@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Street Rat</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="street-rat.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/street-rat.xml" />
+		</update>
+	</info>
+
+	<element name="Street Rat" type="Background" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_STREET_RAT">
+    <description>
+    <ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Sleight of Hand, Stealth </li>
+        <li><strong>Other Proficiencies:</strong>Disguise kit, Thieves’ tools </li>
+				<li><strong>Equipment:</strong>Thieves’ tools, pet mouse, 10 cr </li>
+      </ul>
+      <div element="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_CITY_SECRETS" />
+    </description>
+      <setters>
+        <set name="short">Sleight of Hand, Stealth, Disguise kit, Thieves’ tools </set>
+      </setters>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+      </rules>
+    </element>
+
+    <element name="Feature: City Secrets" type="Background Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_CITY_SECRETS">
+      <supports>Background Feature</supports>
+		<description>
+			<p>You know the secret patterns and flow to cities and can find passages through the urban sprawl that others would miss. When you are not in combat, you (and companions you lead) can travel between any two locations in the city twice as fast as your speed would normally allow.</p>
+		</description>
+		<sheet alt="City Secrets">
+			<description>You know the secret patterns and flow to cities and can find passages through the urban sprawl that others would miss. When you are not in combat, you (and companions you lead) can travel between any two locations in the city twice as fast as your speed would normally allow.</description>
+		</sheet>
+	</element>
+
+</elements>

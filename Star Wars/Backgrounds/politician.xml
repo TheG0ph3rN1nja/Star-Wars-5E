@@ -1,0 +1,42 @@
+Star-Wars/<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Politician</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="politician.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/politician.xml" />
+		</update>
+	</info>
+
+	<element name="Politician" type="Background" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_POLITICIAN">
+    <description>
+    <ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>History, persuasion </li>
+        <li><strong>Other Proficiencies:</strong>One language, and one gaming set </li>
+				<li><strong>Equipment:</strong>Credentials, letter of diplomatic immunity, 25 cr </li>
+      </ul>
+      <div element="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_POSITION_OF_PRIVILEGE" />
+    </description>
+      <setters>
+        <set name="short">History, persuasion, One language, and one gaming set, Credentials, letter of diplomatic immunity, 25 cr </set>
+      </setters>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+        <select type="Proficiency" name="Tool Proficiency (Politician)" supports="Gaming Set" />
+        <select type="Language" name="Language (Politician)" supports="Standard||Exotic" />
+      </rules>
+    </element>
+
+    <element name="Feature: Position of Privilege" type="Background Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_POSITION_OF_PRIVILEGE">
+      <supports>Background Feature</supports>
+		<description>
+			<p>Thanks to your political position, people are inclined to think the best of you. You are welcome in high society, and people assume you have the right to be wherever you are. The common folk make every effort to accommodate you and avoid your displeasure, and other people of high birth treat you as a member of the same social sphere. You can secure an audience with a local government if you need to.</p>
+		</description>
+		<sheet alt="Position of Privilege">
+			<description>Thanks to your political position, people are inclined to think the best of you. You are welcome in high society, and people assume you have the right to be wherever you are. The common folk make every effort to accommodate you and avoid your displeasure, and other people of high birth treat you as a member of the same social sphere. You can secure an audience with a local government if you need to.</description>
+		</sheet>
+	</element>
+
+</elements>

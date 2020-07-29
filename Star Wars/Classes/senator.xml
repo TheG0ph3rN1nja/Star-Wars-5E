@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Senator</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="senator.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/classes/senator.xml" />
+		</update>
+	</info>
+
+	<element name="Senator" type="Class" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_SENATOR">
+		<description>
+      <h5 class="caption">THE SENATOR</h5>
+			<table class="class-feaures">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-5">Proficiency Bonus</td><td class="left">Features</td><td class="col-5">Majestic Talents</td></tr>
+				</thead>
+        <tr><td> 1st</td><td>+2</td><td class="left">Inspiring Call (d4), Encouraging Words</td><td>—</td></tr>
+        <tr><td> 2nd</td><td>+2</td><td class="left">Majesty Points, Charismatc Armor</td><td>1</td></tr>
+				<tr><td> 3rd</td><td>+2</td><td class="left">Cohorts</td><td>1</td></tr>
+				<tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td><td>2</td></tr>
+				<tr><td> 5th</td><td>+3</td><td class="left">Inspiring Call (d6), Boon of Diplomacy</td><td>2</td></tr>
+				<tr><td> 6th</td><td>+3</td><td class="left">Ability Score Improvement</td><td>3</td></tr>
+				<tr><td> 7th</td><td>+3</td><td class="left">Affecting Persona</td><td>3</td></tr>
+				<tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td><td>4</td></tr>
+				<tr><td> 9th</td><td>+4</td><td class="left">Inspiring Call (d8)</td><td>4</td></tr>
+				<tr><td>10th</td><td>+4</td><td class="left">—</td><td>5</td></tr>
+				<tr><td>11th</td><td>+4</td><td class="left">—</td><td>5</td></tr>
+				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td><td>5</td></tr>
+				<tr><td>13th</td><td>+5</td><td class="left">—</td><td>6</td></tr>
+				<tr><td>14th</td><td>+5</td><td class="left">Ability Score Improvement, Sublime Majesty</td><td>6</td></tr>
+				<tr><td>15th</td><td>+5</td><td class="left">—</td><td>6</td></tr>
+				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td><td>7</td></tr>
+				<tr><td>17th</td><td>+6</td><td class="left">Inspiring Call (d10)</td><td>7</td></tr>
+				<tr><td>18th</td><td>+6</td><td class="left">Supreme Guardian</td><td>7</td></tr>
+				<tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td><td>8</td></tr>
+				<tr><td>20th</td><td>+6</td><td class="left">Senatorial Paramountcy</td><td>9</td></tr>
+			</table>
+			<h3>Class Features</h3>
+      <p>As a senator, you have the following class features.</p>
+      <h4>Hit Points</h4>
+      <p><strong>Hit Dice:</strong> 1d6 per senator Level.</p>
+      <p><strong>Hit Points at 1st Level:</strong> 10 + your Constitution modifier</p>
+      <p><strong>Hit Points at Higher Levels:</strong> 1d6 (or 4) + your Constitution modifier per senator level after 1st</p>
+      <h5>PROFICIENCIES</h5>
+      <p><strong>Armor:</strong> Light armor</p>
+      <p><strong>Weapons:</strong> Simple Weapons</p>
+      <p><strong>Tools:</strong> None</p>
+      <p><strong>Saving Throw:</strong> Charisma, Wisdom</p>
+      <p><strong>Skills:</strong> Choose any three from Acrobatics, Animal Handling, History, Insight, Intimidation, Investigation, Medicine, Nature, Perception, Performance, Persuasion or Religion.</p>
+      <h5>EQUIPMENT</h5>
+      <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+      <ul>
+        <li>(a) a simple melee weapon or (b) a simple ranged weapon and ammunition</li>
+        <li>a blaster pistol</li>
+        <li>5 charge packs per ranged weapon</li>
+        <li>Leather armor, a vibroblade, and an engineer’s pack</li>
+      </ul>
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_INSPIRING_CALL" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_ENCOURAGING_WORDS" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_MAJESTY_POINTS" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_MAJESTIC_TALENTS" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_CHARISMATIC_ARMOR" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_COHORTS" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_ABILITYSCOREIMPROVEMENT_SENATOR" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_BOONOFDIPLOMACY" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_AFFECTINGPERSONA" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_SUBLIMEMAJESTY" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_SUPREMEGUARDIAN" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_SENATORIALPARAMOUNTCY" />
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="hd">d6</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+			<select type="Proficiency" name="Skill Proficiency (Senator)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_RELIGION" number="3" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SKILL_REPAIRS" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SKILL_SECURITY" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_INSPIRING_CALL" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_ENCOURAGING_WORDS" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_MAJESTY_POINTS" level="2" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_MAJESTIC_TALENTS" level="2" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_CHARISMATIC_ARMOR" level="2" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_COHORTS" level="3" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_ABILITYSCOREIMPROVEMENT_SENATOR" level="4" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_BOONOFDIPLOMACY" level="5" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_AFFECTINGPERSONA" level="7" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_SUBLIMEMAJESTY" level="14" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_SUPREMEGUARDIAN" level="18" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_SENATORIALPARAMOUNTCY" level="20" />
+		</rules>
+	</element>
+
+	<element name="Inspiring Call" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_INSPIRING_CALL">
+		<description>
+			<p>At 1st level, you may inspire an ally, such as through a rallying call, to achieve greater feats in the service of yourself or that which you call for. In order to use this feature, you must be able to speak. As an action, any ally within 60 feet of you that you can see gains a Inspiring Call die. This size of this die is determined by your levels in senator. Within the next minute, they may use this extra die on any attack roll, damage roll, ability check, or saving throw. They may decide to use this extra die after they roll but not after the DM has decided if they succeeded or failed.</p>
+			<p class="indent">You may use this feature a number of times equal to 1 + your Charisma modifier. You regain all expended uses after you complete a short or long rest. Your Inspiring Call die grows at 5th, 9th, and 17th level.</p>
+		</description>
+		<sheet usage="{{inspiring-call:count}}/Short Rest" action="1 Action">
+			<description>As an action, any ally within 60 feet of you that you can see gains a Inspiring Call die, 1d{{inspiring-call:dice}}. Within the next minute, they may use this extra die on any attack roll, damage roll, ability check, or saving throw. They may decide to use this extra die after they roll but not after the DM has decided if they succeeded or failed.</description>
+		</sheet>
+		<rules>
+			<stat name="inspiring-call:dice" value="4" level="1" />
+			<stat name="inspiring-call:dice" value="2" level="5" />
+			<stat name="inspiring-call:dice" value="2" level="9" />
+			<stat name="inspiring-call:dice" value="2" level="17" />
+
+			<stat name="inspiring-call:count" value="1" />
+			<stat name="inspiring-call:count" value="charisma:modifier" />
+			<stat name="calculation" value="inspiring-call:count" bonus="calculation" />
+		</rules>
+	</element>
+
+	<element name="Encouraging Words" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_ENCOURAGING_WORDS">
+		<description>
+			<p>Also at 1st level, you may use your words to bolster morale, instead of simply inspiring your allies. You gain a pool of hit points that you can use to impart temporary hit points to an ally, equal to your levels in senator x 5. As an action, you encourage an ally within 5 feet of yourself and instill a portion of the temporary hit points or all of it, at your choice. You must be within 5 feet of an ally, due to the intimacy of these encouraging words. You cannot use your encouraing words on yourself. Your pool of hit points for encouraging words fully replenish after a long rest.</p>
+		</description>
+		<sheet usage="Replenish/Long Rest" action="1 Action">
+			<description>As an action, you encourage an ally within 5 feet of yourself and instill a portion of the temporary hit points or all of it, Your pool equaling {{encouraging-words:count}}, at your choice. You must be within 5 feet of an ally, due to the intimacy of these encouraging words. You cannot use your encouraing words on yourself.</description>
+		</sheet>
+		<rules>
+			<stat name="encouraging-words:count" value="level:senator" />
+			<stat name="encouraging-words:count" value="level:senator" />
+			<stat name="encouraging-words:count" value="level:senator" />
+			<stat name="encouraging-words:count" value="level:senator" />
+			<stat name="encouraging-words:count" value="level:senator" />
+			<stat name="calculation" value="encouraging-words:count" bonus="calculation" />
+		</rules>
+	</element>
+
+	<element name="Majesty Points" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_MAJESTY_POINTS">
+		<description>
+			<p>At 2nd level, you have unlocked a resevoire of power that only the epitome of nobility can understand: majesty. You gain a number of majesty points equal to your levels in the senator class. You may expend these points for your Majestic Talents or other class features. You regain all expended majesty points after you complete a long rest.</p>
+		</description>
+		<sheet usage="Replenish/Long Rest">
+			<description>You gain a number of majesty points equal {{majesty-points:count}}. You may expend these points for your Majestic Talents or other class features.</description>
+		</sheet>
+		<rules>
+			<stat name="majesty-points:count" value="level:senator" />
+			<!--Below is added from Boon of Diplomacy-->
+			<stat name="majesty-points:count" value="charisma:modifier" level="5" />
+			<stat name="calculation" value="majesty-points:count" bonus="calculation" />
+		</rules>
+	</element>
+
+	<element name="Majestic Talents" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_MAJESTIC_TALENTS">
+		<description>
+			<p>Also at 2nd level, you gain access to your first abilities to utilize your majesty points, your Majestic Talents. Choose 1 from the Majestic Talents section at 2nd level and more based on your level as you progress on the senator class table.</p>
+			<p>If any talents require you to formulate a saving throw, it is a DC of 8 + your Charisma modifier + your Proficiency bonus. Whenever you gain a level in the senator class you can forget one majestic talent and learn another one that you meet the prerequisites for.</p>
+		</description>
+		<sheet>
+			<description>If any talents require you to formulate a saving throw, it is a DC {{majestic-talent-save:count}}. Whenever you gain a level in the senator class you can forget one majestic talent and learn another one that you meet the prerequisites for.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Majestic Talent" supports="Majestic Talent" number="1" level="2" />
+			<select type="Class Feature" name="Majestic Talent" supports="Majestic Talent" number="1" level="4" />
+			<select type="Class Feature" name="Majestic Talent" supports="Majestic Talent" number="1" level="6" />
+			<select type="Class Feature" name="Majestic Talent" supports="Majestic Talent" number="1" level="8" />
+			<select type="Class Feature" name="Majestic Talent" supports="Majestic Talent" number="1" level="10" />
+			<select type="Class Feature" name="Majestic Talent" supports="Majestic Talent" number="1" level="13" />
+			<select type="Class Feature" name="Majestic Talent" supports="Majestic Talent" number="1" level="16" />
+			<select type="Class Feature" name="Majestic Talent" supports="Majestic Talent" number="1" level="19" />
+			<select type="Class Feature" name="Majestic Talent" supports="Majestic Talent" number="1" level="20" />
+
+			<stat name="majestic-talent-save:count" value="charisma:modifier" />
+			<stat name="majestic-talent-save:count" value="proficiency" />
+			<stat name="majestic-talent-save:count" value="8" />
+			<stat name="calculation" value="majestic-talent-save:count" bonus="calculation" />
+		</rules>
+	</element>
+
+	<element name="Charismatic Armor" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_CHARISMATIC_ARMOR">
+		<description>
+			<p>Additionally at 2nd level, your mere presence exudes a charismatic aura that is difficult to strike to most creatures. When not wearing any armor, using a shield, or using another type of armor class (such as unarmored defense or armor class from the mage armor spell) you have an armor class equal to 10 + your Dexterity Modifier + your Charisma modifier. Creatures who are immune to being charmed or who have advantage against the charmed condition have advantange to attack rolls against you when using this armor class.</p>
+		</description>
+		<sheet>
+			<description>Creatures who are immune to being charmed or who have advantage against the charmed condition have advantange to attack rolls against you when using the charismatic armor class.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:charismatic defense senator:base" value="10" />
+			<stat name="ac:charismatic defense senator:dexterity" value="dexterity:modifier" />
+			<stat name="ac:charismatic defense senator:charisma" value="charisma:modifier" />
+			<stat name="ac:charismatic defense senator" value="ac:charismatic defense senator:base" />
+			<stat name="ac:charismatic defense senator" value="ac:charismatic defense senator:dexterity" />
+			<stat name="ac:charismatic defense senator" value="ac:charismatic defense senator:charisma" />
+			<stat name="ac:calculation" value="ac:charismatic defense senator" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Charismatic Defense (Senator)" />
+		</rules>
+	</element>
+
+	<element name="Cohorts" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_COHORTS">
+		<description>
+			<p>At 3rd level, you gain two cohorts that follow you around, obeying you faithfully. You have one guardian and one pilot. Both cohorts are of your race, but lack any exceptionalities of your race to grant them racial traits. Guardians and pilots may be of either gender. Guardians are proficient in all simple and martial weapons and light and medium armor. You may add your Proficiency bonus to their attacks, damage rolls, and saving throws so long as you are within 120 feet of your cohorts and they are aware of your presence. If your cohort ever dies, another takes its place within one month's time, so long as you properly inform your governing body. While they may collect a salary or they are sworn to serve you and/or your governing body, any expenses they require are handled by your government. If you have been disavowed by your governing body or they have been destroyed, you must handle this matter on your own, depending upon the disposition of your cohorts.</p>
+			<p class="indent">Cohorts take their turn on your initiative, though they don't take an action unless you command them to. On your turn, you can verbally command them where to move (no action required by you). You can use your action, or when you target them with Inspiring Call, to verbally command them to take the Attack, Dash, Disengage, Dodge, or Help action. Once you have the Extra Attack feature (if you ever do), you can make one weapon attack yourself when you command them to take the Attack action.</p>
+			<p class="indent">At 6th level, whenenver your guardian takes the Attack action, he or she can make two attacks instead of just one.</p>
+		</description>
+		<sheet usage="1 Action">
+			<description>Cohorts take their turn on your initiative, though they don't take an action unless you command them to. On your turn, you can verbally command them where to move (no action required by you). You can verbally command them to take the Attack, Dash, Disengage, Dodge, or Help action. Once you have the Extra Attack feature (if you ever do), you can make one weapon attack yourself when you command them to take the Attack action. At 6th level, whenenver your guardian takes the Attack action, he or she can make two attacks instead of just one.</description>
+		</sheet>
+		<rules>
+			<!--Pilot will be added once multiple companion sheets are available, but is still listed in the compendium-->
+			<select type="Companion" name="Senator’s Companion" supports="Humanoid,Medium,1/2" />
+			<stat name="companion:ac" value="0" />
+			<stat name="companion:attack" value="0" />
+			<stat name="companion:damage" value="0" />
+			<stat name="additional:hp:max" value="0" />
+			<stat name="additional:hp:max" value="0" />
+			<stat name="additional:hp:max" value="0" />
+			<stat name="additional:hp:max" value="0" />
+			<stat name="companion:hp:max" value="additional:hp:max" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Ability Score Improvement" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_ABILITYSCOREIMPROVEMENT_SENATOR">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Senator 4)" supports="Improvement Option,Senator,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Senator 6)" supports="Improvement Option,Senator,6" level="6" />
+			<select type="Class Feature" name="Improvement Option (Senator 12)" supports="Improvement Option,Senator,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Senator 14)" supports="Improvement Option,Senator,14" level="14" />
+			<select type="Class Feature" name="Improvement Option (Senator 16)" supports="Improvement Option,Senator,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Senator 19)" supports="Improvement Option,Senator,19" level="19" />
+		</rules>
+	</element>
+
+	<element name="Boon of Diplomacy" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_BOONOFDIPLOMACY">
+		<description>
+			<p>At 5th level, you utilize your majesty more often than most senators. You gain two additional majestic talents. Also, you gain extra majesty points equal to your Charisma modifier.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Majestic Talent" supports="Majestic Talent" number="2" />
+		</rules>
+	</element>
+
+	<element name="Affecting Persona" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_AFFECTINGPERSONA">
+		<description>
+			<p>At 7th level, your Inspiring Call and Encouraging Words can now go hand in hand. Whenever you use your Inspiring Call feature, you may then use your Encouraging Words as a bonus action on the same creature on your turn. If you do so, you do not need to be within 5 feet of them.</p>
+			<p class="indent">Additionally, as an action, you may regain your spent healing pool from your Encouring Words ability as you focus on how to bolster your allies. You regain half of your maximum pool of hit points from your Encouraging Words ability. Once you do so you cannot do so again until you finish a long rest.</p>
+		</description>
+		<sheet usage="Once/Long Rest" action="Action">
+			<description>Whenever you use your Inspiring Call feature, you may then use your Encouraging Words as a bonus action on the same creature on your turn. If you do so, you do not need to be within 5 feet of them. Additionally you may regain your spent healing pool from your Encouring Words ability as you focus on how to bolster your allies. You regain half of your maximum pool of hit points from your Encouraging Words ability.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Sublime Majesty" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_SUBLIMEMAJESTY">
+		<description>
+			<p>At 14th level, you may use your understanding of your current dilemma to consider how to reassert yourself. As a bonus action, you regain expended majesty points equal to your Wisdom modifier. You can use this feature twice. You regain all expended uses after finishing a long rest.</p>
+		</description>
+		<sheet usage="2/Long Rest" action="Bonus Action">
+			<description>you regain expended majesty points equal to {{sublime-majesty:wisdom}}.</description>
+		</sheet>
+		<rules>
+			<stat name="sublime-majesty:wisdom" value="wisdom:modifier" />
+		</rules>
+	</element>
+
+	<element name="Supreme Guardian" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_SUPREMEGUARDIAN">
+		<description>
+			<p>At 18th level, your guardian is exceptional in his or her ability to defend you in battle or circumstance. You may now command your guardian to take an action as a bonus action. Additionally, at the beginning of a creature's turn, you may expend two majesty points to let your guardian use their reaction to take another action. Additionally, at the beginning of a creature's turn, you may expend two majesty points to let your guardian use their reaction to take another action.</p>
+			<p class="indent">Finally, your guardian gains double the hit points from his or her synergy ability.</p>
+		</description>
+		<sheet>
+			<description>You may now command your guardian to take an action as a bonus action. Additionally, at the beginning of a creature's turn, you may expend two majesty points to let your guardian use their reaction to take another action. Additionally, at the beginning of a creature's turn, you may expend two majesty points to let your guardian use their reaction to take another action. Finally, your guardian gains double the hit points from his or her synergy ability.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Senatorial Paramountcy" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENATOR_SENATORIALPARAMOUNTCY">
+		<description>
+			<p>At 20th level, you have reached the greatest height of being a senator. This new pinnacle is reflected in your sheer presence. Your Wisdom and Charisma ability scores improve by 4 to a maximum of 24.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="4" />
+			<stat name="charisma" value="4" />
+			<stat name="wisdom:max" value="4" />
+			<stat name="charisma:max" value="4" />
+		</rules>
+	</element>
+
+</elements>

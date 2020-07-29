@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Duros</name>
+		<description>GM Binder</description>
+		<author />
+		<update version="0.0.1">
+			<file name="duros.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Duros" type="Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACE_DUROS">
+		<description>
+			<h4>Duros Traits</h4>
+			<p>Your Duros character has many different attributes that might be useful in the field:</p>
+			<p class="indent"><strong><i>Ability Score Increase.</i></strong> +1 Charisma, +2 Intelligence</p>
+      <p class="indent"><strong><i>Age.</i></strong> Up to 100 years.</p>
+			<p class="indent"><strong><i>Alignment.</i></strong> Proclivity to good.</p>
+			<p class="indent"><strong><i>Size.</i></strong> Medium</p>
+			<p class="indent"><strong><i>Speed.</i></strong> 30ft.</p>
+			<p class="indent"><strong><i>Proficiency.</i></strong> Perception and Security</p>
+			<p class="indent"><strong><i>Photographic Memory.</i></strong> Can recall anything ever told to them or read. This gives proficiency with the history skill and advantage on history checks.</p>
+      <p class="indent"><strong><i>Darkvision</i></strong> 30ft.</p>
+			<p class="indent"><strong><i>Languages.</i></strong> Durese, Basic.</p>
+		</description>
+		<sheet display="false" />
+			<setters />
+			<rules>
+				<stat name="Intelligence" value="2" />
+				<stat name="Charisma" value="1" />
+				<grant type="Size" id="ID_SIZE_MEDIUM" />
+				<stat name="Speed" value="30" bonus="base" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+        <grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_SKILL_SECURITY" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_DUROS_PHOTGRAPHIC_MEMORY" />
+				<grant type="Vision" name="ID_VISION_DARKVISION" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_DURESE" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_BASIC" />
+			</rules>
+    </element>
+
+    <element name="Photographic Memory" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_DUROS_PHOTGRAPHIC_MEMORY">
+			<description>
+				<p>Can recall anything ever told to them or read. This gives proficiency with the history skill and advantage on history checks.</p>
+			</description>
+			<sheet>
+				<description>
+          <p>Can recall anything ever told to them or read. You also advantage on history checks.</p>
+        </description>
+			</sheet>
+			<rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+      </rules>
+		</element>
+
+
+ </elements>

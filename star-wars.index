@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>GM Binder SW5E</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="star-wars.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/bounty-hunter.xml" />
+		</update>
+	</info>
+	<files>
+		<file name="source.xml" url="https://raw.githubusercontent.com/TheG0ph3rN1nja/Star-Wars-5E/sources.xml" />
+
+		<file name="bounty-hunter.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/bounty-hunter.xml" />
+		<file name="celebrity-performer.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/celebrity-performer.xml" />
+		<file name="con-artist.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/con-artist.xml" />
+		<file name="follower-of-the-force.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/follower-of-the-force.xml" />
+		<file name="foreman.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/foreman.xml" />
+		<file name="hermit.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/hermit.xml" />
+		<file name="librarian.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/librarian.xml" />
+		<file name="mercenary-veteran.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/mercenary-veteran.xml" />
+		<file name="outlaw.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/outlaw.xml" />
+		<file name="pod-racer.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/pod-racer.xml" />
+		<file name="police-force.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/police-force.xml" />
+		<file name="politician.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/politician.xml" />
+		<file name="sage.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/sage.xml" />
+		<file name="senators-aid.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/senators-aid.xml" />
+		<file name="space-pirate-deck-hand.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/space-pirate-deck-hand.xml" />
+		<file name="street-rat.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/street-rat.xml" />
+		<file name="survivalist.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/survivalist.xml" />
+		<file name="tribal-warrior.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/tribal-warrior.xml" />
+		<file name="trooper-background.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/trooper-background.xml" />
+		<file name="under-cover-agent.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/under-cover-agent.xml" />
+		<file name="union-merchant.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/union-merchant.xml" />
+	</files>
+</index>

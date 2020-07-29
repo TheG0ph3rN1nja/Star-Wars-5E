@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Space Pirate/Deck Hand</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="space-pirate-deck-hand.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/space-pirate-deck-hand.xml" />
+		</update>
+	</info>
+
+	<element name="Space Pirate/Deck Hand" type="Background" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_SPACE_PIRATE">
+    <description>
+    <ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Athletics, Perception </li>
+        <li><strong>Other Proficiencies:</strong>Space and Land Vehicles </li>
+				<li><strong>Equipment:</strong>50 feet of cable, lucky charm, 10 cr </li>
+      </ul>
+      <div element="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_BAD_REPUTATION" />
+    </description>
+      <setters>
+        <set name="short">Athletics, Perception, Space and Land Vehicles,50 feet of cable, lucky charm, 10 cr </set>
+      </setters>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND" />
+        <select type="Proficiency" name="Tool Proficiency" supports="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE" />
+      </rules>
+    </element>
+
+    <element name="Feature: Bad Reputation/Ship's Passage" type="Background Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_BAD_REPUTATION">
+      <supports>Background Feature</supports>
+		<description>
+			<p>You spent your youth under the sway of a dread pirate, a ruthless cutthroat who taught you how to survive in a world of exogorths and savages. You’ve indulged in larceny throughout the galaxy and sent more than one deserving soul to a vacuous grave. Fear and bloodshed are no strangers to you, and you’ve garnered a somewhat unsavory reputation in many a spaceport.</p>
+      <p class="indent">When you need to, you can secure free passage on a starship for yourself and your adventuring companions. You might travel on the starship you served on, or another starship you have good relations with (perhaps one captained by a former crewmate). Because you’re calling in a favor, you can’t be certain of a schedule or route that will meet your every need. Your Dungeon Master will determine how long it takes to get where you need to go. In return for your free passage, you and your companions are expected to assist the crew during the voyage.</p>
+		</description>
+		<sheet alt="Bad Reputation/Ship's Passage">
+			<description>
+        <p>You spent your youth under the sway of a dread pirate, a ruthless cutthroat who taught you how to survive in a world of exogorths and savages. You’ve indulged in larceny throughout the galaxy and sent more than one deserving soul to a vacuous grave. Fear and bloodshed are no strangers to you, and you’ve garnered a somewhat unsavory reputation in many a spaceport.</p>
+        <p class="indent">When you need to, you can secure free passage on a starship for yourself and your adventuring companions. You might travel on the starship you served on, or another starship you have good relations with (perhaps one captained by a former crewmate). Because you’re calling in a favor, you can’t be certain of a schedule or route that will meet your every need. Your Dungeon Master will determine how long it takes to get where you need to go. In return for your free passage, you and your companions are expected to assist the crew during the voyage.</p>
+      </description>
+		</sheet>
+	</element>
+
+</elements>

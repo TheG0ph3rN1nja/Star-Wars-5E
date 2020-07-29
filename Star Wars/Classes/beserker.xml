@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Beserker</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="beserker.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/classes/beserker.xml" />
+		</update>
+	</info>
+
+  <element name="Beserker" type="Class" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_BESERKER">
+		<description>
+      <p>The Berserker is a horrifying force to be reckoned with. They are savage and methodical, hulking brutes that are nigh unstoppable on the battlefield.</p>
+      <h5 class="caption">THE BESERKER</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-5">Proficiency Bonus</td><td class="col-5">Features</td></tr>
+				</thead>
+        <tr><td> 1st</td><td>+2</td><td class="left">Adrenaline Rush, Unarmored Defense</td></tr>
+				<tr><td> 2nd</td><td>+2</td><td class="left">Trained Reflexs,Reckless Abandon</td></tr>
+				<tr><td> 3rd</td><td>+2</td><td class="left">Beserker Path</td></tr>
+				<tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 5th</td><td>+3</td><td class="left">Extra Attack, Beserker Speed</td></tr>
+				<tr><td> 6th</td><td>+3</td><td class="left">Beserker Path feature</td></tr>
+				<tr><td> 7th</td><td>+3</td><td class="left">Combat Readiness</td></tr>
+				<tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 9th</td><td>+4</td><td class="left">Brutal Strike</td></tr>
+				<tr><td>10th</td><td>+4</td><td class="left">Beserker Path feature</td></tr>
+				<tr><td>11th</td><td>+4</td><td class="left">Adrealine Boost</td></tr>
+				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>+5</td><td class="left">—</td></tr>
+				<tr><td>14th</td><td>+5</td><td class="left">Beserker Path feature</td></tr>
+				<tr><td>15th</td><td>+5</td><td class="left">Lasting Adrenaline</td></tr>
+				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td>+6</td><td class="left">—</td></tr>
+				<tr><td>18th</td><td>+6</td><td class="left">Unstoppable Force</td></tr>
+				<tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td>+6</td><td class="left">Brute Strength</td></tr>
+      </table>
+      <p>As a beserker, you gain the following class features.</p>
+			<h5>HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d12 per beserker level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 12 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d12 (or 7) + your Constitution modifier per consular level after 1st</li>
+			</ul>
+			<h5>PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> Light and medium armor, shields</li>
+				<li><strong>Weapons:</strong> Simple weapons and martial melee weapons</li>
+				<li><strong>Tools:</strong> None</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Strength, Constitution</li>
+				<li><strong>Skills:</strong> Choose three skills from Animal Handling, Athletics, Intimidation, Nature, Perception, and Survival</li>
+			</ul>
+			<h5>EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li>(a) A vibroaxe or (b) any martial melee weapon or (c) two ryyk blades if a Wookie</li>
+				<li>(a) Two short swords or (b) a blaster carbine and 5 charge packs</li>
+        <li>An explorer’s pack</li>
+        <li>A blaster pistol and 5 charge packs</li>
+        <li>A shield</li>
+			</ul>
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_ADRENALINE_RUSH" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_UNARMORED_DEFENSE" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_TRAINED_REFLEXES" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_RECKLESS_ABANDON" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_BESERKER_PATH" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_ABILITYSCOREIMPROVEMENT_BESERKER" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_EXTRA_ATTACK" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_BESERKERS_SPEED" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_COMBAT_READINESS" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_BRUTAL_STRIKES" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_ADRENALINE_BOOST" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_LASTING_ADRENALINE" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_UNSTOPPABLE_FORCE" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_BRUTE_STRENGTH" />
+    </description>
+		<sheet display="false" />
+		<setters>
+			<set name="hd">d12</set>
+		</setters>
+		<rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+			<select type="Proficiency" name="Skill Proficiency (Beserker)" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL" number="3" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SKILL_REPAIRS" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SKILL_SECURITY" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS" level="1" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_ADRENALINE_RUSH" level="1" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_UNARMORED_DEFENSE" level="1" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_TRAINED_REFLEXES" level="2" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_RECKLESS_ABANDON" level="2" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_BESERKER_PATH" level="3" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_ABILITYSCOREIMPROVEMENT_BESERKER" level="4" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_EXTRA_ATTACK" level="5" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_BESERKERS_SPEED" level="5" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_COMBAT_READINESS" level="7" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_BRUTAL_STRIKES" level="9" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_ADRENALINE_BOOST" level="11" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_LASTING_ADRENALINE" level="15" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_UNSTOPPABLE_FORCE" level="18" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_BRUTE_STRENGTH" level="20" />
+    </rules>
+  </element>
+
+    <element name="Adrealine Rush" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_ADRENALINE_RUSH">
+  		<description>
+  			<p>In battle, you fight with primal ferocity. On your turn, you can enter an adrenaline rush as a Bonus Action.</p>
+        <p class="indent">While in this state, you gain the following benefits if you aren't wearing heavy armor:</p>
+        <ul>
+          <li>You have advantage on Strength Checks and Strength saving throws.</li>
+          <li>When you make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll. This bonus increases as you level. The bonus increases to +3 at lvl 9, and +4 at lvl 16.</li>
+          <li>You have Resistance to bludgeoning, piercing, slashing, and radiant damage.</li>
+        </ul>
+        <p class="indent">This effect lasts for 1 minute. It ends early if you are knocked Unconscious or if Your Turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your this effect on Your Turn as a Bonus Action.</p>
+        <p class="indent">Once you have used this feature the maximum number of times for your barbarian level, you must finish a Long Rest before you can again. You may use adrenaline rush 2 times at 1st level, 3 at 3rd, 4 at 6th, 5 at 12th, and 6 at 17th, and at lvl 20 you gain unlimited uses.</p>
+  		</description>
+  		<sheet>
+  		<description>{{adrenaline-rush:count}} uses/ Long Rest</description>
+  		</sheet>
+  			<rules>
+          <stat name="adrenaline-rush:count" value="2" />
+  				<stat name="adrenaline-rush:count" value="1" level="3" />
+  				<stat name="adrenaline-rush:count" value="1" level="6" />
+  				<stat name="adrenaline-rush:count" value="1" level="12" />
+  				<stat name="adrenaline-rush:count" value="1" level="17" />
+  				<stat name="adrenaline-rush:count" value="93" level="20" />
+        </rules>
+  	</element>
+
+    <element name="Unarmored Defense" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_UNARMORED_DEFENSE">
+  		<description>
+  			<p>While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a Shield and still gain this benefit.</p>
+  		</description>
+  		<sheet>
+  			<description>While you are wearing no armor, your AC equals {{ac:unarmored defense beserker}}.</description>
+  		</sheet>
+  			<rules>
+  				<stat name="ac:unarmored defense beserker:base" value="10" />
+  				<stat name="ac:unarmored defense beserker:dexterity" value="dexterity:modifier" />
+  				<stat name="ac:unarmored defense beserker:constitution" value="constitution:modifier" />
+  				<stat name="ac:unarmored defense beserker" value="ac:unarmored defense beserker:base" />
+  				<stat name="ac:unarmored defense beserker" value="ac:unarmored defense beserker:dexterity" />
+  				<stat name="ac:unarmored defense beserker" value="ac:unarmored defense beserker:constitution" />
+  				<stat name="ac:calculation" value="ac:unarmored defense beserker" bonus="calculation" equipped="[armor:none]" alt="Unarmored Defense (Beserker)" />
+  			</rules>
+  	</element>
+
+    <element name="Trained Reflexs" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_TRAINED_REFLEXES">
+  		<description>
+  			<p>At 2nd level, you gain an uncanny sense of when things nearby aren't as they should be, giving you an edge when you dodge away from danger. You have advantage on Dexterity saving throws against effects that you can see, such as traps and Spells. To gain this benefit, you can't be Blinded, Deafened, or Incapacitated.</p>
+  		</description>
+  		<sheet>
+  		<description>You have advantage on Dexterity saving throws against effects that you can see, such as traps and Spells. To gain this benefit, you can't be Blinded, Deafened, or Incapacitated.</description>
+  		</sheet>
+  			<rules />
+  	</element>
+
+    <element name="Reckless" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_RECKLESS_ABANDON">
+  		<description>
+  			<p>Starting at 2nd level, you can throw aside all concern for defense to Attack with fierce desperation. When you make your first Attack on Your Turn, you can decide to Attack recklessly. Doing so gives you advantage on melee weapon Attack rolls using Strength during this turn, but Attack rolls against you have advantage until your next turn.</p>
+  		</description>
+  		<sheet>
+  		<description>When you make your first Attack on Your Turn, you can decide to Attack recklessly. Doing so gives you advantage on melee weapon Attack rolls using Strength during this turn, but Attack rolls against you have advantage until your next turn.</description>
+  		</sheet>
+  			<rules />
+  	</element>
+
+    <element name="Beserker Path" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_BESERKER_PATH">
+  		<description>
+  			<p>At 3rd level, you choose a path that shapes the nature of your fighting. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels.</p>
+  		</description>
+  		<sheet display="false" />
+  			<rules>
+          <select type="Archetype" name="Beserker Path" supports="Beserker Path" level="3" />
+        </rules>
+  	</element>
+
+    <element name="Ability Score Improvement" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_ABILITYSCOREIMPROVEMENT_BESERKER">
+  		<compendium display="false" />
+  		<description>
+  			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+  		</description>
+  		<sheet display="false" />
+  		<rules>
+  			<select type="Class Feature" name="Improvement Option (Beserker 4)" supports="Improvement Option,Beserker,4" level="4" />
+  			<select type="Class Feature" name="Improvement Option (Beserker 8)" supports="Improvement Option,Beserker,8" level="8" />
+  			<select type="Class Feature" name="Improvement Option (Beserker 12)" supports="Improvement Option,Beserker,12" level="12" />
+  			<select type="Class Feature" name="Improvement Option (Beserker 16)" supports="Improvement Option,Beserker,16" level="16" />
+  			<select type="Class Feature" name="Improvement Option (Beserker 19)" supports="Improvement Option,Beserker,19" level="19" />
+  		</rules>
+  	</element>
+
+    <element name="Extra Attack" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_EXTRA_ATTACK">
+  		<description>
+  			<p>Beginning at 5th level, you can Attack twice, instead of once, whenever you take the Attack action on Your Turn.</p>
+  		</description>
+  		<sheet>
+  		<description>You can Attack twice, instead of once, whenever you take the Attack action on Your Turn.</description>
+  		</sheet>
+  			<rules />
+  	</element>
+
+    <element name="Beserker's Speed" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_BESERKERS_SPEED">
+  		<description>
+  			<p>Starting at 5th level, your speed increases by 10 feet while you aren't wearing Heavy Armor.</p>
+  		</description>
+  		<sheet>
+  		<description>your speed increases by 10 feet while you aren't wearing Heavy Armor.</description>
+  		</sheet>
+  			<rules>
+          <stat name="innate speed:misc" value="10" equipped="![armor:heavy]" requirements="[innate speed:1]" />
+          <stat name="innate speed:climb:misc" value="10" equipped="![armor:heavy]" requirements="[innate speed:climb:1]" />
+          <stat name="innate speed:fly:misc" value="10" equipped="![armor:heavy]" requirements="[innate speed:fly:1]" />
+          <stat name="innate speed:swim:misc" value="10" equipped="![armor:heavy]" requirements="[innate speed:swim:1]" />
+          <stat name="innate speed:burrow:misc" value="10" equipped="![armor:heavy]" requirements="[innate speed:burrow:1]" />
+        </rules>
+      </element>
+
+      <element name="Combat Readiness" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_COMBAT_READINESS">
+    		<description>
+    			<p>By 7th level, your instincts are so honed that you have advantage on initiative rolls.</p>
+          <p class="indent">Additionally, if you are surprised at the beginning of Combat and aren't Incapacitated, you can act normally on your first turn, but only if you enter your adrenaline rush before doing anything else on that turn.</p>
+    		</description>
+    		<sheet>
+    		<description>You have advantage on initiative rolls. Additionally, if you are surprised at the beginning of Combat and aren't Incapacitated, you can act normally on your first turn, but only if you enter your adrenaline rush before doing anything else on that turn.</description>
+    		</sheet>
+    			<rules />
+    	</element>
+
+      <element name="Brutal Strike" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_BRUTAL_STRIKES">
+    		<description>
+    			<p>Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee Attack.</p>
+          <p class="indent">This increases to two additional dice at 13th level and three additional dice at 17th level.</p>
+    		</description>
+    		<sheet>
+    		<description>You can roll {{brutal-strike:count}} additional weapon damage die when determining the extra damage for a critical hit with a melee Attack.</description>
+    		</sheet>
+    			<rules>
+            <stat name="brutal-strike:count" value="1" />
+    				<stat name="brutal-strike:count" value="1" level="13" />
+    				<stat name="brutal-strike:count" value="1" level="17" />
+          </rules>
+    	</element>
+
+      <element name="Adrenaline Boost" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_ADRENALINE_BOOST">
+    		<description>
+    			<p>Starting at 11th level, your adrenaline rush can keep you fighting despite grievous wounds. If you drop to 0 hit points while you're under the effects of adrenaline rush and don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead.</p>
+          <p class="indent">Each time you use this feature after the first, the DC increases by 5. When you finish a short or Long Rest, the DC resets to 10.</p>
+    		</description>
+    		<sheet>
+    		<description>If you drop to 0 hit points while you're under the effects of adrenaline rush and don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead.</description>
+    		</sheet>
+    			<rules />
+    	</element>
+
+      <element name="Lasting Adrealine" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_LASTING_ADRENALINE">
+    		<description>
+    			<p>Beginning at 15th level, your adrenaline rush is so fierce that it ends early only if you fall unconscious or if you choose to end it.</p>
+    		</description>
+    		<sheet>
+    		<description>Your adrenaline rush is so fierce that it ends early only if you fall unconscious or if you choose to end it.</description>
+    		</sheet>
+    			<rules />
+    	</element>
+
+      <element name="Unstoppable Force" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_UNSTOPPABLE_FORCE">
+    		<description>
+    			<p>Beginning at 18th level, if your total for a Strength check is less than your Strength score, you can use that score in place of the total.</p>
+    		</description>
+    		<sheet>
+    		<description>If your total for a Strength check is less than your Strength score, you can use that score in place of the total.</description>
+    		</sheet>
+    			<rules />
+    	</element>
+
+      <element name="Brute Strength" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_BESERKER_BRUTE_STRENGTH">
+    		<description>
+    			<p>At 20th level, you embody the power of the wilds. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 24.</p>
+    		</description>
+    		<sheet display="false" />
+    			<rules>
+            <stat name="strength" value="4" />
+            <stat name="constitution" value="4" />
+            <stat name="strength:max" value="4" />
+            <stat name="constitution:max" value="4" />
+          </rules>
+        </element>
+
+        <element name="Path of Anger" type="Archetype" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_PATH_OF_ANGER">
+          <supports>Beserker Path</supports>
+          <description>
+            <p>Berserkers of this path forgo their own safety and protection in order to deal maximum damage to their opponents.</p>
+            <div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_ANGER_FRENZY" />
+            <div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_ANGER_MINDLESS_COMBAT" />
+            <div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_ANGER_FRIGHTENING_FURY" />
+            <div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_ANGER_BACKLASH" />
+          </description>
+          <sheet display="false">
+            <description>Berserkers of this path forgo their own safety and protection in order to deal maximum damage to their opponents.</description>
+          </sheet>
+          <rules>
+            <grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_ANGER_FRENZY" level="3" />
+            <grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_ANGER_MINDLESS_COMBAT" level="6" />
+            <grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_ANGER_FRIGHTENING_FURY" level="10" />
+            <grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_ANGER_BACKLASH" level="14" />
+          </rules>
+        </element>
+
+        <element name="Frenzy" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_ANGER_FRENZY">
+      		<description>
+      			<p>Starting when you choose this path at 3rd level, you can go into a frenzy when you use adrenaline rush. If you do so, for the Duration of your adrenaline rush you can make a single melee weapon Attack as a Bonus Action on each of your turns after this one. When adrenaline rush ends, you suffer one level of Exhaustion (as described in Conditions).</p>
+      		</description>
+      		<sheet>
+      		<description>You can go into a frenzy when you use adrenaline rush. If you do so, for the Duration of your adrenaline rush you can make a single melee weapon Attack as a Bonus Action on each of your turns after this one. When adrenaline rush ends, you suffer one level of Exhaustion (as described in Conditions).</description>
+      		</sheet>
+      			<rules />
+      	</element>
+
+        <element name="Mindless Combat" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_ANGER_MINDLESS_COMBAT">
+      		<description>
+      			<p>Beginning at 6th level, you can’t be Charmed or Frightened while raging. If you are Charmed or Frightened when you enter your adrenaline rush, the effect is suspended for the duration of the ability.</p>
+      		</description>
+      		<sheet>
+      		<description>You can’t be Charmed or Frightened while raging. If you are Charmed or Frightened when you enter your adrenaline rush, the effect is suspended for the duration of the ability.</description>
+      		</sheet>
+      			<rules />
+      	</element>
+
+        <element name="Frightening Fury" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_ANGER_FRIGHTENING_FURY">
+      		<description>
+      			<p>Beginning at 10th level, you can use your action to frighten someone with your menacing presence. When you do so, choose one creature that you can see within 30 feet of you. If the creature can see or hear you, it must succeed on a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Charisma modifier) or be Frightened of you until the end of your next turn. On subsequent turns, you can use your action to extend the Duration of this effect on the Frightened creature until the end of your next turn. This effect ends if the creature ends its turn out of line of sight or more than 60 feet away from you. If the creature succeeds on its saving throw, you can’t use this feature on that creature again for 24 hours.</p>
+      		</description>
+      		<sheet>
+      		<description>You can use your action to frighten someone with your menacing presence.</description>
+      		</sheet>
+      			<rules />
+      	</element>
+
+        <element name="Backlash" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_ANGER_BACKLASH">
+      		<description>
+      			<p>Starting at 14th level, when you take damage from a creature that is within 5 feet of you, you can use your reaction to make a melee weapon Attack against that creature.</p>
+      		</description>
+      		<sheet>
+      		<description>When you take damage from a creature that is within 5 feet of you, you can use your reaction to make a melee weapon Attack against that creature.</description>
+      		</sheet>
+      			<rules />
+      	</element>
+
+        <element name="Path of Force Commune" type="Archetype" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_PATH_OF_FORCE_COMMUNE">
+          <supports>Beserker Path</supports>
+          <description>
+            <p>Berserkers of this path have a spiritual connection to the force and use its aid to enhance their abilities.</p>
+            <div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_FORCE_COMMUNE_FORCE_CONNECTION" />
+            <div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_FORCE_COMMUNE_FORCE_ANIMAL_SPIRIT" />
+            <div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_FORCE_COMMUNE_FORCE_COMMUNION" />
+          </description>
+          <sheet display="false">
+            <description>Berserkers of this path have a spiritual connection to the force and use its aid to enhance their abilities.</description>
+          </sheet>
+          <rules>
+            <grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_FORCE_COMMUNE_FORCE_CONNECTION" level="3" />
+            <grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_FORCE_COMMUNE_FORCE_ANIMAL_SPIRIT" level="3" />
+            <grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_FORCE_COMMUNE_FORCE_COMMUNION" level="10" />
+          </rules>
+        </element>
+
+				<element name="Force Connection" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_FORCE_COMMUNE_FORCE_CONNECTION">
+      		<description>
+      			<p>At level 3 when you pick this path you gain a spiritual connection to the force. Due to this connection you gain proficiency with arcana.</p>
+      		</description>
+      		<sheet>
+      		<description>You gain proficiency with arcana.</description>
+      		</sheet>
+      			<rules>
+							<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+						</rules>
+      	</element>
+
+        <element name="Force Animal Spirit" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_FORCE_COMMUNE_FORCE_ANIMAL_SPIRIT">
+      		<description>
+      			<p>At 3rd level, when you take this path the force provides you with the life force from an animal kingdom. These life forces can buff you in one of the following ways based on the creature the force provides you.</p>
+						<h5>Force Enhancement</h5>
+						<p>At 6th level, the force empowers you with the life force of another animal species. This can be the same as before or a new one.</p>
+						<h5>Force Spirit Mastery</h5>
+						<p>At 14th level, the force empowers you with yet another species. This can be the same as before or a new one.</p>
+      		</description>
+      		<sheet display="false" />
+      			<rules>
+              <select type="Archetype Feature" name="Force Animal Spirit" supports="Force Animal Spirit,3" />
+							<select type="Archetype Feature" name="Force Animal Spirit" supports="Force Animal Spirit,(3||6)" level="6" />
+							<select type="Archetype Feature" name="Force Animal Spirit" supports="Force Animal Spirit,(3||6||14)" level="14" />
+            </rules>
+      	</element>
+
+        <element name="Force Animal Spirit (Ganjuko)" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_FORCE_COMMUNE_FORCE_ANIMAL_SPIRIT_GANJUKO">
+          <supports>Force Animal Spirit,3</supports>
+      		<description>
+      			<p><strong>Ganjuko/Graul/Hanadak/Kalaks/Orray/Rancor/Reek:</strong>When granted the abilities of one of these creatures when you are under the effects of your adrenaline rush ability, you have resistance to all damage except psychic damage.The spirit of these creatures make you tough enough to stand up to any punishment.</p>
+      		</description>
+      		<sheet>
+      		<description>When you are under the effects of your adrenaline rush ability, you have resistance to all damage except psychic damage.</description>
+      		</sheet>
+      			<rules />
+      	</element>
+
+        <element name="Force Animal Spirit (Clawbird)" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_FORCE_COMMUNE_FORCE_ANIMAL_SPIRIT_CLAWBIRD">
+          <supports>Force Animal Spirit,3</supports>
+      		<description>
+      			<p><strong>Clawbird/Dactillion/Geejaws:</strong>When granted the abilities of one of these creatures when you are under the effects of your adrenaline rush ability and aren’t wearing heavy armor, other creatures have disadvantage on opportunity attack rolls against you, and you can use the Dash action as a bonus action on your turn. The spirit of these creatures make you into a predator who can weave through the fray with ease.</p>
+      		</description>
+      		<sheet>
+      		<description>When you are under the effects of your adrenaline rush ability and aren’t wearing heavy armor, other creatures have disadvantage on opportunity attack rolls against you, and you can use the Dash action as a bonus action on your turn.</description>
+      		</sheet>
+      			<rules />
+      	</element>
+
+				<element name="Force Animal Spirit (Blurrg)" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_FORCE_COMMUNE_FORCE_ANIMAL_SPIRIT_BLURRG">
+          <supports>Force Animal Spirit,3</supports>
+      		<description>
+      			<p><strong>Blurrg/Bordok/Dewback/Eopie/Falumpaset/Kath hound/Tauntaun:</strong>When granted the abilities of one of these creatures when you are under the effects of your adrenaline rush ability and aren’t wearing heavy armor, your walking speed increases by 15 feet. The spirit of these creatures make you extraordinarily swift.</p>
+      		</description>
+      		<sheet>
+      		<description>When you are under the effects of your adrenaline rush ability and aren’t wearing heavy armor, your walking speed increases by 15 feet.</description>
+      		</sheet>
+      			<rules />
+      	</element>
+
+				<element name="Force Animal Spirit (Anooba)" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_FORCE_COMMUNE_FORCE_ANIMAL_SPIRIT_ANOOBA">
+          <supports>Force Animal Spirit,3</supports>
+      		<description>
+      			<p><strong>Anooba/Cherfer/Nexu/Tuskcat:</strong>When granted the abilities of one of these creatures when you are under the effects of your adrenaline rush ability, you can add 10 feet too your long jump distance and 3 feet to your high jump distance. The spirit of these creatures empower your leaps.</p>
+      		</description>
+      		<sheet>
+      		<description>When you are under the effects of your adrenaline rush ability, you can add 10 feet too your long jump distance and 3 feet to your high jump distance.</description>
+      		</sheet>
+      			<rules />
+      	</element>
+
+				<element name="Force Animal Spirit (Akk Dog)" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_FORCE_COMMUNE_FORCE_ANIMAL_SPIRIT_AKK_DOG">
+          <supports>Force Animal Spirit,3</supports>
+      		<description>
+      			<p><strong>Akk Dog/Furnocs/Garrals:</strong>When granted the abilities of one of these creatures when you are under the effects of your adrenaline rush ability,your friends have advantage on melee attack rolls against any creature within 5 feet of you that is hostile to you. The spirit of these creatures make you a leader of hunters.</p>
+      		</description>
+      		<sheet>
+      		<description>When you are under the effects of your adrenaline rush ability, your friends have advantage on melee attack rolls against any creature within 5 feet of you that is hostile to you</description>
+      		</sheet>
+      			<rules />
+      	</element>
+
+				<element name="Force Animal Spirit (Graul)" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_FORCE_COMMUNE_FORCE_ANIMAL_SPIRIT_GRAUL">
+          <supports>Force Animal Spirit,6</supports>
+      		<description>
+      			<p><strong>Ganjuko/Graul/Hanadak/Kalaks/Orray/Rancor/Reek:</strong>You gain the might of a one of these creatures. Your carrying capacity (including maximum load and maximum lift) is doubled, and you have advantage on Strength checks made to push, pull, lift, or break objects.</p>
+      		</description>
+      		<sheet>
+      		<description>Your carrying capacity is doubled, and you have advantage on Strength checks made to push, pull, lift, or break objects.</description>
+      		</sheet>
+      			<rules>
+							<grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_DOUBLED" />
+						</rules>
+      	</element>
+
+				<element name="Force Animal Spirit (Dactillion)" type="Arcehtype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_FORCE_COMMUNE_FORCE_ANIMAL_SPIRIT_DACTILLION">
+          <supports>Force Animal Spirit,6</supports>
+      		<description>
+      			<p><strong>Clawbird/Dactillion/Geejaws:</strong>You gain the eyesight of one of these creatures. You can see up to 1 mile away with no difficulty, able to discern even fine details as though looking at something no more than 100 feet away from you. Additionally, dim light doesn’t impose disadvantage on your Wisdom (Perception) checks.</p>
+      		</description>
+      		<sheet>
+      		<description>You can see up to 1 mile away with no difficulty, able to discern even fine details as though looking at something no more than 100 feet away from you. Additionally, dim light doesn’t impose disadvantage on your Wisdom (Perception) checks.</description>
+      		</sheet>
+      			<rules />
+      	</element>
+
+				<element name="Force Animal Spirit (Bordok)" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_FORCE_COMMUNE_FORCE_ANIMAL_SPIRIT_BORDOK">
+          <supports>Force Animal Spirit,6</supports>
+      		<description>
+      			<p><strong>Blurrg/Bordok/Dewback/Eopie/Falumpaset/Kath hound/Tauntaun:</strong>Whether mounted or on foot, your travel pace is doubled, as is the travel pace of up to 10 companions while they’re within 60 feet of you and you’re not incapacitated (see chapter 8 in the Player’s Handbook for more information about travel pace). The spirit of these creatures help you roam far and fast.</p>
+      		</description>
+      		<sheet>
+      		<description>Whether mounted or on foot, your travel pace is doubled, as is the travel pace of up to 10 companions while they’re within 60 feet of you and you’re not incapacitated.</description>
+      		</sheet>
+      			<rules />
+      	</element>
+
+				<element name="Force Animal Spirit (Cherfer)" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_FORCE_COMMUNE_FORCE_ANIMAL_SPIRIT_CHERFER">
+          <supports>Force Animal Spirit,6</supports>
+      		<description>
+      			<p><strong>Anooba/Cherfer/Nexu/Tuskcat:</strong>You gain proficiency in two skills from the following list: Athletics, Acrobatics, Stealth, and Survival. These creatures spirits hone your survival instincts.</p>
+      		</description>
+      		<sheet>
+      		<description>You gain proficiency in two skills from the following list: Athletics, Acrobatics, Stealth, and Survival.</description>
+      		</sheet>
+      			<rules>
+							<select type="Proficiency" name="Skill Proficiency (Anooba/Cherfer/Nexu/Tuskcat)" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" number="2" />
+						</rules>
+      	</element>
+
+				<element name="Force Animal Spirit (Furnocs)" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_FORCE_COMMUNE_FORCE_ANIMAL_SPIRIT_FURNOCS">
+          <supports>Force Animal Spirit,6</supports>
+      		<description>
+      			<p><strong>Akk Dog/Furnocs/Garrals:</strong>You gain the hunting sensibilities of one of these creatures. You can track other creatures while traveling at a fast pace, and you can move stealthily while traveling at a normal pace (see chapter 8 for rules on travel pace).</p>
+      		</description>
+      		<sheet>
+      		<description>You can track other creatures while traveling at a fast pace, and you can move stealthily while traveling at a normal pace.</description>
+      		</sheet>
+      			<rules />
+      	</element>
+
+				<element name="Force Animal Spirit (Hanadak)" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_FORCE_COMMUNE_FORCE_ANIMAL_SPIRIT_HANADAK">
+          <supports>Force Animal Spirit,14</supports>
+      		<description>
+      			<p><strong>Ganjuko/Graul/Hanadak/Kalaks/Orray/Rancor/Reek:</strong>When you are under the effects of your adrenaline rush ability, any creature within 5 feet of you that’s hostile to you has disadvantage on attack rolls against targets other than you or another character with this feature. An enemy is immune to this effect if it can’t see or hear you or if it can’t be frightened.</p>
+      		</description>
+      		<sheet>
+      		<description>When you are under the effects of your adrenaline rush ability, any creature within 5 feet of you that’s hostile to you has disadvantage on attack rolls against targets other than you or another character with this feature. An enemy is immune to this effect if it can’t see or hear you or if it can’t be frightened.</description>
+      		</sheet>
+      			<rules />
+      	</element>
+
+				<element name="Force Animal Spirit (Geejaws)" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_FORCE_COMMUNE_FORCE_ANIMAL_SPIRIT_GEEJAWS">
+          <supports>Force Animal Spirit,14</supports>
+      		<description>
+      			<p><strong>Clawbird/Dactillion/Geejaws:</strong>When you are under the effects of your adrenaline rush ability, the force grants you a flying speed equal to your current walking speed. This benefit works only in short bursts; you fall if you end your turn in the air and nothing else is holding you aloft.</p>
+      		</description>
+      		<sheet>
+      		<description>When you are under the effects of your adrenaline rush ability, the force grants you {{beserker speed:flying}} flying speed. This benefit works only in short bursts; you fall if you end your turn in the air and nothing else is holding you aloft.</description>
+      		</sheet>
+      			<rules>
+							<stat name="beserker speed:flying" value="speed" bonus="base" />
+						</rules>
+      	</element>
+
+				<element name="Force Animal Spirit (Dewback)" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_FORCE_COMMUNE_FORCE_ANIMAL_SPIRIT_DEWBACK">
+          <supports>Force Animal Spirit,14</supports>
+      		<description>
+      			<p><strong>Blurrg/Bordok/Dewback/Eopie/Falumpaset/Kath hound/Tauntaun:</strong>When you are under the effects of your adrenaline rush ability, you can use a bonus action during your move to pass through the space of a Large or smaller creature. That creature must succeed on a Strength saving throw (DC = 8 + your Strength bonus + your proficiency bonus) or be knocked prone and take bludgeoning damage equal to 1d12 + your Strength modifier.</p>
+      		</description>
+      		<sheet>
+      		<description>When you are under the effects of your adrenaline rush ability, you can use a bonus action during your move to pass through the space of a Large or smaller creature. That creature must succeed on a Strength saving throw (DC ={{beserker blurrg:save}}) or be knocked prone and take bludgeoning damage equal to 1d12 + {{beserker:strength}}.</description>
+      		</sheet>
+      			<rules>
+							<stat name="beserker blurrg:save" value="8" />
+							<stat name="beserker blurrg:save" value="strength:modifier" />
+							<stat name="beserker blurrg:save" value="proficiency:modifier" />
+							<stat name="calculation" value="beserker blurrg:save" bonus="calculation" />
+
+							<stat name="beserker:strength" value="strength:modifier" />
+						</rules>
+      	</element>
+
+				<element name="Force Animal Spirit (Nexu)" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_FORCE_COMMUNE_FORCE_ANIMAL_SPIRIT_NEXU">
+          <supports>Force Animal Spirit,14</supports>
+      		<description>
+      			<p><strong>Anooba/Cherfer/Nexu/Tuskcat:</strong>When you are under the effects of your adrenaline rush ability, if you move at least 20 feet in a straight line toward a Large or smaller target right before making a melee weapon attack against it, you can use a bonus action to make an additional melee weapon attack against it.</p>
+      		</description>
+      		<sheet>
+      		<description>When you are under the effects of your adrenaline rush ability, if you move at least 20 feet in a straight line toward a Large or smaller target right before making a melee weapon attack against it, you can use a bonus action to make an additional melee weapon attack against it.</description>
+      		</sheet>
+      			<rules />
+      	</element>
+
+				<element name="Force Animal Spirit (Garrals)" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_FORCE_COMMUNE_FORCE_ANIMAL_SPIRIT_GARRALS">
+          <supports>Force Animal Spirit,14</supports>
+      		<description>
+      			<p><strong>Akk Dog/Furnocs/Garrals:</strong>When you are under the effects of your adrenaline rush ability, you can use a bonus action on your turn to knock a Large or smaller creature prone when you hit it with melee weapon attack.</p>
+      		</description>
+      		<sheet>
+      		<description>When you are under the effects of your adrenaline rush ability, you can use a bonus action on your turn to knock a Large or smaller creature prone when you hit it with melee weapon attack.</description>
+      		</sheet>
+      			<rules />
+      	</element>
+
+				<element name="Force Communion" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_FORCE_COMMUNE_FORCE_COMMUNION">
+      		<description>
+      			<p>At 10 level, you now have the ability to commune with the force and ask it for guidance.</p>
+      		</description>
+      		<sheet>
+      		<description>You now have the ability to commune with the force and ask it for guidance.</description>
+      		</sheet>
+      			<rules />
+      	</element>
+
+				<element name="Path of Brute Strength" type="Archetype" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_PATH_OF_BRUTE_STRENGTH">
+          <supports>Beserker Path</supports>
+          <description>
+            <p>Berserkers of this path use their monstrous strength to overwhelm and disable your opponents. Restriction Wookies and Gamorreans only unless DM rules otherwise.</p>
+            <div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_BRUTE_STRENGTH_MONSTROUS_STRENGTH" />
+            <div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_BRUTE_STRENGTH_TRUE_RECKLESSNESS" />
+            <div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_BRUTE_STRENGTH_WHIRLWIND" />
+						<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_BRUTE_STRENGTH_LIMB_RIPPER" />
+          </description>
+          <sheet display="false">
+            <description>Berserkers of this path use their monstrous strength to overwhelm and disable your opponents. Restriction Wookies and Gamorreans only unless DM rules otherwise.</description>
+          </sheet>
+          <rules>
+            <grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_BRUTE_STRENGTH_MONSTROUS_STRENGTH" level="3" />
+            <grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_BRUTE_STRENGTH_TRUE_RECKLESSNESS" level="6" />
+            <grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_BRUTE_STRENGTH_WHIRLWIND" level="10" />
+						<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_BRUTE_STRENGTH_LIMB_RIPPER" level="14" />
+          </rules>
+        </element>
+
+				<element name="Monstrous Strength" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_BRUTE_STRENGTH_MONSTROUS_STRENGTH">
+      		<description>
+      			<p>Starting when you choose this path at 3rd level, while under the effects of adrenaline rush you gain the following benefits:</p>
+						<ul>
+							<li>You now score a critical hit on a 19 or 20</li>
+							<li>Once per turn when you land a melee attack you can force your target to make a dc 14 strength saving throw or get knocked prone</li>
+						</ul>
+      		</description>
+      		<sheet>
+      		<description>You now score a critical hit on a 19 or 20 and once per turn when you land a melee attack you can force your target to make a dc 14 strength saving throw or get knocked prone</description>
+      		</sheet>
+      			<rules />
+      	</element>
+
+				<element name="True Recklessness" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_BRUTE_STRENGTH_TRUE_RECKLESSNESS">
+      		<description>
+      			<p>Beginning at 6th level, when you use Reckless Attack while under the effects of adrenaline rush, you also gain temporary hit points equal to your level + Constitution modifier (minimum of 1). They vanish if any of them are left when your adrenaline rush ends.</p>
+      		</description>
+      		<sheet>
+      		<description>when you use Reckless Attack while under the effects of adrenaline rush, you also gain temporary hit points equal {{true-recklessness:count}}. They vanish if any of them are left when your adrenaline rush ends.</description>
+      		</sheet>
+      			<rules>
+							<stat name="true-recklessness:count" value="level" />
+							<stat name="true-recklessness:count" value="constitution:modifier" />
+							<stat name="calculation" value="true-recklessness:modifier" bonus="calculation" />
+						</rules>
+      	</element>
+
+				<element name="Whirlwind" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_BRUTE_STRENGTH_WHIRLWIND">
+      		<description>
+      			<p>Beginning at 10th level, on your turn you can use your action to make one attack against each enemy within 5 ft of you, weapons with the reach property do not benefit from it for this attack action, after using this ability you must take a short rest before using it again.</p>
+      		</description>
+      		<sheet usage="Once/Long Rest">
+      		<description>On your turn you can use your action to make one attack against each enemy within 5 ft of you, weapons with the reach property do not benefit from it for this attack action</description>
+      		</sheet>
+      			<rules />
+      	</element>
+
+				<element name="Limb Ripper" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_PATH_OF_BRUTE_STRENGTH_LIMB_RIPPER">
+      		<description>
+      			<p>Starting at 14th level, as an action you can attempt to rip a limb off of an enemy. Roll a strength check against the enemies constitution saving throw (your enemy cannot roll lower than their constitution score even with a 1). If you succeed you successfully manage to rip off the limb and the enemy takes 1d8+your berserker lvl damage.</p>
+      		</description>
+      		<sheet>
+      		<description>as an action you can attempt to rip a limb off of an enemy. Roll a strength check against the enemies constitution saving throw. If you succeed you successfully manage to rip off the limb and the enemy takes 1d8+your berserker lvl damage.</description>
+      		</sheet>
+      			<rules />
+      	</element>
+
+			</elements>

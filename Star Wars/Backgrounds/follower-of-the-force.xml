@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Follower of the Force</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="follower-of-the-force.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/follower-of-the-force.xml" />
+		</update>
+	</info>
+
+	<element name="Follower of the Force" type="Background" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_FOLLOWER_OF_THE_FORCE">
+    <description>
+    <ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Insight, Religion </li>
+        <li><strong>Languages:</strong>Two of your choice </li>
+				<li><strong>Equipment:</strong>15 cr  </li>
+      </ul>
+      <div element="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_SHELTER_OF_THE_FAITHFUL" />
+    </description>
+      <setters>
+        <set name="short">Insight, Religion, 2 languages of your choice, 15 cr</set>
+      </setters>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+        <select type="Language" name="Language (Follower of the Force)" supports="Standard||Exotic" number="2" />
+      </rules>
+    </element>
+
+    <element name="Feature: Shelter of the Faithful" type="Background Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_SHELTER_OF_THE_FAITHFUL">
+      <supports>Background Feature</supports>
+		<description>
+			<p>As a follower of the Force, you command the respect of those who share your faith. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle. You might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple.</p>
+		</description>
+		<sheet alt="Shelter of the Faithful">
+			<description>As a follower of the Force, you command the respect of those who share your faith. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle. You might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple.</description>
+		</sheet>
+	</element>
+
+</elements>

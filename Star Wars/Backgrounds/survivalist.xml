@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Survivalist</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="survivalist.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/survivalist.xml" />
+		</update>
+	</info>
+
+	<element name="Survivalist" type="Background" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_SURVIVALIST">
+    <description>
+    <ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Athletics, Survival </li>
+        <li><strong>Other Proficiencies:</strong>One musical Instrument </li>
+				<li><strong>Language:</strong>One of your choice </li>
+				<li><strong>Equipment:</strong>Hunting trap, trophy from killed animal/monster, 10 cr  </li>
+      </ul>
+      <div element="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_WANDERER" />
+    </description>
+      <setters>
+        <set name="short">Athletics, Survival, One musical Instrument, One language of your choice </set>
+      </setters>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+				<select type="Proficiency" name="Tool Proficiency (Survivalist)" supports="Musical Instrument" />
+        <select type="Language" name="Language (Survivalist)" supports="Standard||Exotic" />
+      </rules>
+    </element>
+
+    <element name="Feature: Wanderer" type="Background Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_WANDERER">
+      <supports>Background Feature</supports>
+		<description>
+			<p>You have an excellent memory for maps and geography, and you can always recall the general layout of terrain, settlements, and other features around you. In addition, you can find food and fresh water for yourself and up to five other people each day, provided that the land offers berries, small game, water, and so forth.</p>
+		</description>
+		<sheet alt="Wanderer">
+			<description>You have an excellent memory for maps and geography, and you can always recall the general layout of terrain, settlements, and other features around you. In addition, you can find food and fresh water for yourself and up to five other people each day, provided that the land offers berries, small game, water, and so forth.</description>
+		</sheet>
+	</element>
+
+</elements>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Droid</name>
+		<description>GM Binder</description>
+		<author />
+		<update version="0.0.1">
+			<file name="droid.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Droid" type="Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACE_Droid">
+		<description>
+			<p>Droids, short for androids, were mechanical beings, often possessing artificial intelligence. They were used in a variety of roles and environments, often those considered too menial or too dangerous for humans and other species. Droids were also used in fields that required extensive specialization and knowledge, such as medical droids and astromech droids. Droids designed for combat were battle droids.</p>
+      <h4>Smart or too smart?</h4>
+      <p>Depending on the model and its corresponding purpose, droids were totally obedient, rugged, expendable, capable of vast memory recall, and mathematically precise. These characteristics made them well suited for many jobs, though the lack of independent thought in the cheaper, less advanced models limited their capability. This lack of autonomy was simultaneously a vast asset and a glaring weakness—an asset in terms of obedience and control but a massive drawback in terms of effectiveness. Designers faced a fundamental paradox—make the droids overly intelligent, and they might rebel; yet make the droids not intelligent enough and they would be ineffectual.</p>
+      <h4>Droid Names</h4>
+      <p class="indent"><strong><i>Droid Names:</i></strong> 4-L0M, C-3PO, HK-47, IG-88, R2-D2</p>
+			<h4>Droid Traits</h4>
+			<p>Your Droid character has many different attributes that might be useful in the field:</p>
+			<p class="indent"><strong><i>Ability Score Increase.</i></strong> Your Intelligence score increases by 2.</p>
+      <p class="indent"><strong><i>Machine Heart.</i></strong> You are a man-made construct. You are immune to disease. You do not need to eat or breathe. Instead of sleeping, you enter an inactive state for 4 hours each day. You do not dream in this state; you are fully aware of your surroundings and notice approaching enemies and other events as normal.</p>
+			<p class="indent"><strong><i>Size.</i></strong> The player character droids are all around human size, but of course weighing between three to four-hundred pounds. Your size is Medium.</p>
+      <p class="indent"><strong><i>Subrace.</i></strong> There are many different types of droids, the following of which a player can use as their character. There are other droids which can be used as familiars, which will be detailed later.</p>
+		</description>
+		<sheet display="false" />
+			<setters>
+        <set name="names" type="custom">4-L0M, C-3PO, HK-47, IG-88, R2-D2</set>
+        <set name="names-format">$(custom)</set>
+      </setters>
+			<rules>
+				<stat name="Intelligence" value="2" />
+				<grant type="Size" id="ID_SIZE_MEDIUM" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_DROID_SUBRACE" />
+			</rules>
+    </element>
+
+    <element name="Droid Subrace" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_DROID_SUBRACE">
+      <description />
+      <sheet display="false" />
+      <rules>
+        <select type="Sub Race" name="Droid Subrace" supports="Droid" />
+      </rules>
+    </element>
+
+    <element name="Assassin Droid" type="Sub Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SUB_RACE_ASSASSIN">
+      <supports>Droid</supports>
+      <description>
+        <h4>Assassin Traits</h4>
+        <p>Assassin droids were used by assassins to eliminate their targets. Assassin droids were the only droids built specifically to kill organics.</p>
+        <p class="indent"><strong><i>Ability Score Increase:</i></strong> As an assassin droid you were built for causing death. Because of that increase your Dexterity score by 1</p>
+        <p class="indent"><strong><i>Alignment:</i></strong> Assassin droids, when fully sentient, tend to align with the chaotic evil alignment. When they are not fully sentient, like HK-47, they do the bidding of their master whole-heartedly, but still tend to be rather chaotic.</p>
+        <p class="indent"><strong><i>Natutal Plating:</i></strong> Because you were built for battle you have plating built all over you. When unarmored, your AC is equal to 12 + your dexterity modifier.</p>
+				<p class="indent"><strong><i>Speed:</i></strong> 35ft.</p>
+				<p class="indent"><strong><i>Proficiency:</i></strong> Choose one between Acrobatics and Stealth.</p>
+				<p class="indent"><strong><i>Langages:</i></strong> Basic and Binary</p>
+      </description>
+      <sheet display="false">
+        <description>
+					<h4>AssassinTraits</h4>
+	        <p>Assassin droids were used by assassins to eliminate their targets. Assassin droids were the only droids built specifically to kill organics.</p>
+	        <p class="indent"><strong><i>Ability Score Increase:</i></strong> As an assassin droid you were built for causing death. Because of that increase your Dexterity score by 1</p>
+	        <p class="indent"><strong><i>Alignment:</i></strong> Assassin droids, when fully sentient, tend to align with the chaotic evil alignment. When they are not fully sentient, like HK-47, they do the bidding of their master whole-heartedly, but still tend to be rather chaotic.</p>
+	        <p class="indent"><strong><i>Natutal Plating:</i></strong> Because you were built for battle you have plating built all over you. When unarmored, your AC is equal to 12 + your dexterity modifier.</p>
+					<p class="indent"><strong><i>Speed:</i></strong> 35ft.</p>
+					<p class="indent"><strong><i>Proficiency:</i></strong> Choose one between Acrobatics and Stealth.</p>
+					<p class="indent"><strong><i>Langages:</i></strong> Basic and Binary</p>
+        </description>
+      </sheet>
+      <rules>
+        <stat name="Dexterity" value="1" />
+        <grant type="Racial Trait" name="ID_GMBINDER_SW5E_RACIAL_TRAIT_ASSASSIN_NATURAL_PLATING" />
+        <stat name="Speed" value="35" />
+				<select type="Proficiency" name="Skill Proficiency (Droid)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_STEALTH" number="1" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_BINARY" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_BASIC" />
+      </rules>
+    </element>
+
+    <element name="Natural Plating" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_ASSASSIN_NATURAL_PLATING">
+      <description>
+        <p>Because you were built for battle you have plating built all over you. When unarmored, your AC is equal to 12 + your dexterity modifier.</p>
+      </description>
+      <sheet display="false">
+        <description>
+          <p>Because you were built for battle you have plating built all over you. When unarmored, your AC is equal to 12 + your dexterity modifier.</p>
+        </description>
+      </sheet>
+      <rules>
+				<stat name="ac:natural plating droid:base" value="12" />
+				<stat name="ac:natural plating droid:dexterity" value="dexterity:modifier" />
+				<stat name="ac:natural plating droid" value="ac:natural plating droid:base" />
+				<stat name="ac:natural plating droid" value="ac:natural plating droid:dexterity" />
+				<stat name="ac:calculation" value="ac:natural plating Droid" bonus="calculation" equipped="[armor:none]" alt="Natural PLating (Droid)" />
+			</rules>
+    </element>
+
+		<element name="Security Droid" type="Sub Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SUB_RACE_SECURITY">
+      <supports>Droid</supports>
+      <description>
+        <p class="indent"><strong><i>Ability Score Increase:</i></strong> As a security droid, you were designed to be rugged and strong. Increase either your Strength or Constitution score by 1.</p>
+        <p class="indent"><strong><i>Alignment:</i></strong> Security droids tend to work for someone and take on that person's alignment. If they do not work for someone, their alignment can be anything.</p>
+				<p class="indent"><strong><i>Mechanical Strength:</i></strong> If you chose to increase your Strength score, you have advantage on all Strength contests, such as grappling and shoving, as long as you initiate the contest.</p>
+				<p class="indent"><strong><i>Durasteel Plating:</i></strong> If you chose to increase your Constitution score, your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</p>
+				<p class="indent"><strong><i>Speed:</i></strong> 30ft.</p>
+				<p class="indent"><strong><i>Proficiency:</i></strong> Choose one between Athletics and Insight.</p>
+				<p class="indent"><strong><i>Langages:</i></strong> Basic and Binary</p>
+      </description>
+      <sheet display="false">
+        <description>
+	        <p class="indent"><strong><i>Ability Score Increase:</i></strong> As a security droid, you were designed to be rugged and strong. Increase either your Strength or Constitution score by 1.</p>
+	        <p class="indent"><strong><i>Alignment:</i></strong> Security droids tend to work for someone and take on that person's alignment. If they do not work for someone, their alignment can be anything.</p>
+	        <p class="indent"><strong><i>Mechanical Strength:</i></strong> If you chose to increase your Strength score, you have advantage on all Strength contests, such as grappling and shoving, as long as you initiate the contest.</p>
+					<p class="indent"><strong><i>Durasteel Plating:</i></strong> If you chose to increase your Constitution score, your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</p>
+					<p class="indent"><strong><i>Speed:</i></strong> 30ft.</p>
+					<p class="indent"><strong><i>Proficiency:</i></strong> Choose one between Athletics and Insight.</p>
+					<p class="indent"><strong><i>Langages:</i></strong> Basic and Binary</p>
+        </description>
+      </sheet>
+      <rules>
+        <select type="Ability Score Improvement" name="Ability Score Increase (Security Droid)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION" />
+        <grant type="Racial Trait" name="ID_GMBINDER_SW5E_RACIAL_TRAIT_SECURITY_MECHANICAL_STRENGTH" />
+				<grant type="Racial Trait" name="ID_GMBINDER_SW5E_RACIAL_TRAIT_SECURITY_DURASTEEL_PLATING" />
+        <stat name="Speed" value="30" />
+				<select type="Proficiency" name="Skill Proficiency (Droid)" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INSIGHT" number="1" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_BINARY" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_BASIC" />
+      </rules>
+    </element>
+
+		<element name="Mechanical Strength" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_SECURITY_MECHANICAL_STRENGTH">
+      <description>
+        <p>If you chose to increase your Strength score, you have advantage on all Strength contests, such as grappling and shoving, as long as you initiate the contest.</p>
+      </description>
+      <sheet>
+        <description>
+          <p>If you chose to increase your Strength score, you have advantage on all Strength contests, such as grappling and shoving, as long as you initiate the contest.</p>
+        </description>
+      </sheet>
+      <rules />
+		</element>
+
+		<element name="Durasteel Plating" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_SECURITY_DURASTEEL_PLATING">
+      <description>
+        <p>If you chose to increase your Constitution score, your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</p>
+      </description>
+      <sheet>
+        <description>
+          <p>If you chose to increase your Constitution score, your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</p>
+        </description>
+      </sheet>
+      <rules />
+		</element>
+
+		<element name="Protocol Droid" type="Sub Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SUB_RACE_PROTOCOL">
+      <supports>Droid</supports>
+      <description>
+        <h4>Protocol Traits</h4>
+        <p>Protocol droids were programmed for diplomacy, often with the knowledge of millions of different languages and cultures. They were mainly used by ambassadors and diplomats.</p>
+        <p class="indent"><strong><i>Ability Score Increase:</i></strong> You were created for the express purpose of translation and diplomacy. As such increase your Charisma score by 1.</p>
+        <p class="indent"><strong><i>Alignment:</i></strong> </p>
+				<p class="indent"><strong><i>Speed:</i></strong> 25ft.</p>
+				<p class="indent"><strong><i>Proficiency:</i></strong> You gain proficiency in persuasion and insight.</p>
+				<p class="indent"><strong><i>Langages:</i></strong> What kind of protocol droid would be if you didn't know how to communicate properly? You know every language.</p>
+      </description>
+      <sheet display="false">
+        <description>
+					<h4>Protocol Traits</h4>
+	        <p>Protocol droids were programmed for diplomacy, often with the knowledge of millions of different languages and cultures. They were mainly used by ambassadors and diplomats.</p>
+	        <p class="indent"><strong><i>Ability Score Increase:</i></strong> You were created for the express purpose of translation and diplomacy. As such increase your Charisma score by 1.</p>
+	        <p class="indent"><strong><i>Alignment:</i></strong> </p>
+					<p class="indent"><strong><i>Speed:</i></strong> 25ft.</p>
+					<p class="indent"><strong><i>Proficiency:</i></strong> You gain proficiency in persuasion and insight.</p>
+					<p class="indent"><strong><i>Langages:</i></strong> What kind of protocol droid would be if you didn't know how to communicate properly? You know every language.</p>
+        </description>
+      </sheet>
+      <rules>
+        <stat name="Charisma" value="1" />
+        <stat name="Speed" value="25" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_ALL" />
+      </rules>
+    </element>
+
+   <element name="All" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_ALL">
+    <supports>ID_INTERNAL_SUPPORT_LANGUAGE_EXOTIC</supports>
+		<requirements>ID_GMBINDER_SW5E_SUB_RACE_PROTOCOL</requirements>
+    <description>
+      <p>You know every language in the galaxy</p>
+    </description>
+    <setters>
+      <set name="Speakers">All</set>
+      <set name="Script">All</set>
+      <set name="Exotic">True</set>
+    </setters>
+  </element>
+
+  </elements>

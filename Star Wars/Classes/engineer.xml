@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Engineer</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="engineer.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/classes/engineer.xml" />
+		</update>
+	</info>
+
+  <element name="Engineer" type="Class" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_ENGINEER">
+		<description>
+      <h3>Class Features</h3>
+      <p>As an engineer, you gain the following class features.</p>
+			<h5>HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d8 per engineer level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per consular level after 1st</li>
+			</ul>
+			<h5>PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> Light armor</li>
+				<li><strong>Weapons:</strong> Engineer’s Tools or Demolitionist's Tools </li>
+				<li><strong>Tools:</strong> None</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Dexterity, Intelligence </li>
+				<li><strong>Skills:</strong> Choose three from Investigation, Nature, Perception, Repair, Security, Survival</li>
+			</ul>
+			<h5>EQUIPMENT</h5>
+			<p>As an engineer you start out with the following equipment, including the equipment from your background.</p>
+			<ul>
+				<li>Combat Suit and engineer’s clothing</li>
+				<li>(a) Any simple melee weapon, or (b) blaster pistol and 5 charge packs</li>
+        <li>Any simple ranged weapon and 5 charge packs</li>
+        <li>Engineers Tools and Datapad</li>
+			</ul>
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_SCHEMATICS" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_DATAPAD" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_EVERYONEHASTHEIRLIMITS" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_MECHANICALLY_INCLINED" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_REAPAIRS" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_EXPERTISE" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_ANOTHERMANSTRASH" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_ENGINEERING_DISCIPLINE" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_ABILITYSCOREIMPROVEMENT_ENGINEER" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_QUICK_FINGERS" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_THESTUDENTBECOMESTHETEACHER" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_RAPID_RECONFIGURATION" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_ACADEMIC_LITERACY" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_INDOMITABLE_MIND" />
+    </description>
+		<sheet display="false" />
+		<setters>
+			<set name="hd">d8</set>
+		</setters>
+		<rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+			<select type="Proficiency" name="Skill Proficiency (Engineer)" supports="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_ITEM_ENGINEERING_TOOLS|ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_ITEM_DEMOLITIONIST_TOOLS" number="1" />
+			<select type="Proficiency" name="Skill Proficiency (Engineer)" supports="ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_NATURE|ID_GMBINDER_SW5E_PROFICIENCY_SKILL_REPAIRS|ID_GMBINDER_SW5E_PROFICIENCY_SKILL_SECURITY|ID_PROFICIENCY_SKILL_SURVIVAL" number="3" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SKILL_REPAIRS" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SKILL_SECURITY" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS" level="1" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_SCHEMATICS" level="1" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_DATAPAD" level="1" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_EVERYONEHASTHEIRLIMITS" level="1" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_MECHANICALLY_INCLINED" level="1" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_REAPAIRS" level="1" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_EXPERTISE" level="2" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_ANOTHERMANSTRASH" level="3" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_ENGINEERING_DISCIPLINE" level="3" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_ABILITYSCOREIMPROVEMENT_ENGINEER" level="4" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_QUICK_FINGERS" level="5" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_THESTUDENTBECOMESTHETEACHER" level="6" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_RAPID_RECONFIGURATION" level="9" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_ACADEMIC_LITERACY" level="11" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_INDOMITABLE_MIND" level="18" />
+    </rules>
+  </element>
+
+  <element name="Schematics" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_SCHEMATICS">
+    <description>
+      <p>As an engineer, you need schematics to make your gadgets and know how they operate. These schematics are separated into 4 levels, with 1 being the most simple and 4 being extremely complicated. Each gadget costs a number of credits equal to the materials needed, and a certain amount of time.</p>
+      <p class="indent">As an engineer, you automatically know 3 level 1 schematics and 2 level 2 schematics. Whenever you level up you can choose to replace one schematic you know with another schematic from the list. The new schematic must have an equal level to the schematic you replaced.</p>
+      <table class="The Engineer">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-5">Proficiency Bonus</td><td class="left">Features</td><td class="col-5">Schematics Known</td><td class="col-5">Level 1</td><td class="col-5">Level 2</td><td class="col-5">Level 3</td><td class="col-5">Level 4</td></tr>
+				</thead>
+        <tr><td> 1st</td><td>+2</td><td class="left">Gadgets, Mechanically Inclined, Repair</td><td>8</td><td>4</td><td>2</td><td>-</td><td>-</td></tr>
+        <tr><td> 2nd</td><td>+2</td><td class="left">Expertise</td><td>9</td><td>4</td><td>2</td><td>-</td><td>-</td></tr>
+        <tr><td> 3rd</td><td>+2</td><td class="left">Another Man's Trash, Engineering Discipline</td><td>10</td><td>4</td><td>3</td><td>-</td><td>-</td></tr>
+				<tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td><td>11</td><td>5</td><td>3</td><td>-</td><td>-</td></tr>
+				<tr><td> 5th</td><td>+3</td><td class="left">Quick Fingers</td><td>12</td><td>5</td><td>4</td><td>-</td><td>-</td></tr>
+				<tr><td> 6th</td><td>+3</td><td class="left">Student Becomes Teacher</td><td>14</td><td>5</td><td>4</td><td>1</td><td>-</td></tr>
+				<tr><td> 7th</td><td>+3</td><td class="left">Engineering Discipline Feature</td><td>15</td><td>5</td><td>4</td><td>2</td><td>-</td></tr>
+				<tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td><td>16</td><td>5</td><td>5</td><td>2</td><td>-</td></tr>
+				<tr><td> 9th</td><td>+4</td><td class="left">Rapid Reconfiguration (3)</td><td>17</td><td>5</td><td>5</td><td>3</td><td>-</td></tr>
+				<tr><td> 10th</td><td>+4</td><td class="left">Engineering Discipline Feature</td><td>18</td><td>6</td><td>5</td><td>3</td><td>-</td></tr>
+				<tr><td> 11th</td><td>+4</td><td class="left">Academic Literacy</td><td>20</td><td>6</td><td>5</td><td>3</td><td>-</td></tr>
+				<tr><td> 12th</td><td>+4</td><td class="left">Ability Score Improvement</td><td>21</td><td>6</td><td>5</td><td>4</td><td>-</td></tr>
+				<tr><td> 13th</td><td>+5</td><td class="left">Rapid Reconfiguration (5)</td><td>22</td><td>6</td><td>6</td><td>4</td><td>1</td></tr>
+				<tr><td> 14th</td><td>+5</td><td class="left">Engineering Discipline Feature</td><td>23</td><td>6</td><td>6</td><td>4</td><td>1</td></tr>
+				<tr><td> 15th</td><td>+5</td><td class="left">--</td><td>26</td><td>6</td><td>6</td><td>5</td><td>1</td></tr>
+				<tr><td> 16th</td><td>+5</td><td class="left">Ability Score Improvement</td><td>27</td><td>6</td><td>6</td><td>5</td><td>1</td></tr>
+				<tr><td> 17th</td><td>+6</td><td class="left">Rapid Reconfiguration (7)</td><td>29</td><td>6</td><td>6</td><td>5</td><td>2</td></tr>
+				<tr><td> 18th</td><td>+6</td><td class="left">Indomitable Mind</td><td>31</td><td>6</td><td>6</td><td>5</td><td>2</td></tr>
+				<tr><td> 19th</td><td>+6</td><td class="left">Ability Score Improvement</td><td>33</td><td>6</td><td>6</td><td>5</td><td>3</td></tr>
+				<tr><td> 20th</td><td>+6</td><td class="left">Engineering Discipline Feature</td><td>35</td><td>6</td><td>6</td><td>5</td><td>3</td></tr>
+			</table>
+			<p>Learning and creating a new gadget takes time and money. The cost to learn and create new gadgets are as such.</p>
+				<table>
+					<thead>
+						<tr><td class="col-5">Level</td><td class="left">Cost</td><td class="left">Time</td></tr>
+					</thead>
+					<tr><td>1</td><td>20</td><td>1 hour</td></tr>
+					<tr><td>2</td><td>60</td><td>2 hours</td></tr>
+					<tr><td>3</td><td>260</td><td>8 hours</td></tr>
+					<tr><td>4</td><td>1450</td><td>30 hours</td></tr>
+				</table>
+				<p>With gadgets that have attacks or saving throws, their rolls are made as such:</p>
+				<p><strong>Gadget Attack:</strong>Proficiency bonus + ability score modifier listed on gadget.</p>
+				<p><strong>Gadget Saving Throw:</strong>8 + Proficiency modifier + Intelligence modifier.</p>
+			</description>
+			<sheet>
+				<description>You know {{engineer:spellcasting:prepare}} schemactics listed in your datapad.</description>
+			</sheet>
+			<spellcasting name="Engineer" ability="Intelligence" prepare="true">
+				<list known="true">Engineer</list>
+			</spellcasting>
+			<setters />
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
+
+				<stat name="engineer:spellcasting:slots:1" value="4" level="1" />
+				<stat name="engineer:spellcasting:slots:1" value="1" level="4" />
+				<stat name="engineer:spellcasting:slots:1" value="1" level="11" />
+				<stat name="engineer:spellcasting:slots:2" value="2" level="1" />
+				<stat name="engineer:spellcasting:slots:2" value="1" level="3" />
+				<stat name="engineer:spellcasting:slots:2" value="1" level="5" />
+				<stat name="engineer:spellcasting:slots:2" value="1" level="8" />
+				<stat name="engineer:spellcasting:slots:2" value="1" level="13" />
+				<stat name="engineer:spellcasting:slots:3" value="1" level="6" />
+				<stat name="engineer:spellcasting:slots:3" value="1" level="7" />
+				<stat name="engineer:spellcasting:slots:3" value="1" level="9" />
+				<stat name="engineer:spellcasting:slots:3" value="1" level="12" />
+				<stat name="engineer:spellcasting:slots:3" value="1" level="15" />
+				<stat name="engineer:spellcasting:slots:4" value="1" level="13" />
+				<stat name="engineer:spellcasting:slots:4" value="1" level="17" />
+				<stat name="engineer:spellcasting:slots:4" value="1" level="19" />
+
+				<stat name="engineer:spellcasting:prepare" value="8" level="1" />
+				<stat name="engineer:spellcasting:prepare" value="1" level="2" />
+				<stat name="engineer:spellcasting:prepare" value="1" level="3" />
+				<stat name="engineer:spellcasting:prepare" value="1" level="4" />
+				<stat name="engineer:spellcasting:prepare" value="1" level="5" />
+				<stat name="engineer:spellcasting:prepare" value="2" level="6" />
+				<stat name="engineer:spellcasting:prepare" value="1" level="7" />
+				<stat name="engineer:spellcasting:prepare" value="1" level="8" />
+				<stat name="engineer:spellcasting:prepare" value="1" level="9" />
+				<stat name="engineer:spellcasting:prepare" value="1" level="10" />
+				<stat name="engineer:spellcasting:prepare" value="2" level="11" />
+				<stat name="engineer:spellcasting:prepare" value="1" level="12" />
+				<stat name="engineer:spellcasting:prepare" value="1" level="13" />
+				<stat name="engineer:spellcasting:prepare" value="1" level="14" />
+				<stat name="engineer:spellcasting:prepare" value="3" level="15" />
+				<stat name="engineer:spellcasting:prepare" value="1" level="16" />
+				<stat name="engineer:spellcasting:prepare" value="2" level="17" />
+				<stat name="engineer:spellcasting:prepare" value="2" level="18" />
+				<stat name="engineer:spellcasting:prepare" value="2" level="19" />
+				<stat name="engineer:spellcasting:prepare" value="2" level="20" />
+
+				<stat name="calculation" value="engineer:spellcasting:prepare" bonus="calculation" />
+			</rules>
+		</element>
+
+		<element name="Datapad" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_DATAPAD">
+  		<description>
+  			<p>The datapad is the personalized computer you keep on you at all times. It is your life. Your datapad is where all your schematics are stored, it can be used to keep a personalized journal of your adventures, and you can have other modules added to it to accomplish different tasks.</p>
+  		</description>
+  		<sheet>
+  		<description>Your datapad is where all your schematics are stored and can have other modules added to it to accomplish different tasks.</description>
+  		</sheet>
+  			<rules />
+  	</element>
+
+		<element name="Everyone Has their Limits" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_EVERYONEHASTHEIRLIMITS">
+  		<description>
+  			<p>Even as an engineer, keeping, maintaining, and repairing gadgets can be tough. For this reason, engineers can only have a certain number of gadgets equipped at any given time; this is detailed within the levels list. Each equipped gadget can be integrated into one of your items of clothing or equipment as specified in the schematic description. Multiple gadgets using different schematics can each be integrated into the same piece of equipment.</p>
+				<p class="indent">Each equipped gadget increases the weight of the item it is integrated into by 2 pounds. Gadget types that are considered consumables, however, do not add to that number.</p>
+				<p class="indent">Whenever you complete a long rest, you may reconfigure any number of gadgets you have equipped. These gadgets can be reconfigured with any known schematics that you have, however, the new gadget must be of the same level as the replaced gadget.</p>
+  		</description>
+  		<sheet>
+  		<description>You can have {{engineer-gadgets:count}} gadgets equipped. Each equipped gadget can be integrated into one of your items of clothing or equipment as specified in the schematic description. Multiple gadgets using different schematics can each be integrated into the same piece of equipment.</description>
+  		</sheet>
+  			<rules>
+					<stat name="engineer-gadgets:count" value="8" level="1" />
+					<stat name="engineer-gadgets:count" value="1" level="2" />
+					<stat name="engineer-gadgets:count" value="1" level="3" />
+					<stat name="engineer-gadgets:count" value="1" level="4" />
+					<stat name="engineer-gadgets:count" value="1" level="5" />
+					<stat name="engineer-gadgets:count" value="2" level="6" />
+					<stat name="engineer-gadgets:count" value="1" level="7" />
+					<stat name="engineer-gadgets:count" value="1" level="8" />
+					<stat name="engineer-gadgets:count" value="1" level="9" />
+					<stat name="engineer-gadgets:count" value="1" level="10" />
+					<stat name="engineer-gadgets:count" value="2" level="11" />
+					<stat name="engineer-gadgets:count" value="1" level="12" />
+					<stat name="engineer-gadgets:count" value="1" level="13" />
+					<stat name="engineer-gadgets:counte" value="1" level="14" />
+					<stat name="engineer-gadgets:count" value="3" level="15" />
+					<stat name="engineer-gadgets:count" value="1" level="16" />
+					<stat name="engineer-gadgets:count" value="2" level="17" />
+					<stat name="engineer-gadgets:count" value="2" level="18" />
+					<stat name="engineer-gadgets:count" value="2" level="19" />
+					<stat name="engineer-gadgets:count" value="2" level="20" />
+				</rules>
+  	</element>
+
+		<element name="Mechanically Inclined" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_MECHANICALLY_INCLINED">
+  		<description>
+  			<p>At level 1, your skill with mechanical devices allows you to use your engineer’s tools to attempt to open mechanical locks and disarm mechanical traps.</p>
+  		</description>
+  		<sheet>
+  		<description>Your skill with mechanical devices allows you to use your engineer’s tools to attempt to open mechanical locks and disarm mechanical traps.</description>
+  		</sheet>
+  			<rules />
+  	</element>
+
+		<element name="Repairs" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_REAPAIRS">
+  		<description>
+  			<p>Additionally at level 1, you realize your basic purpose in life is to fix things. You find joy and intrigue in learning how things work and putting them back together.</p>
+				<p class="indent">As an action, you can use your engineer's tools on any vehicle or mechanical object that you are familiar with. If you are not familiar with this object you can spend a day learning its inner workings. The object heals 1d12 per half engineer level, rounded up, plus your proficiency bonus. The number of uses you get is half of your level plus your intelligence modifier.</p>
+				<p class="indent">This ability does not work on constructs such as droids.</p>
+  		</description>
+  		<sheet>
+  		<description>As an action, you can use your engineer's tools on any vehicle or mechanical object that you are familiar with. If you are not familiar with this object you can spend a day learning its inner workings. The object heals 1d12 + {{repairs-heal:count}}. The number of uses you get is {{repairs-usage:count}}.</description>
+  		</sheet>
+  			<rules>
+					<stat name="repairs-heal:level" value="level:engineer:half:up" />
+					<stat name="repairs-heal:proficiency" value="proficiency" />
+					<stat name="repairs-heal:count" value="repairs-heal:level" />
+					<stat name="repairs-heal:count" value="repairs-heal:proficiency" />
+					<stat name="calculation" value="repairs-heal:count" bonus="calculation" />
+
+					<stat name="repairs-usage:level" value="level:engineer:half:up" />
+					<stat name="repairs-usage:intelligence" value="intelligence:modifier" />
+					<stat name="repairs-usage:count" value="repairs-usage:level" />
+					<stat name="repairs-usage:count" value="repairs-usage:intelligence" />
+					<stat name="calculation" value="repairs-usage:count" bonus="calculation" />
+				</rules>
+  	</element>
+
+		<element name="Expertise" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_EXPERTISE">
+		<description>
+			<p>At 2nd level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with Engineer's tools. Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiencies.</p>
+		</description>
+		<sheet display="false">
+			<description>Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Expertise (Engineer)" level="2" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
+		</rules>
+	</element>
+
+	<element name="Another Man's Trash" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_ANOTHERMANSTRASH">
+		<description>
+			<p>Beginning at 3rd level, you can use your downtime to scavenge for spare parts, useful chemicals, and raw materials which you can use to build your gadgets or to craft items. In order to do so, you must be in a city, junkyard, or another location where such items might be found. Your DM may limit the availability of certain types of materials depending on the location where you are scavenging.</p>
+			<p class="indent">For each hour that you spend scavenging, you can locate up to 10 credits + your engineer level’s worth of such materials. You can use the resources you collect while scavenging to pay the material cost of learning new schematics, creating or repairing a companion, or as raw materials for crafting with artisans tools with which you have proficiency.</p>
+		</description>
+		<sheet>
+		<description>You can scavenge for parts for schematics. For each hour that you spend scavenging, you can locate up to {{trash-engineer:count}} credits worth of such materials. </description>
+		</sheet>
+			<rules>
+				<stat name="trash-engineer:count" value="10" />
+				<stat name="trash-engineer:count" value="level" />
+				<stat name="calculation" value="trash-engineer:count" bonus="calculation" />
+			</rules>
+	</element>
+
+	<element name="Engineering Discipline" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_ENGINEERING_DISCIPLINE">
+		<description>
+			<p>At level three, you choose your Engineering Discipline. You have four different disciplines to choose from, and you gain benefits from each of them at levels 3, 7, 10, 14, and 20.</p>
+		</description>
+		<sheet display="false" />
+			<rules>
+				<select type="Archetype" name="Engineering Discipline" supports="Engineering Discipline" level="3" />
+			</rules>
+	</element>
+
+	<element name="Ability Score Improvement" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_ABILITYSCOREIMPROVEMENT_ENGINEER">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Engineer 4)" supports="Improvement Option,Engineer,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Engineer 8)" supports="Improvement Option,Engineer,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Engineer 12)" supports="Improvement Option,Engineer,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Engineer 16)" supports="Improvement Option,Engineer,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Engineer 19)" supports="Improvement Option,Engineer,19" level="19" />
+		</rules>
+	</element>
+
+	<element name="Quick Fingers" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_QUICK_FINGERS">
+		<description>
+			<p>Starting at Level 5, you can now use a bonus action to make repairs, use gadgets that require an interaction, or use engineer’s tools to open a lock or disarm a trap.</p>
+		</description>
+		<sheet action="Bonus Action">
+		<description>You can now use a bonus action to make repairs, use gadgets that require an interaction, or use engineer’s tools to open a lock or disarm a trap.</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="The Student Becomes the Teacher" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_THESTUDENTBECOMESTHETEACHER">
+		<description>
+			<p>Beginning at level 6, you can use a short or long rest to teach one of your companions how to use one of your tools. You must use the gold and time to make the gadget for them, but afterwards it does not count towards your limit of gadgets.</p>
+			<p class="indent">Your companions can only have one gadget equipped at any time, and cannot use gadgets higher than level 3.</p>
+		</description>
+		<sheet usage="Once/Short Rest">
+		<description>You can teach one of your companions how to use one of your tools. You must use the gold and time to make the gadget for them, but afterwards it does not count towards your limit of gadgets.Your companions can only have one gadget equipped at any time, and cannot use gadgets higher than level 3.</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="Rapid Reconfiguration" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_RAPID_RECONFIGURATION">
+		<description>
+			<p>Starting at 9th level, whenever you complete a short rest, you may reconfigure up to 3 of your equipped gadgets, switching them with different gadgets from the list of schematics that you know. You must have access to your Engineer's tools in order to reconfigure your equipped gadgets.</p>
+			<p class="indent">At 13th level the number of equipped gadgets you can reconfigure increases to 5 and it increases again to 7 gadgets at 17th level.</p>
+		</description>
+		<sheet usage="Once/Short Rest">
+		<description>whenever you complete a short rest, you may reconfigure up to {{rapid-reconfiguration:count}} of your equipped gadgets, switching them with different gadgets from the list of schematics that you know. You must have access to your Engineer's tools in order to reconfigure your equipped gadgets.</description>
+		</sheet>
+			<rules>
+				<stat name="rapid-reconfiguration:count" value="3" />
+				<stat name="rapid-reconfiguration:count" value="2" level="13" />
+				<stat name="rapid-reconfiguration:count" value="2" level="17" />
+			</rules>
+	</element>
+
+	<element name="Academic Literacy" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_ACADEMIC_LITERACY">
+		<description>
+			<p>From 11th level onwards, you can add half of your proficiency bonus to any intelligence skill check that you don’t have proficiency for.</p>
+		</description>
+		<sheet>
+		<description>You can add {{academic-literacy:count}}to any intelligence skill check that you don’t have proficiency for.</description>
+		</sheet>
+			<rules>
+				<stat name="academic-literacy:count" value="proficiency:half:up" />
+			</rules>
+	</element>
+
+	<element name="Indomitable Mind" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ENGINEER_INDOMITABLE_MIND">
+		<description>
+			<p>Beginning at 18th level, if your total for an Intelligence check is less than your Intelligence score, you can use that score in place of the total.</p>
+		</description>
+		<sheet>
+		<description>If your total for an Intelligence check is less than your Intelligence score, you can use that score in place of the total.</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="Shipwright" type="Archetype" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_SHIPWRIGHT">
+		<supports>Engineering Discipline</supports>
+		<description>
+			<p>Throughout all your time as an engineer, nothing has come as close to your heart as your love for starships; something about them and the space they fly in just gets your motor running, so you have spent your life learning them.</p>
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SHIPWIGHT_BONUS_PROFICIENCIES" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SHIPWIGHT_MY_LITTLE_HELPER" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SHIPWIGHT_REROUTE_POWER" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SHIPWIGHT_DROID_DOCKING" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SHIPWIGHT_WEAPON_POWER_UP" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SHIPWIGHT_MASTER_ENGINEER" />
+		</description>
+		<sheet display="false">
+			<description>Throughout all your time as an engineer, nothing has come as close to your heart as your love for starships; something about them and the space they fly in just gets your motor running, so you have spent your life learning them.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SHIPWIGHT_BONUS_PROFICIENCIES" level="3" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SHIPWIGHT_MY_LITTLE_HELPER" level="3" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SHIPWIGHT_REROUTE_POWER" level="7" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SHIPWIGHT_DROID_DOCKING" level="10" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SHIPWIGHT_WEAPON_POWER_UP" level="14" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SHIPWIGHT_MASTER_ENGINEER" level="20" />
+		</rules>
+	</element>
+
+	<element name="Bonus Proficiency(Shipwright)" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SHIPWIGHT_BONUS_PROFICIENCIES">
+		<description>
+			<p>You gain proficiency in the investigation and repairs skills, and space vehicles.</p>
+		</description>
+		<sheet>
+		<description>You gain proficiency in the investigation and repairs skills, and space vehicles.</description>
+		</sheet>
+			<rules>
+				<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+				<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_SKILL_REPAIRS" />
+				<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE" />
+			</rules>
+	</element>
+
+	<element name="Reroute Power" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SHIPWIGHT_REROUTE_POWER">
+		<description>
+			<p>At level 7, you have formed a deep relationship with your ship and have learned to get as much potential out of your ship as possible in the form of re-routing power. Whenever you are inside a ship you are proficient with and the pilot performs an action, you can use your action or reaction to reroute power to boost the effects of one system, but negatively impact another. You choose one effect off the pros list, and one effect off the cons list, both happen immediately. The effect are listed as such:</p>
+			<ul>
+				<h5>Pros:</h5>
+				<li>Engines: Add half of the ship’s movement to its movement for the rest of the turn.</li>
+				<li>Shields: Shields gain a +5 to their AC until the beginning of your next turn.</li>
+				<li>Weapons: Double the damage of your ship’s next weapon attack.</li>
+				<h5>Cons:</h5>
+				<li>Engines: Cut your ship’s movement by half for the rest of the turn</li>
+				<li>Shields: Your shields take a -5 to AC until the beginning of your next turn.</li>
+				<li>Weapons: Halve the damage of your ship’s next weapon attack.</li>
+			</ul>
+			<p class="indent">In order to reroute power you must not be piloting the ship or manning a turret.</p>
+		</description>
+		<sheet>
+		<description>Whenever you are inside a ship you are proficient with and the pilot performs an action, you can use your action or reaction to reroute power to boost the effects of one system, but negatively impact another. You choose one effect off the pros list, and one effect off the cons list, both happen immediately.</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="Droid Docking" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SHIPWIGHT_DROID_DOCKING">
+		<description>
+			<p>As of level 10, you and your droid have formed a strong bond and know how to work together well. Whenever you are piloting a starship, you can have your droid connect with your ship's systems to use the reroute power ability.</p>
+		</description>
+		<sheet>
+		<description>Whenever you are piloting a starship, you can have your droid connect with your ship's systems to use the reroute power ability.</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="Weapon Power Up" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SHIPWIGHT_WEAPON_POWER_UP">
+		<description>
+			<p>Beginning at level 14, as an action, you can choose any number of allies you can see within 30 feet of you and power up any ranged weapons they are using. For the next 3 rounds, the allies you chose deal an additional die of damage.</p>
+		</description>
+		<sheet action="Action">
+		<description>You can choose any number of allies you can see within 30 feet of you and power up any ranged weapons they are using. For the next 3 rounds, the allies you chose deal an additional die of damage.</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="Master Engineer" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SHIPWIGHT_MASTER_ENGINEER">
+		<description>
+			<p>At level 20, you have earned the title of Master Engineer and neither you, nor your droid, take the negative effect from the re-route powers.</p>
+		</description>
+		<sheet>
+		<description>Neither you, nor your droid, take the negative effect from the re-route powers.</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="Medic" type="Archetype" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_MEDIC">
+		<supports>Engineering Discipline</supports>
+		<description>
+			<p>As a medical engineer, you have decided that you wanted to focus your mechanical efforts of technology to keep people alive.</p>
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MEDIC_BONUS_PROFICIENCIES" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MEDIC_STIM_PISTOL" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MEDIC_EXTRA_SCHEMATICS" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MEDIC_PLENTIFUL_REUSE" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MEDIC_SAFEGUARD" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MEDIC_STIM_SHOT" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MEDIC_SURGEON_GENERAL" />
+		</description>
+		<sheet display="false">
+			<description>As a medical engineer, you have decided that you wanted to focus your mechanical efforts of technology to keep people alive.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MEDIC_BONUS_PROFICIENCIES" level="3" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MEDIC_STIM_PISTOL" level="3" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MEDIC_EXTRA_SCHEMATICS" level="7" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MEDIC_PLENTIFUL_REUSE" level="7" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MEDIC_SAFEGUARD" level="10" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MEDIC_STIM_SHOT" level="14" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MEDIC_SURGEON_GENERAL" level="20" />
+		</rules>
+	</element>
+
+	<element name="Bonus Proficiency(Medic)" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MEDIC_BONUS_PROFICIENCIES">
+		<description>
+			<p>You gain proficiency with heavy armor. You also gain proficiency with the medicine skill. If you already have proficiency in the medicine skill, you gain expertise in it instead.</p>
+		</description>
+		<sheet>
+		<description>You gain proficiency with heavy armor. You also gain proficiency with the medicine skill. If you already have proficiency in the medicine skill, you gain expertise in it instead.</description>
+		</sheet>
+			<rules>
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+				<stat name="medicine:misc" value="proficiency" />
+			</rules>
+	</element>
+
+	<element name="Stim Pistol" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MEDIC_STIM_PISTOL">
+		<description>
+			<p>At 3rd level you gain access to a stim pistol. This pistol is vital to the role of a medic. The stim pistol allows a medic to shoot someone with a small vial filled with bacta along with some other ingredients. The stim pistol replaces your repair action. Make a ranged weapon attack against the target creature's natural AC. The weapon attack can either use strength or dexterity to make the attack. When successfully hit, the targeted creature regains hit points equal to the roll you would normally make for repair. The number of uses are the same as you normally would get for repair.</p>
+			<p class="indent">When using the pistol within 5 ft of the target creature, the pistol automatically hits.</p>
+		</description>
+		<sheet action="Action">
+		<description>Make a ranged weapon attack against the target creature's natural AC. The weapon attack can either use strength or dexterity to make the attack. When successfully hit, the targeted creature regains hit points equal to the roll you would normally make for repair. The number of uses are the same as you normally would get for repair. When using the pistol within 5 ft of the target creature, the pistol automatically hits.</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="Extra Schematics(Medic)" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MEDIC_EXTRA_SCHEMATICS">
+		<description>
+			<p>Starting at level 7, you gain the bacta field schematic, and it doesn’t count towards the total number of schematics known. When you get the schematic you, automatically gain the gadget and it does not count towards the number of gadgets you can carry.</p>
+		</description>
+		<sheet>
+		<description>You gain the recovery field schematic, and it doesn’t count towards the total number of schematics known. When you get the schematic you, automatically gain the gadget and it does not count towards the number of gadgets you can carry.</description>
+		</sheet>
+			<rules>
+				<grant type="Spell" id="ID_GMBINDER_SW5E_SPELL_GADGET_RECOVERY_FIELD" spellcasting="Engineer" />
+			</rules>
+	</element>
+
+	<element name="Plentiful Reuse" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MEDIC_PLENTIFUL_REUSE">
+		<description>
+			<p>Additionally at level 7, when using a medpac, you now have the ability to refill the medpac and reuse it after a short/long rest instead of it being lost after consumption.</p>
+		</description>
+		<sheet usage="Once/Short Rest">
+		<description>When using a medpac, you now have the ability to refill the medpac and reuse it after a short/long rest instead of it being lost after consumption.</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="Safeguard" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MEDIC_SAFEGUARD">
+		<description>
+			<p>From level 10 onwards, As an action you can boost either your defenses or that of an ally within 30ft of you for a limited time. When you use this action on an ally or yourself, you reduce the damage you take by 1/4 until the beginning of the target creature's turn.</p>
+			<p class="indent">Once used, this ability cannot be used again until after a long rest has been completed.</p>
+			<p class="indent">You may also use this ability as a reaction when you are being attacked. You must choose to use this when this attack is declared.</p>
+		</description>
+		<sheet usage="Once/Long Rest" action="Action, Reaction">
+		<description>You can boost either your defenses or that of an ally within 30ft of you for a limited time. When you use this action on an ally or yourself, you reduce the damage you take by 1/4 until the beginning of the target creature's turn. You may also use this ability as a reaction when you are being attacked.</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="Stim Shot" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MEDIC_STIM_SHOT">
+		<description>
+			<p>Starting at level 14, you gain the ability to use a boost shot with your stim pistol. It counts towards the number of regular charges of your stim pistol. In addition to healing, the target creature gains an additional action and a bonus to speed equal to 1/2 its movement until the beginning of its next turn. You have only one use of this shot per long rest, but you gain an additional shot at levels 16 and 18.</p>
+		</description>
+		<sheet usage="{{stim-shot:count}}/Long Rest">
+		<description>you gain the ability to use a boost shot with your stim pistol. In addition to healing, the target creature gains an additional action and a bonus to speed equal to 1/2 its movement until the beginning of its next turn. </description>
+		</sheet>
+			<rules>
+				<stat name="stim-shot:count" value="1" />
+				<stat name="stim-shot:count" value="1" level="16" />
+				<stat name="stim-shot:count" value="1" level="18" />
+			</rules>
+	</element>
+
+	<element name="Surgeon General" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MEDIC_SURGEON_GENERAL">
+		<description>
+			<p>At level 20, when you would normally roll one or more dice to restore hit points, you instead use the highest number possible for each die. For example, instead of restoring 2d6 hit points to a creature, you restore 12.</p>
+		</description>
+		<sheet>
+		<description>When you would normally roll one or more dice to restore hit points, you instead use the highest number possible for each die</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="Slicer" type="Archetype" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_SLICER">
+		<supports>Engineering Discipline</supports>
+		<description>
+			<p>As a medical engineer, you have decided that you wanted to focus your mechanical efforts of technology to keep people alive.</p>
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SLICER_BONUS_PROFICIENCIES" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SLICER_HACKING" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SLICER_UNCANNY_DODGE" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SLICER_EXTRA_SCHEMATICS" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SLICER_UNDETECTABLE" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SLICER_VOLATILE_OVERLOAD" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SLICER_NOTHING_IS_SAFE" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SLICER_YOUR_FRIENDS_ARE_NOW_MY_FRIENDS" />
+		</description>
+		<sheet display="false">
+			<description>As a medical engineer, you have decided that you wanted to focus your mechanical efforts of technology to keep people alive.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SLICER_BONUS_PROFICIENCIES" level="3" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SLICER_HACKING" level="3" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SLICER_UNCANNY_DODGE" level="5" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SLICER_EXTRA_SCHEMATICS" level="7" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SLICER_UNDETECTABLE" level="7" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SLICER_VOLATILE_OVERLOAD" level="10" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SLICER_NOTHING_IS_SAFE" level="14" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SLICER_YOUR_FRIENDS_ARE_NOW_MY_FRIENDS" level="20" />
+		</rules>
+	</element>
+
+	<element name="Bonus Proficiencies(Slicer)" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SLICER_BONUS_PROFICIENCIES">
+		<description>
+			<p>At 3rd level you gain proficiency in the intimidation and stealth skills, as well as medium armor. If you already have proficiency in the security skill you may gain expertise in it.</p>
+		</description>
+		<sheet>
+		<description>You gain proficiency in the intimidation and stealth skills, as well as medium armor</description>
+		</sheet>
+			<rules>
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+				<grant type="Skill" id="ID_PROFICIENCY_SKILL_STEALTH" />
+				<stat name="security:count" value="proficiency" />
+			</rules>
+	</element>
+
+	<element name="Hacking" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SLICER_HACKING">
+		<description>
+			<p>Starting at 3rd level, you can mark technology as a bonus action, and subsequently use an action to attempt to hack it as long as you have your datapad with you. You can mark a limited number of items, based off the table below. As your level increases, the number of things you can mark increases.</p>
+			<table>
+				<thead>
+					<tr><td class="col-5">Level</td><td class="left">Small/Tiny</td><td class="left">Medium</td><td class="left">Large</td><td class="left">Huge</td></tr>
+				</thead>
+				<tr><td>3</td><td class="left">3</td><td class="left">2</td><td class="left">-</td><td class="left">-</td></tr>
+				<tr><td>7</td><td class="left">5</td><td class="left">3</td><td class="left">1</td><td class="left">-</td></tr>
+				<tr><td>10</td><td class="left">7</td><td class="left">4</td><td class="left">2</td><td class="left">-</td></tr>
+				<tr><td>14</td><td class="left">9</td><td class="left">5</td><td class="left">3</td><td class="left">1</td></tr>
+			</table>
+			<p class="indent">A hacking attempt is a battle of rolls; your hacking roll, which is d20 + Intelligence modifier + Proficiency bonus, against their system’s d20 + Constitution modifier + Proficiency bonus. If you roll higher, then the systems are either deactivated or taken over. You must then make a intimidation check higher than the system's passive perception to ensure the system does not notice your hacking attempt. If you fail on either rolls, your attempt is immediately detected and target hostiles are noted of the attempt.</p>
+			<p class="indent">You may not be able to take over systems that are sentient (i.e PC droids) but you may shut down their systems for 1d8 hours, at which point they are considered unconscious.</p>
+		</description>
+		<sheet>
+		<description>
+			<p class="indent">A hacking attempt is a battle of rolls; your hacking roll, which is d20 + {{hacking:count}}, against their system’s d20 + Constitution modifier + Proficiency bonus. If you roll higher, then the systems are either deactivated or taken over. You must then make an intimidation check higher than the system's passive perception to ensure the system does not notice your hacking attempt. If you fail on either rolls, your attempt is immediately detected and target hostiles are noted of the attempt.</p>
+			<p class="indent">You may not be able to take over systems that are sentient (i.e PC droids) but you may shut down their systems for 1d8 hours, at which point they are considered unconscious.</p>
+		</description>
+		</sheet>
+			<rules>
+				<stat name="hacking:count" value="intelligence:modifier" />
+				<stat name="hacking:count" value="proficiency" />
+				<stat name="calculation" value="hacking:count" bonus="calculation" />
+			</rules>
+	</element>
+
+	<element name="Uncanny Dodge" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SLICER_UNCANNY_DODGE">
+		<description>
+			<p>At 5th level, when an attacker that you can see hits you with an Attack, you can use your reaction to halve the attack's damage against you.</p>
+		</description>
+		<sheet>
+		<description>When an attacker that you can see hits you with an Attack, you can use your reaction to halve the attack's damage against you.</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="Extra Schematics(Slicer)" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SLICER_EXTRA_SCHEMATICS">
+		<description>
+			<p>At 7th level, you gain access to the Invisibility generator schematic, and it does not count towards the number of schematics known. Once you gain access to this schematic you automatically have this gadget equipped, and it does not count against the number of gadgets equipped.</p>
+		</description>
+		<sheet>
+		<description>You gain access to the Invisibility generator schematic, and it does not count towards the number of schematics known.</description>
+		</sheet>
+			<rules>
+				<grant type="Spell" id="ID_GMBINDER_SW5E_SPELL_GADGET_INVISIBILITY_GENERATOR" />
+			</rules>
+	</element>
+
+	<element name="Undetectable" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SLICER_UNDETECTABLE">
+		<description>
+			<p>Additionally at 7th level, you have achieved what some might call “slicer” status, you are able to go through any system without triggering any alarms. Now, whenever you make a hacking attempt, you no longer need to roll intelligence.</p>
+		</description>
+		<sheet>
+		<description>Whenever you make a hacking attempt, you no longer need to roll intimidation.</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="Volatile Overload" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SLICER_VOLATILE_OVERLOAD">
+		<description>
+			<p>As of 10th level, when you make a hacking attempt, you have a chance to completely overload the systems and cause an explosion. Whenever you successfully hack a system, you can choose to overload the system and cause an explosion around the object, where the radius of the explosion is equal to the size of the object. Everyone within the radius must make a dexterity saving throw to take half damage, or take 2d8 bludgeoning damage plus 1d6 lightning damage. The damage increases to 3d8 + 2d6 at level 14, and to 4d10 + 3d6 at level 20.</p>
+		</description>
+		<sheet>
+		<description>Whenever you successfully hack a system, you can choose to overload the system and cause an explosion around the object, where the radius of the explosion is equal to the size of the object. Everyone within the radius must make a dexterity saving throw to take half damage, or take {{volatile-dice:count}}d{{volatile-dice:size}} bludgeoning damage plus {{overload-dice:count}}d6 lightning damage.</description>
+		</sheet>
+			<rules>
+				<stat name="volatile-dice:count" value="2" />
+				<stat name="volatile-dice:count" value="1" level="14" />
+				<stat name="volatile-dice:count" value="1" level="20" />
+
+				<stat name="volatile-dice:size" value="8" />
+				<stat name="volatile-dice:size" value="2" level="20" />
+
+				<stat name="overload-dice:count" value="1" />
+				<stat name="overload-dice:count" value="1" level="14" />
+				<stat name="overload-dice:count" value="1" level="20" />
+			</rules>
+	</element>
+
+	<element name="Nothing is Safe" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SLICER_NOTHING_IS_SAFE">
+		<description>
+			<p>Starting at 14th level, you can now even hack the huge systems of ships. As an action, you can connect your datapad to make a hacking attempt to permanently shut down one of a ships systems: thrusters, weapons, shields, or communications. Once you have used this ability it cannot be used again till long rest.</p>
+		</description>
+		<sheet action="Action" usage="Once/Long Rest">
+		<description>You can connect your datapad to make a hacking attempt to permanently shut down one of a ships systems: thrusters, weapons, shields, or communications.</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="Your Friends are now my Friends" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SLICER_YOUR_FRIENDS_ARE_NOW_MY_FRIENDS">
+		<description>
+			<p>At 20th level, you have completely learned the complex systems that are droids, and can even take over their systems. When you successfully hack a droid, you can temporarily make them attack their allies for up to 1 hour. Whenever it is that droid’s turn, you determine its movement and action, and it attacks whoever you designate as long as they are controlled. Once you use this ability, you cannot use it again until you have completed a long rest.</p>
+		</description>
+		<sheet usage="Once/Long Rest">
+		<description>When you successfully hack a droid, you can temporarily make them attack their allies for up to 1 hour. Whenever it is that droid’s turn, you determine its movement and action, and it attacks whoever you designate as long as they are controlled.</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="Vanguard" type="Archetype" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_VANGUARD">
+		<supports>Engineering Discipline</supports>
+		<description>
+			<p>The vanguard uses his knowledge of the battlefield to make sure he and his team have the best tech there is. He uses a deployable turret to make sure he always has covering fire.</p>
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_BONUS_PROFICIENCIES" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_TURRET" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_TURRET_TALENTS" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_BRAIN_OVER_BRAWN" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_EXTRA_SCHEMATICS" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_BATTLEFRONT_TACTICIAN" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_KILLSHOT" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_TRUE_GRIT" />
+		</description>
+		<sheet display="false">
+			<description>The vanguard uses his knowledge of the battlefield to make sure he and his team have the best tech there is. He uses a deployable turret to make sure he always has covering fire.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_BONUS_PROFICIENCIES" level="3" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_TURRET" level="3" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_TURRET_TALENTS" level="7" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_BRAIN_OVER_BRAWN" level="3" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_EXTRA_SCHEMATICS" level="7" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_BATTLEFRONT_TACTICIAN" level="10" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_KILLSHOT" level="14" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_TRUE_GRIT" level="20" />
+		</rules>
+	</element>
+
+	<element name="Bonus Proficiencies(Vanguard)" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_BONUS_PROFICIENCIES">
+		<description>
+			<p>You gain proficiency in medium armor and martial weapons. Additionally, you gain proficiency in Demolitionist's Tools, or expertise in it if you already have proficiency.</p>
+		</description>
+		<sheet>
+		<description>You gain proficiency in medium armor and martial weapons. Additionally, you gain proficiency in Demolitionist's Tools, or expertise in it if you already have proficiency.</description>
+		</sheet>
+			<rules>
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+				<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_ITEM_DEMOLITIONIST_TOOLS" />
+			</rules>
+	</element>
+
+	<element name="Turret" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_TURRET">
+		<description>
+			<p>At level 3, you gain a deployable turret with the following properties.</p>
+			<ul>
+				<li>It can be deployed up to 20ft away from you as an action.</li>
+				<li>Once deployed, its hit points and armor class are based on the table below.</li>
+				<li>It can run for as long as 10 minutes or until its HP hits 0.</li>
+				<li>It takes its action on your turn and makes a single attack against the closest hostile creature. It does not have disadvantage at close range.</li>
+				<li>It comes equipped with a blaster carbine. This can be any other ranged weapon that is not heavy. Changing the equipped weapon takes a long rest.</li>
+				<li>The turret can hold three charge packs. When a charge pack is depleted, it uses its action to reload. However, when it has run out of charge packs it shuts down. You must spend a short or long rest to reinstall expended charge packs.</li>
+				<li>Your turret gains abilities in the form of talents that you choose when your subclass levels up. The talents are listed below.</li>
+			</ul>
+			<table>
+				<thead>
+					<tr><td class="col-5">Engineer Level</td><td class="left">Turret Armor Class</td><td class="left">Turret Hit Points</td></tr>
+				</thead>
+				<tr><td>3</td><td class="left">10</td><td class="left">40</td></tr>
+				<tr><td>7</td><td class="left">12</td><td class="left">60</td></tr>
+				<tr><td>10</td><td class="left">14</td><td class="left">80</td></tr>
+				<tr><td>14</td><td class="left">16</td><td class="left">100</td></tr>
+				<tr><td>20</td><td class="left">18</td><td class="left">120</td></tr>
+			</table>
+		</description>
+		<sheet action="Action">
+		<description>You have a deployable turret. It has {{turret:hit-points}}hp and {{turret:ac}}AC. It does not regain hit points on its own and must be repaired to regain hit points.</description>
+		</sheet>
+			<rules>
+				<stat name="turret:hit-points" value="40" />
+				<stat name="turret:hit-points" value="20" level="7" />
+				<stat name="turret:hit-points" value="20" level="10" />
+				<stat name="turret:hit-points" value="20" level="14" />
+				<stat name="turret:hit-points" value="20" level="20" />
+
+				<stat name="turret:ac" value="10" />
+				<stat name="turret:ac" value="2" level="7" />
+				<stat name="turret:ac" value="2" level="10" />
+				<stat name="turret:ac" value="2" level="14" />
+				<stat name="turret:ac" value="2" level="20" />
+			</rules>
+	</element>
+
+	<element name="Turret Talents" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_TURRET_TALENTS">
+		<description>
+			<h5>Level 7</h5>
+			<ul>
+				<li><strong><i>Ready Loader.</i></strong>The turret can now reload one equipped weapon per turn as a free action.</li>
+				<li><strong><i>Longbow Turret.</i></strong>You can deploy your turret up to 60ft away from you.</li>
+			</ul>
+			<h5>Level 10</h5>
+			<ul>
+				<li><strong><i>Guided Missiles.</i></strong>You turret has the mini missiles gadget attached to it, and can use it as an action. In addition to the mini missiles statistics, this missile launcher does not require direct line of sight and ignores cover.</li>
+				<li><strong><i>Turret Shield.</i></strong>When first deployed, your turret projects a shield in a 10ft radius around itself. Projectiles can travel out, but not in. The shield has an AC of 10, and half the turret's maximum HP.</li>
+			</ul>
+			<h5>Level 14</h5>
+			<ul>
+				<li><strong><i>Mag Lock.</i></strong>The turret can be deployed and will stick onto magnetic surfaces.</li>
+				<li><strong><i>Quick Shield.</i></strong>Whenever your turret deals the killing blow to a creature, you gain temporary HP equal to the damage dealt as long as you are within 30ft of your turret.</li>
+			</ul>
+			<h5>Level 20</h5>
+			<ul>
+				<li><strong><i>Double Up.</i></strong>You can add a second weapon to your turret. The turret can fire both weapons as one action, and can now hold three additional charge packs.</li>
+				<li><strong><i>Gemeni.</i></strong>You now have two turrets. Each turret has 70 hit points.</li>
+			</ul>
+			<p class="indent">You can also add gadgets to your turret. These do add to the number of your gadgets equipped.</p>
+		</description>
+		<sheet />
+			<rules>
+				<select type="Archetype Feature" supports="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_TURRET_TALENTS_READY_LOADER|ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_TURRET_TALENTS_LONGBOW_TURRET" number="1" />
+				<select type="Archetype Feature" supports="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_TURRET_TALENTS_GUIDED_MISSILES|ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_TURRET_TALENTS_TURRET_SHIELD" level="10" number="1" />
+				<select type="Archetype Feature" supports="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_TURRET_TALENTS_MAG_LOCK|ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_TURRET_TALENTS_QUICK_SHIELD" level="14" number="1" />
+				<select type="Archetype Feature" supports="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_TURRET_TALENTS_DOUBLE_UP|ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_TURRET_TALENTS_GEMENI" level="20" number="1" />
+			</rules>
+	</element>
+
+	<element name="Ready Loader(Turret Talent)" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_TURRET_TALENTS_READY_LOADER">
+		<description>
+			<p>The turret can now reload one equipped weapon per turn as a free action.</p>
+		</description>
+		<sheet action="Free Action">
+		<description>The turret can now reload one equipped weapon per turn as a free action.</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="Longbow Turret(Turret Talent)" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_TURRET_TALENTS_LONGBOW_TURRET">
+		<description>
+			<p>You can deploy your turret up to 60ft away from you.</p>
+		</description>
+		<sheet>
+		<description>You can deploy your turret up to 60ft away from you.</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="Guided Missiles(Turret Talent)" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_TURRET_TALENTS_GUIDED_MISSILES">
+		<description>
+			<p>You turret has the mini missiles gadget attached to it, and can use it as an action. In addition to the mini missiles statistics, this missile launcher does not require direct line of sight and ignores cover.</p>
+		</description>
+		<sheet>
+		<description>You turret has the mini missiles gadget attached to it, and can use it as an action. In addition to the mini missiles statistics, this missile launcher does not require direct line of sight and ignores cover.</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="Turret Shield(Turret Talent)" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_TURRET_TALENTS_TURRET_SHIELD">
+		<description>
+			<p>When first deployed, your turret projects a shield in a 10ft radius around itself. Projectiles can travel out, but not in. The shield has an AC of 10, and half the turret's maximum HP.</p>
+		</description>
+		<sheet>
+		<description>When first deployed, your turret projects a shield in a 10ft radius around itself. Projectiles can travel out, but not in. The shield has an AC of 10, and half the turret's maximum HP.</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="Mag Lock(Turret Talent)" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_TURRET_TALENTS_MAG_LOCK">
+		<description>
+			<p>The turret can be deployed and will stick onto magnetic surfaces.</p>
+		</description>
+		<sheet>
+		<description>The turret can be deployed and will stick onto magnetic surfaces.</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="Quick Shield(Turret Talent)" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_TURRET_TALENTS_QUICK_SHIELD">
+		<description>
+			<p>Whenever your turret deals the killing blow to a creature, you gain temporary HP equal to the damage dealt as long as you are within 30ft of your turret.</p>
+		</description>
+		<sheet>
+		<description>Whenever your turret deals the killing blow to a creature, you gain temporary HP equal to the damage dealt as long as you are within 30ft of your turret.</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="Double Up(Turret Talent)" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_TURRET_TALENTS_DOUBLE_UP">
+		<description>
+			<p>You can add a second weapon to your turret. The turret can fire both weapons as one action, and can now hold three additional charge packs.</p>
+		</description>
+		<sheet>
+		<description>You can add a second weapon to your turret. The turret can fire both weapons as one action, and can now hold three additional charge packs.</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="Gemeni(Turret Talent)" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_TURRET_TALENTS_GEMENI">
+		<description>
+			<p>You now have two turrets. Each turret has 70 hit points.</p>
+		</description>
+		<sheet>
+		<description>You now have two turrets. Each turret has 70 hit points.</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="Brain Over Brawn" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_BRAIN_OVER_BRAWN">
+		<description>
+			<p>Most people look at a rocket launcher and see something that requires great strength. You, however, know that it is all in the technique. At 3rd level, all strength requirements for heavy ranged weapons are now intelligence requirements.</p>
+		</description>
+		<sheet>
+		<description>All strength requirements for heavy ranged weapons are now intelligence requirements.</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="Extra Schematics(Vanguard)" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_EXTRA_SCHEMATICS">
+		<description>
+			<p>At level 7, you automatically gain the Cryoban Balls gadget schematic and it does not add to your list of schematics known. Additionally, it does not add to the number of gadgets equipped.</p>
+		</description>
+		<sheet>
+		<description>You automatically gain the Cryoban Balls gadget schematic and it does not add to your list of schematics known.</description>
+		</sheet>
+			<rules>
+				<grant type="Spell" id="ID_GMBINDER_SW5E_SPELL_GADGET_CRYOBAN_BALLS" />
+			</rules>
+	</element>
+
+	<element name="Battlefront Tactician" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_BATTLEFRONT_TACTICIAN">
+		<description>
+			<p>Starting at level 10, while your turret is deployed you gain advantage on attacks made against your turret's target.</p>
+		</description>
+		<sheet>
+		<description>While your turret is deployed you gain advantage on attacks made against your turret's target.</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="Killshot" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_KILLSHOT">
+		<description>
+			<p>At level 14, whenever your turret kills an enemy, it gains an additional damage die on its next attack.</p>
+		</description>
+		<sheet>
+		<description>Whenever your turret kills an enemy, it gains an additional damage die on its next attack.</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="True Grit" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_VANGUARD_TRUE_GRIT">
+		<description>
+			<p>At 20th level, you won’t let anyone stop you from protecting the things that are important to you. Anytime that you would take enough damage to knock you down to 0 you can make a constitution saving throw. If you succeed the saving throw you do not take and of the damage and you also regain HP equal to half of your max HP. If you fail the save, you take the damage as normal. You can only use this ability once per long rest.</p>
+		</description>
+		<sheet>
+		<description>Anytime that you would take enough damage to knock you down to 0 you can make a constitution saving throw. If you succeed the saving throw you do not take and of the damage and you also regain HP equal to half of your max HP. If you fail the save, you take the damage as normal.</description>
+		</sheet>
+			<rules />
+	</element>
+
+</elements>

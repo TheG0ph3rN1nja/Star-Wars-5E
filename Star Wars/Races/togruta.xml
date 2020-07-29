@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Togruta</name>
+		<description>GM Binder</description>
+		<author />
+		<update version="0.0.1">
+			<file name="togruta.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Togruta" type="Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACE_TOGRUTA">
+		<description>
+			<h4>Togruta Traits</h4>
+			<p>Your Togruta character has many different attributes that might be useful in the field:</p>
+			<p class="indent"><strong><i>Ability Score Increase.</i></strong> Strength +1, Wisdom +2.</p>
+      <p class="indent"><strong><i>Age.</i></strong> Up to 94 years.</p>
+			<p class="indent"><strong><i>Alignment.</i></strong> Tendency to good.</p>
+			<p class="indent"><strong><i>Size.</i></strong> Medium</p>
+			<p class="indent"><strong><i>Speed.</i></strong> 30ft.</p>
+			<p class="indent"><strong><i>Frightening Presence.</i></strong> You have advantage on Intimidation checks.</p>
+			<p class="indent"><strong><i>Montral.</i></strong> Togrutan's horns on their heads give them echolocation up to 60ft unless they are deafened or there is a significant amount of background noise, such as in cities or near loud vehicles or waterfalls.</p>
+      <p class="indent"><strong><i>Proficiency.</i></strong> Persuasion, Intimidation.</p>
+			<p class="indent"><strong><i>Languages.</i></strong> Basic, Togruti.</p>
+		</description>
+		<sheet display="false" />
+			<setters />
+			<rules>
+				<stat name="Wisdom" value="2" />
+				<stat name="Strength" value="1" />
+				<grant type="Size" id="ID_SIZE_MEDIUM" />
+				<stat name="Speed" value="30" bonus="base" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_TOGRUTA_FRIGHTENING_PRESENCE" />
+				<grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_TOGRUTA_MONTRAL" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_TOGRUTI" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_BASIC" />
+			</rules>
+    </element>
+
+    <element name="Frightening Presence" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_TOGRUTA_FRIGHTENING_PRESENCE">
+			<description>
+				<p>You have advantage on Intimidation checks.</p>
+			</description>
+			<sheet>
+				<description>
+          <p>You have advantage on Intimidation checks.</p>
+        </description>
+			</sheet>
+			<rules />
+		</element>
+
+		<element name="Montral" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_TOGRUTA_MONTRAL">
+			<description>
+				<p>Togrutan's horns on their heads give them echolocation up to 60ft unless they are deafened or there is a significant amount of background noise, such as in cities or near loud vehicles or waterfalls.</p>
+			</description>
+			<sheet>
+				<description>
+          <p>You have echolocation up to 60ft unless you are deafened or there is a significant amount of background noise, such as in cities or near loud vehicles or waterfalls.</p>
+        </description>
+			</sheet>
+			<rules />
+		</element>
+
+</elements>

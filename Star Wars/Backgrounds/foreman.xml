@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Foreman</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="foreman.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/forman.xml" />
+		</update>
+	</info>
+
+	<element name="Foreman" type="Background" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_FOREMAN">
+    <description>
+    <ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Repairs, Insight </li>
+        <li><strong>Other Proficiencies:</strong>One type of tools </li>
+        <li><strong>Languages:</strong>One of your choice </li>
+				<li><strong>Equipment:</strong>One set of tools, a ceremonial plaque with the seal of your company, 15 cr </li>
+      </ul>
+      <div element="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_COMPANY_RESPECT" />
+    </description>
+      <setters>
+        <set name="short">Sleight of Hand, Insight, One type of tools, 1 language of your choice, a ceremonial plaque with the seal of your company, 15 cr</set>
+      </setters>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+        <grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_SKILL_REPAIRS" />
+        <select type="Proficiency" name="Tool Proficiency (Foreman)" supports="Tool" />
+        <select type="Language" name="Language (Foreman)" supports="Standard||Exotic" />
+      </rules>
+    </element>
+
+    <element name="Feature: Company Respect" type="Background Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_COMPANY_RESPECT">
+      <supports>Background Feature</supports>
+		<description>
+			<p>Due to your connection with the company, people in civilized society respect you and treat you well. Because the factories of your company produce everything.</p>
+		</description>
+		<sheet alt="Shelter of the Faithful">
+			<description>Due to your connection with the company, people in civilized society respect you and treat you well. Because the factories of your company produce everything.</description>
+		</sheet>
+	</element>
+
+</elements>

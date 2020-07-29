@@ -1,0 +1,44 @@
+Star-Wars/<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Pod Racer</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="pod-racer.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/pod-racer.xml" />
+		</update>
+	</info>
+
+	<element name="Pod Racer" type="Background" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_POD_RACER">
+    <description>
+    <ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Repairs, Perception </li>
+        <li><strong>Other Proficiencies:</strong>Land Vehicles, Space Vehicles </li>
+        <li><strong>Language:</strong>Huttese </li>
+				<li><strong>Equipment:</strong>Lucky charm, 10 cr </li>
+      </ul>
+      <div element="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_OBSERVANT" />
+    </description>
+      <setters>
+        <set name="short">Sleight Of Hand, Perception, Land Vehicles, Space Vehicles, Huttese, Lucky charm, 10 cr </set>
+      </setters>
+      <rules>
+        <grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_SKILL_REPAIRS" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND" />
+        <select type="Proficiency" name="Tool Proficiency" supports="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE" />
+        <grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_HUTTESE" />
+      </rules>
+    </element>
+
+    <element name="Feature: Observant" type="Background Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_OBSERVANT">
+      <supports>Background Feature</supports>
+		<description>
+			<p>While in a vehicle that you are proficient with you can spot traps and obstacles while traveling at full speed.</p>
+		</description>
+		<sheet alt="Observant">
+			<description>While in a vehicle that you are proficient with you can spot traps and obstacles while traveling at full speed.</description>
+		</sheet>
+	</element>
+
+</elements>

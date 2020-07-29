@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Sentinel</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="sentinel.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/classes/sentinel.xml" />
+		</update>
+	</info>
+
+  <element name="Sentinel" type="Class" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_SENTINEL">
+		<description>
+      <p>While they possessed considerable combat skills and had somewhat extensive knowledge of the Force, Sentinels blended both schools of teaching and amplified them with a series of non-Force skills, such as in the fields of security, computers, stealth techniques, demolitions, repair or medicine. These skills tended to take the forefront in their middle-road approach to problems.</p>
+      <h3>CLASS FEATURES</h3>
+			<p>As an sentinel, you gain the following class features.</p>
+			<h5>HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d8 per sentinel level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per sentinel level after 1st</li>
+			</ul>
+			<h5>PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> Light Armor</li>
+				<li><strong>Weapons:</strong> Simpleweapons, Martial, Weapons lightsabers</li>
+				<li><strong>Tools:</strong> None</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Dexterity, Intelligence</li>
+				<li><strong>Skills:</strong>Choose four skills from Acrobatics, Arcana, History, Investigation, Nature, Religion, Sleight of Hand, and Stealth.</li>
+			</ul>
+			<h5>EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li>A blaster rifle</li>
+				<li>A lightsaber according to your fighting style</li>
+				<li>Robes</li>
+			</ul>
+			<h5 class="caption">The Sentinel</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="left">Proficiency Bonus</td><td class="left">Features</td><td class="col-5">Talents Known</td><td class="col-5">Disciplines Known</td><td class="col-5">Force Points</td><td class="col-5">Force Limit</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>+2</td><td class="left">Fighting Style, Force, Force Order</td><td>1</td><td>1</td><td>4</td><td>2</td></tr>
+				<tr><td> 2nd</td><td>+2</td><td class="left">Slow Fall</td><td>1</td><td>1</td><td>6</td><td>2</td></tr>
+				<tr><td> 3rd</td><td>+2</td><td class="left">Force Order feature</td><td>2</td><td>2</td><td>14</td><td>3</td></tr>
+				<tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td><td>2</td><td>2</td><td>17</td><td>3</td></tr>
+				<tr><td> 5th</td><td>+3</td><td class="left">Extra Attack,Ranged Precision</td><td>2</td><td>2</td><td>27</td><td>4</td></tr>
+				<tr><td> 6th</td><td>+3</td><td class="left">Force Order feature</td><td>2</td><td>3</td><td>32</td><td>4</td></tr>
+				<tr><td> 7th</td><td>+3</td><td class="left">Lightsaber Control</td><td>2</td><td>3</td><td>38</td><td>5</td></tr>
+				<tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td><td>2</td><td>3</td><td>44</td><td>5</td></tr>
+				<tr><td> 9th</td><td>+4</td><td class="left">Force Shield</td><td>2</td><td>4</td><td>57</td><td>6</td></tr>
+				<tr><td>10th</td><td>+4</td><td class="left">Force Order feature</td><td>3</td><td>4</td><td>64</td><td>6</td></tr>
+				<tr><td>11th</td><td>+4</td><td class="left">—</td><td>3</td><td>4</td><td>64</td><td>7</td></tr>
+				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td><td>3</td><td>5</td><td>64</td><td>7</td></tr>
+				<tr><td>13th</td><td>+5</td><td class="left">Battle Meditation</td><td>3</td><td>5</td><td>64</td><td>7</td></tr>
+				<tr><td>14th</td><td>+5</td><td class="left">Force Order feature</td><td>3</td><td>5</td><td>64</td><td>7</td></tr>
+				<tr><td>15th</td><td>+5</td><td class="left">—</td><td>3</td><td>6</td><td>64</td><td>7</td></tr>
+				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td><td>3</td><td>6</td><td>64</td><td>7</td></tr>
+				<tr><td>17th</td><td>+6</td><td class="left">Stealthy</td><td>4</td><td>6</td><td>64</td><td>7</td></tr>
+				<tr><td>18th</td><td>+6</td><td class="left">—</td><td>4</td><td>7</td><td>64</td><td>7</td></tr>
+				<tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td><td>4</td><td>7</td><td>64</td><td>7</td></tr>
+				<tr><td>20th</td><td>+6</td><td class="left">Perfect Self</td><td>5</td><td>7</td><td>64</td><td>7</td></tr>
+			</table>
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_FIGHTING_STYLE" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_FORCE_POINTS" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_FORCE_ORDER" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_SPELLCASTING_SENTINEL" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_SLOW_FALL" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_ABILITYSCOREIMPROVEMENT_SENTINEL" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_EXTRA_ATTACK" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_RANGED_PERCICISON" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_LIGHTSABER_CONTROL" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_FORCE_SHIELD" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_BATTLE_MEDITATION" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_STEALTHY" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_PERFECT_SELF" />
+    </description>
+		<sheet display="false" />
+		<setters>
+			<set name="hd">d8</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSABER" />
+      <grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_DOUBLEBLADED_LIGHTSABER" />
+      <grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSABER_PIKE" />
+			<select type="Proficiency" name="Skill Proficiency (Consular)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH" number="4" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SKILL_REPAIRS" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SKILL_SECURITY" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_FORCE_POINTS" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_FORCE_LIMIT" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_FORCE_TALENT_SENTINEL" level="1" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FORCE_ORDER" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_SPELLCASTING_SENTINEL" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FIGHTING_STYLE" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_SLOW_FALL" level="2" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_ABILITYSCOREIMPROVEMENT_SENTINEL" level="4" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_EXTRA_ATTACK" level="5" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_RANGED_PERCICISON" level="5" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_LIGHTSABER_CONTROL" level="7" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_FORCE_SHIELD" level="9" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_BATTLE_MEDITATION" level="13" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_STEALTHY" level="17" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_PERFECT_SELF" level="20" />
+		</rules>
+	</element>
+
+  <element name="Force Points(Sentinel)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_FORCE_POINTS">
+		<description>
+      <p>You have an internal reservoir of energy that can be devoted to the force disciplines you know. This energy is represented by force points. Each force discipline describes effects you can create with it by spending a certain number of force points. A force talent requires no force points.</p>
+      <p class="indent">The number of force points you have is based on your force wielder level, as shown in the Force Points column of the class tables. The number shown for your level is your force point maximum. Your force point total returns to its maximum after you finish a long rest. The number of force points you have can’t go below 0 or over your maximum.</p>
+    </description>
+		<sheet usage="{{force-points sentinel:count}}/Long Rest" />
+			<rules>
+				<stat name="force-points sentinel:count" value="4" />
+				<stat name="force-points sentinel:count" value="2" level="2" />
+				<stat name="force-points sentinel:count" value="8" level="3" />
+				<stat name="force-points sentinel:count" value="3" level="4" />
+				<stat name="force-points sentinel:count" value="10" level="5" />
+				<stat name="force-points sentinel:count" value="5" level="6" />
+				<stat name="force-points sentinel:count" value="6" level="7" />
+				<stat name="force-points sentinel:count" value="6" level="8" />
+				<stat name="force-points sentinel:count" value="13" level="9" />
+				<stat name="force-points sentinel:count" value="7" level="10" />
+			</rules>
+	</element>
+
+	<element name="Force Limit(Sentinel)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_FORCE_LIMIT">
+		<description />
+		<sheet usage="{{force-limit Sentinel:count}}/Spell Cast " />
+			<rules>
+				<stat name="force-limit Sentinel:count" value="2" />
+				<stat name="force-limit Sentinel:count" value="1" level="3" />
+				<stat name="force-limit Sentinel:count" value="1" level="5" />
+				<stat name="force-limit Sentinel:count" value="1" level="7" />
+				<stat name="force-limit Sentinel:count" value="1" level="9" />
+				<stat name="force-limit Sentinel:count" value="1" level="11" />
+			</rules>
+		</element>
+
+	<element name="Force Talent(Sentinel)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_FORCE_TALENT_SENTINEL">
+		<description />
+		<sheet display="false" />
+			<rules>
+				<select type="Class Feature" name="Force Talent(Sentinel)" supports="Force Talent" number="1" level="1" />
+				<select type="Class Feature" name="Force Talent(Sentinel)" supports="Force Talent" number="1" level="3" />
+				<select type="Class Feature" name="Force Talent(Sentinel)" supports="Force Talent" number="1" level="10" />
+				<select type="Class Feature" name="Force Talent(Sentinel)" supports="Force Talent" number="1" level="17" />
+				<select type="Class Feature" name="Force Talent(Sentinel)" supports="Force Talent" number="1" level="20" />
+			</rules>
+	</element>
+
+  <element name="Force Discilpine(Spellcasting)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_SPELLCASTING_SENTINEL">
+		<description>
+			<p>Intelligence is your force ability for your force disciplines. You use your Intelligence modifier when setting the saving throw DC for a force discipline or when making an attack roll with one.</p>
+			<center>
+				<p><strong>Discipline save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+				<p><strong>Discipline attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+			</center>
+		</description>
+		<sheet>
+			<description>Ability to use force disciplines(spells).</description>
+		</sheet>
+		<spellcasting name="Sentinel" ability="Intelligence" prepare="false" allowReplace="true">
+			<list>Consular</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
+			<grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
+
+			<select type="Class Feature" name="Force Discipline(Sentinel)" supports="Force Discipline" number="1" level="1" />
+			<select type="Class Feature" name="Force Discipline(Sentinel)" supports="Force Discipline" number="1" level="3" />
+			<select type="Class Feature" name="Force Discipline(Sentinel)" supports="Force Discipline" number="1" level="6" />
+			<select type="Class Feature" name="Force Discipline(Sentinel)" supports="Force Discipline" number="1" level="9" />
+			<select type="Class Feature" name="Force Discipline(Sentinel)" supports="Force Discipline" number="1" level="12" />
+			<select type="Class Feature" name="Force Discipline(Sentinel)" supports="Force Discipline" number="1" level="15" />
+			<select type="Class Feature" name="Force Discipline(Sentinel)" supports="Force Discipline" number="1" level="18" />
+		</rules>
+	</element>
+
+	<element name="Force Talent(Sentinel)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_FORCE_TALENT_SENTINEL">
+		<description />
+		<sheet display="false" />
+			<rules>
+				<select type="Class Feature" name="Force Talent(Sentinel)" supports="Force Talent" number="1" level="1" />
+				<select type="Class Feature" name="Force Talent(Sentinel)" supports="Force Talent" number="1" level="3" />
+				<select type="Class Feature" name="Force Talent(Sentinel)" supports="Force Talent" number="1" level="10" />
+				<select type="Class Feature" name="Force Talent(Sentinel)" supports="Force Talent" number="1" level="17" />
+				<select type="Class Feature" name="Force Talent(Sentinel)" supports="Force Talent" number="1" level="20" />
+			</rules>
+	</element>
+
+  <element name="Slow Fall" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_SLOW_FALL">
+		<description>
+			<p>Beginning at 2nd level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to 5 x your sentinel level.</p>
+		</description>
+		<sheet usage="Reaction">
+		<description>You can use your reaction when you fall to reduce any falling damage you take by an amount equal to {{slow fall:sentinel}} level.</description>
+		</sheet>
+			<rules>
+        <stat name="slow fall:sentinel:1" value="Level" />
+  			<stat name="slow fall:sentinel:2" value="Level" />
+  			<stat name="slow fall:sentinel:3" value="Level" />
+        <stat name="slow fall:sentinel:4" value="Level" />
+        <stat name="slow fall:sentinel:5" value="Level" />
+
+  			<stat name="slow fall:sentinel" value="slow fall:sentinel:1" />
+  			<stat name="slow fall:sentinel" value="slow fall:sentinel:2" />
+  			<stat name="slow fall:sentinel" value="slow fall:sentinel:3" />
+        <stat name="slow fall:sentinel" value="slow fall:sentinel:4" />
+        <stat name="slow fall:sentinel" value="slow fall:sentinel:5" />
+
+  			<stat name="calculation" value="slow fall:sentinel" bonus="calculation" />
+      </rules>
+	</element>
+
+  <element name="Ability Score Improvement" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_ABILITYSCOREIMPROVEMENT_SENTINEL">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Sentinel 4)" supports="Improvement Option,Sentinel,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Sentinel 8)" supports="Improvement Option,Sentinel,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Sentinel 12)" supports="Improvement Option,Sentinel,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Sentinel 16)" supports="Improvement Option,Sentinel,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Sentinel 19)" supports="Improvement Option,Sentinel,19" level="19" />
+		</rules>
+	</element>
+
+  <element name="Extra Attack" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_EXTRA_ATTACK">
+		<description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>You can attack twice whenever you take the Attack action on your turn.</description>
+		</sheet>
+		<rules />
+	</element>
+
+  <element name="Ranged Precision" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_RANGED_PERCICISON">
+		<description>
+			<p>Additionally at level 5, you have learned how to use the force to influence your precise aim. When you make a ranged weapon attack, your disadvantage range equals the weapon's effective range. The only disadvantage you take on ranged weapons is within the close disadvantage range.</p>
+		</description>
+		<sheet>
+		<description>When you make a ranged weapon attack, your disadvantage range equals the weapon's effective range. The only disadvantage you take on ranged weapons is within the close disadvantage range.</description>
+		</sheet>
+			<rules />
+	</element>
+
+  <element name="Lightsaber Control" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_LIGHTSABER_CONTROL">
+		<description>
+			<p>Starting at level 7, you have mastered the art of controlling your lightsaber without physically wielding it.</p>
+      <p class="indent">You can now use the Throw action on your turn, as shown on the Lightsaber stat block below. Additionally, as an action on your turn, you can use 3 force points to start controlling your lightsaber. When you do so, your lightsaber gains all the properties listed in the Lightsaber stat block below. You control its movement on your turn, and can have it perform one of its action as your bonus action.</p>
+      <p class="indent">If your lightsaber's HP is reduced to zero, it is broken, and thus can no longer be used. You must use a short rest to repair it.</p>
+      <p class="indent">At the beginning of your next turn, the Lightsaber returns to your hand unless you choose to use 2 force points to extend the duration.</p>
+		</description>
+		<sheet usage="Bonus Action">
+		<description>You can now throw your lightsaber on your turn, as shown on the Lightsaber stat block below. Additionally, as an action on your turn, you can use 3 force points to start controlling your lightsaber. When you do so, your lightsaber gains all the properties listed in the Lightsaber stat block below. You control its movement on your turn, and can have it perform one of its action as your bonus action.</description>
+		</sheet>
+			<rules>
+				<select type="Companion" name="Senator’s Companion" supports="Humanoid,Medium,1/2" />
+				<stat name="companion:ac" value="0" />
+				<stat name="companion:attack" value="0" />
+				<stat name="companion:damage" value="0" />
+				<stat name="additional:hp:max" value="0" />
+				<stat name="additional:hp:max" value="0" />
+				<stat name="additional:hp:max" value="0" />
+				<stat name="additional:hp:max" value="0" />
+				<stat name="companion:hp:max" value="additional:hp:max" bonus="base" />
+			</rules>
+	</element>
+
+  <element name="Force Shield" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_FORCE_SHIELD">
+		<description>
+			<p>Beginning at 9th level, you have learned to channel the force into a protective shield. As a free action on your turn, you can use 1-3 force points to give yourself 1d10 per force point spent temporary HP.</p>
+      <p class="indent">From level 17 onwards you can use up to 5 force points on this ability.</p>
+		</description>
+		<sheet action="Free Action">
+		<description>You can use 1-{{force-shield:max}} force points to give yourself 1d10 per force point spent temporary HP.</description>
+		</sheet>
+			<rules>
+        <stat name="force-shield:max" value="3" />
+        <stat name="force-shield:max" value="2" level="17" />
+
+        <stat name="calculation" value="force-shield:max" bonus="calculation" />
+      </rules>
+	</element>
+
+  <element name="Battle Meditation" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_BATTLE_MEDITATION">
+		<description>
+			<p>At level 13, a sentinel learns the proper way to meditate before a battle to gain the advantage. You can spend 2 minutes before entering combat to give up to six friendly creatures temporary hit points equal to your sentinel level plus your Intelligence modifier. Once this ability has been used you cannot use it again until you have completed a long rest.</p>
+		</description>
+		<sheet>
+		<description>You can spend 2 minutes before entering combat to give up to six friendly creatures temporary hit points equal to {{battle-meditation:sentinel}}.</description>
+		</sheet>
+			<rules>
+        <stat name="battle-meditation:level" value="Level" />
+        <stat name="battle-meditation:intelligence" value="inelligence:modifier" />
+
+        <stat name="battle-meditation:sentinel" value="battle-meditation:level" />
+        <stat name="battle-meditation:sentinel" value="battle-meditation:intelligence" />
+
+        <stat name="calculation" value="battle-meditation:sentinel" bonus="calculation" />
+      </rules>
+	</element>
+
+  <element name="Stealthy" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_STEALTHY">
+		<description>
+			<p>From level 17 onwards, you gain permanent knowledge and focus on the Force Chameleon discipline. If you already knew the Force Chameleon discipline, choose a new one to learn. In addition, you cannot break your concentration on the Force Chameleon discipline, but you can concentrate on another force discipline as well.</p>
+		</description>
+		<sheet>
+		<description>You cannot break your concentration on the Force Chameleon discipline, but you can concentrate on another force discipline as well.</description>
+		</sheet>
+			<rules />
+	</element>
+
+  <element name="Stealthy" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_STEALTHY">
+		<description>
+			<p>From level 17 onwards, you gain permanent knowledge and focus on the Concealment discipline. If you already knew the Concealment discipline, choose a new one to learn. In addition, you cannot break your concentration on the Concealment discipline, but you can concentrate on another force discipline as well.</p>
+		</description>
+		<sheet>
+		<description>You cannot break your concentration on the Concealment discipline, but you can concentrate on another force discipline as well.</description>
+		</sheet>
+			<rules>
+				<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FORCE_DISCIPLINE_CONCEALMENT" />
+			</rules>
+	</element>
+
+  <element name="Perfect Self" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SENTINEL_PERFECT_SELF">
+		<description>
+			<p>At 20th level, when you roll for initiative and have no force points remaining, you regain 20 force points.</p>
+		</description>
+		<sheet>
+		<description>When you roll for initiative and have no force points remaining, you regain 20 force points.</description>
+		</sheet>
+			<rules />
+	</element>
+
+</elements>

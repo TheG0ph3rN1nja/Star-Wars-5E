@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Trooper</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="trooper.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/classes/trooper.xml" />
+		</update>
+	</info>
+
+	<element name="Trooper" type="Class" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_TROOPER">
+		<description>
+			<h5 class="caption">THE TROOPER</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-5">Proficiency Bonus</td><td class="left">Features</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>+2</td><td class="left">Weapon Forging</td></tr>
+				<tr><td> 2nd</td><td>+2</td><td class="left">Fighting Style</td></tr>
+				<tr><td> 3rd</td><td>+2</td><td class="left">Combat Expertise</td></tr>
+				<tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 5th</td><td>+3</td><td class="left">Extra Attack</td></tr>
+				<tr><td> 6th</td><td>+3</td><td class="left">Special Ammunition Expert</td></tr>
+				<tr><td> 7th</td><td>+3</td><td class="left">Combat Expertise Feature</td></tr>
+				<tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 9th</td><td>+4</td><td class="left">Indomitable</td></tr>
+				<tr><td>10th</td><td>+4</td><td class="left">Personal Shield Generator</td></tr>
+				<tr><td>11th</td><td>+4</td><td class="left">Weapon Forging (3), Extra Attack (2)</td></tr>
+				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>+5</td><td class="left">Combat Expertise Feature</td></tr>
+				<tr><td>14th</td><td>+5</td><td class="left">Fighting Style (2)</td></tr>
+				<tr><td>15th</td><td>+5</td><td class="left">Combat Expertise Feature</td></tr>
+				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td>+6</td><td class="left">Combat Expertise Feature</td></tr>
+				<tr><td>18th</td><td>+6</td><td class="left">Survivor</td></tr>
+				<tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td>+6</td><td class="left">Combat Expertise Feature, Extra Attack (3)</td></tr>
+			</table>
+			<h3>Class Features</h3>
+			<p>As a tactician, you have the following class features.</p>
+			<h4>Hit Points</h4>
+			<p><strong>Hit Dice:</strong> 1d10 per trooper Level.</p>
+			<p><strong>Hit Points at 1st Level:</strong> 10 + your Constitution modifier</p>
+			<p><strong>Hit Points at Higher Levels:</strong> 1d10 (or 6) + your Constitution modifier per trooper level after 1st</p>
+			<h5>PROFICIENCIES</h5>
+			<p><strong>Armor:</strong> Light and Medium armor</p>
+			<p><strong>Weapons:</strong> Simple and Martial Weapons</p>
+			<p><strong>Tools:</strong> Tinker's Tools</p>
+			<p><strong>Saving Throw:</strong> Dexterity, Strength</p>
+			<p><strong>Skills:</strong> Choose four from Acrobatics, Athletics, History, Insight, Perception, Sleight of Hand, Stealth, and Survival</p>
+			<h5>EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li>(a) a blaster pistol or (b) blaster rifle</li>
+				<li>(a) light exoskeleton or (b) verpine fiber mesh</li>
+				<li>A blaster pistol and 10 charge packs</li>
+			</ul>
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_WEAPON_FORGING" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_FIGHTING_STYLE" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_COMBAT_EXPERTISE" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_ABILITYSCOREIMPROVEMENT_TROOPER" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_EXTRA_ATTACK" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_SPECIAL_AMMUNITION_EXPERT" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_INDOMITABLE" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_PERSONAL_SHIELD_GENERATOR" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_SURVIVOR" />
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="hd">d10</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_ITEM_TINKERERS_TOOLS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+			<select type="Proficiency" name="Skill Proficiency (Trooper)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" number="4" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SKILL_REPAIRS" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SKILL_SECURITY" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_WEAPON_FORGING" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_FIGHTING_STYLE" level="2" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_COMBAT_EXPERTISE" level="3" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_ABILITYSCOREIMPROVEMENT_TROOPER" level="4" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_EXTRA_ATTACK" level="5" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_SPECIAL_AMMUNITION_EXPERT" level="6" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_INDOMITABLE" level="9" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_PERSONAL_SHIELD_GENERATOR" level="10" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_SURVIVOR" level="18" />
+		</rules>
+	</element>
+
+	<element name="Weapon Forging" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_WEAPON_FORGING">
+		<description>
+			<p>Starting at level 1, you can modify your blasters using your repair skill. You can spend a long rest to add one modification to a blaster weapon. You will use your Repair skill for this.</p>
+			<p claas="indent">You can add one modification to any blaster you wield. This number increases to 3 modifications at level 11.</p>
+		</description>
+		<sheet usage="Long Rest">
+			<description level ="2">You can add one modification to any blaster you wield.</description>
+			<description level ="11">You can add three modifications to any blaster you wield.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Weapon Mod (Trooper)" supports="Weapon Mod" number ="1" />
+			<select type="Class Feature" name="Weapon Mod (Trooper)" supports="Weapon Mod" number ="2" level="11" />
+		</rules>
+	</element>
+
+	<element name="Fighting Style" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_FIGHTING_STYLE">
+		<description>
+			<p>You adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again. You choose a second fighting style at level 10.</p>
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_FIGHTING_STYLE_CRACKSHOT" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_FIGHTING_STYLE_DEFENSIVEFIGHTINGSTYLE" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_FIGHTING_STYLE_GUNSLINGER" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_FIGHTING_STYLE_GREATWEAPONFIGHTING" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_FIGHTING_STYLE_GRENADIER" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_FIGHTING_STYLE_SUPRESSION" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_FIGHTING_STYLE_TWOWEAPONFIGHTING" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Fighting Style" supports="Fighting Style,Trooper" level="2"/>
+			<select type="Class Feature" name="Fighting Style" supports="Fighting Style,Trooper" level="10"/>
+		</rules>
+	</element>
+
+	<element name="Crack Shot (Fighting Style,Trooper)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_FIGHTING_STYLE_CRACKSHOT">
+		<supports>Fighting Style, Trooper</supports>
+		<description>
+			<p>You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
+		</description>
+		<sheet>
+			<description>You gain a +2 bonus to attack rolls you make with ranged weapons.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Defensive Fighting Style (Fighting Style,Trooper)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_FIGHTING_STYLE_DEFENSIVEFIGHTINGSTYLE">
+		<supports>Fighting Style, Trooper</supports>
+		<description>
+			<p>While you are wearing armor, you gain a +1 bonus to AC.</p>
+		</description>
+		<sheet>
+			<description>While you are wearing armor, you gain a +1 bonus to AC.</description>
+			</sheet>
+			<rules>
+				<stat name="ac:misc" value="1" bonus="fighting style" equipped="[armor:any]" alt="Defensive Fighting Style (Fighting Style,Trooper)" />
+			</rules>
+	</element>
+
+	<element name="Grenadier (Fighting Style,Trooper)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_FIGHTING_STYLE_GRENADIER">
+		<supports>Fighting Style, Trooper</supports>
+		<description>
+			<p>When you make an attack roll to throw a grenade, you get a +2 bonus to hit. Additionally, each die you roll for grenade damage deals 1 extra point of damage.</p>
+		</description>
+		<sheet>
+			<description>When you make an attack roll to throw a grenade, you get a +2 bonus to hit. Additionally, each die you roll for grenade damage deals 1 extra point of damage.</description>
+			</sheet>
+		<rules />
+	</element>
+
+	<element name="Gunslinger (Fighting Style,Trooper)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_FIGHTING_STYLE_GUNSLINGER">
+		<supports>Fighting Style, Trooper</supports>
+		<description>
+			<p>When you are wielding a pistol in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+		</description>
+		<sheet>
+			<description>When you are wielding a pistol in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</description>
+			</sheet>
+		<rules />
+	</element>
+
+	<element name="Great Weapon Fighting (Fighting Style,Trooper)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_FIGHTING_STYLE_PROTECTION">
+		<supports>Fighting Style, Trooper</supports>
+		<description>
+			<p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
+		</description>
+		<sheet>
+			<description>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</description>
+			</sheet>
+		<rules />
+	</element>
+
+	<element name="Supression (Fighting Style,Trooper)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_FIGHTING_STYLE_SUPRESSION">
+		<supports>Fighting Style, Trooper</supports>
+		<description>
+			<p>If you use all your attacks on your turn against one creature while you are behind any cover or prone, that creature has disadvantage on its next ranged attack roll.</p>
+		</description>
+		<sheet>
+			<description>If you use all your attacks on your turn against one creature while you are behind any cover or prone, that creature has disadvantage on its next ranged attack roll.</description>
+			</sheet>
+		<rules />
+	</element>
+
+	<element name="Two-Weapon Fighting (Fighting Style,Trooper)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_FIGHTING_STYLE_TWOWEAPONFIGHTING">
+		<supports>Fighting Style, Trooper</supports>
+		<description>
+			<p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack. This applies to dual-wielding pistols.</p>
+		</description>
+		<sheet>
+			<description>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack. This applies to dual-wielding pistols.</description>
+			</sheet>
+		<rules />
+	</element>
+
+	<element name="Combat Expertise" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_COMBAT_EXPERTISE">
+		<description>
+			<p>At level 3 you choose a combat expertise. Your options are Commander, Guerilla, and Marksman, which are detailed at the end of the class description.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Combat Expertise" supports="Combat Expertise" />
+		</rules>
+	</element>
+
+	<element name="Ability Score Improvement" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_ABILITYSCOREIMPROVEMENT_TROOPER">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Trooper 4)" supports="Improvement Option,Trooper,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Trooper 8)" supports="Improvement Option,Trooper,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Trooper 12)" supports="Improvement Option,Trooper,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Trooper 16)" supports="Improvement Option,Trooper,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Trooper 19)" supports="Improvement Option,Trooper,19" level="19" />
+		</rules>
+	</element>
+
+	<element name="Extra Attack" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_EXTRA_ATTACK">
+		<description>
+			<p>Starting at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. The number of attacks increases to three at 11th level and four at 20th level in this class.</p>
+		</description>
+		<sheet>
+			<description level="5">You can attack twice, instead of once, whenever you take the Attack action on your turn</description>
+			<description level="11">You can attack three times, instead of once, whenever you take the Attack action on your turn</description>
+			<description level="20">You can attack four times, instead of once, whenever you take the Attack action on your turn</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Special Ammunition Expert" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_SPECIAL_AMMUNITION_EXPERT">
+		<description>
+			<p>Starting at 6th level, when you use special ammunition, your weapon does not take the damage penalty normally imposed by the special ammunition.</p>
+			<p class="indent">For instance, a blaster rifle with a kesium cartridge would still do 1d10 damage instead of the 1d8 damage imposed by the cartridge installed.</p>
+		</description>
+		<sheet>
+			<description>When you use special ammunition, your weapon does not take the damage penalty normally imposed by the special ammunition.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Indomitable" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_INDOMITABLE">
+		<description>
+			<p>Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can’t use this feature again until you finish a long rest. You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level.</p>
+		</description>
+		<sheet usage="{{trooper-indomitable:count}}/Long Rest">
+			<description>You can reroll a saving throw that you fail. If you do so, you must use the new roll.</description>
+		</sheet>
+		<rules>
+			<stat name="trooper-indomitable:count" value="1" />
+			<stat name="trooper-indomitable:count" value="1" level="13" />
+			<stat name="trooper-indomitable:count" value="1" level="17" />
+		</rules>
+	</element>
+<!--Fixed Multiple inclusion of shield hit points-->
+	<element name="Personal Shield Generator" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_PERSONAL_SHIELD_GENERATOR">
+		<description>
+			<p>Starting at 10th level, you obtain a personal shield generator. When the shield is broken you take the remaining damage. While the shield has hit points you are unaffected by the dodge action. <i>The shield takes double damage from Ion weapons.</i></p>
+			<p class="indent">During a short rest or as a bonus action, you can choose to repair your shield generator. Your shield generator has hit points equal to twice your level. You may expend up to your Wisdom modifier's number of hit die as a bonus action, or up to 10 hit die during a short rest.</p>
+		</description>
+		<sheet>
+			<description>You obtain a personal shield generator. When the shield is broken you take the remaining damage. While the shield has hit points you are unaffected by the dodge action. <i>The shield takes double damage from Ion weapons.</i> During a short rest or as a bonus action, you can choose to repair your shield generator. Your shield generator has hit points equal to {{generator:hit-points}}. You may expend up to {{generator:hit-die}} of hit die as a bonus action, or up to 10 hit die during a short rest.</description>
+		</sheet>
+		<rules>
+			<stat name="generator:hit-points" value="level" />
+			<stat name="generator:hit-points" value="level" />
+			<stat name="generator:hit-die" value="wisdom:modifier" />
+		</rules>
+	</element>
+
+	<element name="Survivor" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TROOPER_SURVIVOR">
+		<description>
+			<p>At 18th level, you attain the pinnacle of resilience in battle. At the start of each of your turns, you regain hit points equal to 5 + your Constitution modifier if you have no more than half of your hit points left. You don’t gain this benefit if you have 0 hit points.</p>
+		</description>
+		<sheet>
+			<description>At the start of each of your turns, you regain hit points equal to {{trooper-survivor:count}} if you have no more than half of your hit points left. You don’t gain this benefit if you have 0 hit points.</description>
+		</sheet>
+		<rules>
+			<stat name="trooper-survivor:count" value="5" />
+			<stat name="trooper-survivor:count" value="constitution:modifier" />
+			<stat name="calculation" value="trooper-survivor:count" bonus="calculation" />
+		</rules>
+	</element>
+
+	<element name="Gunglinger" type="Archetype" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_GUNSLINGER">
+		<supports>Combat Expertise</supports>
+		<requirements>ID_GMBINDER_SW5E_CLASS_TROOPER</requirements>
+		<description>
+			<p>Gunslingers are quick to be the first ones to attack. They typically prefer to remain mobile while attempting to flank their opponents.</p>
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUNSLINGER_GUNSLINGER_TRAINING" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUNSLINGER_QUICK_DRAW" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUNSLINGER_GUNSLINGER_MODS" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUNSLINGER_DOUBLE_TAP" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUNSLINGER_IMPROVISEDSHIELDGENERATORREPAIRS" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUNSLINGER_MASTER_COMBATANT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUNSLINGER_GUNSLINGER_TRAINING" level="3" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUNSLINGER_QUICK_DRAW" level="7" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUNSLINGER_GUNSLINGER_MODS" level="13" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUNSLINGER_DOUBLE_TAP" level="15" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUNSLINGER_IMPROVISEDSHIELDGENERATORREPAIRS" level="17" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUNSLINGER_MASTER_COMBATANT" level="20" />
+		</rules>
+	</element>
+
+	<element name="Gunslinger Training" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUNSLINGER_GUNSLINGER_TRAINING">
+		<description>
+			<p>Starting at 3rd level, you gain the following abilities.</p>
+			<ul>
+				<li>Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls with blasters.</li>
+				<li>Your movement speed increases by 5 feet.</li>
+				<li>You are now proficient with shields.</li>
+				<li>You can now dash as a bonus action if you use your action to make an attack.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls with blasters. You can now dash as a bonus action if you use your action to make an attack.</description>
+		</sheet>
+		<rules>
+			<stat name="speed" value="5" bonus="base" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+		</rules>
+	</element>
+
+	<element name="Quick Draw" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUNSLINGER_QUICK_DRAW">
+		<description>
+			<p>Starting at 7th level, when combat starts and you are not surprised you can make one attack per pistol you have in hand before the first round begins.</p>
+		</description>
+		<sheet>
+			<description>When combat starts and you are not surprised you can make one attack per pistol you have in hand before the first round begins.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Gunslinger Mods" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUNSLINGER_GUNSLINGER_MODS">
+		<description>
+			<p>Starting at 13th level, you gain access to the high impact pistol rounds mod and the tranquilizer rounds mod.</p>
+		</description>
+		<sheet />
+		<rules>
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MODS_HIGH_IMPACT_PISTOL_ROUND" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MODS_STUN_ROUNDS" />
+		</rules>
+	</element>
+
+	<element name="Double Tap" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUNSLINGER_DOUBLE_TAP">
+		<description>
+			<p>Starting at 15th level, when you make an attack on your turn, you may fire an additional shot for each attack you make. You must take a short or long rest before using this feature again.</p>
+		</description>
+		<sheet usage="Once/Short Rest">
+			<description>when you make an attack on your turn, you may fire an additional shot for each attack you make. You must take a short or long rest before using this feature again.</description>
+		</sheet>
+		<rules />
+	</element>
+<!--hp value changed to max for balance purposes-->
+	<element name="Improved Shield Generator Repairs" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUNSLINGER_IMPROVISEDSHIELDGENERATORREPAIRS">
+		<description>
+			<p>Starting at 17th level, if your shield generator is depleted you can use your action to repair it to max hp. This feature can only be used once per short or long rest.</p>
+		</description>
+		<sheet action="Once/Short Rest">
+			<description>if your shield generator is depleted you can use your action to repair it to max hp.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Master Combatant" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUNSLINGER_MASTER_COMBATANT">
+		<description>
+			<p>Starting at 20th level, you gain the following additional abilities, as long as you aren't incapacitated:</p>
+			<ul>
+				<li>You can use the dodge action as a bonus action.</li>
+				<li>You also ignore any reduction to your movement speed.</li>
+				<li>You now have an additional 10 feet of movement instead of 5 feet.</li>
+			</ul>
+		</description>
+		<sheet usage="Bonus Action">
+			<description>You can use the dodge action as a bonus action. You also ignore any reduction to your movement speed.</description>
+		</sheet>
+		<rules>
+			<stat name="speed" value="5" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Heavy Assualt Trooper" type="Archetype" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_HEAVY_ASSUALT_TROOPER">
+		<supports>Combat Expertise</supports>
+		<requirements>ID_GMBINDER_SW5E_CLASS_TROOPER</requirements>
+		<description>
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_HEAVY_ASSUALT_TROOPER_ASSUALT_TRAINING" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_HEAVY_ASSUALT_TROOPER_HEAVY_WEAPON_EXPERT" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_HEAVY_ASSUALT_TROOPER_HEAVY_MOD_MASTER" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_HEAVY_ASSUALT_TROOPER_AMMO_CONSERVATIONIST" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_HEAVY_ASSUALT_TROOPER_HEAVY_BLASTER_BLUDGEONER" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_HEAVY_ASSUALT_TROOPER_EXPLOSIVERS_EXPERT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_HEAVY_ASSUALT_TROOPER_ASSUALT_TRAINING" level="3" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_HEAVY_ASSUALT_TROOPER_HEAVY_WEAPON_EXPERT" level="7" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_HEAVY_ASSUALT_TROOPER_HEAVY_MOD_MASTER" level="13" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_HEAVY_ASSUALT_TROOPER_AMMO_CONSERVATIONIST" level="15" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_HEAVY_ASSUALT_TROOPER_HEAVY_BLASTER_BLUDGEONER" level="17" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_HEAVY_ASSUALT_TROOPER_EXPLOSIVERS_EXPERT" level="20" />
+		</rules>
+	</element>
+
+	<element name="Assualt Training" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_HEAVY_ASSUALT_TROOPER_ASSUALT_TRAINING">
+		<description>
+			<p>Starting at 3rd level, you gain the following abilities.</p>
+			<ul>
+				<li>You gain proficiency with Heavy Armor.</li>
+				<li>Your carrying capacity is doubled.</li>
+				<li>You have the ability to carry 2 heavy blasters instead of just one.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your carrying capacity is doubled. You have the ability to carry 2 heavy blasters instead of just one.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+		</rules>
+	</element>
+
+	<element name="Heavy Weapon Expert" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_HEAVY_ASSUALT_TROOPER_HEAVY_WEAPON_EXPERT">
+		<description>
+			<p>Starting at 7th level, you have mastered the art of wielding heavy weapons. Because of your expertise you can now reload the flamethrower and rocket launcher as a bonus action (like the fast hands feat you can only fire one rocket per turn), and you can reload the gatling blaster as an action.You also cannot stack this ability with fast hands.</p>
+		</description>
+		<sheet>
+			<description>you can now reload the flamethrower and rocket launcher as a bonus action, and you can reload the gatling blaster as an action.You also cannot stack this ability with fast hands.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Heavy Mod Master" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_HEAVY_ASSUALT_TROOPER_HEAVY_MOD_MASTER">
+		<description>
+			<p>Starting at 13th level, you gain the ability to use the suppressive fire mod, guided rockets mod, and the jellied fuel mod.</p>
+		</description>
+		<sheet />
+		<rules>
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MODS_SUPPRESSING_FIRE" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MODS_GUIDED_ROCKET" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MODS_JELLIED_FUEL" />
+		</rules>
+	</element>
+
+	<element name="Ammo Conservationist" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_HEAVY_ASSUALT_TROOPER_AMMO_CONSERVATIONIST">
+		<description>
+			<p>Starting at 15th level, you have learned how to mod your weapons to stretch their charge packs to their maximum potential. The number of shots you can make with a blaster before reloading is multiplied by 1.5 (so gatling blaster becomes 18 shots, flamethrower has 12 shots, sniper has 9 shot, etc). Except for the bowcaster which gets x2 (so 4 shots). This counts towards your weapon mod limit and cannot be given to allies. When you acquire this ability at your DM’s discretion you might find 1 for free.</p>
+		</description>
+		<sheet>
+			<description>The number of shots you can make with a blaster before reloading is multiplied by 1.5 (so gatling blaster becomes 18 shots, flamethrower has 12 shots, sniper has 9 shot, etc). Except for the bowcaster which gets x2 (so 4 shots). This counts towards your weapon mod limit and cannot be given to allies. When you acquire this ability at your DM’s discretion you might find 1 for free.</description>
+		</sheet>
+		<rules />
+	</element>
+<!--hp value changed to max for balance purposes-->
+	<element name="Heavy Blaster Blugeoner" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_HEAVY_ASSUALT_TROOPER_HEAVY_BLASTER_BLUDGEONER">
+		<description>
+			<p>Starting at 17th level, when wielding a rocket launcher, gatling blaster, or flame thrower and within 5 ft of an enemy you can make an attack to bash them with your weapon. This attack deals 1d8 damage and uses the strength ability score. I you hit then the target makes a Strength saving throw (DC 8 + your Strength Modifier + your Proficiency Bonus) or be shoved 5 ft.</p>
+		</description>
+		<sheet>
+			<description>When wielding a rocket launcher, gatling blaster, or flame thrower and within 5 ft of an enemy you can make an attack to bash them with your weapon. This attack deals 1d8 damage and uses the strength ability score. I you hit then the target makes a Strength saving throw (DC {{heavy-blaster-bludgeoner:save-dc}}) or be shoved 5 ft.</description>
+		</sheet>
+		<rules>
+			<stat name="heavy-blaster-bludgeoner:save-dc" value="8" />
+			<stat name="heavy-blaster-bludgeoner:save-dc" value="strength:modifier" />
+			<stat name="heavy-blaster-bludgeoner:save-dc" value="proficiency" />
+			<stat name="calculation" value="heavy-blaster-bludgeoner:save-dc" bonus="calculation" />
+		</rules>
+	</element>
+
+	<element name="Explosives Expert" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_HEAVY_ASSUALT_TROOPER_EXPLOSIVERS_EXPERT">
+		<description>
+			<p>Starting at 20th level, when throwing grenades or firing a rocket launcher at enemies near you, if you would also be hit by the blast then on a failed save you take half damage and no damage on a successful save. You can now also fire a second rocket on your turn.</p>
+		</description>
+		<sheet>
+			<description>When throwing grenades or firing a rocket launcher at enemies near you, if you would also be hit by the blast then on a failed save you take half damage and no damage on a successful save. You can now also fire a second rocket on your turn.</description>
+		</sheet>
+		<rules />
+	</element>
+
+</elements>

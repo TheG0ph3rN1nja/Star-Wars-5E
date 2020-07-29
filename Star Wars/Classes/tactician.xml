@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Tactician</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="tactician.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/classes/tactician.xml" />
+		</update>
+	</info>
+
+	<element name="Tactician" type="Class" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_TACTICIAN">
+		<description>
+			<h5 class="caption">THE TACTICIAN</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-5">Proficiency Bonus</td><td class="left">Features</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>+2</td><td class="left">Second Wind, Weapon Forging</td></tr>
+				<tr><td> 2nd</td><td>+2</td><td class="left">Fighting Style</td></tr>
+				<tr><td> 3rd</td><td>+2</td><td class="left">Combat Expertise</td></tr>
+				<tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 5th</td><td>+3</td><td class="left">Extra Attack</td></tr>
+				<tr><td> 6th</td><td>+3</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 7th</td><td>+3</td><td class="left">Combat Expertise Feature</td></tr>
+				<tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 9th</td><td>+4</td><td class="left">Hide in Plain Sight</td></tr>
+				<tr><td>10th</td><td>+4</td><td class="left">Fighting Style (2)</td></tr>
+				<tr><td>11th</td><td>+4</td><td class="left">Weapon Forging (3), Extra Attack (2)</td></tr>
+				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>+5</td><td class="left">Combat Expertise Feature</td></tr>
+				<tr><td>14th</td><td>+5</td><td class="left">Low Profile</td></tr>
+				<tr><td>15th</td><td>+5</td><td class="left">Combat Expertise Feature</td></tr>
+				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td>+6</td><td class="left">Combat Expertise Feature</td></tr>
+				<tr><td>18th</td><td>+6</td><td class="left">Feral Senses</td></tr>
+				<tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td>+6</td><td class="left">Combat Expertise Feature</td></tr>
+			</table>
+			<h3>Class Features</h3>
+      <p>As a tactician, you have the following class features.</p>
+      <h4>Hit Points</h4>
+      <p><strong>Hit Dice:</strong> 1d10 per tactician Level.</p>
+      <p><strong>Hit Points at 1st Level:</strong> 10 + your Constitution modifier</p>
+      <p><strong>Hit Points at Higher Levels:</strong> 1d10 (or 6) + your Constitution modifier per tactician level after 1st</p>
+      <h5>PROFICIENCIES</h5>
+      <p><strong>Armor:</strong> Light and Medium armor</p>
+      <p><strong>Weapons:</strong> Simple and Martial Weapons</p>
+      <p><strong>Tools:</strong> Tinker's Tools and Demolitionist's Tools</p>
+      <p><strong>Saving Throw:</strong> Charisma, Dexterity</p>
+      <p><strong>Skills:</strong> Choose four from Acrobatics, Deception, History, Insight, Intimidation, Perception, Performance, Persuasion, Sleight of Hand, Stealth, and Survival</p>
+      <h5>EQUIPMENT</h5>
+      <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+      <ul>
+        <li>(a) a blaster pistol or (b) blaster rifle</li>
+        <li>(a) light exoskeleton or (b) verpine fiber mesh</li>
+        <li>A blaster pistol and 10 charge packs</li>
+      </ul>
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_SECOND_WIND" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_WEAPON_FORGING" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_FIGHTING_STYLE" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_COMBAT_EXPERTISE" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_ABILITYSCOREIMPROVEMENT_TACTICIAN" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_EXTRA_ATTACK" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_HIDEINPLAINSIGHT" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_LOW_PROFILE" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_FERAL_SENSES" />
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="hd">d10</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<select type="Proficiency" name="Tool Proficiency (Tactician)" supports="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_ITEM_DEMOLITIONIST_TOOLS|ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_ITEM_TINKERERS_TOOLS" number="1" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+			<select type="Proficiency" name="Skill Proficiency (Tactician)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" number="4" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SKILL_REPAIRS" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SKILL_SECURITY" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_SECOND_WIND" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_WEAPON_FORGING" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_FIGHTING_STYLE" level="2" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_COMBAT_EXPERTISE" level="3" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_ABILITYSCOREIMPROVEMENT_TACTICIAN" level="4" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_EXTRA_ATTACK" level="5" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_HIDEINPLAINSIGHT" level="9" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_LOW_PROFILE" level="14" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_FERAL_SENSES" level="18" />
+		</rules>
+	</element>
+
+	<element name="Second Wind" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_SECOND_WIND">
+		<description>
+			<p>You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your tactician level.</p>
+			<p claas="indent">Once you use this feature, you must finish a short or long rest before you can use it again.</p>
+		</description>
+		<sheet usage="Once/Short Rest" action="Bonus Action">
+			<description>You regain hit points equal to 1d10 + {{second-wind-tactician:count}}.</description>
+		</sheet>
+		<rules>
+			<stat name="second-wind-tactician:count" value="level:tactician" />
+		</rules>
+	</element>
+
+	<element name="Weapon Forging" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_WEAPON_FORGING">
+		<description>
+			<p>Starting at level 1, you can modify your blasters using your repair skill. You can spend a long rest to add one modification to a blaster weapon. You will use your Repair skill for this.</p>
+			<p claas="indent">You can add one modification to any blaster you wield. This number increases to 3 modifications at level 11.</p>
+		</description>
+		<sheet usage="Long Rest">
+			<description level ="2">You can add one modification to any blaster you wield.</description>
+			<description level ="11">You can add three modifications to any blaster you wield.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Weapon Mod (Tactician)" supports="Weapon Mod" number ="1" />
+			<select type="Class Feature" name="Weapon Mod (Tactician)" supports="Weapon Mod" number ="2" level="11" />
+		</rules>
+	</element>
+
+	<element name="Fighting Style" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_FIGHTING_STYLE">
+		<description>
+			<p>You adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again. You choose a second fighting style at level 10.</p>
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_FIGHTING_STYLE_CRACKSHOT" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_FIGHTING_STYLE_DEFENSIVEFIGHTINGSTYLE" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_FIGHTING_STYLE_GRENADIER" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_FIGHTING_STYLE_GUNSLINGER" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_FIGHTING_STYLE_PROTECTION" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_FIGHTING_STYLE_SUPRESSION" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_FIGHTING_STYLE_TWOWEAPONFIGHTING" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Fighting Style" supports="Fighting Style,Tactician" level="2"/>
+			<select type="Class Feature" name="Fighting Style" supports="Fighting Style,Tactician" level="10"/>
+		</rules>
+	</element>
+
+	<element name="Crack Shot (Fighting Style,Tactician)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_FIGHTING_STYLE_CRACKSHOT">
+		<supports>Fighting Style, Tactician</supports>
+		<description>
+			<p>You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
+		</description>
+		<sheet>
+			<description>You gain a +2 bonus to attack rolls you make with ranged weapons.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Defensive Fighting Style (Fighting Style,Tactician)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_FIGHTING_STYLE_DEFENSIVEFIGHTINGSTYLE">
+		<supports>Fighting Style, Tactician</supports>
+		<description>
+			<p>While you are wearing armor, you gain a +1 bonus to AC.</p>
+		</description>
+		<sheet>
+			<description>While you are wearing armor, you gain a +1 bonus to AC.</description>
+			</sheet>
+			<rules>
+				<stat name="ac:misc" value="1" bonus="fighting style" equipped="[armor:any]" alt="Defensive Fighting Style (Fighting Style,Tactician)" />
+			</rules>
+	</element>
+
+	<element name="Grenadier (Fighting Style,Tactician)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_FIGHTING_STYLE_GRENADIER">
+		<supports>Fighting Style, Tactician</supports>
+		<description>
+			<p>When you make an attack roll to throw a grenade, you get a +2 bonus to hit. Additionally, each die you roll for grenade damage deals 1 extra point of damage.</p>
+		</description>
+		<sheet>
+			<description>When you make an attack roll to throw a grenade, you get a +2 bonus to hit. Additionally, each die you roll for grenade damage deals 1 extra point of damage.</description>
+			</sheet>
+		<rules />
+	</element>
+
+	<element name="Gunslinger (Fighting Style,Tactician)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_FIGHTING_STYLE_GUNSLINGER">
+		<supports>Fighting Style, Tactician</supports>
+		<description>
+			<p>When you are wielding a pistol in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+		</description>
+		<sheet>
+			<description>When you are wielding a pistol in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</description>
+			</sheet>
+		<rules />
+	</element>
+
+	<element name="Protection (Fighting Style,Tactician)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_FIGHTING_STYLE_PROTECTION">
+		<supports>Fighting Style, Tactician</supports>
+		<description>
+			<p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a blaster.</p>
+		</description>
+		<sheet>
+			<description>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a blaster.</description>
+			</sheet>
+		<rules />
+	</element>
+
+	<element name="Supression (Fighting Style,Tactician)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_FIGHTING_STYLE_SUPRESSION">
+		<supports>Fighting Style, Tactician</supports>
+		<description>
+			<p>If you use all your attacks on your turn against one creature while you are behind any cover or prone, that creature has disadvantage on its next ranged attack roll.</p>
+		</description>
+		<sheet>
+			<description>If you use all your attacks on your turn against one creature while you are behind any cover or prone, that creature has disadvantage on its next ranged attack roll.</description>
+			</sheet>
+		<rules />
+	</element>
+
+	<element name="Two-Weapon Fighting (Fighting Style,Tactician)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_FIGHTING_STYLE_TWOWEAPONFIGHTING">
+		<supports>Fighting Style, Tactician</supports>
+		<description>
+			<p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack. This applies to dual-wielding pistols.</p>
+		</description>
+		<sheet>
+			<description>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack. This applies to dual-wielding pistols.</description>
+			</sheet>
+		<rules />
+	</element>
+
+	<element name="Combat Expertise" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_COMBAT_EXPERTISE">
+		<description>
+			<p>At level 3 you choose a combat expertise. Your options are Commander, Guerilla, and Marksman, which are detailed at the end of the class description.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Combat Expertise" supports="Combat Expertise" />
+		</rules>
+	</element>
+
+	<element name="Ability Score Improvement" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_ABILITYSCOREIMPROVEMENT_TACTICIAN">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 6th,8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Tactician 4)" supports="Improvement Option,Tactician,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Tactician 4)" supports="Improvement Option,Tactician,6" level="6" />
+			<select type="Class Feature" name="Improvement Option (Tactician 8)" supports="Improvement Option,Tactician,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Tactician 12)" supports="Improvement Option,Tactician,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Tactician 16)" supports="Improvement Option,Tactician,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Tactician 19)" supports="Improvement Option,Tactician,19" level="19" />
+		</rules>
+	</element>
+
+	<element name="Extra Attack" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_EXTRA_ATTACK">
+		<description>
+			<p>Starting at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. The number of attacks increases to three at 11th level in this class.</p>
+		</description>
+		<sheet>
+			<description level="5">You can attack twice, instead of once, whenever you take the Attack action on your turn</description>
+			<description level="11">You can attack three times, instead of once, whenever you take the Attack action on your turn</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Hide in Plain Sight" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_HIDEINPLAINSIGHT">
+		<description>
+			<p>Starting at 9th level, you can spend 1 minute creating camouflage for yourself. You must have access to fresh mud, dirt, plants, soot, and other naturally occurring materials with which to create your camouflage. Once you are camouflaged in this way, you can try to hide by pressing yourself up against a solid surface, such as a tree or wall, that is at least as tall and wide as you are. You gain a +10 bonus to dexterity (Stealth) checks as long as you remain there without moving or taking actions.</p>
+			<p class="indent">Once you move or take an action or a reaction your bonus goes down to +3, but you may use the hide action as a bonus action. You can only move half your total movement in one turn in order to keep this benefit.</p>
+		</description>
+		<sheet>
+			<description>You can spend 1 minute creating camouflage for yourself. You must have access to fresh mud, dirt, plants, soot, and other naturally occurring materials with which to create your camouflage. Once you are camouflaged in this way, you can try to hide by pressing yourself up against a solid surface, such as a tree or wall, that is at least as tall and wide as you are. You gain a +10 bonus to dexterity (Stealth) checks as long as you remain there without moving or taking actions. Once you move or take an action or a reaction your bonus goes down to +3, but you may use the hide action as a bonus action. You can only move half your total movement in one turn in order to keep this benefit.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Low Profile" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_LOW_PROFILE">
+		<description>
+			<p>Starting at 14th level, 1/2 cover counts as 3/4 cover for you.</p>
+		</description>
+		<sheet>
+			<description>Starting at 14th level, 1/2 cover counts as 3/4 cover for you.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Feral Senses" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_TACTICIAN_FERAL_SENSES">
+		<description>
+			<p>Starting at 18th level, you gain preternatural senses that help you fight creatures you can't see. When you attack a creature you can't see, your inability to see it doesn't impose disadvantage on your attack rolls against it. You are also aware of the location of any invisible creature within 30 feet of you, provided that the creature isn't hidden from you and you aren't blinded or deafened.</p>
+		</description>
+		<sheet>
+			<description>When you attack a creature you can't see, your inability to see it doesn't impose disadvantage on your attack rolls against it. You are also aware of the location of any invisible creature within 30 feet of you, provided that the creature isn't hidden from you and you aren't blinded or deafened.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Commander" type="Archetype" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_COMMANDER">
+		<supports>Combat Expertise</supports>
+		<requirements>ID_GMBINDER_SW5E_CLASS_TACTICIAN</requirements>
+		<description>
+			<p>Commanders on the battlefield are a wonder to behold. Leading their troops to victory, they are tactical geniuses and experts at supporting their troops. The sight of a Commander on the battlefield both raises allies spirits and demoralizes your enemies.</p>
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_COMMANDER_COMMANDERS_INFLUENCE" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_COMMANDER_STAND_AS_ONE" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_COMMANDER_COMMANDER_MODS" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_COMMANDER_COMMANDING_PRESENCE" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_COMMANDER_EXPERIENCED_COMMANDER" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_COMMANDER_MASTER_COMMANDER" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_COMMANDER_COMMANDERS_INFLUENCE" level="3" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_COMMANDER_STAND_AS_ONE" level="7" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_COMMANDER_COMMANDER_MODS" level="13" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_COMMANDER_COMMANDING_PRESENCE" level="15" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_COMMANDER_EXPERIENCED_COMMANDER" level="17" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_COMMANDER_MASTER_COMMANDER" level="20" />
+		</rules>
+	</element>
+
+	<element name="Commander's Influence" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_COMMANDER_COMMANDERS_INFLUENCE">
+		<description>
+			<p>Starting at 3rd level, you learn the Morale and Demoralize feature.</p>
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_COMMANDER_COMMANDERS_INFLUENCE_MORALE" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_COMMANDER_COMMANDERS_INFLUENCE_DEMORALIZE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_COMMANDER_COMMANDERS_INFLUENCE_MORALE" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_COMMANDER_COMMANDERS_INFLUENCE_DEMORALIZE" />
+		</rules>
+	</element>
+<!--Morale is invisible above demoralize on the .pdf in the tactician section. You can still copy and paste-->
+	<element name="Morale" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_COMMANDER_COMMANDERS_INFLUENCE_MORALE">
+		<description>
+			<p class="indent"><strong><i>Morale.</i></strong> As an action, you can boost your allies morale. Choose a number of allies that you can see, and can see or hear you, up to your Charisma modifier (with a minimum of 1). Those allies gain a +1 bonus to their attacks and saving throws. This lasts for 1 minute or until you use this feature again. Your allies lose this bonus if you cannot see them and they cannot see or hear you, or if you become Incapacitated. You can use this feature a number of times equal to your Charisma modifier, regaining any expended uses when you finish a long rest. The bonus increases to a +2 bonus at 7th level, and to a +3 bonus at 13th level.</p>
+		</description>
+		<sheet usage="{{commanders-influence-morale:count}}/Long Rest" action="Action" level="3">
+			<description level="3"><strong><i>Morale.</i></strong>Choose a number of allies that you can see, and can see or hear you, up to your {{commanders-influence-morale:ally-count}}. Those allies gain a +1 bonus to their attacks and saving throws. This lasts for 1 minute or until you use this feature again. Your allies lose this bonus if you cannot see them and they cannot see or hear you, or if you become Incapacitated.</description>
+			<description level="7"><strong><i>Morale.</i></strong>Choose a number of allies that you can see, and can see or hear you, up to your {{commanders-influence-morale:ally-count}}. Those allies gain a +2 bonus to their attacks and saving throws. This lasts for 1 minute or until you use this feature again. Your allies lose this bonus if you cannot see them and they cannot see or hear you, or if you become Incapacitated.</description>
+			<description level="13"><strong><i>Morale.</i></strong>Choose a number of allies that you can see, and can see or hear you, up to your {{commanders-influence-morale:ally-count}}. Those allies gain a +3 bonus to their attacks and saving throws. This lasts for 1 minute or until you use this feature again. Your allies lose this bonus if you cannot see them and they cannot see or hear you, or if you become Incapacitated.</description>
+			<description level="15"><strong><i>Morale.</i></strong>Choose a number of allies that you can see, and can see or hear you, up to your {{commanders-influence-morale:ally-count}}. Those allies gain a +3 bonus to their attacks and saving throws. This lasts for 3 hours or until you use this feature again.</description>
+			<description level="20"><strong><i>Morale.</i></strong>Choose a number of allies that you can see, and can see or hear you, up to your {{commanders-influence-morale:ally-count}}. Those allies gain a +3 bonus to their damage, attacks, and saving throws. This lasts for 3 hours or until you use this feature again.</description>
+		</sheet>
+		<rules>
+			<stat name="commanders-influence-morale:ally-count" value="charisma:modifier" />
+			<stat name="commanders-influence-morale:count" value="charisma:modifier" />
+		</rules>
+	</element>
+
+	<element name="Demoralize" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_COMMANDER_COMMANDERS_INFLUENCE_DEMORALIZE">
+		<description>
+			<p class="indent"><strong><i>Demoralize.</i></strong>As an action, you can demoralize the opposition. Choose a number of hostile creatures that you can see, and can see or hear you, up to your Charisma modifier (with a minimum of 1). Those creatures make a Charisma saving throw (DC = 8 + your proficiency bonus + your Charisma Modifier). On a failed save, the creatures have a -1 penalty to attacks and saving throws. This lasts for 1 minute or until you use this feature again. A creature automatically succeeds on the saving throw if it is immune to being frightened. On a successful save, a creature becomes immune to the effects of demoralize for 24 hours. The hostile creatures lose this penalty if you cannot see them and they cannot see or hear you, or if you become Incapacitated. You can use this feature a number of times equal to your Charisma modifier, regaining any expended uses when you finish a long rest. This penalty increases to a -2 penalty at 7th level, and to a -3 penalty at 13th level.</p>
+		</description>
+		<sheet usage="{{commanders-influence-demoralize:count}}/Long Rest" action="Action" level="3">
+			<description level="3"><strong><i>Demoralize.</i></strong>Choose a number of hostile creatures that you can see, and can see or hear you, up to {{commanders-influence-demoralize:enemy-count}}. Those creatures make a Charisma saving throw (DC {{commanders-influence-demoralize:save-dc}}). On a failed save, the creatures have a -1 penalty to attacks and saving throws. This lasts for 1 minute or until you use this feature again. A creature automatically succeeds on the saving throw if it is immune to being frightened. On a successful save, a creature becomes immune to the effects of demoralize for 24 hours. The hostile creatures lose this penalty if you cannot see them and they cannot see or hear you, or if you become Incapacitated.</description>
+			<description level="7"><strong><i>Demoralize.</i></strong>Choose a number of hostile creatures that you can see, and can see or hear you, up to {{commanders-influence-demoralize:enemy-count}}. Those creatures make a Charisma saving throw (DC {{commanders-influence-demoralize:save-dc}}). On a failed save, the creatures have a -2 penalty to attacks and saving throws. This lasts for 1 minute or until you use this feature again. A creature automatically succeeds on the saving throw if it is immune to being frightened. On a successful save, a creature becomes immune to the effects of demoralize for 24 hours. The hostile creatures lose this penalty if you cannot see them and they cannot see or hear you, or if you become Incapacitated.</description>
+			<description level="13"><strong><i>Demoralize.</i></strong>Choose a number of hostile creatures that you can see, and can see or hear you, up to {{commanders-influence-demoralize:enemy-count}}. Those creatures make a Charisma saving throw (DC {{commanders-influence-demoralize:save-dc}}). On a failed save, the creatures have a -3 penalty to attacks and saving throws. This lasts for 1 minute or until you use this feature again. A creature automatically succeeds on the saving throw if it is immune to being frightened. On a successful save, a creature becomes immune to the effects of demoralize for 24 hours. The hostile creatures lose this penalty if you cannot see them and they cannot see or hear you, or if you become Incapacitated.</description>
+			<description level="20"><strong><i>Demoralize.</i></strong>Choose a number of hostile creatures that you can see, and can see or hear you, up to {{commanders-influence-demoralize:enemy-count}}. Those creatures make a Charisma saving throw (DC {{commanders-influence-demoralize:save-dc}}). On a failed save, the creatures have a -3 penalty to damage, attacks, and saving throws. This lasts for 1 minute or until you use this feature again. A creature automatically succeeds on the saving throw if it is immune to being frightened. On a successful save, a creature becomes immune to the effects of demoralize for 24 hours. The hostile creatures lose this penalty if you cannot see them and they cannot see or hear you, or if you become Incapacitated.</description>
+		</sheet>
+		<rules>
+			<stat name="commanders-influence-demoralize:enemy-count" value="charisma:modifier" />
+			<stat name="commanders-influence-demoralize:count" value="charisma:modifier" />
+			<stat name="commanders-influence-demoralize:save-dc" value="8" />
+			<stat name="commanders-influence-demoralize:save-dc" value="charisma:modifier" />
+			<stat name="commanders-influence-demoralize:save-dc" value="proficiency" />
+			<stat name="calculation" value="commanders-influence-demoralize:save-dc" bonus="calculation" />
+		</rules>
+	</element>
+
+	<element name="Stand as One" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_COMMANDER_STAND_AS_ONE">
+		<description>
+			<p>Starting at 7th level, when an ally under the effects of your Morale feature hits a hostile creature with an attack, the ally may choose to deal an additional 1d6 psychic damage, or choose to heal themselves 1d6 HP instead. Allies can deal this extra damage, or heal themselves only once per turn. HP cannot be restored in this way while out of combat.</p>
+		</description>
+		<sheet>
+			<description>When an ally under the effects of your Morale feature hits a hostile creature with an attack, the ally may choose to deal an additional 1d6 psychic damage, or choose to heal themselves 1d6 HP instead. Allies can deal this extra damage, or heal themselves only once per turn. HP cannot be restored in this way while out of combat.</description>
+		</sheet>
+		<rules />
+	</element>
+<!--Tranquilizer changed to stun because unlisted-->
+	<element name="Commander Mods" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_COMMANDER_COMMANDER_MODS">
+		<description>
+			<p>Starting at 13th level, you gain access to the targeting laser mod and the stun rounds mod.</p>
+		</description>
+		<sheet />
+		<rules>
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MODS_TARGETING_LASER" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MODS_STUN_ROUNDS" />
+		</rules>
+	</element>
+<!--Next 3 elements are set in the morale and demoralize elements and may not show up on sheet-->
+	<element name="Commanding Presence" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_COMMANDER_COMMANDING_PRESENCE">
+		<description>
+			<p>Starting at 15th level, you have advantage on all saving throws, and ranged attack rolls with a blaster if you have an ally under the effect of your Morale feature. Additionally, allies under the effect of Commander's Influence gain the Morale bonus for 3 hours, and do not lose the bonus when they are away from you.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on all saving throws, and ranged attack rolls with a blaster if you have an ally under the effect of your Morale feature.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Experienced Commander" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_COMMANDER_EXPERIENCED_COMMANDER">
+		<description>
+			<p>Beginning at level 17, you can use your Commander's Influence feature as a bonus action instead of an action.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>you can use your Commander's Influence feature as a bonus action instead of an action.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Master Commander" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_COMMANDER_MASTER_COMMANDER">
+		<description>
+			<p>Starting at 20th level, your Morale and Demoralize bonuses and penalties count for damage as well as attacks and saving throws.</p>
+		</description>
+		<sheet display="false" />
+		<rules />
+	</element>
+
+	<element name="Guerilla" type="Archetype" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_GUERILLA">
+		<supports>Combat Expertise</supports>
+		<description>
+			<p>Guerilla specialize in ambushes, sabotage, raids, and hit-and-run tactics. They are used to being one of a few in their fighting unit, and are generally not concerned when going up against stronger forces.</p>
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUERILLA_FROM_THE_SHADOWS" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUERILLA_ESCAPE_THE_HORDE" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUERILLA_EXPLOSIVE_FEINT" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUERILLA_VOLLEY" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUERILLA_OPPORTUNIST" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUERILLA_MASTER_RIFLEMAN" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUERILLA_FROM_THE_SHADOWS" level="3" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUERILLA_ESCAPE_THE_HORDE" level="7" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUERILLA_EXPLOSIVE_FEINT" level="13" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUERILLA_VOLLEY" level="15" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUERILLA_OPPORTUNIST" level="17" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUERILLA_MASTER_RIFLEMAN" level="20" />
+		</rules>
+	</element>
+
+	<element name="From the Shadows" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUERILLA_FROM_THE_SHADOWS">
+		<description>
+			<p>Starting at level 3, you can take the Dash, Disengage, and Hide actions as a bonus action. When making a ranged attack while hidden, you may roll a Dexterity (Stealth) check and if you are still not seen you do not have to take the Hide action again.</p>
+			<p class="indent">Additionally, ranged attack rolls you make do not have disadvantage when an enemy is within 5 feet of you.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>you can take the Dash, Disengage, and Hide actions as a bonus action. When making a ranged attack while hidden, you may roll a Dexterity (Stealth) check and if you are still not seen you do not have to take the Hide action again. Additionally, ranged attack rolls you make do not have disadvantage when an enemy is within 5 feet of you.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Escape the Horde" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUERILLA_ESCAPE_THE_HORDE">
+		<description>
+			<p>At 7th level, your instinct to retreat allows you to make quick getaways. Opportunity attacks against you are made with disadvantage.</p>
+		</description>
+		<sheet>
+			<description>Opportunity attacks against you are made with disadvantage.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Explosive Feint" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUERILLA_EXPLOSIVE_FEINT">
+		<description>
+			<p>Beginning at level 13, when there is at least one creature within 5 feet of you, you may use your bonus action to attach a grenade to an enemy within 5 feet of you. Make a Sleight of Hand check contested against the target's Perception check. If you win, the grenade is attached to the target and the target automatically fails the saving throw to avoid the grenade. If you lose the contest, the grenade is dropped at your feet. Regardless, the grenade detonates at the end of your turn.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>When there is at least one creature within 5 feet of you, you may use your bonus action to attach a grenade to an enemy within 5 feet of you. Make a Sleight of Hand check contested against the target's Perception check. If you win, the grenade is attached to the target and the target automatically fails the saving throw to avoid the grenade. If you lose the contest, the grenade is dropped at your feet. Regardless, the grenade detonates at the end of your turn.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Volley" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUERILLA_VOLLEY">
+		<description>
+			<p>Starting at level 15, you can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon’s range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target. You receive Extra Attack as though this were one attack. Also, this action cannot be taken as an Extra Attack.</p>
+		</description>
+		<sheet action="1 Action">
+			<description>Make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon’s range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target. You receive Extra Attack as though this were one attack. Also, this action cannot be taken as an Extra Attack.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Oppotunist" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUERILLA_OPPORTUNIST">
+		<description>
+			<p>At 17th level, you can exploit a creature's momentary distraction when it is hit by an attack. Whenever a creature within 15 feet of you that you can see is hit by an attack made by a creature other than you, you can use your reaction to make a ranged weapon attack against that creature.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>Whenever a creature within 15 feet of you that you can see is hit by an attack made by a creature other than you, make a ranged weapon attack against that creature.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Master Rifleman" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_GUERILLA_MASTER_RIFLEMAN">
+		<description>
+			<p>Beginning at 20th level, your mastery of the blaster lets you turn failure into success in combat. If you miss with an attack roll, you can choose to roll it again with advantage. Once you have activated this feature, it applies for the next minute. This can be used once per short or long rest.</p>
+		</description>
+		<sheet usage="Once/Short Rest">
+			<description>If you miss with an attack roll, you can choose to roll it again with advantage. Once you have activated this feature, it applies for the next minute.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Marksman" type="Archetype" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_MARKSMAN">
+		<supports>Combat Expertise</supports>
+		<requirements>ID_GMBINDER_SW5E_CLASS_TACTICIAN</requirements>
+		<description>
+			<p>Marksmen are the guardians of the battlefield. Constantly watching over their allies, they prefer to sit back and provide assistance from a distance while also watching over the battlefield from a safe position.</p>
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MARKSMAN_SNIPERS_MARK" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MARKSMAN_MARKSMAN_MODS" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MARKSMAN_INTERRUPTING_SHOT" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MARKSMAN_ENHANCED_TIBANA_CARTRIDGES" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MARKSMAN_MASTER_MARKSMAN" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MARKSMAN_LEADING_VOLLEY" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MARKSMAN_SNIPERS_MARK" level="3" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MARKSMAN_MARKSMAN_MODS" level="7" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MARKSMAN_INTERRUPTING_SHOT" level="13" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MARKSMAN_ENHANCED_TIBANA_CARTRIDGES" level="15" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MARKSMAN_MASTER_MARKSMAN" level="17" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MARKSMAN_LEADING_VOLLEY" level="20" />
+		</rules>
+	</element>
+
+	<element name="Sniper's Mark" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MARKSMAN_SNIPERS_MARK">
+		<description>
+			<p>Starting at 3rd level, as a bonus action, you can fire a small tracking device onto a creature that you can see. Once they are marked in this way you have advantage on all attack rolls with blasters against that creature and advantage on tracking that target. This lasts for 1 hour, or until the creature has 0 hit points. You can use this feature a number of times equal to your Charisma modifier (minimum of once). You regain any expended uses when you finish a long rest.</p>
+			<p class="indent">At level 7 the duration extends to 3 hours, 6 hours at level 11, and 12 at level 15.</p>
+		</description>
+		<sheet usage="{{snipers-mark:count}}/Long Rest" action="Bonus Action">
+			<description level="3">You can fire a small tracking device onto a creature that you can see. Once they are marked in this way you have advantage on all attack rolls with blasters against that creature and advantage on tracking that target. This lasts for 1 hour, or until the creature has 0 hit points</description>
+			<description level="7">You can fire a small tracking device onto a creature that you can see. Once they are marked in this way you have advantage on all attack rolls with blasters against that creature and advantage on tracking that target. This lasts for 3 hours, or until the creature has 0 hit points</description>
+			<description level="11">You can fire a small tracking device onto a creature that you can see. Once they are marked in this way you have advantage on all attack rolls with blasters against that creature and advantage on tracking that target. This lasts for 6 hours, or until the creature has 0 hit points</description>
+			<description level="15">You can fire a small tracking device onto a creature that you can see. Once they are marked in this way you have advantage on all attack rolls with blasters against that creature and advantage on tracking that target. This lasts for 12 hours, or until the creature has 0 hit points</description>
+		</sheet>
+		<rules>
+			<stat name="snipers-mark:count" value="charisma:modifier" />
+			<stat name="snipers-mark:count" value="charisma:modifier" level="17"/>
+		</rules>
+	</element>
+<!--Tranquilizer changed to stun because unlisted-->
+	<element name="Marksman Mods" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MARKSMAN_MARKSMAN_MODS">
+		<description>
+			<p>Starting at 13th level, you gain access to the target finder scope mod and the tranquilizer rounds mod.</p>
+		</description>
+		<sheet />
+		<rules>
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MODS_TARGET_FINDER_SCOPE" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MODS_STUN_ROUNDS" />
+		</rules>
+	</element>
+
+	<element name="Interrupting Shots" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MARKSMAN_INTERRUPTING_SHOT">
+		<description>
+			<p>Additionally at 13th level, when a creature makes an attack against you, you may use your reaction to make a ranged weapon attack against the creature. This attack happens before the creature rolls to attack. If your attack hits the creature, the creature has disadvantage on the attack roll made against you.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>when a creature makes an attack against you, make a ranged weapon attack against the creature. This attack happens before the creature rolls to attack. If your attack hits the creature, the creature has disadvantage on the attack roll made against you.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Enhanced Tibana Cartridges" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MARKSMAN_ENHANCED_TIBANA_CARTRIDGES">
+		<description>
+			<p>Starting at 15th level, your blasters deal additional weapon damage equal to your Charisma modifier (minimum of 0), and are considered magical for purposes of overcoming resistances.</p>
+		</description>
+		<sheet>
+			<description>Your blasters deal additional weapon damage equal to {{enhanced-tibana-cartridges:count}}, and are considered magical for purposes of overcoming resistances.</description>
+		</sheet>
+		<rules>
+			<stat name="enhanced-tibana-cartridges:count" value="charisma:modifier" />
+		</rules>
+	</element>
+<!-- put in snipers mark rules-->
+	<element name="Master Marksman" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MARKSMAN_MASTER_MARKSMAN">
+		<description>
+			<p>Starting at 17th level, your Sniper's Mark feature becomes second nature to you. You can now use it a number of times equal to two times your Charisma modifier, and you regain any expended expended uses when you finish a short or long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules />
+	</element>
+
+	<element name="Leading Volley" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_MARKSMAN_LEADING_VOLLEY">
+		<description>
+			<p>Starting at 20th level, as a bonus action, you may make up to three ranged weapon attacks with a blaster. Each shot requires ammunition, and scores a critical hit on a roll of 18-20. You cannot benefit from any other feature or spell on these attacks. Once you use this feature you cannot use it again until you take a short or long rest.</p>
+		</description>
+		<sheet usage="Once/Short Rest" action="Reaction">
+			<description>You may make up to three ranged weapon attacks with a blaster. Each shot requires ammunition, and scores a critical hit on a roll of 18-20. You cannot benefit from any other feature or spell on these attacks.</description>
+		</sheet>
+		<rules />
+	</element>
+
+</elements>

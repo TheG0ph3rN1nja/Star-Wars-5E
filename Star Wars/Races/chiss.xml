@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Chiss</name>
+		<description>GM Binder</description>
+		<author />
+		<update version="0.0.1">
+			<file name="chiss.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Chiss" type="Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACE_CHISS">
+		<description>
+			<p>The Chiss were a tall, blue-skinned Near-Human civilization from the planet Csilla in the Unknown Regions, best known to most Humans as the people to which Grand Admiral Thrawn belonged. Due to the remote position of their home territory in the Chiss Ascendancy they remained largely an enigma to the rest of the galaxy, and contact with outsiders was limited even in the days of the Galactic Alliance.</p>
+      <h4>Highly Evolved</h4>
+      <p>The origins of the Chiss were largely unknown, even to the Chiss themselves, though some scientists thought that they were the result of a long forgotten Human colony that had been lost to time. This was the leading theory held by not only Chiss historians but scientists within the New Republic who held the view that this colony predated the formation of the Old Republic. A report by the University of Sanbra indicated that very little was known of Chiss history due to their own records being carefully guarded on their homeworld. However, scattered reports from many intrepid scholars suggested the Chiss were a forgotten colonization attempt; this theory was mostly based on their resemblance to Humanity. Genetic analysis later confirmed that the Chiss were indeed an offshoot of the Human species' earliest attempts at colonization. It was believed that sometime before 27,000 BBY, a lost colony of Humans settled in the Unknown Regions on the planet Csilla.</p>
+      <h4>Chiss Names</h4>
+      <p class="indent"><strong><i>Chiss Names:</i></strong> Chaf'orm'bintrano, Fehlaaur'aitel'loro, Kthira'shi'ktarloo, Kung'urama'nuruodo, Mitth'raw'nuruodo, Prard'ras'kleoni</p>
+			<h4>Bothan Traits</h4>
+			<p>Your Chiss character has many different attributes that might be useful in the field:</p>
+			<p class="indent"><strong><i>Ability Score Increase.</i></strong> Increase three ability scores by one, but they cannot be stacked.</p>
+      <p class="indent"><strong><i>Age.</i></strong> Chiss mature and age at the same rate as humans.</p>
+			<p class="indent"><strong><i>Alignment.</i></strong> Chiss generally align most with neutral, but tend to be morally good.</p>
+			<p class="indent"><strong><i>Size.</i></strong> Chiss stand around 4-5 feet tall and tend to be no more than 200 pounds due to the nature of their home planet of Csilla. Your size is Medium.</p>
+			<p class="indent"><strong><i>Speed.</i></strong> Your base movement speed is 30 feet.</p>
+			<p class="indent"><strong><i>Proficiency.</i></strong> Survival and Nature</p>
+      <p class="indent"><strong><i>Darkvision</i></strong> 60 ft.</p>
+			<p class="indent"><strong><i>Languages.</i></strong> Cheunh, Basic.</p>
+      <p class="indent"><strong><i>Acclimated.</i></strong> Your home planet of Csilla is a frozen wasteland. You do not take any kind of penalties due to cold weather, and you have resistance to cold damage.</p>
+      <p class="indent"><strong><i>Chiss Weapons.</i></strong> You are proficient with the Charric class of weapons. They are Chiss weapons, and can be found on Chiss controlled/colonized planets. Your character starts off with a Charric Carbine.</p>
+		</description>
+		<sheet display="false" />
+			<setters>
+        <set name="names" type="custom">Chaf'orm'bintrano, Fehlaaur'aitel'loro, Kthira'shi'ktarloo, Kung'urama'nuruodo, Mitth'raw'nuruodo, Prard'ras'kleoni</set>
+        <set name="names-format">{{custom}}</set>
+      </setters>
+			<rules>
+        <select type="Racial Trait" name="Ability Score Increase (Chiss)" supports="Chiss" number="3" />
+				<grant type="Size" id="ID_SIZE_MEDIUM" />
+				<stat name="Speed" value="30" bonus="base" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+        <grant type="Vision" name="ID_VISION_DARKVISION" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_CHISS_ACCLIMATED" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_CHISS_CHISS_WEAPONS" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_CHEUNH" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_BASIC" />
+			</rules>
+    </element>
+
+    <element name="Acclimated" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_CHISS_ACCLIMATED">
+			<description>
+				<p>Your home planet of Csilla is a frozen wasteland. You do not take any kind of penalties due to cold weather, and you have resistance to cold damage.</p>
+			</description>
+			<sheet>
+				<description>
+          <p>You do not take any kind of penalties due to cold weather, and you have resistance to cold damage.</p>
+        </description>
+			</sheet>
+			<rules />
+		</element>
+
+    <element name="Chiss Weapons" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_CHISS_CHISS_WEAPONS">
+			<description>
+				<p>You are proficient with the Charric class of weapons. They are Chiss weapons, and can be found on Chiss controlled/colonized planets. Your character starts off with a Charric Carbine.</p>
+			</description>
+			<sheet>
+				<description>
+          <p>You are proficient with the Charric class of weapons.</p>
+        </description>
+			</sheet>
+			<rules>
+        <grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_CHARRIC_PISTOL" />
+				<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_CHARRIC_CARBINE" />
+				<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_CHARRIC_RIFLE" />
+				<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_CHARRIC_SNIPER" />
+      </rules>
+		</element>
+
+    <element name="Chiss Weapons Proficiency" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPONS_CHISS_WEAPONS">
+			<description>
+				<p>You are proficient with the Charric class of weapons.</p>
+			</description>
+			<sheet display="false">
+				<description>
+          <p>You are proficient with the Charric class of weapons.</p>
+        </description>
+			</sheet>
+			<rules />
+		</element>
+
+		<element name="Req Temp Fix" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_REQTEMPFIX" />
+  <append id="ID_GMBINDER_SW5E_RACE_CHISS">
+    <rules>
+      <grant type="Grants" id="ID_INTERNAL_GRANTS_REQTEMPFIX"/>
+    </rules>
+  </append>
+
+  <element name="Ability Score Increase (Strength)" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACE_CHISS_STRENGTH">
+    <compendium display="false" />
+    <supports>Chiss</supports>
+    <description>
+      <p>Your Strength score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="strength" value="1" alt="Chiss" />
+    </rules>
+  </element>
+  <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACE_CHISS_DEXTERITY">
+    <compendium display="false" />
+    <supports>Chiss</supports>
+    <description>
+      <p>Your Dexterity score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="dexterity" value="1" alt="Chiss" />
+    </rules>
+  </element>
+  <element name="Ability Score Increase (Constitution)" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACE_CHISS_CONSTITUTION">
+    <compendium display="false" />
+    <supports>Chiss</supports>
+    <description>
+      <p>Your Constitution score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="constitution" value="1" alt="Chiss" />
+    </rules>
+  </element>
+  <element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACE_CHISS_INTELLIGENCE">
+    <compendium display="false" />
+    <supports>Chiss</supports>
+    <description>
+      <p>Your Intelligence score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="intelligence" value="1" alt="Chiss" />
+    </rules>
+  </element>
+  <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACE_CHISS_WISDOM">
+    <compendium display="false" />
+    <supports>Chiss</supports>
+    <description>
+      <p>Your Wisdom score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="wisdom" value="1" alt="Chiss" />
+    </rules>
+  </element>
+  <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACE_CHISS_CHARISMA">
+    <compendium display="false" />
+    <supports>Chiss</supports>
+    <description>
+      <p>Your Charisma score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="charisma" value="1" alt="Chiss" />
+    </rules>
+  </element>
+
+ </elements>

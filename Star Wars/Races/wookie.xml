@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Wookie</name>
+		<description>GM Binder</description>
+		<author />
+		<update version="0.0.1">
+			<file name="wookie.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Wookie" type="Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACE_WOOKIE">
+		<description>
+			<h4>Wookie Traits</h4>
+			<p>Your Wookie character has many different attributes that might be useful in the field:</p>
+			<p class="indent"><strong><i>Ability Score Increase.</i></strong> Constitution +2, Strength +2.</p>
+      <p class="indent"><strong><i>Age.</i></strong> More than 400 years.</p>
+			<p class="indent"><strong><i>Alignment.</i></strong> Good.</p>
+			<p class="indent"><strong><i>Size.</i></strong> Medium</p>
+			<p class="indent"><strong><i>Speed.</i></strong> 35ft.</p>
+      <p class="indent"><strong><i>Ryyk Warrior.</i></strong> Wookiees can dual-wield Ryyk blades, and additionally their Strength modifier can be added to the second attack roll when dual-wielding Ryyk blades.</p>
+      <p class="indent"><strong><i>Proficiency.</i></strong> Athletics.</p>
+      <p class="indent"><strong><i>Weapon Proficiency.</i></strong> Bowcaster, Ryyk Blades.</p>
+      <p class="indent"><strong><i>Languages.</i></strong> Basic, Shyriiwook.</p>
+		</description>
+		<sheet display="false" />
+			<setters />
+			<rules>
+				<stat name="Strength" value="2" />
+				<stat name="Constitution" value="1" />
+				<grant type="Size" id="ID_SIZE_MEDIUM" />
+				<stat name="Speed" value="35" bonus="base" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+        <grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_RYYK_BLADE" />
+        <grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_BOWCASTER" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_WOOKIE_RYYK_WARRIOR" />
+        <grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_SHYRIIWOOK" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_BASIC" />
+			</rules>
+    </element>
+
+    <element name="Ryyk Warrior" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_WOOKIE_RYYK_WARRIOR">
+			<description>
+				<p>Wookiees can dual-wield Ryyk blades, and additionally their Strength modifier can be added to the second attack roll when dual-wielding Ryyk blades.</p>
+			</description>
+			<sheet>
+				<description>
+          <p>You can dual-wield Ryyk blades, and additionally your Strength modifier can be added to the second attack roll when dual-wielding Ryyk blades.</p>
+        </description>
+			</sheet>
+			<rules />
+		</element>
+
+  </elements>

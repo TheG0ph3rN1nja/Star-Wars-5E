@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Majestic Talents</name>
+		<description>GM Binder</description>
+		<update version="0.0.1">
+			<file name="majestic-talents.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Majestic Talents" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MAJESTIC_TALENTS">
+		<description>
+			<p>Majestic talents are the features that make a senator unique. These abilities make them stand out from each other, make them branded with diversity, and allow them to express in their own unique ways how they are a senator. If a majestic talent has a prerequisite, you must meet them. At each senator level, you may lose one talent and replace it with another as long as you meet the majestic talent's prerequisites.</p>
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MAJESTIC_TALENTS_ALLEYESONME" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MAJESTIC_TALENTS_ANIMAL_COMPANION" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MAJESTIC_TALENTS_AURAOFPROTECTION" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MAJESTIC_TALENTS_BERATING_WORDS" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MAJESTIC_TALENTS_CHARISMATIC_INSTRUCTIONS" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MAJESTIC_TALENTS_DESTROY_MORALE" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MAJESTIC_TALENTS_DO_SOMETHING" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MAJESTIC_TALENTS_EXERTTHYSELF" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MAJESTIC_TALENTS_INFLUENTIAL" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MAJESTIC_TALENTS_MAJESTIC_HEALING" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MAJESTIC_TALENTS_MY_HERO" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MAJESTIC_TALENTS_SENATORIAL_BOUNTY" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MAJESTIC_TALENTS_SENATOR_SHIELD" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MAJESTIC_TALENTS_YOUKNOWME" />
+		</description>
+		<sheet display="false" />
+		<rules />
+	</element>
+
+	<element name="All Eyes On Me" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MAJESTIC_TALENTS_ALLEYESONME">
+		<supports>Majestic Talent</supports>
+		<description>
+			<p>You can use your action to force all eyes on you by unveiling yourself or doing some dramatic action, such as singing or playing an instrument. All creatures that can see you within 30 feet must make a Wisdom saving throw or be charmed by you until the beginning of your next turn. While they are charmed they are incredibly distracted. Attacks against them have advantage and their attacks against others have disadvantage. The use of this talent costs 1 majesty point per creature that fails their saving throw and you choose to have it be distracted by you as you focus your majesty on it.</p>
+		</description>
+		<sheet action="1 Action">
+			<description>All creatures that can see you within 30 feet must make a Wisdom saving throw or be charmed by you until the beginning of your next turn. While they are charmed they are incredibly distracted. Attacks against them have advantage and their attacks against others have disadvantage. The use of this talent costs 1 majesty point per creature that fails their saving throw and you choose to have it be distracted by you as you focus your majesty on it.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<!--WIll be added after multiple companion sheets are supported
+	<element name="Animal Companion" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MAJESTIC_TALENTS_ANIMAL_COMPANION">
+		<supports>Majestic Talent</supports>
+		<description>
+			<p>You gain an animal companion that you consider your best friend and loyal ally. Choose a beast that is no larger than Medium and that has a challenge rating of 1/4 or lower. Add your proficiency bonus to the beast's AC, attack rolls, and damage rolls, as well as to any saving throws and skills it is proficient in. Its hit point maximum equals its normal maximum or four times your senator level, whichever is higher.</p>
+			<p class="indent">The beast obeys your commands as best as it can. It takes its turn on your initiative, though it doesn't take an action unless you command it to. On your turn, you can verbally command the beast where to move (no action required by you). You can use your action or a majesty point, to verbally command it to take the Attack, Dash, Disengage, Dodge, or Help action. Once you have the Extra Attack feature (if you ever do), you can make one weapon attack yourself when you command the beast to take the Attack action.</p>
+			<p class="indent">If the beast dies, you can obtain another one by spending 8 hours bonding with another beast that isn't hostile to you, either the same type of beast as before or a different one.<p>
+		</description>
+		<sheet>
+			<description>The beast obeys your commands as best as it can. It takes its turn on your initiative, though it doesn’t take an action unless you command it to. On your turn, you can verbally command the beast where to move. You can use your action to verbally command it to take the Attack, Dash, Disengage, Dodge, or Help action. Once you have the Extra Attack feature, you can make one weapon attack yourself when you command the beast to take the Attack action.
+			While traveling through your favored terrain with only the beast, you can move stealthily at a normal pace.
+			If the beast dies, you can obtain another one by spending 8 hours magically bonding with another beast that isn’t hostile to you, either the same type of beast as before or a different one.</description>
+		</sheet>
+		<rules>
+			<select type="Companion" name="Senator's Companion" supports="Beast,(Tiny||Small||Medium),(0||1/8||1/4)" />
+			<stat name="companion:ac" value="proficiency" />
+			<stat name="companion:attack" value="proficiency" />
+			<stat name="companion:damage" value="proficiency" />
+			<stat name="additional:hp:max" value="level:senator" />
+			<stat name="additional:hp:max" value="level:senator" />
+			<stat name="additional:hp:max" value="level:senator" />
+			<stat name="additional:hp:max" value="level:senator" />
+			<stat name="companion:hp:max" value="additional:hp:max" bonus="base" />
+		</rules>
+	</element>-->
+
+	<element name="Aura of Protection" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MAJESTIC_TALENTS_AURAOFPROTECTION">
+		<supports>Majestic Talent</supports>
+		<description>
+			<p>You are constantly shrouded by an aura of protection. You are always under the effects of a protection from evil and good spell.</p>
+			<p class="indent">At 5th level, as an action and at the expense of two majesty points, you may touch a creature and shroud it in your majesty. It gains the effects of a protecttion from evil and good spell for 8 hours.</p>
+		</description>
+		<sheet action="1 Action">
+			<description>You are constantly shrouded by an aura of protection. You are always under the effects of a protection from evil and good spell. At the expense of two majesty points, you may touch a creature and shroud it in your majesty. It gains the effects of a protecttion from evil and good spell for 8 hours.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Berating Words" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MAJESTIC_TALENTS_BERATING_WORDS">
+		<supports>Majestic Talent</supports>
+		<description>
+			<p>You realize your inspiring presence can have the reverse effect on a foe. At the expense of one majesty point and as a reaction to you or your ally being targetted by a weapon attack by an enemy within 60 feet of you, you can berate the foe and cause them to miss. As a use of one of your Senator Inspiration die, you may add that result to you or your allies armor class against the creature's attack. You must decide to use this feature before the target rolls their attack, but once they've targetted you or an ally.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>At the expense of one majesty point, you or an ally being targetted by a weapon attack by an enemy within 60 feet of you, you can berate the foe and cause them to miss. As a use of one of your Senator Inspiration die, you may add that result to you or your allies armor class against the creature's attack. You must decide to use this feature before the target rolls their attack, but once they've targetted you or an ally.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Charismatic Instructions" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MAJESTIC_TALENTS_CHARISMATIC_INSTRUCTIONS">
+		<supports>Majestic Talent</supports>
+		<description>
+			<p>You may utilize your sheer presence to request, order, demand, or persuade others to do something. As an action and at the expense of two majesty points, a target creature acts as though you casted the suggestion spell on them. You may expend additional majesty points using this ability, as though you increased its spell slot for greater effect, by one majesty point per spell slot beyond 2nd, as per the spell's description.</p>
+		</description>
+		<sheet action="1 Action">
+			<description>At the expense of two majesty points, a target creature acts as though you casted the suggestion spell on them. You may expend additional majesty points using this ability, as though you increased its spell slot for greater effect, by one majesty point per spell slot beyond 2nd, as per the spell's description.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Destroy Morale" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MAJESTIC_TALENTS_DESTROY_MORALE">
+		<supports>Majestic Talent</supports>
+		<requirements>[level:9]</requirements>
+		<description>
+			<p>You utilize the defeat of a foe to change the tide of battle. At the expense of six majesty points and as a reaction to an ally defeating a hostile creature, all other hostile creatures within 30 feet of you and the defeated creature who consider that defeated creature an ally must make a Wisdom saving throw or lose half of their current hit points (rounded down). Creatures who have advantage against charmed conditions may roll the saving throw with advantage. Creatures who are immune to being charmed are immune to this effect.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>At the expense of six majesty points and as a reaction to an ally defeating a hostile creature, all other hostile creatures within 30 feet of you and the defeated creature who consider that defeated creature an ally must make a Wisdom saving throw or lose half of their current hit points (rounded down). Creatures who have advantage against charmed conditions may roll the saving throw with advantage. Creatures who are immune to being charmed are immune to this effect.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Do Something!" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MAJESTIC_TALENTS_DO_SOMETHING">
+		<supports>Majestic Talent</supports>
+		<description>
+			<p>At the expense of two majesty points and as a bonus action, you may force an ally to take an action by using up their reaction. They may take any action they would like and can take. For example, a creature who has already cast a spell that takes 1 action cannot cast another spell that takes 1 action.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>At the expense of two majesty points, you may force an ally to take an action by using up their reaction. They may take any action they would like and can take. For example, a creature who has already cast a spell that takes 1 action cannot cast another spell that takes 1 action.</description>
+			</sheet>
+		<rules />
+	</element>
+
+	<element name="Exert Thy Self" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MAJESTIC_TALENTS_EXERTTHYSELF">
+		<supports>Majestic Talent</supports>
+		<description>
+			<p>By reminding yourself of who you are, you may reassert control over yourself. As an action and at the expense of one majesty point, you may end the effects causing you to be charmed or frightened.</p>
+		</description>
+		<sheet action="1 Action">
+			<description>At the expense of one majesty point, you may end the effects causing you to be charmed or frightened.</description>
+			</sheet>
+		<rules />
+	</element>
+
+	<element name="Influential" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MAJESTIC_TALENTS_INFLUENTIAL">
+		<supports>Majestic Talent</supports>
+		<description>
+			<p>You gain proficiency in Deception and Persuasion skills. At the expense of one majesty point, you may gain advantage on your next Deception or Persuasion roll made in the next 10 minutes.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>At the expense of one majesty point, you may gain advantage on your next Deception or Persuasion roll made in the next 10 minutes.</description>
+			</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+		</rules>
+	</element>
+
+	<element name="Majestic Healing" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MAJESTIC_TALENTS_MAJESTIC_HEALING">
+		<supports>Majestic Talent</supports>
+		<description>
+			<p>The healing pool of your Encouraging Words can be restored. As a bonus action, you may replenish expended hit points from your healing pool by converting your majesty points. For every majesty point converted, you regain 5 hit points into your healing pool. You cannot exceed the maximum healing pool with this ability, but may regain them instead of waiting for finishing a long rest.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>you may replenish expended hit points from your healing pool by converting your majesty points. For every majesty point converted, you regain 5 hit points into your healing pool. You cannot exceed the maximum healing pool with this ability, but may regain them instead of waiting for finishing a long rest.</description>
+			</sheet>
+		<rules />
+	</element>
+
+	<element name="My Hero" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MAJESTIC_TALENTS_MY_HERO">
+		<supports>Majestic Talent</supports>
+		<description>
+			<p>As an action and the expense of one majesty point, you may target an ally as though you casted heroism on them, except it does not require concentration, the target must be within 60 feet of you that can see or hear you, and they gain temporary hit points equal to your Charisma modifier + your Proficiency bonus at the start of each of their turns for the duration of the effect.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>At the expense of one majesty point, you may target an ally as though you casted heroism on them, except it does not require concentration, the target must be within 60 feet of you that can see or hear you, and they gain temporary hit points equal to your {{my-hero:count}} bonus at the start of each of their turns for the duration of the effect.</description>
+			</sheet>
+		<rules>
+			<stat name="my-hero:count" value="charisma:modifier" />
+			<stat name="my-hero:count" value="proficiency" />
+			<stat name="calculation" value="my-hero:count" bonus="calculation" />
+		</rules>
+	</element>
+
+	<element name="Senatorial Bounty" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MAJESTIC_TALENTS_SENATORIAL_BOUNTY">
+		<supports>Majestic Talent</supports>
+		<description>
+			<p>By contacting officials from your governing body by messenger, you sacrifice two majesty points to place a bounty on the head of a creature of your choice. All expenses for this bounty are paid by your government. You may only have up to three bounties placed at a time and each bounty costs two <strong>permanent</strong> majesty points. Once the bounty is claimed, you may regain the two expended majesty points after a long rest. The bounty can be claimed by reprimanding the creature and bringing them before you or by slaying the creature. You must decide this when the bounty is placed.</p>
+		</description>
+		<sheet>
+			<description>By contacting officials from your governing body by messenger, you sacrifice two majesty points to place a bounty on the head of a creature of your choice. All expenses for this bounty are paid by your government. You may only have up to three bounties placed at a time and each bounty costs two permanent majesty points. Once the bounty is claimed, you may regain the two expended majesty points after a long rest. The bounty can be claimed by reprimanding the creature and bringing them before you or by slaying the creature. You must decide this when the bounty is placed.</description>
+			</sheet>
+		<rules />
+	</element>
+
+	<element name="Senator Shield" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MAJESTIC_TALENTS_SENATOR_SHIELD">
+		<supports>Majestic Talent</supports>
+		<requirements>[level:5]</requirements>
+		<description>
+			<p>Prerequisites: 5 levels in the senator class You may thrust forth an exertion of your majestic presence to defy the odds of combat. At the expense of one majesty point and as a reaction to being the target of an attack, you ward yourself as per the sanctuary spell, except this effect ends after the attack that caused the reaction is calculated.</p>
+		</description>
+		<sheet>
+			<description>At the expense of one majesty point and as a reaction to being the target of an attack, you ward yourself as per the sanctuary spell, except this effect ends after the attack that caused the reaction is calculated.</description>
+			</sheet>
+		<rules />
+	</element>
+
+	<element name="You Know Me" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MAJESTIC_TALENTS_YOUKNOWME">
+		<supports>Majestic Talent</supports>
+		<description>
+			<p>You may create a bond with a number of creatures that is represented by the fact that you can near-telepathically tell them what to do simply by your body language. Choose a number of creatures equal to your Charisma modifier + half your levels in senator (rounded down) that you have spent at least one week with. Whenever those creatures can see you, they understand basic commands simply by reading your body language. You can tell them things like "no", "yes", "that's bad", "I don't like that", "this is a great idea", etc. You cannot reveal complex information in this way. Other creatures cannot determine your messages in this way, even if they roll impressive Insight skill checks.</p>
+		</description>
+		<sheet>
+			<description>Choose a number of creatures equal to your Charisma modifier + half your levels in senator (rounded down) that you have spent at least one week with. Whenever those creatures can see you, they understand basic commands simply by reading your body language. You cannot reveal complex information in this way. Other creatures cannot determine your messages in this way, even if they roll impressive Insight skill checks.</description>
+			</sheet>
+		<rules>
+			<stat name="you-know-me:count" value="charisma:modifier" />
+			<stat name="you-know-me:count" value="level:senator:half:down" />
+			<stat name="calculation" value="you-know-me:count" bonus="calculation" />
+		</rules>
+	</element>
+
+	</elements>

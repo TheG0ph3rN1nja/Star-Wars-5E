@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Senator's Aid</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="senators-aid.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/senators-aid.xml" />
+		</update>
+	</info>
+
+	<element name="Senator's Aid" type="Background" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_SENATORS_AID">
+    <description>
+    <ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Insight, Persuasion </li>
+        <li><strong>Languages:</strong>Two of your choice </li>
+				<li><strong>Equipment:</strong>5 cr, and a letter of diplomatic immunity </li>
+      </ul>
+      <div element="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_SENATE_FUNCTIONARY" />
+    </description>
+      <setters>
+        <set name="short">Insight, Persuasion, Two of your choice, 5 cr, and a letter of diplomatic immunity </set>
+      </setters>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+        <select type="Language" name="Language (Senator's Aid)" supports="Standard||Exotic" number="2" />
+      </rules>
+    </element>
+
+    <element name="Feature: Senate Functionary" type="Background Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_SENATE_FUNCTIONARY">
+      <supports>Background Feature</supports>
+		<description>
+			<p>Your knowledge of how bureaucracies function lets you gain access to the records and inner workings of the Republic Senate. You know who the movers and shakers are, whom to go to for the favors you seek, and what the current intrigues of interest in the group are.</p>
+		</description>
+		<sheet alt="Researcher">
+			<description>Your knowledge of how bureaucracies function lets you gain access to the records and inner workings of the Republic Senate. You know who the movers and shakers are, whom to go to for the favors you seek, and what the current intrigues of interest in the group are.</description>
+		</sheet>
+	</element>
+
+</elements>

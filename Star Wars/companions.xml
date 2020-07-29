@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Companions</name>
+		<description>GM Binder</description>
+		<update version="0.0.1">
+			<file name="companions.xml" url="" />
+		</update>
+	</info>
+
+  <element name="Young Vornskr" type="Companion" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_COMPANION_YOUNG_VORNSKR">
+		<description>
+      <p>The vornskr, native to the planet Myrkr, were a wild, vicious canine species that had the unusual ability to sense the Force. This ability evolved to help them hunt ysalamiri, but a side effect caused them to think that Force-sensitives were their favorite prey, including Jedi in their appetite.</p>
+      <p class="indent">Vornskrs were primarily nocturnal hunters, and used their whip-like, mildly venomous tails to stun prey before finishing it off with their teeth. They were normally sedate during the day, but hunger or other factors would drive them to hunt during daylight hours.</p>
+    </description>
+		<setters>
+			<set name="strength">16</set>
+			<set name="dexterity">10</set>
+			<set name="constitution">16</set>
+			<set name="intelligence">10</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">6</set>
+			<set name="ac">14</set>
+			<set name="hp">34 (4d8+12)</set>
+			<set name="speed">40 ft.</set>
+			<set name="languages">—</set>
+			<set name="skills">Perception +6</set>
+			<set name="type">Beast</set>
+			<set name="size">Medium</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">1/2</set>
+      <set name="traits">ID_GMBINDER_SW5E_COMPANION_TRAIT_YOUNG_VORNSKR_EVOLVED_PREDATOR</set>
+			<set name="actions">ID_GMBINDER_SW5E_COMPANION_ACTION_YOUNG_VORNSKR_BITE,ID_GMBINDER_SW5E_COMPANION_ACTION_YOUNG_VORNSKR_CLAWS,ID_GMBINDER_SW5E_COMPANION_ACTION_YOUNG_VORNSKR_TAIL</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="14" />
+			<stat name="companion:hp:max" value="34" bonus="base" />
+			<stat name="companion:speed" value="40" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+
+  <element name="Evolved Predator" type="Companion Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_COMPANION_TRAIT_YOUNG_VORNSKR_EVOLVED_PREDATOR">
+		<description>
+			<p>The vornskr have evolved to hunt the force-neutral ysalamiri on Myrkr. The vornskr have an unnatural force sensitivity, which grants them better hunting skills against any creature that is force sensitive.</p>
+      <p>Vornskr have advantage on all force-related saving throws, and all attacks against force-sensitive targets.</p>
+		</description>
+		<sheet>
+			<description>Vornskr have advantage on all force-related saving throws, and all attacks against force-sensitive targets.</description>
+		</sheet>
+	</element>
+
+  <element name="Bite" type="Companion Action" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_COMPANION_ACTION_YOUNG_VORNSKR_BITE">
+		<description>
+			<p>Melee Weapon Attack: +3 to hit, one target. Hit 10 (1d10 + 3)</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +3 to hit, one target. Hit 10 (1d10 + 3)</description>
+		</sheet>
+	</element>
+
+  <element name="Claws" type="Companion Action" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_COMPANION_ACTION_YOUNG_VORNSKR_CLAWS">
+		<description>
+			<p>Melee Weapon Attack: +3 to hit, one target. Hit 8 (1d8 + 3)</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +3 to hit, one target. Hit 8 (1d8 + 3)</description>
+		</sheet>
+	</element>
+
+  <element name="Tail" type="Companion Action" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_COMPANION_ACTION_YOUNG_VORNSKR_TAIL">
+		<description>
+			<p>Melee Weapon Attack: +3 to hit, reach 5ft, one target. Hit 6 (1d4 + 3 poison) On a hit, target must make Con saving throw or be poisoned.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +3 to hit, reach 5ft, one target. Hit 6 (1d4 + 3 poison) On a hit, target must make Con saving throw or be poisoned.</description>
+		</sheet>
+	</element>
+
+  <element name="Ysalamiri" type="Companion" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_COMPANION_YSALAMIRI">
+		<description>
+      <p>Ysalamiri were furry, lizard-like tree-dwellers about 50 centimeters in length native to the planet Myrkr, most known for their ability to repel the Force by creating a Force-neutral bubble. This ability evolved in response to predation by the Force-sensitive vornskrs. Many ysalamiri grouped together would expand their Force-neutral bubble by varying distances – sometimes by kilometers.</p>
+    </description>
+		<setters>
+			<set name="strength">12</set>
+			<set name="dexterity">14</set>
+			<set name="constitution">10</set>
+			<set name="intelligence">8</set>
+			<set name="wisdom">18</set>
+			<set name="charisma">10</set>
+			<set name="ac">14</set>
+			<set name="hp">21 (6d6)</set>
+			<set name="speed">30 ft.</set>
+			<set name="languages">—</set>
+			<set name="skills">Perception +6</set>
+			<set name="type">Beast</set>
+			<set name="size">Small</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">1/4</set>
+      <set name="traits">ID_GMBINDER_SW5E_COMPANION_TRAIT_YSALAMIRI_EVOLVED_PREY</set>
+			<set name="actions">ID_GMBINDER_SW5E_COMPANION_ACTION_YSALAMIRI_BITE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="14" />
+			<stat name="companion:hp:max" value="21" bonus="base" />
+			<stat name="companion:speed" value="30" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+
+  <element name="Evolved Prey" type="Companion Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_COMPANION_TRAIT_YSALAMIRI_EVOLVED_PREYR">
+		<description>
+			<p>Due to being hunted so heavily by the vornskrs of Myrkr, the Ysalamiri have developed a force-neutral bubble around themselves to protect them from the vornskr's force-sensing abilities.</p>
+      <p>The force-neutral bubble completely protects the ysalamiri and anyone in the bubble from any force abilities that directly affect them. The bubble is 5ft in diameter, unless there is a large group of ysalamiri, in which case the bubble can be upwards of 1km in diameter.</p>
+		</description>
+		<sheet>
+			<description>The force-neutral bubble completely protects the ysalamiri and anyone in the bubble from any force abilities that directly affect them. The bubble is 5ft in diameter, unless there is a large group of ysalamiri, in which case the bubble can be upwards of 1km in diameter.</description>
+		</sheet>
+	</element>
+
+  <element name="Bite" type="Companion Action" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_COMPANION_ACTION_YSALAMIRI_BITE">
+		<description>
+			<p>Melee Weapon Attack: +3 to hit, one target. Hit 5 (1d6 + 1)</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +3 to hit, one target. Hit 5 (1d6 + 1)</description>
+		</sheet>
+	</element>
+
+  <element name="Guardian" type="Companion" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_COMPANION_GUARDIAN">
+		<description />
+		<setters>
+			<set name="strength">16</set>
+			<set name="dexterity">16</set>
+			<set name="constitution">16</set>
+			<set name="intelligence">10</set>
+			<set name="wisdom">10</set>
+			<set name="charisma">10</set>
+			<set name="ac">16</set>
+			<set name="hp">38 (5d8 + 15)</set>
+			<set name="speed">30 ft.</set>
+			<set name="languages">Basic</set>
+			<set name="skills">—</set>
+			<set name="type">Humanoid</set>
+			<set name="size">Medium</set>
+			<set name="alignment">Your Alignment</set>
+			<set name="challenge">1/2</set>
+      <set name="traits">ID_GMBINDER_SW5E_COMPANION_TRAIT_GUARDIAN_SYNERGY</set>
+			<set name="actions">ID_GMBINDER_SW5E_COMPANION_ACTION_GUARDIAN_VIBROSWORD,ID_GMBINDER_SW5E_COMPANION_ACTION_GUARDIAN_BLASTERRIFLE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="16" />
+			<stat name="companion:hp:max" value="38" bonus="base" />
+			<stat name="companion:speed" value="30" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+
+  <element name="Synergy" type="Companion Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_COMPANION_TRAIT_GUARDIAN_SYNERGY">
+		<description>
+			<p>Whenever a guardian finishes a long rest in the presence of the senator they serve, they gain temporary hit points equal to senator's Charisma modifier X their levels in the senator class.</p>
+		</description>
+		<sheet>
+			<description>Whenever a guardian finishes a long rest in the presence of the senator they serve, they gain temporary hit points equal to senator's Charisma modifier X their levels in the senator class.</description>
+		</sheet>
+	</element>
+
+  <element name="Vibroblade" type="Companion Action" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_COMPANION_ACTION_GUARDIAN_VIBROSWORD">
+		<description>
+			<p>Melee Weapon Attack: +6 to hit, one target. Hit 9 (1d10 + 3)</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +6 to hit, one target. Hit 9 (1d10 + 3)</description>
+		</sheet>
+	</element>
+
+  <element name="Blaster Rifle" type="Companion Action" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_COMPANION_ACTION_GUARDIAN_BLASTERRIFLE">
+		<description>
+			<p>Ranged Weapon Attack: +6 to hit, one target. Hit 9 (1d10 + 3)</p>
+		</description>
+		<sheet>
+			<description>Ranged Weapon Attack: +6 to hit, one target. Hit 9 (1d10 + 3)</description>
+		</sheet>
+	</element>
+
+  <element name="Pilot" type="Companion" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_COMPANION_PILOT">
+		<description />
+		<setters>
+			<set name="strength">10</set>
+			<set name="dexterity">16</set>
+			<set name="constitution">12</set>
+			<set name="intelligence">16</set>
+			<set name="wisdom">10</set>
+			<set name="charisma">10</set>
+			<set name="ac">13</set>
+			<set name="hp">17 (3d8 + 3)</set>
+			<set name="speed">30 ft.</set>
+			<set name="languages">Basic</set>
+			<set name="skills">—</set>
+			<set name="type">Humanoid</set>
+			<set name="size">Medium</set>
+			<set name="alignment">Your Alignment</set>
+			<set name="challenge">1/4</set>
+			<set name="actions">ID_GMBINDER_SW5E_COMPANION_ACTION_PILOT_HEAVYBLASTERPISTOL</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="13" />
+			<stat name="companion:hp:max" value="17" bonus="base" />
+			<stat name="companion:speed" value="30" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+
+  <element name="Heavy Blaster Pistol" type="Companion Action" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_COMPANION_ACTION_PILOT_HEAVYBLASTERPISTOL">
+		<description>
+			<p>Ranged Weapon Attack: +4 to hit, one target. Hit 5 (1d6 + 2)</p>
+		</description>
+		<sheet>
+			<description>Ranged Weapon Attack: +4 to hit, one target. Hit 5 (1d6 + 2)</description>
+		</sheet>
+	</element>
+
+  <element name="Lightsaber" type="Companion" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_COMPANION_LIGHTSABER">
+		<description />
+		<setters>
+			<set name="strength">16</set>
+			<set name="dexterity">16</set>
+			<set name="constitution">10</set>
+			<set name="intelligence">10</set>
+			<set name="wisdom">10</set>
+			<set name="charisma">10</set>
+			<set name="ac">20</set>
+			<set name="hp">30 (12d4)</set>
+			<set name="speed">30 ft. flying</set>
+			<set name="languages">—</set>
+			<set name="skills">Dexterity +8, Strength +8</set>
+			<set name="type">Construct</set>
+			<set name="size">Tiny</set>
+			<set name="alignment">—</set>
+			<set name="challenge">1/2</set>
+      <set name="traits">ID_GMBINDER_SW5E_COMPANION_TRAIT_LIGHTSABER_INANIMATE,ID_GMBINDER_SW5E_COMPANION_TRAIT_LIGHTSABER_FORCE_RESISTANCE</set>
+			<set name="actions">ID_GMBINDER_SW5E_COMPANION_ACTION_LIGHTSABER_ATTACK,ID_GMBINDER_SW5E_COMPANION_ACTION_LIGHTSABER_THROW</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="20" />
+			<stat name="companion:hp:max" value="30" bonus="base" />
+			<stat name="companion:speed:fly" value="30" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+
+  <element name="Inanimate" type="Companion Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_COMPANION_TRAIT_LIGHTSABER_INANIMATE">
+		<description>
+			<p>The lightsaber automatically succeeds any constitution, intelligence, wisdom, or charisma saving throw, check, or contest it must make.</p>
+		</description>
+		<sheet>
+			<description>The lightsaber automatically succeeds any constitution, intelligence, wisdom, or charisma saving throw, check, or contest it must make.</description>
+		</sheet>
+	</element>
+
+  <element name="Force Resistance" type="Companion Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_COMPANION_TRAIT_LIGHTSABER_FORCE_RESISTANCE">
+		<description>
+			<p>Whenever the lightsaber must make a saving throw, check, or contest, you can spend up to 6 force points to add +1 per force point spent to its roll.</p>
+		</description>
+		<sheet>
+			<description>Whenever the lightsaber must make a saving throw, check, or contest, you can spend up to 6 force points to add +1 per force point spent to its roll.</description>
+		</sheet>
+	</element>
+
+  <element name="Attack" type="Companion Action" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_COMPANION_ACTION_LIGHTSABER_ATTACK">
+		<description>
+			<p>Melee Weapon Attack: +5 to hit, one target. Hit 9 radiant (1d10 + 3)</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +5 to hit, one target. Hit 9 radiant (1d10 + 3)</description>
+		</sheet>
+	</element>
+
+  <element name="Throw" type="Companion Action" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_COMPANION_ACTION_LIGHTSABER_THROW">
+		<description>
+			<p>Ranged Weapon Attack: +5 to hit, range 30ft, one target. Hit 14 radiant (2d10 + 3) On a hit, the lightsaber returns to its original location.</p>
+		</description>
+		<sheet>
+			<description>Ranged Weapon Attack: +5 to hit, range 30ft, one target. Hit 14 radiant (2d10 + 3) On a hit, the lightsaber returns to its original location.</description>
+		</sheet>
+	</element>
+
+</elements>

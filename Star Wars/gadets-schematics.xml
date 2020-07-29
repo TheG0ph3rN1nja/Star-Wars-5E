@@ -1,0 +1,1637 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Gadgets(Schematics)</name>
+		<description>GM Binder</description>
+		<author />
+		<update version="0.0.1">
+			<file name="gadgets-schematics.xml" url="" />
+		</update>
+	</info>
+
+  <element name="Gadgets" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_GADGETS">
+    <description>
+      <p>Gadgets are the lifeblood of an engineer's trade. They are used every single day and in nearly everything he does. Some serve specific purposes, other vary in what they can do. The following gadgets are available to all classes for purchase, while some are restricted to Mercenarys and Engineers, and even more restricted to Engineers alone for building. This will be denoted in the gadget description.</p>
+    </description>
+    <sheet displa="false">
+    <description>Gadgets are the lifeblood of an engineer's trade. They are used every single day and in nearly everything he does. Some serve specific purposes, other vary in what they can do. The following gadgets are available to all classes for purchase, while some are restricted to Mercenarys and Engineers, and even more restricted to Engineers alone for building. This will be denoted in the gadget description.</description>
+    </sheet>
+      <rules />
+  </element>
+
+  <element name="A/V Recorder" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_AVRECORDER">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>1</p>
+      <p><strong><i>Type.</i></strong>Toolbelt</p>
+      <p><strong><i>Subtype.</i></strong></p>
+      <p><strong><i>Activation.</i></strong>Object Interaction</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>50cr</p>
+      <p><strong><i>Description.</i></strong>This gadget allows you to record sound and/or visual images of objects that you can see and hear within 60 feet of you. You can begin recording by taking an object interaction to activate the gadget and you can take a second object interaction to stop the recording. When you activate the recorder, you can chose to record sound only, images only, or both images and sound. Messages of up to 1 minute in length can be recorded and stored recordings can be played back by taking an object interaction.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">1</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">20cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Adaptive Armor" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_ADAPTIVE_ARMOR">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>3</p>
+      <p><strong><i>Type.</i></strong>Armor</p>
+      <p><strong><i>Subtype.</i></strong></p>
+      <p><strong><i>Activation.</i></strong>Reaction</p>
+      <p><strong><i>Restriction.</i></strong>Engineer, Mercenary</p>
+      <p><strong><i>Standard Cost.</i></strong>500cr</p>
+      <p><strong><i>Description.</i></strong>When this is equipped to an armor and you are hit with an attack or ability, you can use a reaction to gain resistance against thunder, acid, cold, lightning, fire, or radiant damage until the beginning of your next turn.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Conjuration</set>
+      <set name="time">8 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">260cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Advanced Personal Stealth Field" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_ADVANCED_PERSONAL_STEALTH_FIELD">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>3</p>
+      <p><strong><i>Type.</i></strong>Tool</p>
+      <p><strong><i>Subtype.</i></strong></p>
+      <p><strong><i>Activation.</i></strong>Action</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>500cr</p>
+      <p><strong><i>Description.</i></strong>When equipped, as an action, you can activate the field to temporarily gain +5 to all stealth check for up to 10 minutes. This duration of the field increases to 20 minutes at level 7, 45 minutes at level 14, and an hour at level 17.</p>
+      <p><strong><i>Shared Field</i></strong>As an action, you may instead create a small 10ft radius sphere of your stealth field, giving anyone inside the field the bonus of the field. However because of the expanded range the duration of the field becomes halved, and after use, its energy is expended and a long rest must be taken to recharge it.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Conjuration</set>
+      <set name="time">8 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">260cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Anti-Theft Device" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_ANTITHEFT_DEVICE">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>1</p>
+      <p><strong><i>Type.</i></strong>Toolbelt</p>
+      <p><strong><i>Subtype.</i></strong></p>
+      <p><strong><i>Activation.</i></strong>Constant</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>80cr</p>
+      <p><strong><i>Description.</i></strong>When this gadget is equipped, other creatures have disadvantage on any Dexterity (Sleight of Hand) checks that they make in an attempt to steal objects that are in your possession. Additionally, you automatically know when a failed attempt to pick your pockets has been made.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">1</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">20cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Arkanian Energy Shield" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_ARKANIAN_ENERGY_SHIELD">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>3</p>
+      <p><strong><i>Type.</i></strong>Armor</p>
+      <p><strong><i>Subtype.</i></strong></p>
+      <p><strong><i>Activation.</i></strong>Constant</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>550cr</p>
+      <p><strong><i>Description.</i></strong>Arkanian energy shields are personal shields that protect from extreme temperatures and energy and sonic-based weaponry. This shield has an AC of 16 with 40 HP and has resistances to sonic and energy-based weaponry. Once it’s HP hits 0 the shield is destroyed and a new one must be built. You may only have one personal shield equipped at a time.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Conjuration</set>
+      <set name="time">8 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">260cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Autoloader" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_AUTOLOADER">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>3</p>
+      <p><strong><i>Type.</i></strong>Weapom</p>
+      <p><strong><i>Subtype.</i></strong>Attachment</p>
+      <p><strong><i>Activation.</i></strong>Constant</p>
+      <p><strong><i>Restriction.</i></strong>Engineer, Mercenary</p>
+      <p><strong><i>Standard Cost.</i></strong>600cr</p>
+      <p><strong><i>Description.</i></strong>When you attach this gadget to a weapon of your choosing it lowers the reload time of the weapon by 1 action. For example, with a gatling laser, instead of taking a full turn to reload, it would instead take a regular action when this gadget is attached.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Conjuration</set>
+      <set name="time">8 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">260cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Breathalyzer" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_BREATHALYZER">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>1</p>
+      <p><strong><i>Type.</i></strong>Toolbelt</p>
+      <p><strong><i>Subtype.</i></strong></p>
+      <p><strong><i>Activation.</i></strong>Object Interaction</p>
+      <p><strong><i>Restriction.</i></strong>Engineer</p>
+      <p><strong><i>Standard Cost.</i></strong>40cr</p>
+      <p><strong><i>Description.</i></strong>You can use this gadget to identify a type of poison or disease that is affecting a creature. The afflicted creature must make an object interaction to breathe into the gadget. After 1d4 rounds you can determine indicate the type of disease or poison, or the type of creature that created the poison.</p>
+      <p><strong><i>Synthesized Antidote.</i></strong>After analyzing the breath of an infected creature, you can take an action to synthesize an antidote or an antitoxin, Once begun, it takes the gadget 1d4 rounds to create the antidote. Drinking the antidote give the infected advantage to their next saving throw against the disease or poison. Only the creature that breathed into the device can benefit. Once this effect is used, it must be recharged and cannot be used again until a short or long rest.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">1</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">20cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Bug" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_BUG">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>1</p>
+      <p><strong><i>Type.</i></strong>Toolbelt</p>
+      <p><strong><i>Subtype.</i></strong></p>
+      <p><strong><i>Activation.</i></strong>Action</p>
+      <p><strong><i>Restriction.</i></strong>Engineer, Mercenary</p>
+      <p><strong><i>Standard Cost.</i></strong>150cr</p>
+      <p><strong><i>Description.</i></strong>This gadget which is a tiny probe bot, when activated, has AC 10, 1 hit point, a movement/flying speed of 30, and cannot attack. It can take no actions on its own, but you can control the insectoid robot via a wireless communications link. While controlling the robot you perceive through the robot’s senses and are deaf and blind with regard to your own senses. The wireless link is lost and the gadget is deactivated if the robot moves further than 100 feet away from you or if you take an object interaction to disable it. At 10th level its speed is increased to 60 feet and the maximum range is increased to 200.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">1</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">20cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Cape of the Mynock" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_CAPE_OF_THE_MYNOCK">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>3</p>
+      <p><strong><i>Type.</i></strong>Clothing</p>
+      <p><strong><i>Subtype.</i></strong>Cape</p>
+      <p><strong><i>Activation.</i></strong>Object Interaction</p>
+      <p><strong><i>Restriction.</i></strong>Engineer</p>
+      <p><strong><i>Standard Cost.</i></strong>800cr</p>
+      <p><strong><i>Description.</i></strong>When you take an object interaction to activate this gadget, your cloak becomes rigid, allowing you to glide down from a high place. You can fly at a speed of 30 feet for a maximum distance of up to three times the height of your starting point (If you begin at a height of 30 feet, you can glide a maximum of 90 feet from your starting point). If you are still airborne when you reach the maximum distance, you fall. Once used, the gadget must be reset and this effect cannot be used again until you complete a short or long rest.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Conjuration</set>
+      <set name="time">8 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">260cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Climbsuit" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_CLIMBSUIT">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>4</p>
+      <p><strong><i>Type.</i></strong>Armor</p>
+      <p><strong><i>Subtype.</i></strong></p>
+      <p><strong><i>Activation.</i></strong>Constant</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>2000cr</p>
+      <p><strong><i>Description.</i></strong>The climbsuit is a suit of light armor that is used for climbing. Its knees, elbow pads, and gloves are covered in Frictiongrip. This is an armor that has an ac of 11 + dexterity modifier and can be used to climb any surface as long as your knees and hands are on the surface of which you are climbing.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">4</set>
+      <set name="school">Conjuration</set>
+      <set name="time">30 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">1450cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Cluster Charge" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_CLUSTER_CHARGE">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>4</p>
+      <p><strong><i>Type.</i></strong>Weapon</p>
+      <p><strong><i>Subtype.</i></strong>Breaching</p>
+      <p><strong><i>Activation.</i></strong>Action</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>3500cr</p>
+      <p><strong><i>Description.</i></strong>When equipped, the cluster charge can be used against breachable surfaces. When placed against the surface, it releases 5 small grenades into the room. To evaluate where they grenades land, divide the room into 10ft. squares and assign the squares numbers. Use an appropriate die to randomly assign where the grenades land. When the grenade explodes it deals 1d4 bludgeoning damage to all enemies within the radii, and the radii stack.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">4</set>
+      <set name="school">Conjuration</set>
+      <set name="time">30 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">1450cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Concealed Carry" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_CONCEALED_CARRY">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>2</p>
+      <p><strong><i>Type.</i></strong>Toolbelt</p>
+      <p><strong><i>Subtype.</i></strong></p>
+      <p><strong><i>Activation.</i></strong>Constant</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>350cr</p>
+      <p><strong><i>Description.</i></strong>When this gadget is equipped, the weapon that this gadget is integrated into becomes easier to hide. You get a +2 bonus and have advantage on Dexterity (Sleight of Hand) checks to prevent the weapon from being found during any search of your person. If the weapon requires ammunition, up to 2 charge pack, including the one already in your weapon, are hidden as well.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Conjuration</set>
+      <set name="time">2 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">60cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Cryoban Balls" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_CRYOBAN_BALLS">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>3</p>
+      <p><strong><i>Type.</i></strong>Charge Pack</p>
+      <p><strong><i>Subtype.</i></strong></p>
+      <p><strong><i>Activation.</i></strong>Bonus</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>800cr</p>
+      <p><strong><i>Description.</i></strong>When equipped, the user can load a CryoBan Cell into their weapon. When they do so, the damage type of their weapon is converted to cold and gains the effect of Freeze. The amount of use would be only one cartridge worth of ammunition and once used must be recharged through a long rest.</p>
+      <p><strong><i>Freeze.</i></strong>When a creature is hit with CryoBan Cells it must make a constitution saving throw (DC 15) or it is frozen. When you are frozen your movement speed becomes 0, you cannot make any actions or reactions, and at the end of your turn you may make the DC save again. If you hit them with the cells multiple times the effect stacks. If a creature remains frozen for more than 1 minutes it dies.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Conjuration</set>
+      <set name="time">8 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">260cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Defibralator" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_DEFIBRALATOR">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>1</p>
+      <p><strong><i>Type.</i></strong>Clothing</p>
+      <p><strong><i>Subtype.</i></strong>Gloves</p>
+      <p><strong><i>Activation.</i></strong>Object Interaction</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>100cr</p>
+      <p><strong><i>Description.</i></strong>When you take 1 object interaction to activate this gadget, you can target an unconscious, dying target within 10 feet of you and they regain 1 hp. Once used, the gadget must be recharged and cannot be used until a short or long rest.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">1</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">20cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Dew Condenser Jugs" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_DEW_CONDENSER_JUGS">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>1</p>
+      <p><strong><i>Type.</i></strong>Backpack</p>
+      <p><strong><i>Subtype.</i></strong></p>
+      <p><strong><i>Activation.</i></strong>Object Interaction</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>40cr</p>
+      <p><strong><i>Description.</i></strong>The Dew condenser Jug was created for use on dry planets such as Tatooine to draw water from the atmosphere. It is a large water container that once activated must be left outside for about 8 hours or less depending upon the environment before becoming full.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">1</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">20cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Disintegrator 9000" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_DISINTEGRATOR_9000">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>4</p>
+      <p><strong><i>Type.</i></strong>Weapon</p>
+      <p><strong><i>Subtype.</i></strong>Ranged</p>
+      <p><strong><i>Activation.</i></strong>Action</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>10000cr</p>
+      <p><strong><i>Description.</i></strong>The Disintegrator 9000 takes the form of a large heavy beam cannon that shoots out a powerful beam of force towards a target up to 60 feet away from you. The target can be a creature or an object.</p>
+      <p class="indent">When targeted, the target must make a dexterity saving throw (DC 15). If the target succeeds the saving throw, the gadget has no effect. If the saving throw fails, the target takes 95 (10d6 + 40) force damage. If this damage reduces the target to 0 hit points, it is disintegrated. The disintegrated creature and everything it is wearing and carrying, except magical items, are reduced to a pile of fine gray dust. This effect automatically disintegrates a Large or smaller nonmagical object or a creation of magical force. If the target is a Huge or larger object or creation of force, this effect disintegrates a 10-foot-cube portion of it. Magic items are unaffected.</p>
+      <p class="indent">Once this effect has been used, the gadget must be recharged and cannot be used again until you have completed a short or long rest.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">4</set>
+      <set name="school">Conjuration</set>
+      <set name="time">30 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">1450cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Durasteel Plating" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_DURASTEEL_PLATING">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>2</p>
+      <p><strong><i>Type.</i></strong>Turret</p>
+      <p><strong><i>Subtype.</i></strong></p>
+      <p><strong><i>Activation.</i></strong>Constant</p>
+      <p><strong><i>Restriction.</i></strong>Engineer</p>
+      <p><strong><i>Standard Cost.</i></strong>300cr</p>
+      <p><strong><i>Description.</i></strong>When this gadget is equipped, your turret gains a +2 to its AC.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Conjuration</set>
+      <set name="time">2 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">60cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Electrified Net" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_ELECTRIFIED_NET">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>2</p>
+      <p><strong><i>Type.</i></strong>Weapon</p>
+      <p><strong><i>Subtype.</i></strong>Net</p>
+      <p><strong><i>Activation.</i></strong>Constant</p>
+      <p><strong><i>Restriction.</i></strong>Engineer, Mercenary</p>
+      <p><strong><i>Standard Cost.</i></strong>200cr</p>
+      <p><strong><i>Description.</i></strong>This is a normal net for all intents and purposes, except it is electrified. Creatures stuck in the net will be shocked into submission until they escape or are released.</p>
+      <p><strong><i>Ensnare.</i></strong>Ranged Weapon Attack thrown 15/30. On a hit, the target is ensnared by the net. When the target becomes ensnared and at the beginning of each of its turns while still in the net, it must make a DC 12 Constitution saving throw or it is stunned until the beginning of its next turn.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Conjuration</set>
+      <set name="time">2 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">60cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Electromagnetic Gloves" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_ELECTROMAGNETIC_GLOVE">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>2</p>
+      <p><strong><i>Type.</i></strong>Clothing</p>
+      <p><strong><i>Subtype.</i></strong>Gloves</p>
+      <p><strong><i>Activation.</i></strong>Action</p>
+      <p><strong><i>Restriction.</i></strong>Engineer</p>
+      <p><strong><i>Standard Cost.</i></strong>300cr</p>
+      <p><strong><i>Description.</i></strong>When this gadget is equipped, you can take an action to target a creature within 30 feet of you that is wielding a weapon or holding an object made of metal that weighs 9 pounds or less. The target must make a Strength saving throw. On a failed save, they drop the object, which flies through the air and into your hands. Once used, the effect must be recharged and cannot be used again until you complete a short or long rest.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Conjuration</set>
+      <set name="time">2 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">60cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Expanded Turret Capacity" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_EXPANDED_TURRET_CAPACITY">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>2</p>
+      <p><strong><i>Type.</i></strong>Turret</p>
+      <p><strong><i>Subtype.</i></strong></p>
+      <p><strong><i>Activation.</i></strong>Constant</p>
+      <p><strong><i>Restriction.</i></strong>Engineer</p>
+      <p><strong><i>Standard Cost.</i></strong>300cr</p>
+      <p><strong><i>Description.</i></strong>When this gadget is equipped to your turret, it multiplies the number of charge packs it can carry by two.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Conjuration</set>
+      <set name="time">2 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">60cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Explosive Trap" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_EXPLOSIVE_TRAP">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>3</p>
+      <p><strong><i>Type.</i></strong>Weapon</p>
+      <p><strong><i>Subtype.</i></strong>Explosive</p>
+      <p><strong><i>Activation.</i></strong>Action</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>1000cr</p>
+      <p><strong><i>Description.</i></strong>As an action, this gadget allows you to place a mechanical trap on an unoccupied location within 5 feet of you. When you place the trap you may choose its damage type and trigger mechanism:</p>
+      <p class="indent"><strong><i>Location:</i></strong>10ft x 10ft area within 30 ft of trap.</p>
+      <p class="indent"><strong><i>Proximity:</i></strong>10 ft radius circle around trap.</p>
+      <p class="indent"><strong><i>Timer:</i></strong>An amount of time from 1 minute to an hour.</p>
+      <p class="indent">The trap becomes active the turn after you activated it and remains active unless deactivated or disarmed. When activated, the trap explodes and deals 2d10 damage of the damage type to each creature within 30 feet of the trap. The damage increase by 1d10 at 11th and then again at 17th level. Once used it must be recharged and its effects cannot be used again until after a successful short or longs rest.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Conjuration</set>
+      <set name="time">8 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">260cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Extendable Shield" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_EXTENDABLE_SHIELD">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>3</p>
+      <p><strong><i>Type.</i></strong>Armor</p>
+      <p><strong><i>Subtype.</i></strong>Shield</p>
+      <p><strong><i>Activation.</i></strong>Constant, Object Interaction</p>
+      <p><strong><i>Restriction.</i></strong>Engineer</p>
+      <p><strong><i>Standard Cost.</i></strong>600cr</p>
+      <p><strong><i>Description.</i></strong>When equipped it is a regular shield, but as an object interaction you can extend or retract the shield. When extended, you gain 3/4 cover in front of you and your movement is halved. This shield is considered heavy armor for the purposes of proficiency.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Conjuration</set>
+      <set name="time">8 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">260cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Full Auto Conversion" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_FULL_AUTO_CONVERSION">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>4</p>
+      <p><strong><i>Type.</i></strong>Weapon</p>
+      <p><strong><i>Subtype.</i></strong>Ranged</p>
+      <p><strong><i>Activation.</i></strong>Action, Object Interaction</p>
+      <p><strong><i>Restriction.</i></strong>Engineer, Mercenary</p>
+      <p><strong><i>Standard Cost.</i></strong>1800cr</p>
+      <p><strong><i>Description.</i></strong>When this gadget is equipped, the firearm that the gadget is integrated into gains the Burst Fire property. You can use the weapon to take a normal attack action, or you can use an object interaction in conjunction with an attack action to spray a 30 foot cone area within normal range with plasma rounds. Each creature in the area must succeed on a Dexterity saving throw (DC 15)or take 8 die of the weapon's normal damage die of radiant damage. On a failed save a creature takes half as much damage. This action consumes eight rounds of ammunition.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">4</set>
+      <set name="school">Conjuration</set>
+      <set name="time">30 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">1450cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="G-52 Tactical Shield" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_G52_TACTICAL_SHIELD">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>3</p>
+      <p><strong><i>Type.</i></strong>Armor</p>
+      <p><strong><i>Subtype.</i></strong>Shield</p>
+      <p><strong><i>Activation.</i></strong>Constant, Action</p>
+      <p><strong><i>Restriction.</i></strong>Engineer</p>
+      <p><strong><i>Standard Cost.</i></strong>750cr</p>
+      <p><strong><i>Description.</i></strong>This shield gives a +3 to your AC when equipped. This shield has exceptionally bright lights and as an action you can flash your light in a 60 ft cone. Everyone within this cone must make a constitution saving throw (DC 14) or be blinded for 1 minute. Once used, this gadget cannot be used again until it is recharged via a short or long rest.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Conjuration</set>
+      <set name="time">8 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">260cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Gatling Turret" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_GATLING_TURRET">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>3</p>
+      <p><strong><i>Type.</i></strong>Weapon</p>
+      <p><strong><i>Subtype.</i></strong>Ranged</p>
+      <p><strong><i>Activation.</i></strong>Constant</p>
+      <p><strong><i>Restriction.</i></strong>Engineer</p>
+      <p><strong><i>Standard Cost.</i></strong>600cr</p>
+      <p><strong><i>Description.</i></strong>When this mod is equipped, you can equip a gatling laser onto your turret. Your turret is proficient with this weapon and gains and the bonuses and benefits using it.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Conjuration</set>
+      <set name="time">8 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">260cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Grenade Launcher" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_GRENADE_LAUNCHER">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>3</p>
+      <p><strong><i>Type.</i></strong>Weapon</p>
+      <p><strong><i>Subtype.</i></strong>Ranged</p>
+      <p><strong><i>Activation.</i></strong>Action, Object Interaction</p>
+      <p><strong><i>Restriction.</i></strong>Engineer, Mercenary</p>
+      <p><strong><i>Standard Cost.</i></strong>1200cr</p>
+      <p><strong><i>Description.</i></strong>When you make a weapon attack, you can use an object interaction with a grenade of your choosing to launch the grenade instead. The attack roll is your normal ranged weapon attack roll. The grenade deals its normal damage.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Conjuration</set>
+      <set name="time">8 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">260cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Implanted Healing System" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_IMPLANTED_HEALING_SYSTEM">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>2</p>
+      <p><strong><i>Type.</i></strong>Armor</p>
+      <p><strong><i>Subtype.</i></strong>Ranged</p>
+      <p><strong><i>Activation.</i></strong>Action, Reaction</p>
+      <p><strong><i>Restriction.</i></strong>Engineer</p>
+      <p><strong><i>Standard Cost.</i></strong>500cr</p>
+      <p><strong><i>Description.</i></strong>When you make a weapon attack, you can use an object interaction with a grenade of your choosing to launch the grenade instead. The attack roll is your normal ranged weapon attack roll. The grenade deals its normal damage.</p>
+      <p><strong><i>Self Defense.</i></strong>When you are damaged by a single attack or effect, you can use your reaction to activate your healing infusion. You regain a number of hit points equal to 1d4 + your Intelligence modifier. The amount healed increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4). Once used, the gadget must be reset and cannot be used again until you complete a short or long rest.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Conjuration</set>
+      <set name="time">2 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">60cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Implanted Tracking Devive" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_IMPLANTED_TRACKING_DEVICE">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>2</p>
+      <p><strong><i>Type.</i></strong>Toolbelt</p>
+      <p><strong><i>Subtype.</i></strong></p>
+      <p><strong><i>Activation.</i></strong>Action</p>
+      <p><strong><i>Restriction.</i></strong>Engineer, Mercenary</p>
+      <p><strong><i>Standard Cost.</i></strong>450cr</p>
+      <p><strong><i>Description.</i></strong>When equipped, the user may make an attack action to fire dart at a creature within 40 feet of you, adding their dexterity modifier to the attack. If hit, the creature takes 1d4 damage and now has a tracking device implanted within them. As long as the device is functional, and you have a datapad, you will know the direction of your quarry as long as they are on the same planet as you are.The tracking device functions for 24 hours or until you take an object interaction to deactivate it. The presence of the tracking device is not immediately noticeable to the target unless they have a passive perception score higher than your gadget saving throw DC. An intelligent creature that is aware of the presence of the tracking device can chose to cut it out from under their skin using a bladed weapon that deals piercing or slashing damage. You can chose to fire another dart and implant a tracking device under the skin of a different creature after taking a short or a long rest. However, you can have only one active tracking device at any one time.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Conjuration</set>
+      <set name="time">2 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">60cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Inflatable Boots" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_INFLATABLE_BOOTS">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>2</p>
+      <p><strong><i>Type.</i></strong>Clothing</p>
+      <p><strong><i>Subtype.</i></strong>Boots</p>
+      <p><strong><i>Activation.</i></strong>Object Interaction</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>200cr</p>
+      <p><strong><i>Description.</i></strong>When this gadget is equipped, you gain the ability to move across any liquid (water, quicksand, lava etc.) as if it were solid ground. If the liquid is harmful (such as acid or lava) you still take damage for coming into contact with it.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Conjuration</set>
+      <set name="time">2 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">60cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Invisibility Generator" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_INVISIBILITY_GENERATOR">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>4</p>
+      <p><strong><i>Type.</i></strong>Toolbelt</p>
+      <p><strong><i>Subtype.</i></strong></p>
+      <p><strong><i>Activation.</i></strong>Object Interaction</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>2500cr</p>
+      <p><strong><i>Description.</i></strong>When you use an object interaction to activate it, this gadget projects a light-bending sphere of energy in a 10 foot radius around you. The sphere renders you and all other creatures inside of it invisible to any creature that is outside of the sphere. Equipment that is worn or carried by a creature inside of the sphere is invisible as long as it is on the creature’s person. The sphere and its effect moves as you move. The effect lasts for one minute or until you take a second object interaction to cancel it. Once used, the gadget must be recharged and cannot be used again until you complete a short or a long rest.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">4</set>
+      <set name="school">Conjuration</set>
+      <set name="time">30 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">1450cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="JT-12 Jetpack" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_JT12_JETPACK">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>4</p>
+      <p><strong><i>Type.</i></strong>Backpack</p>
+      <p><strong><i>Subtype.</i></strong></p>
+      <p><strong><i>Activation.</i></strong>Action, Constant</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>4000cr</p>
+      <p><strong><i>Description.</i></strong>This jetpack has 5 fuel units. You regain all units of fuels after spending an entire round without using it.</p>
+      <p class="indent"><strong><i>Flight (1fu).</i></strong>You may expend a unit of fuel to gain a flying speed of 30 feet until the end of your turn.</p>
+      <p class="indent"><strong><i>Hover (1fu).</i></strong>You expend a unit of fuel to hover at your current altitude, and become immune to falling damage until the beginning of your next turn. While you are hovering you may use your jetpack to shift in midair up to your half base speed.</p>
+      <p class="indent"><strong><i>Increased Speed (2fu).</i></strong>You may expend two units of fuel to double your flying speed.</p>
+      <p class="indent"><strong><i>Missile (2fu).</i></strong>You may use two units of fuel and an action to fire the Z-6 anti-vehicle homing missile. This attack uses your proficiency bonus (as long as you are proficient with heavy weapons) and either your dexterity or strength modifier for the attack. The attack can be made against a target that you do not have direct line of sight to as long as the target is within the weapon’s range and you know its location. This attack ignores the effects of cover. Once used, this gadget must be reset and cannot be used again until you complete either a short or a long rest.</p>
+      <p class="indent">The rocket's damage and DC are equivalent to that of the standard rocket launcher.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">4</set>
+      <set name="school">Conjuration</set>
+      <set name="time">30 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">1450cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Lightning Gun" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_LIGHTNING_GUN">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>3</p>
+      <p><strong><i>Type.</i></strong>Weapon</p>
+      <p><strong><i>Subtype.</i></strong>Mod</p>
+      <p><strong><i>Activation.</i></strong>Action, Object Interaction</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>1500cr</p>
+      <p><strong><i>Description.</i></strong>When you make a ranged weapon attack with a weapon equipped with this gadget, you may use an object interaction to instead shoot a bolt of lightning at an opponent. The target takes 6d6 lightning damage on a hit, or half as much on a miss, instead of the normal weapon damage. On a hit or miss, creatures within 10 feet of the target must make a dexterity saving throw (DC 14), taking 3d6 lightning damage on a failed save, and half as much on a successful save. Once used, this gadget must be recharged and its effect cannot be used again until you complete a short or long rest.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Conjuration</set>
+      <set name="time">8 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">260cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Mandalorian Power Shield" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_MANDALORIAN_POWER_SHIELD">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>4</p>
+      <p><strong><i>Type.</i></strong>Armor</p>
+      <p><strong><i>Subtype.</i></strong>Shield</p>
+      <p><strong><i>Activation.</i></strong>Constant</p>
+      <p><strong><i>Restriction.</i></strong>Engineer, Mercenary</p>
+      <p><strong><i>Standard Cost.</i></strong>2500cr</p>
+      <p><strong><i>Description.</i></strong>When equipped, this shield has an AC of 13, HP equal to 10 + your int mod + twice your engineer level, and resistance against all melee weapons and energy based weapons. When its HP hits 0, it can only be recharged by taking a short or long rest. You may only have one personal shield equipped at a time.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">4</set>
+      <set name="school">Conjuration</set>
+      <set name="time">30 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">1450cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Mass-Nulling Clip" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_MASS_NULLING_CLIP">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>1</p>
+      <p><strong><i>Type.</i></strong>Toolbelt</p>
+      <p><strong><i>Subtype.</i></strong></p>
+      <p><strong><i>Activation.</i></strong>Constant</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>40cr</p>
+      <p><strong><i>Description.</i></strong>The Mass-Nulling Clip is a device that can create a field of low gravity to carry heavy loads upon one’s back or belt clip. When equipped the carrier’s maximum carry weight is doubled.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">1</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">20cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Medpac" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_MEDPAC">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>2</p>
+      <p><strong><i>Type.</i></strong>Consumable</p>
+      <p><strong><i>Subtype.</i></strong></p>
+      <p><strong><i>Activation.</i></strong>Action</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>100cr</p>
+      <p><strong><i>Description.</i></strong>When equipped, as an action, you can use the medpac on a creature to heal up to 50 hit points. Once used, the materials are expended and you must spend the time to make another one.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Conjuration</set>
+      <set name="time">2 Hours</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">60cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Memory Flush Unit" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_MEMORY_FLUSH_UNIT">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>2</p>
+      <p><strong><i>Type.</i></strong>Toolbelt</p>
+      <p><strong><i>Subtype.</i></strong></p>
+      <p><strong><i>Activation.</i></strong>Action</p>
+      <p><strong><i>Restriction.</i></strong>Engineer</p>
+      <p><strong><i>Standard Cost.</i></strong>120cr</p>
+      <p><strong><i>Description.</i></strong>When this gadget is equipped, you can take an action to activate it, targeting a creature you can see within 5 feet of you. The target must then make a intelligence saving throw. If they succeed, they are immune to the effect of this gadget for the next 24 hours. If they fail to save, they permanently forget the events of the last 1 minute. At 5th level the amount of time they can forget increase to 2 minutes. This increases again at 11 to 3 minutes, 15 to 4 minutes, 17 to 5 minutes.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Conjuration</set>
+      <set name="time">2 Hours</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">60cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Mini Missiles" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_MINI_MISSILES">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>1</p>
+      <p><strong><i>Type.</i></strong>Clothing</p>
+      <p><strong><i>Subtype.</i></strong>Gloves</p>
+      <p><strong><i>Activation.</i></strong>Action</p>
+      <p><strong><i>Restriction.</i></strong>Engineer, Engineer</p>
+      <p><strong><i>Standard Cost.</i></strong>300cr</p>
+      <p><strong><i>Description.</i></strong>When this gadget is equipped you can use an action to activate it. If you do, you fire tiny missiles out of your gloves. Make a ranged weapon attack against up to three creatures of your choice that you can see within 80 feet of you. Each rocket deals 1d6+1 bludgeoning damage to its target. The three rockets all strike simultaneously, and you can direct them both to hit the same, or different targets. At 5th level you can fire an additional rocket (4 rockets total). This increases by two additional rockets at 11th (6 rockets) and 17th levels (8 rockets). Once used, this gadget must be reloaded and cannot be used again until you complete a short or a long rest.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">1</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">20cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Mining Drill" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_MINING_DRILL">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>4</p>
+      <p><strong><i>Type.</i></strong>Toolbelt</p>
+      <p><strong><i>Subtype.</i></strong></p>
+      <p><strong><i>Activation.</i></strong>Action</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>3000cr</p>
+      <p><strong><i>Description.</i></strong>When equipped, the drill allows you to have a burrowing speed of equal to half your movement speed, which lasts for three turns. The hole created by this drill is 5’ wide and half as tall as your height. Once used it must be recharged, and its effects cannot be used again until after a short or long rest.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">4</set>
+      <set name="school">Conjuration</set>
+      <set name="time">30 Hours</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">1450cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="MM9 Mini Concussion Missile Launcher" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_MM9_MINI_CONCUSSION_MINI_LAUNCHER">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>1</p>
+      <p><strong><i>Type.</i></strong>Clothing</p>
+      <p><strong><i>Subtype.</i></strong>Glove</p>
+      <p><strong><i>Activation.</i></strong>Action</p>
+      <p><strong><i>Restriction.</i></strong>Engineer, Mercenary</p>
+      <p><strong><i>Standard Cost.</i></strong>250cr</p>
+      <p><strong><i>Description.</i></strong>When this gadget is equipped you can use an action to activate it. When you do, you fire an explosive rocket out of the gauntlet. Make a ranged weapon attack against one enemy within 60ft of you. If it hits, it deals 1d8 bludgeoning damage. The number of die you roll increases at level 5 to 2d8, then again at 11 to 3d8 and 17 to 4d8.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">1</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">20cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Night-Vision Goggles" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_NIGHT_VISION_GOGGLES">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>2</p>
+      <p><strong><i>Type.</i></strong>Clothing</p>
+      <p><strong><i>Subtype.</i></strong>Headgear</p>
+      <p><strong><i>Activation.</i></strong>Object Interaction</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>250cr</p>
+      <p><strong><i>Description.</i></strong>When activated, the user gains night vision equal to their normal vision for up to 8 hours. After it has been used it must be recharged and cannot be used until after a long or short rest.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Conjuration</set>
+      <set name="time">2 Hours</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">60cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Rebreather" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_REBREATHER">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>1</p>
+      <p><strong><i>Type.</i></strong>Clothing</p>
+      <p><strong><i>Subtype.</i></strong>Headgear</p>
+      <p><strong><i>Activation.</i></strong>Action, Constant</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>40cr</p>
+      <p><strong><i>Description.</i></strong>You can breathe underwater while you have this gadget equipped.</p>
+      <p class="indent"><strong><i>Air Filter.</i></strong>While this gadget is equipped, you can take an action to activate an emergency air filter that is built into the gadget. For one minute after activation, you have advantage on saving throws made against harmful gases and vapors. Once used, this effect must be recharged and cannot be used again until you complete a short or long rest.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">1</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">20cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Recovery Field" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_RECOVERY_FIELD">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>2</p>
+      <p><strong><i>Type.</i></strong>Toolbelt</p>
+      <p><strong><i>Subtype.</i></strong></p>
+      <p><strong><i>Activation.</i></strong>Constant</p>
+      <p><strong><i>Restriction.</i></strong>Engineer</p>
+      <p><strong><i>Standard Cost.</i></strong>250cr</p>
+      <p><strong><i>Description.</i></strong>Anyone within 60 feet of you regaining hit points at the end of a short rest regains an extra 1d4 hit points per hit die expended.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Conjuration</set>
+      <set name="time">2 Hours</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">60cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Repairpac" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_REPAIRPAC">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>2</p>
+      <p><strong><i>Type.</i></strong>Consumable</p>
+      <p><strong><i>Subtype.</i></strong></p>
+      <p><strong><i>Activation.</i></strong>Action</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>150cr</p>
+      <p><strong><i>Description.</i></strong>When equipped, as an action, you can use it to give you advantage and +5 to your repair check. Whenever you use this item its resources are expended and can be recharged after taking a long rest.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Conjuration</set>
+      <set name="time">2 Hours</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">60cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Repulsor Grappling Gun" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_REPULSOR_GRAPPLING_GUN">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>3</p>
+      <p><strong><i>Type.</i></strong>Weapon</p>
+      <p><strong><i>Subtype.</i></strong>Ranged</p>
+      <p><strong><i>Activation.</i></strong>Action</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>500cr</p>
+      <p><strong><i>Description.</i></strong>The repulsor grappling gun is a modification containing 1000ft of molecularly reinforced line that can pull up to 200 kilograms at 60ft per second. As an action, the user can aim the grappling gun at a surface and make a weapon attack. On a hit, the hook becomes attached to the surface and the user can climb up to 360 ft on their turn. The hook cannot be used on flat ground and the user must have both hands holding the gun while climbing.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Conjuration</set>
+      <set name="time">8 Hours</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">260cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Retractable Bayonet" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_RETRACTABLE_BAYONET">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>1</p>
+      <p><strong><i>Type.</i></strong>Weapon</p>
+      <p><strong><i>Subtype.</i></strong>Ranged</p>
+      <p><strong><i>Activation.</i></strong>Action, Object Interaction</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>250cr</p>
+      <p><strong><i>Description.</i></strong>A weapon equipped with this gadget now has a hidden retractable bayonet, allowing the weapon to be used as an effective close quarters melee weapon. The bayonet can be deployed or hidden using an object interaction. As long as the bayonet is deployed, you can use the weapon to make a melee attack, adding both your proficiency bonus and your choice of either your Strength or Dexterity modifier to the attack roll. If the attack hits, the bayonet deals 1d6 plus either your Strength or Dexterity modifier in piercing damage. If you hit a creature of size large or smaller with the bayonet, you can choose to push the creature up to 5 feet away to you.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">1</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">20cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Sonic Loudspeaker" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_SONIC_LOUDSPEAKER">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>2</p>
+      <p><strong><i>Type.</i></strong>Weapon</p>
+      <p><strong><i>Subtype.</i></strong>Ranged</p>
+      <p><strong><i>Activation.</i></strong>Action, Object Interaction</p>
+      <p><strong><i>Restriction.</i></strong>Engineer</p>
+      <p><strong><i>Standard Cost.</i></strong>350cr</p>
+      <p><strong><i>Description.</i></strong>This gadget consists of a powerful amplifier that can focus a spoken word into a beam of compressed sound. When this gadget is equipped, you can use an object interaction in conjunction with an attack action to make a ranged attack at a target you can see within 60 feet of you. You add both your proficiency bonus and Dexterity modifier to the attack roll. If the attack hits, the beam deals 3d6 thunder damage to the target. Additionally, if the target is a creature, it must succeed on a Strength saving throw or be pushed 10 feet away from you and knocked prone. This gadget cannot be used if you are rendered unable to speak. Once used this gadget must be recharged and cannot be used again until you take a short or a long rest.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Conjuration</set>
+      <set name="time">2 Hours</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">60cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Sonic Screwdriver" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_SONIC_SCREWDRIVER">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>4</p>
+      <p><strong><i>Type.</i></strong>Toolbelt</p>
+      <p><strong><i>Subtype.</i></strong></p>
+      <p><strong><i>Activation.</i></strong>Action</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>5500cr</p>
+      <p><strong><i>Description.</i></strong>This metal device measures about 8 inches long and weighs 1 pound. You can use an action, pointing it at an object within 120 feet of you that can be opened, such as a door, lid, or lock. The screwdriver issues a sonic tone, and one lock or latch on the object opens unless the sound can't reach the object. If no locks or latches remain, the object itself opens.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">4</set>
+      <set name="school">Conjuration</set>
+      <set name="time">30 Hours</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">1450cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Sound-Dampening Stealth Field" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_SOUND_DAMPENING_STEALTH_FIELD">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>1</p>
+      <p><strong><i>Type.</i></strong>Toolbelt</p>
+      <p><strong><i>Subtype.</i></strong></p>
+      <p><strong><i>Activation.</i></strong>Constant</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>150cr</p>
+      <p><strong><i>Description.</i></strong>This gadget creates a field that dampens and almost mutes all sound you make but you are still visible. When activated, for up to an hour, you gain advantage on all stealth checks. Once activated it cannot be used again until after a long or short rest.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">1</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">20cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Targeting Assistance Mem-Stick" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_TARGETING_ASSISTANCE">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>4</p>
+      <p><strong><i>Type.</i></strong>Datapad</p>
+      <p><strong><i>Subtype.</i></strong></p>
+      <p><strong><i>Activation.</i></strong>Bonus, Constant</p>
+      <p><strong><i>Restriction.</i></strong>Engineer</p>
+      <p><strong><i>Standard Cost.</i></strong>5500cr</p>
+      <p><strong><i>Description.</i></strong>The Targeting Assistance Mem-Stick is a reformatted memory stick that when plugged into a datapad gives the user constant updates on hostile target positions. The mem-stick allows the user to use a bonus action to begin tracking up to 10 targets. You know a tracked target's position within 600 feet of you, and have advantage on attack rolls against tracked enemies.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">4</set>
+      <set name="school">Conjuration</set>
+      <set name="time">30 Hours</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">1450cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Targeting Scope" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_TARGETING_SCOPE">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>3</p>
+      <p><strong><i>Type.</i></strong>Weapon</p>
+      <p><strong><i>Subtype.</i></strong>Ranged</p>
+      <p><strong><i>Activation.</i></strong>Constant</p>
+      <p><strong><i>Restriction.</i></strong>Engineer</p>
+      <p><strong><i>Standard Cost.</i></strong>600cr</p>
+      <p><strong><i>Description.</i></strong>This gadget increases your accuracy when you make an attack with the weapon it is attached to. You do not suffer disadvantage when you use this weapon to attack a target outside the weapon's effective range.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Conjuration</set>
+      <set name="time">8 Hours</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">260cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Tinfoil Hat" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_TINFOIL_HAT">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>3</p>
+      <p><strong><i>Type.</i></strong>Clothing</p>
+      <p><strong><i>Subtype.</i></strong>Hat</p>
+      <p><strong><i>Activation.</i></strong>Constant</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>300cr</p>
+      <p><strong><i>Description.</i></strong>As long as you are wearing this gadget you gain resistance to psychic damage and gain advantage on saving throws against your mind.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Conjuration</set>
+      <set name="time">8 Hours</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">260cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Tranquilizer Watch" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_TRANQUILIZER_WATCH">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>1</p>
+      <p><strong><i>Type.</i></strong>Clothing</p>
+      <p><strong><i>Subtype.</i></strong>Armpiece</p>
+      <p><strong><i>Activation.</i></strong>Action, Constant</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>150cr</p>
+      <p><strong><i>Description.</i></strong>This gadget tells you the exact time, date, and day of the week.</p>
+      <p><strong><i>Tranq Dart.</i></strong>When this gadget is equipped, you can use an object interaction in conjunction with an attack action to fire a spring, loaded dart at a target you can see within 30 feet of you. You add your proficiency bonus and Dexterity modifier to the attack roll. If the attack hits, the target takes 1d4 piercing damage and must make a Constitution saving throw or fall unconscious for 10 minutes. The unconscious creature awakens if it takes damage or if someone uses an action to shake or slap it awake. Once used, the effect must be reset and cannot be used again until you complete a short or long rest.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">1</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">150cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Ultra Power Blast" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_ULTRA_POWER_BLAST">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>4</p>
+      <p><strong><i>Type.</i></strong>Clothing</p>
+      <p><strong><i>Subtype.</i></strong>Starship</p>
+      <p><strong><i>Activation.</i></strong>Action</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>10000cr</p>
+      <p><strong><i>Description.</i></strong>The ultra-power blast is a weapon that can be added to any small or larger starship. It is capable of dealing immense amounts of ion damage and can even disable Star Destroyers.</p>
+      <p class="indent">When equipped on a ship, you can make an weapon attack with the ultra power blast. If it hits, it deals 5,000 ion damage.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">4</set>
+      <set name="school">Conjuration</set>
+      <set name="time">30 Hours</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">1450cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Universal Translator" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_UNIVERSAL_TRANSLATOR">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>1</p>
+      <p><strong><i>Type.</i></strong>Clothing</p>
+      <p><strong><i>Subtype.</i></strong>Headgear</p>
+      <p><strong><i>Activation.</i></strong>Constant</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>150cr</p>
+      <p><strong><i>Description.</i></strong>While you have this gadget equipped, you understand and can speak any known language.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">1</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">20cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Valkyrie Cameras" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_VALKYRIE_CAMERAS">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>3</p>
+      <p><strong><i>Type.</i></strong>Toolbelt</p>
+      <p><strong><i>Subtype.</i></strong>Grenade</p>
+      <p><strong><i>Activation.</i></strong>Action, Object Interaction</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>1000cr</p>
+      <p><strong><i>Description.</i></strong>When you have this gadget equipped you gain two small, deployable cameras that can attach to any surface. To use them, you must make a grenade check with them to see where they land. These cameras have 60ft. darkvision. It takes 1 object interaction to see through the chosen camera. The cameras last up to 8 hours. After you use a camera, you cannot use it again until you recharge it during a short or long rest. The number of cameras you can have increases to 3 at level 11 and 4 at level 17.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Conjuration</set>
+      <set name="time">8 Hours</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">260cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Velocity-7 Dart Shooter" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_VELOCITY7_DART_SHOOTER">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>4</p>
+      <p><strong><i>Type.</i></strong>Weapon</p>
+      <p><strong><i>Subtype.</i></strong>Ranged</p>
+      <p><strong><i>Activation.</i></strong>Action</p>
+      <p><strong><i>Restriction.</i></strong>Engineer, Mercenary</p>
+      <p><strong><i>Standard Cost.</i></strong>5000cr</p>
+      <p><strong><i>Description.</i></strong>This gadget is a Velocity-7 Dart Shooter integrated into your gloves/gauntlets. You can use an object interaction in conjunction with an attack action to fire a powerful dart of your choosing at a target you can see within 60 feet of you. You add your proficiency bonus and dexterity modifier to the attack roll. If the attack hits the target suffers the effect of the chosen dart. The darts you can choose from are listed below. Once used, the effect must be reset and cannot be used again until you complete a short or long rest.</p>
+      <p><strong><i>Kaminoan Saberdart.</i></strong>When hit with this dart the enemy must make a constitution saving throw. On a failed throw the target takes 62 (12d6 + 20) poison damage.</p>
+      <p><strong><i>Sleep Dart.</i></strong>The target takes 2d4 piercing damage and must make a Constitution saving throw (DC 16) or fall unconscious for 24 hours.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">4</set>
+      <set name="school">Conjuration</set>
+      <set name="time">30 Hours</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">1450cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Water Purifier" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_WATER_PURIFIER">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>1</p>
+      <p><strong><i>Type.</i></strong>Backpack</p>
+      <p><strong><i>Subtype.</i></strong></p>
+      <p><strong><i>Activation.</i></strong>1 Hour</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>150cr</p>
+      <p><strong><i>Description.</i></strong>The Water purifier is a tool that is placed within a body of water and can be used to pull out water and purify it to become drinkable. This process takes 1hr.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">1</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">20cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="Wheeled Heels" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_WHEELED_HEELS">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>4</p>
+      <p><strong><i>Type.</i></strong>Clothing</p>
+      <p><strong><i>Subtype.</i></strong>Shoe</p>
+      <p><strong><i>Activation.</i></strong>Bonus, Object Interaction</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>2000cr</p>
+      <p><strong><i>Description.</i></strong>While this gadget is equipped, you can use a bonus action on each of your turns to take the Dash action.</p>
+      <p><strong><i>Rocket Shoes.</i></strong>You can take an object interaction to fire rockets built into your boots, causing your walking speed to be doubled and any creature that makes an opportunity attack against you has disadvantage on the attack roll. This effect lasts for one minute. Once used, this effect must be recharged and it cannot be used again until you complete a short or long rest.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">4</set>
+      <set name="school">Conjuration</set>
+      <set name="time">30 Hours</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">1450cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+  <element name="ZX Miniature Flame Projector" type="Spell" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SPELL_GADGET_ZX_MINIATURE_FLAME_PROJECTOR">
+		<supports>Engineer</supports>
+    <description>
+      <p><strong><i>Gadget Level.</i></strong>1</p>
+      <p><strong><i>Type.</i></strong>Clothing</p>
+      <p><strong><i>Subtype.</i></strong>Gloves</p>
+      <p><strong><i>Activation.</i></strong>Action</p>
+      <p><strong><i>Restriction.</i></strong>None</p>
+      <p><strong><i>Standard Cost.</i></strong>750cr</p>
+      <p><strong><i>Description.</i></strong>When you use this gadget, you shoot a 15ft. line of flames from your wrist. Anyone along this line must make a dexterity saving throw (DC 15). On a failed save, the creature takes 4d6 fire damage and is on fire, taking 1d6 fire damage at the start of its turn. On a successful save the creature takes half damage. Creatures on fire can use an action to put the fire out. Once used, this gadget must be recharged and its effect cannot be used again until you complete a short or long rest.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">1</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 Hour</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">20cr</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+
+</elements>

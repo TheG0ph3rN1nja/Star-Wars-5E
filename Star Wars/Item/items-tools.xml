@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Tools</name>
+    <description>GM Binder</description>
+    <author />
+    <update version="0.0.1">
+      <file name="items-tools.xml" url="" />
+    </update>
+  </info>
+
+  <element name="Engineering Tools" type="Item" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ITEM_TOOLS_ENGINEERING_TOOLS">
+		<description>
+			<p>Enginnering Tools allow you to repair most mechanical or electrical items given enough time and correct parts.</p>
+			<p class="indent"><strong><em>Components.</em></strong> The engineering kit is a kit containing 5 wrenches, a hammer, 1 of each type of screw driver, 20 screws, 15 nails, 5x6 slab of iron, a torch, and an assortment of screws, nails, nuts, bolts, springs, and cogs.</p>
+			<p class="indent"><strong><em>History.</em></strong> Proficiency with Enginnering Tools allows you to unlock more information on History checks involving mechanical and electrical materials.</p>
+			<p class="indent"><strong><em>Investigation.</em></strong>When you inspect an area for clues, proficiency with engineering tools grants additional insight into any chemicals or other substances that might have been used in the area.</p>
+      <p class="indent"><strong><em>Upgrades.</em></strong>With the correct parts you can upgrade or modify an exsisting item</p>
+			<p class="indent"><strong><em>Mechanical Crafting.</em></strong>You can use this tool proficiency to create mechanical items. A character can spend money to collect raw materials, which weigh 1 pound for every 50 gp spent. The DM can allow a character to make a check using the indicated skill with advantage. As part of a long rest, you can use engineering tools to make any basic mechanical or electrical item. Subtract half the value of the created item from the total gp worth of raw materials you are carrying.</p>
+			<h5>ENGINEERING TOOLS</h5>
+			<table>
+				<thead>
+					<tr><td>Activity</td><td class="col-10">DC</td></tr>
+				</thead>
+				<tr><td>Repair a mechanical item</td><td>10</td></tr>
+				<tr><td>Repair an electrical item</td><td>10</td></tr>
+				<tr><td>Identify the craftsmanship of an item</td><td>15</td></tr>
+				<tr><td>Weld an item</td><td>15</td></tr>
+				<tr><td>Upgrade an item</td><td>20</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="25">25 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_ITEM_ENGINEERING_TOOLS</set>
+		</setters>
+	</element>
+
+  <element name="Tool Proficiency (Engineering Tools)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_ITEM_ENGINEERING_TOOLS">
+		<supports>ID_INTERNAL_PROFICIENCY_TOOL_PROFICIENCY_TOOL</supports>
+	</element>
+
+  <element name="Medical Kit" type="Item" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ITEM_TOOLS_MEDICAL_KIT">
+		<description>
+			<p>Proficiency with an medical kit allows you to apply quick and efficient first-aid.</p>
+			<p class="indent"><strong><em>Components.</em></strong> A medical kit is a plastic or metal container containing bandages, salves, and splints. The kit has ten uses. As an action, you can expend one use of the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check.</p>
+			<p class="indent"><strong><em>Investigation.</em></strong> When you inspect a wound, your proficiency can help you pick out details and clues that others might miss.</p>
+			<p class="indent"><strong><em>Healing.</em></strong> Your mastery of healing improves your ability to treat illnesses and wounds by augmenting your methods of care with secret medical recipes.</p>
+			<p class="indent"><strong><em>Medicine and Survival.</em></strong> When you travel, your skill in medicine makes it easier to identify illness and plague.</p>
+			<p class="indent"><strong><em>Identify.</em></strong> You can identify most medicines,aliments,and wounds</p>
+			<h5>Medical Kit</h5>
+			<table>
+				<thead>
+					<tr><td>Activity</td><td class="col-10">DC</td></tr>
+				</thead>
+				<tr><td>Find cures</td><td>15</td></tr>
+				<tr><td>Identify wounds</td><td>20</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="3">3 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_ITEM_MEDICAL_KIT</set>
+		</setters>
+	</element>
+
+  <element name="Tool Proficiency (Medical Kit)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_ITEM_MEDICAL_KIT">
+		<supports>ID_INTERNAL_PROFICIENCY_TOOL_PROFICIENCY_TOOL</supports>
+	</element>
+
+  <append id="ID_PROFICIENCY_TOOL_PROFICIENCY_TOOL">
+		<rules>
+			<grant type="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_ITEM_ENGINEERING_TOOLS" />
+      <grant type="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_ITEM_MEDICAL_KIT" />
+      <grant type="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_ITEM_DEMOLITIONIST_TOOLS" />
+      <grant type="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_ITEM_TINKERERS_TOOLS" />
+    </rules>
+  </append>
+
+  <element name="Demolitionist Tools" type="Item" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ITEM_TOOLS_DEMOLITIONIST_TOOLS">
+    <description>
+      <p>Demolitionist's Tools allow you to take destruction to the next level.</p>
+      <p class="indent"><strong><em>Components.</em></strong> The demolitionist toolkit is a kit containing 1 sledgehammer, a hammer, 1 crowbar, 20 screws, safety helmet and vest, 1 set of screwdrivers, 1 set of bolt cutters, assortment of fuses, 5 detonators, 1 fire starter</p>
+      <p class="indent"><strong><em>Accuracy.</em></strong> Proficiency with Demolitionist Tools allows you to cause destruction in a accurate manner. You can choose how what damage is done and how things are destroyed given enough time and supplies</p>
+      <p class="indent"><strong><em>Investigation.</em></strong>When you inspect an area for clues, proficiency with demolitionist tools grants additional insight into any how and what destroyed an item or area</p>
+      <p class="indent"><strong><em>EXPLOSIONS!.</em></strong>You are proficient with making IED's</p>
+      <h5>DEMOLITIONIST TOOLS</h5>
+      <table>
+        <thead>
+          <tr><td>Activity</td><td class="col-10">DC</td></tr>
+        </thead>
+        <tr><td>Cut Locks</td><td>10</td></tr>
+        <tr><td>Dismantale simple items</td><td>10</td></tr>
+        <tr><td>Smash Simple structures</td><td>15</td></tr>
+        <tr><td>Blow Stuff up.</td><td>15</td></tr>
+        <tr><td>Destroy Complex structures</td><td>20</td></tr>
+      </table>
+    </description>
+    <setters>
+      <set name="category">Tools</set>
+      <set name="cost" currency="gp">75</set>
+      <set name="weight" lb="50">50 lbs.</set>
+      <set name="type">Tool</set>
+      <set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_ITEM_DEMOLITIONIST_TOOLS</set>
+    </setters>
+  </element>
+
+  <element name="Tool Proficiency (Demolitionist Tools)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_ITEM_DEMOLITIONIST_TOOLS">
+    <supports>ID_INTERNAL_PROFICIENCY_TOOL_PROFICIENCY_TOOL</supports>
+  </element>
+
+  <element name="Tinkerer's Tools" type="Item" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ITEM_TOOLS_TINKERERS_TOOLS">
+    <description>
+      <p>A set of tinker's tools is designed to enable you to repair many mundane objects. Though you can't manufacture much with tinker's tools, you can mend torn clothes, sharpen a worn sword, and patch a tattered suit of chain mail. </p>
+      <p class="indent"><strong><em>Components.</em></strong>Tinker's tools include a variety of hand tools, thread, needles, a whetstone, scraps of cloth and leather, and a small pot of glue. </p>
+      <p class="indent"><strong><em>History.</em></strong>You can determine the age and origin of objects, even if you have only a few pieces remaining from the original. </p>
+      <p class="indent"><strong><em>Investigation.</em></strong>When you inspect a damaged object, you gain knowledge of how it was damaged and how long ago.</p>
+      <p class="indent"><strong><em>Repair.</em></strong>You can restore 10 hit points to a damaged object for each hour of work. For any object, you need access to the raw materials required to repair it. For metal objects, you need access to an open flame hot enough to make the metal pliable.</p>
+    </description>
+    <setters>
+      <set name="category">Tools</set>
+      <set name="cost" currency="gp">50</set>
+      <set name="weight" lb="10">10 lbs.</set>
+      <set name="type">Tool</set>
+      <set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_ITEM_TINKERERS_TOOLS</set>
+    </setters>
+  </element>
+
+  <element name="Tool Proficiency (Tinkerers Tools)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_ITEM_TINKERERS_TOOLS">
+    <supports>ID_INTERNAL_PROFICIENCY_TOOL_PROFICIENCY_TOOL</supports>
+  </element>
+
+</elements>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Mercenary Veteran</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="mercenary-veteran.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/mercenary-veteran.xml" />
+		</update>
+	</info>
+
+	<element name="Mercenary Veteran" type="Background" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_MERCENARY_VETERAN">
+    <description>
+    <ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Athletics, Persuasion </li>
+        <li><strong>Other Proficiencies:</strong>One type of Vehicle, one gaming set  </li>
+				<li><strong>Equipment:</strong>One game set, uniform from your company, 10 cr </li>
+      </ul>
+      <div element="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_MERCENARY_LIFE" />
+    </description>
+      <setters>
+        <set name="short">Athletics, Persuasion, One type of Vehicle, one gaming set, One game set, uniform from your company, 10 cr</set>
+      </setters>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND" />
+        <select type="Proficiency" name="Tool Proficiency (Mercenary Veteran)" supports="Gaming Set" />
+      </rules>
+    </element>
+
+    <element name="Feature: Mercenary Life" type="Background Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_MERCENARY_LIFE">
+      <supports>Background Feature</supports>
+		<description>
+			<p>You know the mercenary life as only someone who has experienced it can. You are able to identify mercenary companies by their emblems, and you know a little about any such company, including the names and reputations of its commanders and leaders, and who has hired them recently. You can find the cantinas where mercenaries abide in any area, as long as you speak the language. You can find mercenary work between adventures sufficient to maintain a comfortable lifestyle.</p>
+		</description>
+		<sheet alt="Mercenary Life">
+			<description>You know the mercenary life as only someone who has experienced it can. You are able to identify mercenary companies by their emblems, and you know a little about any such company, including the names and reputations of its commanders and leaders, and who has hired them recently. You can find the cantinas where mercenaries abide in any area, as long as you speak the language. You can find mercenary work between adventures sufficient to maintain a comfortable lifestyle.</description>
+		</sheet>
+	</element>
+
+</elements>

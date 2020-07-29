@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Force Talents</name>
+		<description>GM Binder</description>
+		<update version="0.0.1">
+			<file name="force-talents.xml" url="" />
+		</update>
+	</info>
+
+  <element name="Force Talent" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FORCE_TALENT">
+		<supports>Guardian, Sentinel, Adept, Consular</supports>
+		<description>
+      <p>A force talent is an ability that requires force aptitude but doesn’t drain a wielder's force energy. Talents are similar to disciplines and use the same rules, but with three important exceptions:</p>
+      <ul class="unstyled">
+        <li>You can never use your focus on a talent.</li>
+        <li>Talents don’t require you to spend force points to use them.</li>
+        <li>Talents aren’t linked to force orders.</li>
+      </ul>
+    </description>
+    <setters />
+    <sheet display="false" />
+    <rules>
+      <select type="Class Feature" name="Force Talent" supports="Force Talent" />
+    </rules>
+  </element>
+
+  <element name="Beacon" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FORCE_TALENT_BEACON">
+    <supports>Force Talent</supports>
+    <description>
+      <p>As a bonus action, you cause bright light to radiate from your body in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. The light lasts for 1 hour, and you can extinguish it earlier as a bonus action.</p>
+    </description>
+    <sheet action="Bonus Action">
+      <description>You cause bright light to radiate from your body in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. The light lasts for 1 hour, and you can extinguish it earlier as a bonus action.</description>
+    </sheet>
+    <rules />
+  </element>
+
+  <element name="Blade Meld" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FORCE_TALENT_BLADE_MELD">
+    <supports>Force Talent</supports>
+    <description>
+      <p>As a bonus action, a one-handed melee weapon you hold becomes one with your hand. For the next minute, you can’t let go of the weapon nor can it be forced from your grasp.</p>
+    </description>
+    <sheet action="Bonus Action">
+      <description>A one-handed melee weapon you hold becomes one with your hand. For the next minute, you can’t let go of the weapon nor can it be forced from your grasp.</description>
+    </sheet>
+    <rules />
+  </element>
+
+  <element name="Blind Spot" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FORCE_TALENT_BLIND_SPOT">
+    <supports>Force Talent</supports>
+    <description>
+      <p>As an action, you erase your image from the mind of one creature you can see within 120 feet of you; the target must succeed on a Wisdom saving throw, or you are invisible to it until the end of your next turn.</p>
+    </description>
+    <sheet action="Action">
+      <description>You erase your image from the mind of one creature you can see within 120 feet of you; the target must succeed on a Wisdom saving throw, or you are invisible to it until the end of your next turn.</description>
+    </sheet>
+    <rules />
+  </element>
+
+  <element name="Delusion" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FORCE_TALENT_DELUSION">
+    <supports>Force Talent</supports>
+    <description>
+      <p>As an action, you plant a false belief in the mind of one creature that you can see within 60 feet of you. You can create a sound or an image. Only the target of this talent perceives the sound or image you create.</p>
+      <p class="indent">If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a creature's roar, a musical instrument, or any other sound you pick. It lasts for 1 minute.</p>
+      <p class="indent">If you create an object, it must fit within a 5- foot cube and can’t move or be reflective. The image can't create any effect that influences a sense other than sight. The image lasts for 1 minute, and it disappears if the creature touches it.</p>
+    </description>
+    <sheet action="Action">
+      <description>yYou plant a false belief in the mind of one creature that you can see within 60 feet of you. You can create a sound or an image. Only the target of this talent perceives the sound or image you create.</description>
+    </sheet>
+    <rules />
+  </element>
+
+  <element name="Energy Beam" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FORCE_TALENT_ENERGY_BEAM">
+    <supports>Force Talent</supports>
+    <description>
+      <p>As an action, you target one creature you can see within 90 feet of you. The target must succeed on a Dexterity saving throw or take 1d8 acid, cold, fire, lightning, or thunder damage (your choice). The talent’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+    </description>
+    <sheet action="Action">
+      <description>You target one creature you can see within 90 feet of you. The target must succeed on a Dexterity saving throw or take {{energy-beam-dice:number}}d8 acid, cold, fire, lightning, or thunder damage (your choice).</description>
+    </sheet>
+    <rules>
+      <stat name="energy-beam-dice:number" value="1" level="1" />
+      <stat name="energy-beam-dice:number" value="1" level="5" />
+      <stat name="energy-beam-dice:number" value="1" level="11" />
+      <stat name="energy-beam-dice:number" value="1" level="17" />
+    </rules>
+  </element>
+
+  <element name="Force Charm" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FORCE_TALENT_FORCE_CHARM">
+    <supports>Force Talent</supports>
+    <description>
+      <p>As an action, you beguile one humanoid you can see within 120 feet of you. The target must succeed on a Charisma saving throw or be charmed by you until the end of your next turn.</p>
+    </description>
+    <sheet action="Action">
+      <description>You beguile one humanoid you can see within 120 feet of you. The target must succeed on a Charisma saving throw or be charmed by you until the end of your next turn.</description>
+    </sheet>
+    <rules />
+  </element>
+
+  <element name="Force Hand" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FORCE_TALENT_FORCE_Hand">
+    <supports>Force Talent</supports>
+    <description>
+      <p>You can use your action to manipulate or move one object within 30 feet of you. The object can’t weigh more than 10 pounds, and you can’t affect an object being worn or carried by another creature. If the object is loose, you can move it up to 30 feet in any direction.</p>
+    </description>
+    <sheet action="Action">
+      <description>You can manipulate or move one loose object within 30 feet of you. The object can’t weigh more than 10 pounds, and you can’t affect an object being worn or carried by another creature.</description>
+    </sheet>
+    <rules />
+  </element>
+
+  <element name="Light Step" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FORCE_TALENT_LIGHT_STEP">
+    <supports>Force Talent</supports>
+    <description>
+      <p>As a bonus action, you alter your density and weight to improve your mobility. For the rest of your turn, your walking speed increases by 10 feet, and the first time you stand up this turn, you do so without expending any of your movement if your speed is greater than 0.</p>
+    </description>
+    <sheet action="Bonus Action">
+      <description>For the rest of your turn, your walking speed increases by 10 feet, and the first time you stand up this turn, you do so without expending any of your movement if your speed is greater than 0.</description>
+    </sheet>
+    <rules />
+  </element>
+
+  <element name="Mind Meld" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FORCE_TALENT_MIND_MELD">
+    <supports>Force Talent</supports>
+    <description>
+      <p>As a bonus action, you can communicate telepathically with one willing creature you can see within 120 feet of you. The target must have an Intelligence of at least 2, otherwise this talent fails and the action is wasted.</p>
+      <p class="indent">This communication can occur until the end of the current turn. You don’t need to share a language with the target for it to understand your telepathic utterances, and it understands you even if it lacks a language. You also gain access to one memory of the target’s choice, gaining perfect recall of one thing it saw or did.</p>
+    </description>
+    <sheet action="Bonus Action">
+      <description>You communicate telepathically with one willing creature you can see within 120 feet of you. The target must have an Intelligence of at least 2, otherwise this talent fails and the action is wasted.</description>
+    </sheet>
+    <rules />
+  </element>
+
+  <element name="Mind Slam" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FORCE_TALENT_MIND_SLAM">
+    <supports>Force Talent</supports>
+    <description>
+      <p>As an action, you target one creature you can see within 60 feet of you. The target must succeed on a Constitution saving throw or take 1d6 force damage. If it takes any of this damage and is Large or smaller, it is knocked prone.</p>
+      <p class="indent">The talent’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+    </description>
+    <sheet action="Action">
+      <description>You target one creature you can see within 60 feet of you. The target must succeed on a Constitution saving throw or take {{mind-slam-dice:number}}d6 force damage. If it takes any of this damage and is larger or smaller, it is knocked prone.</description>
+    </sheet>
+    <rules>
+      <stat name="mind-slam-dice:number" value="1" level="1" />
+      <stat name="mind-slam-dice:number" value="1" level="5" />
+      <stat name="mind-slam-dice:number" value="1" level="11" />
+      <stat name="mind-slam-dice:number" value="1" level="17" />
+    </rules>
+  </element>
+
+  <element name="Mind Thrust" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FORCE_TALENT_MIND_THRUST">
+    <supports>Force Talent</supports>
+    <description>
+      <p>As an action, you target one creature you can see within 120 feet of you. The target must succeed on an Intelligence saving throw or take 1d10 psychic damage.</p>
+      <p class="indent">The talent’s damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>
+    </description>
+    <sheet action="Action">
+      <description>You target one creature you can see within 120 feet of you. The target must succeed on an Intelligence saving throw or take {{mind-thrust-dice:number}}d10 psychic damage. If it takes any of this damage and is larger or smaller, it is knocked prone.</description>
+    </sheet>
+    <rules>
+      <stat name="mind-thrust-dice:number" value="1" level="1" />
+      <stat name="mind-thrust-dice:number" value="1" level="5" />
+      <stat name="mind-thrust-dice:number" value="1" level="11" />
+      <stat name="mind-thrust-dice:number" value="1" level="17" />
+    </rules>
+  </element>
+
+  <element name="Psychic Hammer" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FORCE_TALENT_PSYCHIC_HAMMER">
+    <supports>Force Talent</supports>
+    <description>
+      <p>As an action, you try to grasp one creature you can see within 120 feet of you, with a hand crafted from telekinetic energy. The target must succeed on a Strength saving throw or take 1d6 force damage. If it takes any of this damage and is Large or smaller, you can move it up to 10 feet in a straight line in a direction of your choice. You can’t lift the target off the ground unless it is already airborne or underwater.</p>
+      <p class="indent">The talent’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+    </description>
+    <sheet action="Action">
+      <description>you try to grasp one creature you can see within 120 feet of you, with a hand crafted from telekinetic energy. The target must succeed on a Strength saving throw or take {{psychic-hammer-dice:number}}d6 force damage. If it takes any of this damage and is larger or smaller, you can move it up to 10 feet in a straight line in a direction of your choice. You can’t lift the target off the ground unless it is already airborne or underwater.</description>
+    </sheet>
+    <rules>
+      <stat name="psychic-hammer-dice:number" value="1" level="1" />
+      <stat name="psychic-hammer-dice:number" value="1" level="5" />
+      <stat name="psychic-hammer-dice:number" value="1" level="11" />
+      <stat name="psychic-hammer-dice:number" value="1" level="17" />
+    </rules>
+  </element>
+
+</elements>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Nautolan</name>
+		<description>GM Binder</description>
+		<author />
+		<update version="0.0.1">
+			<file name="nautolan.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Nautolan" type="Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACE_NAUTOLAN">
+		<description>
+			<p>The Nautolans, sometimes referred to as the Nautiloids, were an amphibious humanoid species from the planet Glee Anselm. Although they established settlements across their aquatic homeworld, most Nautolan civilization was found in the Sabilon region. The most well known Nautolan was Jedi Master Kit Fisto, a hero of the Clone Wars and member of the Jedi Council.</p>
+      <h4>Divided</h4>
+      <p>Nautolans possessed physiology common to amphibious species, including low light vision and excellent swimming skills. Their bony exoskeleton and dense cartilage made them tough and resistant to glancing blows.</p>
+      <p class="indent">An egg-laying species, Nautolans emerged from their egg as a tadpole that developed arms, legs, and head-tails during their second year of life. Roughly the same size as a Human infant during this time, their limbs were weak and unable to support their weight, forcing youthful Nautolans to remain in aquatic environments for much of their childhood. They stood an average of 1.8 meters, had smooth green, blue, purple, or brown skin, and large black or dark maroon eyes with lids that were seldom used. They were capable of breathing underwater; however, unlike other water-based species, Nautolans did not experience difficulties out of water.</p>
+      <h4>Nautolan Names</h4>
+      <p class="indent"><strong><i>Male Names:</i></strong> Bengel Morr, Fong Do, Kit Fisto, Knox, Oric Traless, Zatt</p>
+      <p class="indent"><strong><i>Female Names:</i></strong> Dah'lis Stark, Dossa, Leeha Narezz</p>
+			<h4>Nautolan Traits</h4>
+			<p>Your Nautolan character has many different attributes that might be useful in the field:</p>
+			<p class="indent"><strong><i>Ability Score Increase.</i></strong> +2 to Dexterity, +1 to Constitution</p>
+      <p class="indent"><strong><i>Age.</i></strong> Up to 70 years old</p>
+			<p class="indent"><strong><i>Alignment.</i></strong> Usually good</p>
+			<p class="indent"><strong><i>Size.</i></strong> Medium.</p>
+			<p class="indent"><strong><i>Speed.</i></strong> 30ft land, 60ft underwater</p>
+			<p class="indent"><strong><i>Darkvision.</i></strong> 30ft</p>
+      <p class="indent"><strong><i>Exoskeleton.</i></strong> +1 AC.</p>
+      <p class="indent"><strong><i>Waterborn.</i></strong> Due to being an aquatic race, Nautolan characters can breath in water.</p>
+      <p class="indent"><strong><i>Tendrils.</i></strong> You have tendrils all over your head which allow you to sense the presence of certain pheromones. This allows you to sense your surroundings fairly well, therefore your character has blindsight for up to 30ft.</p>
+			<p class="indent"><strong><i>Languages.</i></strong> Nautila, Basic.</p>
+		</description>
+		<sheet display="false" />
+			<setters />
+			<rules>
+				<stat name="Dexterity" value="2" />
+				<stat name="Constitution" value="1" />
+				<grant type="Size" id="ID_SIZE_MEDIUM" />
+				<stat name="Speed" value="30" bonus="base" />
+        <stat name="Speed:Swim" value="60" bonus="base" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_NAUTOLAN_WATERBORN" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_NAUTOLAN_TENDRILS" />
+        <grant type="Vision" name="ID_VISION_DARKVISION" />
+        <stat name="ac" value="1" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_NAUTILA" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_BASIC" />
+			</rules>
+    </element>
+
+    <element name="Waterborn" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_NAUTOLAN_WATERBORN">
+			<description>
+				<p>Due to being an aquatic race, Nautolan characters can breath in water.</p>
+			</description>
+			<sheet>
+				<description>
+          <p>You can breath in water.</p>
+        </description>
+			</sheet>
+			<rules />
+		</element>
+
+    <element name="Tendrils" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_NAUTOLAN_TENDRILS">
+			<description>
+				<p>You have tendrils all over your head which allow you to sense the presence of certain pheromones. This allows you to sense your surroundings fairly well, therefore your character has blindsight for up to 30ft.</p>
+			</description>
+			<sheet>
+				<description>
+          <p>Your character has blindsight for up to 30ft.</p>
+        </description>
+			</sheet>
+			<rules>
+        <grant type="Vision" name="ID_VISION_BLINDSIGHT" />
+      </rules>
+		</element>
+
+ </elements>

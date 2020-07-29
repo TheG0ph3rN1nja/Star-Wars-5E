@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Consular</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="consular.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/classes/consular.xml" />
+		</update>
+	</info>
+
+  <element name="Consular" type="Class" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_CONSULAR">
+		<description>
+      <p>Led by the Council of Reconciliation, the Consulars sought diplomatic measures in spreading peace and harmony across the Galactic Republic. Refraining from drawing their lightsabers (many Consulars wielded green lightsabers) except as a measure of last resort, Consulars spent a great deal of time studying the mysteries of the Force.</p>
+      <h3>CLASS FEATURES</h3>
+			<p>As an consular, you gain the following class features.</p>
+			<h5>HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d12 per consular level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 12 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d12 (or 7) + your Constitution modifier per consular level after 1st</li>
+			</ul>
+			<h5>PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> Medium, Heavy armor</li>
+				<li><strong>Weapons:</strong> Simple, lightsabers</li>
+				<li><strong>Tools:</strong> None</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Constitution, Wisdom</li>
+				<li><strong>Skills:</strong> Choose four skills from Animal Handling, Deception, Insight, Intimidation, Medicine, Perception, Performance, Persuasion, and Survival </li>
+			</ul>
+			<h5>EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li>A lightsaber according to the lightsaber color table.</li>
+				<li>Robes</li>
+			</ul>
+			<h5 class="caption">The Consular</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="left">Proficiency Bonus</td><td class="left">Features</td><td class="col-5">Talents Known</td><td class="col-5">Disciplines Known</td><td class="col-5">Force Points</td><td class="col-5">Force Limit</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>+2</td><td class="left">Force, Force Order, Telepathy</td><td>1</td><td>1</td><td>4</td><td>2</td></tr>
+				<tr><td> 2nd</td><td>+2</td><td class="left">Force Recovery</td><td>1</td><td>1</td><td>6</td><td>2</td></tr>
+				<tr><td> 3rd</td><td>+2</td><td class="left">Force Order feature</td><td>2</td><td>2</td><td>14</td><td>3</td></tr>
+				<tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td><td>2</td><td>2</td><td>17</td><td>3</td></tr>
+				<tr><td> 5th</td><td>+3</td><td class="left">Healer</td><td>2</td><td>2</td><td>27</td><td>4</td></tr>
+				<tr><td> 6th</td><td>+3</td><td class="left">Force Order feature</td><td>2</td><td>3</td><td>32</td><td>4</td></tr>
+				<tr><td> 7th</td><td>+3</td><td class="left">Heightened Senses</td><td>2</td><td>3</td><td>38</td><td>5</td></tr>
+				<tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td><td>2</td><td>3</td><td>44</td><td>5</td></tr>
+				<tr><td> 9th</td><td>+4</td><td class="left">Advanced Healing, Precognitive Instinct</td><td>2</td><td>4</td><td>57</td><td>6</td></tr>
+				<tr><td>10th</td><td>+4</td><td class="left">Force Order feature</td><td>3</td><td>4</td><td>64</td><td>6</td></tr>
+				<tr><td>11th</td><td>+4</td><td class="left">—</td><td>3</td><td>4</td><td>64</td><td>7</td></tr>
+				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td><td>3</td><td>5</td><td>64</td><td>7</td></tr>
+				<tr><td>13th</td><td>+5</td><td class="left">Precognitive Defense</td><td>3</td><td>5</td><td>64</td><td>7</td></tr>
+				<tr><td>14th</td><td>+5</td><td class="left">Force Order feature</td><td>3</td><td>5</td><td>64</td><td>7</td></tr>
+				<tr><td>15th</td><td>+5</td><td class="left">—</td><td>3</td><td>6</td><td>64</td><td>7</td></tr>
+				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td><td>3</td><td>6</td><td>64</td><td>7</td></tr>
+				<tr><td>17th</td><td>+6</td><td class="left">Cleansing Touch</td><td>4</td><td>6</td><td>64</td><td>7</td></tr>
+				<tr><td>18th</td><td>+6</td><td class="left">—</td><td>4</td><td>7</td><td>64</td><td>7</td></tr>
+				<tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td><td>4</td><td>7</td><td>64</td><td>7</td></tr>
+				<tr><td>20th</td><td>+6</td><td class="left">Force Body</td><td>5</td><td>7</td><td>64</td><td>7</td></tr>
+			</table>
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_FORCE_POINTS" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_FORCE_ORDER" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_SPELLCASTING_CONSULAR" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_TELEPATHY" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_FORCE_RECOVERY" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_ABILITYSCOREIMPROVEMENT_CONSULAR" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_HEALER" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_HEIGHTENED_SENSES" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_ADVANCED_HEALING" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_PRECOGNITIVE_INSTINCT" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_PRECOGNITIVE_DEFENSE" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_CLEANSING_TOUCH" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_FORCE_BODY" />
+    </description>
+		<sheet display="false" />
+		<setters>
+			<set name="hd">d12</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSABER" />
+      <grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_DOUBLEBLADED_LIGHTSABER" />
+      <grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSABER_PIKE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+			<select type="Proficiency" name="Skill Proficiency (Consular)" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_SURVIVAL" number="4" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SKILL_REPAIRS" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SKILL_SECURITY" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_FORCE_POINTS" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_FORCE_LIMIT" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_FORCE_TALENT_CONSULAR" level="1" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FORCE_ORDER" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_SPELLCASTING_CONSULAR" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_TELEPATHY" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_FORCE_RECOVERY" level="2" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_ABILITYSCOREIMPROVEMENT_CONSULAR" level="4" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_HEALER" level="5" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_HEIGHTENED_SENSES" level="7" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_ADVANCED_HEALING" level="9" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_PRECOGNITIVE_INSTINCT" level="9" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_PRECOGNITIVE_DEFENSE" level="13" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_CLEANSING_TOUCH" level="17" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_FORCE_BODY" level="20" />
+		</rules>
+	</element>
+
+  <element name="Force Points(Consular)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_FORCE_POINTS">
+		<description />
+		<sheet usage="{{force-points consular:count}}/Long Rest" />
+			<rules>
+				<stat name="force-points consular:count" value="4" />
+				<stat name="force-points consular:count" value="2" level="2" />
+				<stat name="force-points consular:count" value="8" level="3" />
+				<stat name="force-points consular:count" value="3" level="4" />
+				<stat name="force-points consular:count" value="10" level="5" />
+				<stat name="force-points consular:count" value="5" level="6" />
+				<stat name="force-points consular:count" value="6" level="7" />
+				<stat name="force-points consular:count" value="6" level="8" />
+				<stat name="force-points consular:count" value="13" level="9" />
+				<stat name="force-points consular:count" value="7" level="10" />
+				<stat name="force-points consular:count" value="11" level="13" />
+			</rules>
+	</element>
+
+	<element name="Force Limit(Consular)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_FORCE_LIMIT">
+		<description />
+		<sheet usage="{{force-limit consular:count}}/Spell Cast " />
+			<rules>
+				<stat name="force-limit consular:count" value="2" />
+				<stat name="force-limit consular:count" value="1" level="3" />
+				<stat name="force-limit consular:count" value="1" level="5" />
+				<stat name="force-limit consular:count" value="1" level="7" />
+				<stat name="force-limit consular:count" value="1" level="9" />
+				<stat name="force-limit consular:count" value="1" level="11" />
+			</rules>
+		</element>
+
+  <element name="Force Ability(Spellcasting)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_SPELLCASTING_CONSULAR">
+		<description>
+			<p>Charisma is your force ability for your force disciplines. You use your Charisma modifier when setting the saving throw DC for a force discipline or when making an attack roll with one.</p>
+			<center>
+				<p><strong>Discipline save DC</strong> = 8 + your proficiency bonus + your Charisma modifier</p>
+				<p><strong>Discipline attack modifier</strong> = your proficiency bonus + your Charisma modifier</p>
+			</center>
+		</description>
+		<sheet>
+			<description>Ability to use force disciplines(spells).</description>
+		</sheet>
+		<spellcasting name="Consular" ability="Charisma" prepare="false" allowReplace="true">
+			<list />
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
+			<grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
+
+			<select type="Class Feature" name="Force Discipline(Consular)" supports="Force Discipline" number="1" level="1" />
+			<select type="Class Feature" name="Force Discipline(Consular)" supports="Force Discipline" number="1" level="3" />
+			<select type="Class Feature" name="Force Discipline(Consular)" supports="Force Discipline" number="1" level="6" />
+			<select type="Class Feature" name="Force Discipline(Consular)" supports="Force Discipline" number="1" level="9" />
+			<select type="Class Feature" name="Force Discipline(Consular)" supports="Force Discipline" number="1" level="12" />
+			<select type="Class Feature" name="Force Discipline(Consular)" supports="Force Discipline" number="1" level="15" />
+			<select type="Class Feature" name="Force Discipline(Consular)" supports="Force Discipline" number="1" level="18" />
+		</rules>
+	</element>
+
+	<element name="Force Talent(Consular)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_FORCE_TALENT_CONSULAR">
+		<description />
+		<sheet display="false" />
+			<rules>
+				<select type="Class Feature" name="Force Talent(Consular)" supports="Force Talent" number="1" level="1" />
+				<select type="Class Feature" name="Force Talent(Consular)" supports="Force Talent" number="1" level="3" />
+				<select type="Class Feature" name="Force Talent(Consular)" supports="Force Talent" number="1" level="10" />
+				<select type="Class Feature" name="Force Talent(Consular)" supports="Force Talent" number="1" level="17" />
+				<select type="Class Feature" name="Force Talent(Consular)" supports="Force Talent" number="1" level="20" />
+			</rules>
+	</element>
+
+  <element name="Telephathy" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_TELEPATHY">
+		<description>
+			<p>At 1st level, your mind awakens to the ability to communicate via telepathy. You can telepathically speak to any creature you can see within 120 feet of you in this manner. You don’t need to share a language with the creature for it to understand your telepathic messages, but the creature must be able to understand at least one language or be telepathic itself.</p>
+		</description>
+		<sheet>
+		<description>You can telepathically speak to any creature you can see within 120 feet of you. The creature must be able to understand at least one language or be telepathic itself.</description>
+		</sheet>
+			<rules />
+	</element>
+
+  <element name="Force Recovery" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_FORCE_RECOVERY">
+		<description>
+			<p>Starting at 2nd level, you can draw vigor from the force energy you use to power your force disciplines.</p>
+      <p class="indent">Immediately after you spend force points on a force discipline, you can take a bonus action to regain hit points equal to the number of force points you spent.</p>
+		</description>
+		<sheet action="Bonus Action">
+		<description>Immediately after you spend force points on a force discipline, you regain hit points equal to the number of force points you spent.</description>
+		</sheet>
+			<rules />
+	</element>
+
+  <element name="Ability Score Improvement" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_ABILITYSCOREIMPROVEMENT_CONSULAR">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Consular 4)" supports="Improvement Option,Consular,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Consular 8)" supports="Improvement Option,Consular,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Consular 12)" supports="Improvement Option,Consular,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Consular 16)" supports="Improvement Option,Consular,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Consular 19)" supports="Improvement Option,Consular,19" level="19" />
+		</rules>
+	</element>
+
+  <element name="Healer" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_HEALER">
+		<description>
+			<p>At level 5, you have mastered the art of channeling the force to heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your consular level x 5. As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool.</p>
+      <p class="indent">Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple diseases and neutralize multiple poisons with a single use of Healer, expending hit points separately for each one.</p>
+      <p class="indent">This feature has no effect on droids.</p>
+		</description>
+		<sheet action="Action" usage="Points Replenish/Long Rest">
+		<description>With that pool, you can restore a total number of hit points, by touching a creature(Droids are exempt), equal to {{healer:consular}}.Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it.</description>
+		</sheet>
+			<rules>
+        <stat name="healer:consular:1" value="Level" />
+  			<stat name="healer:consular:2" value="Level" />
+  			<stat name="healer:consular:3" value="Level" />
+        <stat name="healer:consular:4" value="Level" />
+        <stat name="healer:consular:5" value="Level" />
+
+  			<stat name="healer:consular" value="healer:consular:1" />
+  			<stat name="healer:consular" value="healer:consular:2" />
+  			<stat name="healer:consular" value="healer:consular:3" />
+        <stat name="healer:consular" value="healer:consular:4" />
+        <stat name="healer:consular" value="healer:consular:5" />
+
+  			<stat name="calculation" value="healer:consular" bonus="calculation" />
+      </rules>
+	</element>
+
+  <element name="Heightened Senses" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_HEIGHTENED_SENSES">
+		<description>
+			<p>Starting at 7th level, if you are able to hear, you are aware of the location of any hidden or invisible creature within 15 feet of you.</p>
+		</description>
+		<sheet>
+		<description>If you are able to hear, you are aware of the location of any hidden or invisible creature within 15 feet of you.</description>
+		</sheet>
+			<rules />
+	</element>
+
+  <element name="Advanced Healing" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_ADVANCED_HEALING">
+		<description>
+			<p>Starting at level 9, whenever you use a force ability to heal you or another target creature, for every force point spent, add your force ability modifier to the total health gained.</p>
+      <p class="indent">For instance, if your modifier is 4, and you use 3 force points, add 12 to the total health gained.</p>
+		</description>
+		<sheet>
+		<description>Whenever you use a force ability to heal you or another target creature, for every force point spent, add {{heightened-senses:consular}} to the total health gained.</description>
+		</sheet>
+			<rules>
+        <stat name="heightened-senses:consular" value="charisma:modifier" />
+      </rules>
+	</element>
+
+  <element name="Precognitive Instinct" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_PRECOGNITIVE_INSTINCT">
+		<description>
+			<p>By 9th level, your instincts are so honed that you have advantage on initiative rolls.</p>
+      <p class="indent">Additionally, if you are surprised at the beginning of combat and aren’t incapacitated, you can act normally on your first turn.</p>
+		</description>
+		<sheet>
+		<description>You have advantage on initiative rolls and if you are surprised at the beginning of combat and aren’t incapacitated, you can act normally on your first turn.</description>
+		</sheet>
+			<rules />
+	</element>
+
+  <element name="Precognitive Defense" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_PRECOGNITIVE_DEFENSE">
+		<description>
+			<p>At level 13, as long as you moved more than 10 feet during your last turn, you can use your reaction and 3 force points to ignore a single melee or ranged attack made against you.</p>
+		</description>
+		<sheet action="Reaction">
+		<description>As long as you moved more than 10 feet during your last turn, you can use 3 force points to ignore a single melee or ranged attack made against you.</description>
+		</sheet>
+			<rules />
+	</element>
+
+  <element name="Cleansing Touch" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_CLEANSING_TOUCH">
+		<description>
+			<p>Beginning at 17th level, you can use your action to end one spell or force ability on yourself or on one willing creature that you touch.</p>
+      <p class="indent">You can use this feature a number of times equal to your Force ability modifier (a minimum of once). You regain expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="{{cleansing-touch:consular}}/Long Rest">
+		<description>You end one spell or force ability on yourself or on one willing creature that you touch.</description>
+		</sheet>
+			<rules>
+        <stat name="cleansing-touch:consular" value="charisma:modifier" />
+      </rules>
+	</element>
+
+  <element name="Force Body" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_CONSULAR_FORCE_BODY">
+		<description>
+			<p>At 20th level, your mastery of force power causes your mind to transcend the body. Your physical form is infused with force energy. You gain the following benefits:</p>
+      <ul class="unstyled">
+        <li>You gain resistance to bludgeoning, piercing, and slashing damage.</li>
+        <li>You no longer age.</li>
+        <li>You are immune to disease, poison damage, and the poisoned condition.</li>
+        <li>If you die, roll a d20. On a 10 or higher, you discorporate with 0 hit points, instead of dying, and you fall unconscious. You and your gear disappear. You appear at a spot of your choice 1d4 - 1 days later on the plane of existence where you died, having gained the benefits of one long rest.</li>
+      </ul>
+		</description>
+		<sheet>
+		<description>You gain resistance to bludgeoning, piercing, and slashing damage, no longer age, are immune to disease, poison damage, and the poisoned condition, and if you die, roll a d20. On a 10 or higher, you discorporate with 0 hit points, instead of dying, and you fall unconscious. You and your gear disappear. You appear at a spot of your choice 1d4 - 1 days later on the plane of existence where you died, having gained the benefits of one long rest.</description>
+		</sheet>
+			<rules />
+	</element>
+
+</elements>

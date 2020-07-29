@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Arkanian</name>
+		<description>GM Binder</description>
+		<author />
+		<update version="0.0.1">
+			<file name="arkanian.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Arkanian" type="Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACE_ARKANIAN">
+		<description>
+			<p>Arkanians considered themselves the pinnacle of evolution, and as such many were distinctly arrogant. Arkanian scientists had been experts in genetic manipulation for millennia, and by the time of the Mandalorian Wars the species had been split into many sub-species, making it hard to determine exactly what a baseline Arkanian was. Most could pass for Human, though the most pure of blood had pure white eyes and four clawed digits on each hand.</p>
+			<p class="indent">Arkanians were capable of seeing into the infrared spectrum, and their eyes were sensitive to sources of extreme heat. This was helpful on their dark and frigid homeworld, but when traveling offworld, many were forced to wear blinders on planets with hotter, younger suns. It was also not unusual for an Arkanian to enhance themselves with internal and/or external cybernetics. It was also standard practice for Arkanians to undergo genetic manipulation of their own bodies, enhancing themselves so as to be better than "lesser" species.</p>
+      <h4>Arrogant and Proud</h4>
+      <p>The most defining trait of the Arkanian species was their arrogance which stemmed from their belief that they were the pinnacle of evolution. This led to them often appearing arrogant and aloof to others as they saw themselves as being superior to all other species. Even those with a more moderate viewpoint tended to see themselves as being amongst the most intelligent beings in the galaxy. As such, they were highly confident of their abilities.</p>
+      <h4>Arkanian Names</h4>
+      <p class="indent"><strong><i>Male Names:</i></strong> Arca, Arkoh, Dias, Gorman, Hyrim, Zeta</p>
+      <p class="indent"><strong><i>Female Names:</i></strong> Elizie, Jarael, Nasdra, Shenna</p>
+			<h4>Arkanian Traits</h4>
+			<p>Your arkanian character has many different attributes that might be useful in the field:</p>
+			<p class="indent"><strong><i>Ability Score Increase.</i></strong> Your Intelligence score increases by 2.</p>
+      <p class="indent"><strong><i>Age.</i></strong> Arkanians mature at the same rate as humans, but live far longer.</p>
+			<p class="indent"><strong><i>Alignment.</i></strong> Most Arkanians are good-natured, but tend to be outside of the law given their proclivity towards doing illegal genetic mutations.</p>
+			<p class="indent"><strong><i>Size.</i></strong> Arkanians stand around 5-6 feet tall and tend to be no more than 170 pounds. Your size is Medium.</p>
+			<p class="indent"><strong><i>Speed.</i></strong> Your base movement speed is 30 feet.</p>
+			<p class="indent"><strong><i>Proficiency.</i></strong> You are proficient in the Medicine skill.</p>
+      <p class="indent"><strong><i>Tool Proficiency.</i></strong> Engineer's tools.</p>
+      <p class="indent"><strong><i>Medically Inclined.</i></strong> You have advantage on saving throws made against diseases.</p>
+			<p class="indent"><strong><i>Languages.</i></strong> Arkanian, Basic.</p>
+      <p class="indent"><strong><i>Subrace.</i></strong> Two main subraces of arkanians exist in the Star Wars Universe: pure-bloods and offshoots. Choose one of these subraces.</p>
+		</description>
+		<sheet display="false" />
+			<setters>
+        <set name="names" type="male">Arca, Arkoh, Dias, Gorman, Hyrim, Zeta</set>
+        <set name="names-format">$(male)</set>
+        <set name="names" type="female">Elizie, Jarael, Nasdra, Shenna</set>
+        <set name="names-format">$(female)</set>
+      </setters>
+			<rules>
+				<stat name="Intelligence" value="2" />
+				<grant type="Size" id="ID_SIZE_MEDIUM" />
+				<stat name="Speed" value="30" bonus="base" />
+				<grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_ARKANIAN_MEDICALLY_INCLINED" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+        <grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_ITEM_ENGINEERING_TOOLS" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_ARKANIAN" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_BASIC" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_ARKANIAN_SUBRACE" />
+			</rules>
+    </element>
+
+    <element name="Medically Inclined" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_ARKANIAN_MEDICALLY_INCLINED">
+			<description>
+				<p>You have advantage on saving throws made against diseases.</p>
+			</description>
+			<sheet>
+				<description>
+          <p>You have advantage on saving throws made against diseases.</p>
+        </description>
+			</sheet>
+			<rules />
+		</element>
+
+    <element name="Arkanian Subrace" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_ARKANIAN_SUBRACE">
+      <description />
+      <sheet display="false" />
+      <rules>
+        <select type="Sub Race" name="Arkanian Subrace" supports="Arkanian" />
+      </rules>
+    </element>
+    <element name="Pureblood Arkanian" type="Sub Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SUB_RACE_PUREBLOOD">
+      <supports>Arkanian</supports>
+      <description>
+        <h4>Pureblood Traits</h4>
+        <p>The arkanians were native to the Colonies planet, Arkania, a world of frozen tundra and intense cold. The rich gem mines on their planet led to its great development and the construction of elaborate trade cities established by offworlders from the Galactic Republic. This influx of commerce allowed Arkanian culture to flourish and the species quickly became well known throughout the galaxy for their extremely reclusive scientists.</p>
+        <p class="indent"><strong><i>Ability Score Increase:</i></strong> Your Charisma score is increased by 1.</p>
+        <p class="indent"><strong><i>Darkvision:</i></strong> 60 Feet.</p>
+        <p class="indent"><strong><i>Innate Casting:</i></strong> The Pureblood Arkanian can cast the psychic speech force ability once per day.</p>
+      </description>
+      <sheet display="false">
+        <description>
+          <h4>Pureblood Traits</h4>
+          <p>The arkanians were native to the Colonies planet, Arkania, a world of frozen tundra and intense cold. The rich gem mines on their planet led to its great development and the construction of elaborate trade cities established by offworlders from the Galactic Republic. This influx of commerce allowed Arkanian culture to flourish and the species quickly became well known throughout the galaxy for their extremely reclusive scientists.</p>
+          <p class="indent"><strong><i>Ability Score Increase:</i></strong> Your Charisma score is increased by 1.</p>
+          <p class="indent"><strong><i>Darkvision:</i></strong> 60 Feet.</p>
+          <p class="indent"><strong><i>Innate Casting:</i></strong> The Pureblood Arkanian can cast the psychic speech force ability once per day.</p>
+        </description>
+      </sheet>
+      <rules>
+        <stat name="Charisma" value="1" />
+        <grant type="Vision" name="ID_VISION_DARKVISION" />
+        <grant type="Racial Trait" name="ID_GMBINDER_SW5E_RACIAL_TRAIT_ARKANIAN_PUREBLOOD_INNATE_CASTING" />
+      </rules>
+    </element>
+
+    <element name="Innate Casting" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_ARKANIAN_PUREBLOOD_INNATE_CASTING">
+      <description>
+        <p>The pureblood arkanian can cast the psychic speech force ability once per day.</p>
+      </description>
+      <sheet usage="Once/Day">
+        <description>
+          <p>The pureblood arkanian can cast the psychic speech force ability.</p>
+        </description>
+      </sheet>
+      <rules>
+				<grant type="Spell" id="ID_GMBINDER_SW5E_SPELL_PSYCHIC_SPEECH" />
+			</rules>
+    </element>
+
+    <element name="Offshoot Arkanian" type="Sub Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SUB_RACE_OFFSHOOT">
+      <supports>Arkanian</supports>
+      <description>
+        <h4>Offshoot Traits</h4>
+        <p>The Arkanian Offshoots were a sub-species of the Arkanian race, genetically engineered by the famed Arkanian scientists and genetic researchers of the Old Republic era.</p>
+        <p class="indent"><strong><i>Ability Score Increase:</i></strong> You can choose between increasing your Dexterity or Wisdom score by 1.</p>
+        <p class="indent"><strong><i>Hybrid:</i></strong> As a genetic hybrid, you have the skills of both arkanians and another race such as human or sephi. You are proficient with two skills of your choice.</p>
+      </description>
+      <sheet display="false">
+        <description>
+          <h4>Offshoot Traits</h4>
+          <p>The Arkanian Offshoots were a sub-species of the Arkanian race, genetically engineered by the famed Arkanian scientists and genetic researchers of the Old Republic era.</p>
+          <p class="indent"><strong><i>Ability Score Increase:</i></strong> You can choose between increasing your Dexterity or Wisdom score by 1.</p>
+          <p class="indent"><strong><i>Hybrid:</i></strong> As a genetic hybrid, you have the skills of both arkanians and another race such as human or sephi. You are proficient with two skills of your choice.</p>
+        </description>
+      </sheet>
+      <rules>
+        <select type="Ability Score Improvement" name="Ability Score Increase (Offshoot Arkanian)" supports="ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CHARISMA" />
+        <grant type="Racial Trait" name="ID_GMBINDER_SW5E_RACIAL_TRAIT_ARKANIAN_OFFSHOOT_HYBRID" />
+      </rules>
+    </element>
+
+    <element name="Hybrid" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_ARKANIAN_OFFSHOOT_HYBRID">
+      <description>
+        <p>As a genetic hybrid, you have the skills of both arkanians and another race such as human or sephi. You are proficient with two skills of your choice.</p>
+      </description>
+      <sheet display="false">
+        <description>
+          <p>As a genetic hybrid, you have the skills of both arkanians and another race such as human or sephi. You are proficient with two skills of your choice.</p>
+        </description>
+      </sheet>
+      <rules>
+        <select type="Proficiency" name="Skill Proficiency (Offshoot Arkanian)" number="2" />
+      </rules>
+    </element>
+
+  </elements>

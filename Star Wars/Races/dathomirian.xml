@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Dathomirian</name>
+		<description>GM Binder</description>
+		<author />
+		<update version="0.0.1">
+			<file name="dathomirian.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Dathomirian" type="Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACE_DATHOMIRIAN">
+		<description>
+			<p>"But during your time away, you must not forget what Dathomir has given you. Although space is cold and empty, Dathomir's wilderness is lush and rich. It may be years before you return, so never forget the place that birthed and nurtured you—you will always be a Nightsister." ― Mother Talzin</p>
+      <h4>Witches of Dathomir</h4>
+      <p>Dathomirians, or Dathomiri, were a sentient near-Human species native to the Outer Rim world of Dathomir. The creation of the Dathomirian species was the result of hybridization between Human females and male Zabrak.</p>
+      <p class="indent">They constituted a small percentage of the Nightsister society—a sect of witches using dark magicks—but rose to preeminence under the leadership of Clan Mother Talzin, a Dathomirian herself. At some point during the Clone Wars, the Kaleesh General Grievous, leader of the Separatist Droid Army, attacked the Dathomirians, who took refuge in the Nightsister fortress. Grievous wiped out every Dathomirian of the clan, except for Asajj Ventress and Mother Talzin.</p>
+      <h4>Dathomirian Names</h4>
+      <p class="indent"><strong><i>Chiss Names:</i></strong> Asajj, Daka, Gethzerion, Kaminne, Karis, Luce, Naa'leth, Saato, Silri, Talia, Talzin, Zalem</p>
+			<h4>Dathomirian Traits</h4>
+			<p>Your Dathomirian character has many different attributes that might be useful in the field:</p>
+			<p class="indent"><strong><i>Ability Score Increase.</i></strong> Your Intelligence score increases by 2 and your Dexterity score increases by 1.</p>
+      <p class="indent"><strong><i>Age.</i></strong> Up to 90 years.</p>
+			<p class="indent"><strong><i>Alignment.</i></strong> Generally chaotic.</p>
+			<p class="indent"><strong><i>Size.</i></strong> Medium</p>
+			<p class="indent"><strong><i>Speed.</i></strong> Your base movement speed is 40 feet.</p>
+			<p class="indent"><strong><i>Proficiency.</i></strong> Choose between nature and survival.</p>
+      <p class="indent"><strong><i>Weapon Proficiency</i></strong> As a Dathomirian you are proficient with the force bow.</p>
+			<p class="indent"><strong><i>Languages.</i></strong> Dathomiri, Basic.</p>
+      <p class="indent"><strong><i>Force Attuned</i></strong> As a force wielder, when you activate your focus you may choose to focus on two different disciplines at the same time. Changing or losing your discipline causes you to lose focus on your extra discipline, and you cannot use this feature again until you have completed a short rest.</p>
+		</description>
+		<sheet display="false" />
+			<setters>
+        <set name="names" type="custom">Asajj, Daka, Gethzerion, Kaminne, Karis, Luce, Naa'leth, Saato, Silri, Talia, Talzin, Zalem</set>
+        <set name="names-format">{{custom}}</set>
+      </setters>
+			<rules>
+        <stat name="Intelligence" value="2" />
+        <stat name="Dexterity" value="1" />
+				<grant type="Size" id="ID_SIZE_MEDIUM" />
+				<stat name="Speed" value="40" bonus="base" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_DATHOMIRIAN_DATHOMIRIAN_PROFICIENCY" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_DATHOMIRIAN_FORCE_ATTUNED" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_DATHOMIRIAN_WEAPON_PROFICIENCY" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_DATHOMIRI" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_BASIC" />
+			</rules>
+    </element>
+
+		<element name="Dathomirian Proficiency" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_DATHOMIRIAN_DATHOMIRIAN_PROFICIENCY">
+			<description>
+				<p>Choose between nature and survival.</p>
+			</description>
+			<sheet display="false">
+				<description>
+          <p>Choose between nature and survival.</p>
+        </description>
+			</sheet>
+			<rules>
+				<select type="Proficiency" name="Skill Proficiency, Dathomirian Proficiency" supports="ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_SURVIVAL" number="1" />
+			</rules>
+		</element>
+
+		<element name="Weapon Proficiency" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_DATHOMIRIAN_WEAPON_PROFICIENCY">
+			<description>
+				<p>As a Dathomirian you are proficient with the force bow.</p>
+			</description>
+			<sheet display="false">
+				<description>
+          <p>As a Dathomirian you are proficient with the force bow.</p>
+        </description>
+			</sheet>
+			<rules>
+				<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_FORCEBOW" />
+			</rules>
+		</element>
+
+    <element name="Force Attuned" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_DATHOMIRIAN_FORCE_ATTUNED">
+			<description>
+				<p>As a force wielder, when you activate your focus you may choose to focus on two different disciplines at the same time. Changing or losing your discipline causes you to lose focus on your extra discipline, and you cannot use this feature again until you have completed a short rest.</p>
+			</description>
+			<sheet usage="Once/Short Rest">
+				<description>
+          <p>when you activate your focus you may choose to focus on two different disciplines at the same time. Changing or losing your discipline causes you to lose focus on your extra discipline.</p>
+        </description>
+			</sheet>
+			<rules />
+		</element>
+
+ </elements>

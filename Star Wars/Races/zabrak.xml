@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Zabrak</name>
+		<description>GM Binder</description>
+		<author />
+		<update version="0.0.1">
+			<file name="zabrak.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Zabrak" type="Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACE_ZABRAK">
+		<description>
+			<p>The Zabrak, also known as Iridonians when referring to the Zabrak who came from Iridonia, were a carnivorous Near-Human species native to Iridonia, a planet located in the Mid Rim known for its inhospitable terrain and fierce predatory life. They were a species known for having a fierce sense of self-determination and an equally dominant need for independence.</p>
+      <h4>Horned Humans</h4>
+      <p>Zabrak were Near-Human, but had a number of significant physical characteristics that set them apart from baseline Humanity. The most striking of these were a series of vestigial horns that crowned the heads of both males and females. These horns grew at puberty in varying patterns and signified that the time of their rite of passage was drawing near.</p>
+      <p class="indent">The horns were one trait shared by the many Zabrak subspecies, which were divided by a number of physical characteristics that differed from subspecies to subspecies. These could include different skin tones (which included peachy white, pure white, yellow, red, tan, brown and black), horn patterns, hair growth (though it should be noted that most Zabraks, unlike Humans, could not grow eyelashes or facial hair – there were some exceptions, such as Maris Brood and Bao-Dur, who had eyebrows) and eye color (which have certain pigmentations that Humans lack, such as purple, yellow, red, and orange).</p>
+      <h4>Zabrak Names</h4>
+      <p class="indent"><strong><i>Male Names:</i></strong> Aleas, Agen, Bao-Dur, Feral, Gith, Maul, Savage</p>
+      <p class="indent"><strong><i>Female Names:</i></strong> Acaadi, Maris</p>
+			<h4>Zabrak Traits</h4>
+			<p>Your Zabrak character has many different attributes that might be useful in the field:</p>
+			<p class="indent"><strong><i>Ability Score Increase.</i></strong> +2 to one ability score and +1 to another.</p>
+      <p class="indent"><strong><i>Age.</i></strong> Up to 80.</p>
+			<p class="indent"><strong><i>Alignment.</i></strong> Any.</p>
+			<p class="indent"><strong><i>Size.</i></strong> Medium.</p>
+			<p class="indent"><strong><i>Speed.</i></strong> 30ft.</p>
+			<p class="indent"><strong><i>Horned.</i></strong> Due to your horned skull, many people find you to be rather scary. You have advantage on all deception, intimidation, and persuasion checks.</p>
+      <p class="indent"><strong><i>Proficiency.</i></strong> Intimidation, Persuasion.</p>
+			<p class="indent"><strong><i>Languages.</i></strong> Basic, Zabraki.</p>
+		</description>
+		<sheet display="false" />
+			<setters />
+			<rules>
+				<select type="Ability Score Improvement" name="Ability Score Increase, Zabrak" supports="ID_INTERNAL_ASI_STRENGTH|ID_INTERNAL_ASI_DEXTERITY|ID_INTERNAL_ASI_INTELLIGENCE|ID_INTERNAL_ASI_WISDOM|ID_INTERNAL_ASI_CHARISMA" number="3"/>
+				<grant type="Size" id="ID_SIZE_MEDIUM" />
+				<stat name="Speed" value="30" bonus="base" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_ZABRAK_HORNED" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_ZABRAKI" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_BASIC" />
+			</rules>
+    </element>
+
+    <element name="Horned" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_ZABRAK_HORNED">
+			<description>
+				<p>Due to your horned skull, many people find you to be rather scary. You have advantage on all deception, intimidation, and persuasion checks.</p>
+			</description>
+			<sheet>
+				<description>
+          <p>You have advantage on all deception, intimidation, and persuasion checks.</p>
+        </description>
+			</sheet>
+			<rules />
+		</element>
+
+    <element name="Ability Score Increase (Strength)" type="Racial Trait" source="GM Binder SW5E" id="ID_RACIAL_TRAIT_ZABRAK_STRENGTH">
+		<compendium display="false" />
+		<supports>Zabrak</supports>
+		<description>
+			<p>Your Strength score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="strength" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="GM Binder SW5E" id="ID_RACIAL_TRAIT_ZABRAK_DEXTERITY">
+		<compendium display="false" />
+		<supports>Zabrak</supports>
+		<description>
+			<p>Your Dexterity score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="dexterity" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Constitution)" type="Racial Trait" source="GM Binder SW5E" id="ID_RACIAL_TRAIT_ZABRAK_CONSTITUTION">
+		<compendium display="false" />
+		<supports>Zabrak</supports>
+		<description>
+			<p>Your Constitution score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="constitution" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="GM Binder SW5E" id="ID_RACIAL_TRAIT_ZABRAK_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>Zabrak</supports>
+		<description>
+			<p>Your Intelligence score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="intelligence" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="GM Binder SW5E" id="ID_RACIAL_TRAIT_ZABRAK_WISDOM">
+		<compendium display="false" />
+		<supports>Zabrak</supports>
+		<description>
+			<p>Your Wisdom score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="wisdom" value="1"/>
+		</rules>
+	</element>
+  <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="GM Binder SW5E" id="ID_RACIAL_TRAIT_ZABRAK_WISDOM">
+		<compendium display="false" />
+		<supports>Zabrak</supports>
+		<description>
+			<p>Your Charisma score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="Charisma" value="1"/>
+		</rules>
+	</element>
+
+ </elements>

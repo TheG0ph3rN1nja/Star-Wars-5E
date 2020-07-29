@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Scoundrel</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="scoundrel.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/classes/scoundrel.xml" />
+		</update>
+	</info>
+
+  <element name="Scoundrel" type="Class" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_SCOUNDREL">
+		<description>
+      <h5 class="caption">THE SCOUNDREL</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-5">Proficiency Bonus</td><td class="col-5">Sneak Attack</td><td class="left">Features</td></tr>
+				</thead>
+        <tr><td> 1st</td><td>+2</td><td>1d6</td><td class="left">Expertise, Sneak Attack, Thieves’ Cant</td></tr>
+        <tr><td> 2nd</td><td>+2</td><td>1d6</td><td class="left">Cunning Action</td></tr>
+				<tr><td> 3rd</td><td>+2</td><td>2d6</td><td class="left">Scoundrel Path</td></tr>
+				<tr><td> 4th</td><td>+2</td><td>2d6</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 5th</td><td>+3</td><td>3d6</td><td class="left">Uncanny Dodge</td></tr>
+				<tr><td> 6th</td><td>+3</td><td>3d6</td><td class="left">Expertise</td></tr>
+				<tr><td> 7th</td><td>+3</td><td>4d6</td><td class="left">Evasion</td></tr>
+				<tr><td> 8th</td><td>+3</td><td>4d6</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 9th</td><td>+4</td><td>5d6</td><td class="left">Scoundrel Path feature</td></tr>
+				<tr><td>10th</td><td>+4</td><td>5d6</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>11th</td><td>+4</td><td>6d6</td><td class="left">Reliable Talent</td></tr>
+				<tr><td>12th</td><td>+4</td><td>6d6</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>+5</td><td>7d6</td><td class="left">Scoundrel Path feature</td></tr>
+				<tr><td>14th</td><td>+5</td><td>7d6</td><td class="left">Blindsense</td></tr>
+				<tr><td>15th</td><td>+5</td><td>8d6</td><td class="left">Slippery Mind</td></tr>
+				<tr><td>16th</td><td>+5</td><td>8d6</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td>+6</td><td>9d6</td><td class="left">Scoundrel Path feature</td></tr>
+				<tr><td>18th</td><td>+6</td><td>9d6</td><td class="left">Elusive</td></tr>
+				<tr><td>19th</td><td>+6</td><td>10d6</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td>+6</td><td>10d6</td><td class="left">Stroke of Luck</td></tr>
+      </table>
+      <h3>Class Features</h3>
+      <p>As a scoundrel, you have the following class features.</p>
+      <h4>Hit Points</h4>
+      <p><strong>Hit Dice:</strong> 1d8 per scoundrel Level.</p>
+      <p><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</p>
+      <p><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per scoundrel level after 1st</p>
+      <h5>PROFICIENCIES</h5>
+      <p><strong>Armor:</strong> Light armor</p>
+      <p><strong>Weapons:</strong> Simple weapons, martial ranged weapons, vibroblades, vibroswords </p>
+      <p><strong>Saving Throw:</strong> Dexterity, Intelligence</p>
+      <p><strong>Skills:</strong> Choose four from Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance. Persuasion, Security, Sleight of Hand, and Stealth</p>
+      <h5>EQUIPMENT</h5>
+      <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+      <ul>
+        <li>(a) a shortsword or (b) a vibroblade</li>
+        <li>(a) a blaster rifle and 5 charge packs or (b) a vibroblade</li>
+        <li>(a) a burglar’s pack, (b) a dungeoneer’s pack, or (c) an explorer’s pack</li>
+        <li>Combat suit, a blaster pistol and 5 charge packs</li>
+      </ul>
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_EXPERTISE" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_SNEAK_ATTACK" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_THIEVES_CANT" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_CUNNING_ACTION" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_SCOUNDREL_PATH" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_ABILITYSCOREIMPROVEMENT_SCOUNDREL" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_UNCANNY_DODGE" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_EVASION" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_RELIABLE_TALENT" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_BLINDSENSE" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_SLIPPERY_MIND" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_ELUSIVE" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_STROKE_OF_LUCK" />
+    </description>
+    <sheet display="false" />
+    <setters>
+      <set name="hd">d8</set>
+    </setters>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS" />
+      <grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_VIBROBLADE" />
+      <grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_VIBROSWORD" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+      <select type="Proficiency" name="Skill Proficiency (Scoundrel)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_PERSUASION|ID_GMBINDER_SW5E_PROFICIENCY_SKILL_SECURITY|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" number="4" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SKILL_REPAIRS" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SKILL_SECURITY" level="1" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS" level="1" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_EXPERTISE" level="1" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_SNEAK_ATTACK" level="1" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_THIEVES_CANT" level="1" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_CUNNING_ACTION" level="2" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_SCOUNDREL_PATH" level="3" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_ABILITYSCOREIMPROVEMENT_SCOUNDREL" level="4" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_UNCANNY_DODGE" level="5" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_EVASION" level="7" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_RELIABLE_TALENT" level="11" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_BLINDSENSE" level="14" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_SLIPPERY_MIND" level="15" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_ELUSIVE" level="18" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_STROKE_OF_LUCK" level="20" />
+    </rules>
+  </element>
+
+  <element name="Expertise" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_EXPERTISE">
+		<description>
+			<p> At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves’ tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>
+			<p> At 6th level, you can choose two more of your proficiencies (in skills or with thieves’ tools) to gain this benefit. </p>
+		</description>
+		<sheet display="false">
+			<description>Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Expertise (Scoundrel)" level="1" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
+			<select type="Class Feature" name="Expertise (Scoundrel)" level="6" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
+		</rules>
+	</element>
+
+  <element name="Sneak Attack" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_SNEAK_ATTACK">
+		<description>
+			<p>Beginning at 1st level, you know how to strike subtly and exploit a foe’s distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.</p>
+			<p class="indent">You don’t need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.</p>
+			<p class="indent">The amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table.</p>
+		</description>
+		<sheet>
+			<description>Once per turn, you can deal an extra {{sneak-attack:count}}d{{sneak-attack:die}} damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.
+			You don’t need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.</description>
+		</sheet>
+		<rules>
+			<stat name="sneak-attack:count" value="1" level="1" />
+			<stat name="sneak-attack:count" value="1" level="3" />
+			<stat name="sneak-attack:count" value="1" level="5" />
+			<stat name="sneak-attack:count" value="1" level="7" />
+			<stat name="sneak-attack:count" value="1" level="9" />
+			<stat name="sneak-attack:count" value="1" level="11" />
+			<stat name="sneak-attack:count" value="1" level="13" />
+			<stat name="sneak-attack:count" value="1" level="15" />
+			<stat name="sneak-attack:count" value="1" level="17" />
+			<stat name="sneak-attack:count" value="1" level="19" />
+			<stat name="sneak-attack:die" value="6" bonus="die" />
+		</rules>
+	</element>
+
+  <element name="Thieves’ Cant" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_THIEVES_CANT">
+		<description>
+			<p>During your scoundrel training you learned thieves’ cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves’ cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly.</p>
+			<p>In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves’ guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for thieves on the run.</p>
+		</description>
+		<sheet>
+			<description>A secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves’ cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly.
+			In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves’ guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for thieves on the run.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_WOTC_PHB_LANGUAGE_THIEVES_CANT" />
+		</rules>
+	</element>
+
+  <element name="Cunning Action" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_CUNNING_ACTION">
+		<description>
+			<p>Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action.</p>
+		</description>
+		<sheet>
+			<description>You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action.</description>
+		</sheet>
+	</element>
+
+	<element name="Scoundrel Path" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_SCOUNDREL_PATH">
+		<description>
+			<p>At 3rd level, you choose an path that you emulate in the exercise of your scoundrel abilities: Thief, Assassin, or Beast Master, all detailed at the end of the class description. Your path choice grants you features at 3rd level and then again at 9th, 13th, and 17th level.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Scoundrel Path" supports="Scoundrel Path" level="3"/>
+		</rules>
+	</element>
+
+	<element name="Ability Score Improvement" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_ABILITYSCOREIMPROVEMENT_SCOUNDREL">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Scoundrel 4)" supports="Improvement Option,Scoundrel,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Scoundrel 8)" supports="Improvement Option,Scoundrel,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Scoundrel 10)" supports="Improvement Option,Scoundrel,10" level="10" />
+			<select type="Class Feature" name="Improvement Option (Scoundrel 12)" supports="Improvement Option,Scoundrel,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Scoundrel 16)" supports="Improvement Option,Scoundrel,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Scoundrel 19)" supports="Improvement Option,Scoundrel,19" level="19" />
+		</rules>
+	</element>
+
+  <element name="Uncanny Dodge" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_UNCANNY_DODGE">
+		<description>
+			<p>Starting at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack’s damage against you.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When an attacker that you can see hits you with an attack, you can halve the attack’s damage against you.</description>
+		</sheet>
+	</element>
+
+  <element name="Evasion" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_EVASION">
+		<description>
+			<p>Beginning at 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon’s fiery breath or an ice storm spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+		</description>
+		<sheet>
+			<description>When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
+		</sheet>
+	</element>
+
+	<element name="Reliable Talent" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_RELIABLE_TALENT">
+		<description>
+			<p>By 11th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.</p>
+		</description>
+		<sheet>
+			<description>Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.</description>
+		</sheet>
+	</element>
+
+	<element name="Blindsense" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_BLINDSENSE">
+		<description>
+			<p>Starting at 14th level, if you are able to hear, you are aware of the location of any hidden or invisible creature within 10 feet of you.</p>
+		</description>
+		<sheet>
+			<description>If you are able to hear, you are aware of the location of any hidden or invisible creature within 10 feet of you.</description>
+		</sheet>
+	</element>
+
+	<element name="Slippery Mind" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_SLIPPERY_MIND">
+		<description>
+			<p>By 15th level, you have acquired greater mental strength. You gain proficiency in Wisdom saving throws.</p>
+		</description>
+		<sheet display="false">
+			<description>You have acquired greater mental strength. You gain proficiency in Wisdom saving throws.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+		</rules>
+	</element>
+
+	<element name="Elusive" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_ELUSIVE">
+		<description>
+			<p>Beginning at 18th level, you are so evasive that attackers rarely gain the upper hand against you. No attack roll has advantage against you while you aren’t incapacitated.</p>
+		</description>
+		<sheet>
+			<description>No attack roll has advantage against you while you aren’t incapacitated.</description>
+		</sheet>
+	</element>
+
+	<element name="Stroke of Luck" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SCOUNDREL_STROKE_OF_LUCK">
+		<description>
+			<p>At 20th level, you have an uncanny knack for succeeding when you need to. If your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20.</p>
+			<p>Once you use this feature, you can’t use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="Once/Short Rest">
+			<description>If your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20.</description>
+		</sheet>
+	</element>
+
+  <element name="Smuggler" type="Archetype" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_SMUGGLER">
+		<supports>Scoundrel Path</supports>
+		<description>
+      <p>You hone your skills in the larcenous arts. Burglars, bandits, cutpurses, and other criminals typically follow this archetype, but so do rogues who prefer to think of themselves as professional treasure seekers, explorers, delvers, and investigators. In addition to improving your agility and stealth, you learn skills useful for delving into ancient ruins, reading unfamiliar languages, and using magic items you normally couldn’t employ.</p>
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SMUGGLER_CARGO_SMUGGLER" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SMUGGLER_SHORT_NEGOTIATIONS" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SMUGGLER_SUMPREME_SNEAK" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SMUGGLER_AUXILIARY_POWER" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SMUGGLER_SMUGGLERS_REFLEXES" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SMUGGLER_CARGO_SMUGGLER" level="3" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SMUGGLER_SHORT_NEGOTIATIONS" level="3" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SMUGGLER_SUMPREME_SNEAK" level="9" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SMUGGLER_AUXILIARY_POWER" level="13" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SMUGGLER_SMUGGLERS_REFLEXES" level="17" />
+		</rules>
+	</element>
+
+  <element name="Cargo Smuggler" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SMUGGLER_CARGO_SMUGGLER">
+		<description>
+			<p>When you choose this path at 3rd level, you immediately gain proficiency with all cargo starships.</p>
+		</description>
+		<sheet display="false" />
+    <rules>
+      <grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_XS_STOCK" />
+      <grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_DYNAMIC" />
+    </rules>
+	</element>
+
+  <element name="Short Negotiations" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SMUGGLER_SHORT_NEGOTIATIONS">
+		<description>
+			<p>At level 3, you can use an Intelligence check whenever you have to make a Charisma check when prompted by any form of law enforcement.</p>
+		</description>
+		<sheet>
+      <description>You can use an Intelligence check whenever you have to make a Charisma check when prompted by any form of law enforcement.</description>
+    </sheet>
+    <rules />
+	</element>
+
+  <element name="Supreme Sneak" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SMUGGLER_SUMPREME_SNEAK">
+		<description>
+			<p>Starting at 9th level, you have advantage on a Dexterity (Stealth) check if you move no more than half your speed on the same turn.</p>
+		</description>
+		<sheet>
+      <description>You have advantage on a Dexterity (Stealth) check if you move no more than half your speed on the same turn.</description>
+    </sheet>
+    <rules />
+	</element>
+
+  <element name="Auxiliary Power" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SMUGGLER_AUXILIARY_POWER">
+		<description>
+			<p>Beginning at level 2, a scoundrel learns how to transfer power to other systems as a bonus action. Auxiliary power is only available if you are piloting a starship. You must be proficient with the class of starship you are using in order to use Auxiliary Power. You can only use each Auxiliary Power system once, but you regain all expended uses upon finishing repairs while docked. In addition, once you have used Auxiliary Power, you must wait one round before you can use it again. When auxiliary power is shifted to a system, the following applies:</p>
+			<p class="indent"><strong>Engines:</strong> Your starship gains an additional 1000ft movement for the rest of your turn.</p>
+			<p class="indent"><strong>Shields:</strong> Your starship immediately gains 25 SP.</p>
+			<p class="indent"><strong>Targeting:</strong> You gain advantage on your next attack roll.</p>
+			<p class="indent"><strong>Weapons:</strong> You take a -5 penalty to the next attack roll made this turn, but add 10 to the total damage roll if the attack lands (before any multipliers).</p>
+		</description>
+    <sheet action="Bonus Action" usage="Once Each/Ship Repair">
+			<description>
+				<p class="indent"><strong>Engines:</strong> Your starship gains an additional 1000ft movement for the rest of your turn.</p>
+				<p class="indent"><strong>Shields:</strong> Your starship immediately gains 25 SP.</p>
+				<p class="indent"><strong>Targeting:</strong> You gain advantage on your next attack roll.</p>
+				<p class="indent"><strong>Weapons:</strong> You take a -5 penalty to the next attack roll made this turn, but add 10 to the total damage roll if the attack lands (before any multipliers).</p>
+			</description>
+    </sheet>
+    <rules />
+	</element>
+
+  <element name="Smuggler's Reflexes" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SMUGGLER_SMUGGLERS_REFLEXES">
+		<description>
+			<p>When you reach 17th level, you have become adept at laying ambushes and quickly escaping danger. You can take two turns during the first round of any combat. You take your first turn at your normal initiative and your second turn at your initiative minus 10. You can’t use this feature when you are surprised.</p>
+		</description>
+		<sheet>
+      <description>You can take two turns during the first round of any combat. You take your first turn at your normal initiative and your second turn at your initiative minus 10. You can’t use this feature when you are surprised.</description>
+    </sheet>
+    <rules />
+	</element>
+
+  <element name="Assassin" type="Archetype" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_ASSASSIN">
+		<supports>Scoundrel Path</supports>
+		<description>
+      <p>You focus your training on the grim art of death. Those who adhere to this archetype are diverse: hired killers, spies, bounty hunters, and even specially anointed priests trained to exterminate the enemies of their deity. Stealth, poison, and disguise help you eliminate your foes with deadly efficiency.</p>
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_ASSASSIN_BONUS_PROFICIENCIES" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_ASSASSIN_ASSASSINATE" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_ASSASSIN_INFILTRATION_EXPERTISE" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_ASSASSIN_IMPOSTER" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_ASSASSIN_DEATH_STRIKE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_ASSASSIN_BONUS_PROFICIENCIES" level="3" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_ASSASSIN_ASSASSINATE" level="3" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_ASSASSIN_INFILTRATION_EXPERTISE" level="9" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_ASSASSIN_IMPOSTER" level="13" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_ASSASSIN_DEATH_STRIKE" level="17" />
+		</rules>
+	</element>
+
+  <element name="Bonus Proficiencies" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_ASSASSIN_BONUS_PROFICIENCIES">
+		<description>
+			<p>When you choose this archetype at 3rd level, you gain proficiency with the disguise kit and the poisoner’s kit.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT" />
+		</rules>
+	</element>
+
+	<element name="Assassinate" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_ASSASSIN_ASSASSINATE">
+		<description>
+			<p>Starting at 3rd level, you are at your deadliest when you get the drop on your enemies. You have advantage on attack rolls against any creature that hasn’t taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on attack rolls against any creature that hasn’t taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit.</description>
+		</sheet>
+	</element>
+
+	<element name="Infiltration Expertise" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_ASSASSIN_INFILTRATION_EXPERTISE">
+		<description>
+			<p>Starting at 9th level, you can unfailingly create false identities for yourself. You must spend seven days and 25 gp to establish the history, profession, and affiliations for an identity. You can’t establish an identity that belongs to someone else. For example, you might acquire appropriate clothing, letters of introduction, and officiallooking certification to establish yourself as a member of a trading house from a remote city so you can insinuate yourself into the company of other wealthy merchants.</p>
+			<p>Thereafter, if you adopt the new identity as a disguise, other creatures believe you to be that person until given an obvious reason not to.</p>
+		</description>
+		<sheet>
+			<description>You can unfailingly create false identities for yourself. You must spend seven days and 25 gp to establish the history, profession, and affiliations for an identity. You can’t establish an identity that belongs to someone else.</description>
+		</sheet>
+	</element>
+
+	<element name="Imposter" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_ASSASSIN_IMPOSTER">
+		<description>
+			<p>At 13th level, you gain the ability to unerringly mimic another person’s speech, writing, and behavior. You must spend at least three hours studying these three components of the person’s behavior, listening to speech, examining handwriting, and observing mannerisms.</p>
+			<p>Your ruse is indiscernible to the casual observer. If a wary creature suspects something is amiss, you have advantage on any Charisma (Deception) check you make to avoid detection.</p>
+		</description>
+		<sheet>
+			<description>You gain the ability to unerringly mimic another person’s speech, writing, and behavior. Your ruse is indiscernible to the casual observer. If a wary creature suspects something is amiss, you have advantage on any Deception check you make to avoid detection.</description>
+		</sheet>
+	</element>
+
+	<element name="Death Strike" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_ASSASSIN_DEATH_STRIKE">
+		<description>
+			<p>Starting at 17th level, you become a master of instant death. When you attack and hit a creature that is surprised, it must make a Constitution saving throw (DC 8 + your Dexterity modifier + your proficiency bonus). On a failed save, double the damage of your attack against the creature.</p>
+		</description>
+		<sheet>
+			<description>When you attack and hit a creature that is surprised, it must make a DC{{death strike:dc}} Constitution save. On a failed save, double the damage of your attack against the creature.</description>
+		</sheet>
+		<rules>
+			<stat name="death strike:dc" value="8" />
+			<stat name="death strike:dc" value="proficiency" />
+			<stat name="death strike:dc" value="dexterity:modifier" />
+		</rules>
+	</element>
+
+  <element name="Beast Master" type="Archetype" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_BEAST_MASTER">
+		<supports>Scoundrel Path</supports>
+		<description>
+      <p>You focus your training on the grim art of death. Those who adhere to this archetype are diverse: hired killers, spies, bounty hunters, and even specially anointed priests trained to exterminate the enemies of their deity. Stealth, poison, and disguise help you eliminate your foes with deadly efficiency.</p>
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BEAST_MASTER_ANIMAL_COMPANION" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BEAST_MASTER_BEASTS_DEFENSE" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BEAST_MASTER_COORDINATED_ATTACK" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BEAST_MASTER_STORMOFCLAWSANDFANGS" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BEAST_MASTER_SUPERIORBEASTSDEFENSE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BEAST_MASTER_ANIMAL_COMPANION" level="3" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BEAST_MASTER_COORDINATED_ATTACK" level="3" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BEAST_MASTER_BEASTS_DEFENSE" level="9" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BEAST_MASTER_STORMOFCLAWSANDFANGS" level="13" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BEAST_MASTER_SUPERIORBEASTSDEFENSE" level="17" />
+		</rules>
+	</element>
+
+  <element name="Animal Companion" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BEAST_MASTER_ANIMAL_COMPANION">
+		<description>
+			<p>At 3rd level, you learn	to use your	magic to create a powerful bond	with a creature	of the natural world.</p>
+			<p class="indent">With 8 hours of work and the expenditure of 50 gp worth of rare herbs and fine food, you call forth an animal from the wilderness to serve as your faithful companion. You normally select you companion from among the following animals: an ape, a black bear, a boar, a giant badger, a giant weasel, a mule, a panther, or a wolf. However, your DM might pick one of these animals for you, based on the surrounding terrain and on what types of creatures would logically be present in the area.</p>
+      <p class="indent">At the end of the 8 hours, your animal companion appears and gains all the benefits of your Companion’s Bond ability. You can have only one animal companion at a time.</p>
+      <p class="indent">If your animal companion is ever slain, the magical bond you share allows you to return it to life. With 8 hours of work and the expenditure of 25 gp worth of rare herbs and fine food, you call forth your companion’s spirit and use your magic to create a new body for it. You can return an animal companion to life in this manner even if you do not possess any part of its body.</p>
+		</description>
+    <sheet>
+			<description>The beast obeys your commands as best as it can. It takes its turn on your initiative, though it doesn’t take an action unless you command it to. On your turn, you can verbally command the beast where to move. You can use your action to verbally command it to take the Attack, Dash, Disengage, Dodge, or Help action. Once you have the Extra Attack feature, you can make one weapon attack yourself when you command the beast to take the Attack action.
+			While traveling through your favored terrain with only the beast, you can move stealthily at a normal pace.
+			If the beast dies, you can obtain another one by spending 8 hours magically bonding with another beast that isn’t hostile to you, either the same type of beast as before or a different one.</description>
+		</sheet>
+		<rules>
+			<select type="Companion" name="Scoundrel's Companion" supports="Beast,(Tiny||Small||Medium),(0||1/8||1/4||1/2)" />
+			<stat name="companion:ac" value="proficiency" />
+			<stat name="companion:attack" value="proficiency" />
+			<stat name="companion:damage" value="proficiency" />
+			<stat name="additional:hp:max" value="level:scoundrel" />
+			<stat name="additional:hp:max" value="level:scoundrel" />
+			<stat name="additional:hp:max" value="level:scoundrel" />
+			<stat name="additional:hp:max" value="level:scoundrel" />
+			<stat name="companion:hp:max" value="additional:hp:max" bonus="base" />
+		</rules>
+	</element>
+
+  <element name="Coordinated Attack" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BEAST_MASTER_COORDINATED_ATTACK">
+		<description>
+			<p>Additionally at 3rd level, you and your animal companion form a more potent fighting team. When you use the Attack action on your turn, if your companion can see you, it can use its reaction to make a melee attack.</p>
+		</description>
+		<sheet>
+			<description>When you use the Attack action on your turn, if your companion can see you, it can use its reaction to make a melee attack.</description>
+		</sheet>
+	</element>
+
+  <element name="Beast's Defense" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BEAST_MASTER_BEASTS_DEFENSE">
+		<description>
+			<p>At 9th level, while your companion can see you, it has advantage on all saving throws.</p>
+		</description>
+		<sheet>
+			<description>While your companion can see you, it has advantage on all saving throws.</description>
+		</sheet>
+	</element>
+
+  <element name="Storm of Claws and Fangs" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BEAST_MASTER_STORMOFCLAWSANDFANGS">
+		<description>
+			<p>At 13th level, your companion can use its action to make a melee attack against each creature of its choice within 5 feet of it, with a separate attack roll for each target.</p>
+		</description>
+		<sheet>
+			<description>Your companion can use its action to make a melee attack against each creature of its choice within 5 feet of it, with a separate attack roll for each target.</description>
+		</sheet>
+	</element>
+
+  <element name="Superior Beast's Defense" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BEAST_MASTER_SUPERIORBEASTSDEFENSE">
+		<description>
+			<p>At 17th level, whenever an attacker that your companion can see hits it with an attack, it can use its reaction to halve the attack’s damage against it.</p>
+		</description>
+		<sheet>
+			<description>Whenever an attacker that your companion can see hits it with an attack, it can use its reaction to halve the attack’s damage against it.</description>
+		</sheet>
+	</element>
+
+</elements>

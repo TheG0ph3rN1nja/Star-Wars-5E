@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Rodian</name>
+		<description>GM Binder</description>
+		<author />
+		<update version="0.0.1">
+			<file name="rodian.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Rodian" type="Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACE_RODIAN">
+		<description>
+			<h4>Rodian Traits</h4>
+			<p>Your Rodian character has many different attributes that might be useful in the field:</p>
+			<p class="indent"><strong><i>Ability Score Increase.</i></strong> Dexterity +2, Intelligence +1.</p>
+      <p class="indent"><strong><i>Age.</i></strong> Up to 90 years.</p>
+			<p class="indent"><strong><i>Alignment.</i></strong> Any.</p>
+			<p class="indent"><strong><i>Size.</i></strong> Medium</p>
+			<p class="indent"><strong><i>Speed.</i></strong> 35ft.</p>
+			<p class="indent"><strong><i>Proficiency.</i></strong> Acrobatics, Perception</p>
+			<p class="indent"><strong><i>Scaled Skin.</i></strong> Natural armor of 12 + Dexterity modifier</p>
+      <p class="indent"><strong><i>Infrared SIght.</i></strong> You have darkvision for 120ft and can make out life forms perfectly in the dark.</p>
+			<p class="indent"><strong><i>Languages.</i></strong> Basic, Rodese.</p>
+		</description>
+		<sheet display="false" />
+			<setters />
+			<rules>
+				<stat name="Dexterity" value="2" />
+				<stat name="Intelligence" value="1" />
+				<grant type="Size" id="ID_SIZE_MEDIUM" />
+				<stat name="Speed" value="35" bonus="base" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_RODIAN_SCALED_SKIN" />
+				<grant type="Vision" name="ID_VISION_DARKVISION" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_RODESE" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_BASIC" />
+			</rules>
+    </element>
+
+    <element name="Scaled Skin" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_RODIAN_SCALED_SKIN">
+			<description>
+				<p>Natural armor of 12 + Dexterity modifier</p>
+			</description>
+			<sheet>
+				<description>
+          <p>Natural armor of 12 + Dexterity modifier</p>
+        </description>
+			</sheet>
+			<rules>
+        <stat name="ac:scaled skin rodian:base" value="12" />
+        <stat name="ac:scaled skin rodian:dexterity" value="dexterity:modifier" />
+
+        <stat name="ac:scaled skin rodian" value="ac:scaled skin rodian:base" />
+        <stat name="ac:scaled skin rodian" value="ac:scaled skin rodian:dexterity" />
+
+
+        <stat name="ac:calculation" value="ac:scaled skin rodian" bonus="calculation" equipped="[armor:none]" alt="Scaled Skin (Rodian)" />
+      </rules>
+		</element>
+
+
+ </elements>

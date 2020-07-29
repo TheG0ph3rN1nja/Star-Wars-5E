@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Kel Dor</name>
+		<description>GM Binder</description>
+		<author />
+		<update version="0.0.1">
+			<file name="keldor.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Kel Dor" type="Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACE_KELDOR">
+		<description>
+			<p>The Kel Dors, sometimes referred to as Kel Dorians, were a species hailing from the technological planet Dorin. They required masks to protect them when in oxygen-rich atmospheres. They were also known for the unique Force-using traditions of the Baran Do Sages. One notable Kel Dor was the Jedi Master Plo Koon, who was a member of a famous Kel Dor Jedi family. Sha Koon, a Jedi Knight, was Plo Koon's niece.</p>
+      <h4>Exoskeleton</h4>
+      <p>The Kel Dors were a tall race, typically of the same height and weight as Humans. Their skin ranged in color from peach to a crimson red. Most had dark, black eyes, although some were born with silver irises, a mark that was often seen as an affinity for the Force.</p>
+      <p class="indent">Kel Dors were, as a whole, were considered an unattractive species due to their strange facial structure. Their noses were described as falling short of becoming a beak, with a gaping opening that descended to the mouth, a toothless chasm with drooping fleshy strands. In place of teeth, Kel Dor had an upper and lower hard-palate, visible only when they pulled their lips back. Framing their head were extrasensory organs which terminated in small black tusks.</p>
+      <h4>Kel Dor Names</h4>
+      <p class="indent"><strong><i>Male Names:</i></strong> Gnost-Dural, Hetchkee, Plo Koon, Pol Temm, Tol Braga, Zym</p>
+      <p class="indent"><strong><i>Female Names:</i></strong> Charsae Saal, Kara Ziil, Sha Koon, Tila Mong, Till'in</p>
+			<h4>Kel Dor Traits</h4>
+			<p>Your Kel Dor character has many different attributes that might be useful in the field:</p>
+			<p class="indent"><strong><i>Ability Score Increase.</i></strong> +1 Dexterity, +2 Wisdom</p>
+      <p class="indent"><strong><i>Age.</i></strong> Up to 70.</p>
+			<p class="indent"><strong><i>Alignment.</i></strong> Good.</p>
+			<p class="indent"><strong><i>Size.</i></strong> Medium.</p>
+			<p class="indent"><strong><i>Speed.</i></strong> 30ft</p>
+			<p class="indent"><strong><i>Atmopheric Difficulties.</i></strong> Kel Dor do not perform well in oxygen-rich environments, effectively being blind. Therefore, they almost constantly wear a mask when not on their home planet. This mask allows them to survive without oxygen far longer than a normal humanoid could. You can survive without oxygen for up to fifteen minutes.</p>
+      <p class="indent"><strong><i>ExoSkeleton.</i></strong> Your AC is increased by 1.</p>
+      <p class="indent"><strong><i>Proficiency.</i></strong> You are proficient with the Survival skill.</p>
+			<p class="indent"><strong><i>Languages.</i></strong> Basic, Kel Dorian</p>
+		</description>
+		<sheet display="false" />
+			<setters />
+			<rules>
+				<stat name="Wisdom" value="2" />
+				<stat name="Dexterity" value="1" />
+				<grant type="Size" id="ID_SIZE_MEDIUM" />
+				<stat name="Speed" value="30" bonus="base" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_KELDOR_ATMOSPHERIC_DIFFICULTIES" />
+        <stat name="ac" value="1" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_KEL_DORIAN" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_BASIC" />
+			</rules>
+    </element>
+
+    <element name="Atmopheric Difficulties" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_KELDOR_ATMOSPHERIC_DIFFICULTIES">
+			<description>
+				<p>Kel Dor do not perform well in oxygen-rich environments, effectively being blind. Therefore, they almost constantly wear a mask when not on their home planet. This mask allows them to survive without oxygen far longer than a normal humanoid could. You can survive without oxygen for up to fifteen minutes</p>
+			</description>
+			<sheet>
+				<description>
+          <p>You can survive without oxygen for up to fifteen minutes</p>
+        </description>
+			</sheet>
+			<rules />
+		</element>
+
+ </elements>

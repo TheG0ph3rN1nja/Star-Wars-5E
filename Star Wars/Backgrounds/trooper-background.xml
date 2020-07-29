@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Trooper</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="trooper-background.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/trooper-background.xml" />
+		</update>
+	</info>
+
+	<element name="Trooper" type="Background" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_TROOPER">
+    <description>
+    <ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Pick 2 from the following: Athletics, Sleight of Hand, Repair, Security</li>
+        <li><strong>Other Proficiencies:</strong>One gaming set, land vehicles </li>
+				<li><strong>Equipment:</strong>One gaming set, 10 cr </li>
+      </ul>
+      <div element="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_MILITARY_RANK" />
+    </description>
+      <setters>
+        <set name="short">Pick 2 from the following: Athletics, Intimidation, Sleight of Hand, Intimidation, One gaming set, land vehicles </set>
+      </setters>
+      <rules>
+        <select type="Proficiency" name="Skill Proficiency (Trooper)" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_GMBINDER_SW5E_PROFICIENCY_SKILL_REPAIRS|ID_GMBINDER_SW5E_PROFICIENCY_SKILL_SECURITY" />
+				<select type="Proficiency" name="Tool Proficiency (Trooper)" supports="Gaming Set" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND" />
+      </rules>
+    </element>
+
+    <element name="Feature: Military Rank" type="Background Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_MILITARY_RANK">
+      <supports>Background Feature</supports>
+		<description>
+			<p>You have a military rank from your career as a trooper. Troopers loyal to your former military organization still recognize your authority and influence, and they defer to you if they are o f a lower rank. You can invoke your rank to exert influence over other soldiers and requisition simple equipment or horses for temporary use. You can also usually gain access to friendly military encampments and fortresses where your rank is recognized.</p>
+		</description>
+		<sheet alt="Military Rank">
+			<description>You have a military rank from your career as a trooper. Troopers loyal to your former military organization still recognize your authority and influence, and they defer to you if they are o f a lower rank. You can invoke your rank to exert influence over other soldiers and requisition simple equipment or horses for temporary use. You can also usually gain access to friendly military encampments and fortresses where your rank is recognized.</description>
+		</sheet>
+	</element>
+
+</elements>

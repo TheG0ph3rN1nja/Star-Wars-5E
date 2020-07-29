@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Gamorrean</name>
+		<description>GM Binder</description>
+		<author />
+		<update version="0.0.1">
+			<file name="gamorrean.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Gamorrean" type="Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACE_GAMORREAN">
+		<description>
+			<h4>Gamorrean Traits</h4>
+			<p>Your Gamorrean character has many different attributes that might be useful in the field:</p>
+			<p class="indent"><strong><i>Ability Score Increase.</i></strong> Your Strength and Constitution scores increase by 2</p>
+      <p class="indent"><strong><i>Age.</i></strong> Up to 75 years.</p>
+			<p class="indent"><strong><i>Alignment.</i></strong> Any.</p>
+			<p class="indent"><strong><i>Size.</i></strong> Medium</p>
+			<p class="indent"><strong><i>Speed.</i></strong> 30ft.</p>
+			<p class="indent"><strong><i>Savage Attacks.</i></strong> When you score a critical hit with a melee weapon attack, you can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.</p>
+      <p class="indent"><strong><i>Toughness.</i></strong> Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</p>
+			<p class="indent"><strong><i>Languages.</i></strong> Basic, Gamorrese. Gamorreans can only speak Gamorrese.</p>
+		</description>
+		<sheet display="false" />
+			<setters />
+			<rules>
+				<stat name="Strength" value="2" />
+				<stat name="Constitution" value="1" />
+				<grant type="Size" id="ID_SIZE_MEDIUM" />
+				<stat name="Speed" value="30" bonus="base" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_GAMORREAN_SAVAGE_ATTACKS" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_GAMORREAN_TOUGHNESS" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_GAMORRESE" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_BASIC" />
+			</rules>
+    </element>
+
+    <element name="Savage Attack" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_GAMORREAN_SAVAGE_ATTACKS">
+			<description>
+				<p>When you score a critical hit with a melee weapon attack, you can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.</p>
+			</description>
+			<sheet>
+				<description>
+          <p>When you score a critical hit with a melee weapon attack, you can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.</p>
+        </description>
+			</sheet>
+			<rules />
+		</element>
+
+    <element name="Toughness" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_GAMORREAN_TOUGHNESS">
+			<description>
+				<p>Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</p>
+			</description>
+			<sheet>
+				<description>
+          <p>Your hit point maximum increases by {{tough:hp}}.</p>
+        </description>
+			</sheet>
+      <setters>
+        <set name="allow duplicate">true</set>
+      </setters>
+			<rules>
+        <stat name="hp" value="1" />
+        <stat name="tough:hp" value="level" />
+        <stat name="hp" value="tough:hp" />
+      </rules>
+		</element>
+
+
+ </elements>

@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Weapons</name>
+		<description>GM Binder</description>
+		<author />
+		<update version="0.1.0">
+			<file name="items-weapons.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Club" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_CLUB">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_GROUP_CLUBS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="sp">10</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d4</set>
+			<set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_CLUB</set>
+		</setters>
+	</element>
+
+	<element name="Gaderffii" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_GADERFFII">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING,ID_INTERNAL_DAMAGE_TYPE_PIERCING,ID_INTERNAL_DAMAGE_TYPE_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_GROUP_QUARTESTAFF</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="sp">10</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d8</set>
+			<set name="versatile">1d8</set>
+			<set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_GADERFFII</set>
+		</setters>
+	</element>
+
+	<element name="Gammorean Battleaxe" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_GAMMOREAN_BATTLEAXE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_DAMAGE_TYPE_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_GROUP_AXES</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="sp">30</set>
+			<set name="weight" lb="7">7 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="slashing">2d6</set>
+			<set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_GAMMOREAN_BATTLEAXE</set>
+		</setters>
+	</element>
+
+	<element name="Short Sword" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_SHORT_SWORD">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_GROUP_SHORTSWORD</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="sp">10</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="piercing">1d6</set>
+			<set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD</set>
+		</setters>
+	</element>
+
+	<element name="Weapon Proficiency (Club)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_CLUB">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_GROUP_CLUBS</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Gaderffii)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_GADERFFII">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING,ID_INTERNAL_DAMAGE_TYPE_PIERCING,ID_INTERNAL_DAMAGE_TYPE_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_GROUP_QUARTESTAFF</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Gammorean Battleaxe)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_GAMMOREAN_BATTLEAXE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_DAMAGE_TYPE_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_GROUP_AXES</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Short Sword)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_GROUP_SHORTSWORD</supports>
+	</element>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_CLUB" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_GADERFFII" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_GAMMOREAN_BATTLEAXE" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
+		</rules>
+	</append>
+
+	<element name="Blaster Pistol" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_BLASTER_PISTOL">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_WEAPON_CATEGORY_LIGHT, ID_INTERNAL_DAMAGE_TYPE_RADIANT, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_ONEHANDED, ID_INTERNAL_WEAPON_GROUP_CROSSBOWS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">30</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">30/120</set>
+			<set name="damage" type="radiant">1d4</set>
+			<set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_BLASTER_PISTOL</set>
+		</setters>
+	</element>
+
+	<element name="Blaster Carbine" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_BLASTER_CARBINE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_RADIANT, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_CROSSBOWS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">60</set>
+			<set name="weight" lb="7">7 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">80/320</set>
+			<set name="damage" type="radiant">1d8</set>
+			<set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_BLASTER_CARBINE</set>
+		</setters>
+	</element>
+
+	<element name="Heavy Blaster Pistol" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_HEAVY_BLASTER_PISTOL">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_RADIANT, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_ONEHANDED, ID_INTERNAL_WEAPON_GROUP_CROSSBOWS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">30/120</set>
+			<set name="damage" type="radiant">1d6</set>
+			<set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_HEAVY_BLASTER_PISTOL</set>
+		</setters>
+	</element>
+
+	<element name="Weapon Proficiency (Blaster Pistol)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_BLASTER_PISTOL">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_WEAPON_CATEGORY_LIGHT, ID_INTERNAL_DAMAGE_TYPE_RADIANT, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_ONEHANDED, ID_INTERNAL_WEAPON_GROUP_CROSSBOWS</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Blaster Carbine)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_BLASTER_CARBINE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_RADIANT, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_CROSSBOWS</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Heavy Blaster Pistol)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_HEAVY_BLASTER_PISTOL">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_RADIANT, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_ONEHANDED, ID_INTERNAL_WEAPON_GROUP_CROSSBOWS</supports>
+	</element>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_RANGED_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_BLASTER_PISTOL" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_BLASTER_CARBINE" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_HEAVY_BLASTER_PISTOL" />
+		</rules>
+	</append>
+
+	<element name="Force Pike" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_FORCE_PIKE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_LIGHTNING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p>reach 5ft, DC 14 Con save or stunned 1 round</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="lightning">1d10</set>
+			<set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_FORCE_PIKE</set>
+		</setters>
+	</element>
+
+	<element name="Ryyk Blade" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_RYYK_BLADE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_DAMAGE_TYPE_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+		<description>
+			<p>can be dual wielded by Wookiees or with training from Wookiees</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">30</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d8</set>
+			<set name="versatile">1d10</set>
+			<set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_RYYK_BLADE</set>
+		</setters>
+	</element>
+
+	<element name="Stun Baton" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_STUN_BATON">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_LIGHTNING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_ONEHANDED</supports>
+		<description>
+			<p>DC 12 Con save or stunned 1 round</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">30</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="lightning">1d4</set>
+			<set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_STUN_BATON</set>
+		</setters>
+	</element>
+
+	<element name="Stun-Stave" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_STUN_STAVE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_LIGHTNING, ID_INTERNAL_DAMAGE_TYPE_VERSATILE, ID_INTERNAL_WEAPON_GROUP_STAFFS</supports>
+		<description>
+			<p>DC 14 Con save or stunned 1 round</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="lightning">1d6</set>
+			<set name="versatile">1d8</set>
+			<set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_STUN_STAVE</set>
+		</setters>
+	</element>
+
+	<element name="Vibroblade" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_VIBROBLADE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_ONEHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">60</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d6</set>
+			<set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_VIBROBLADE</set>
+		</setters>
+	</element>
+
+	<element name="Vibrosword" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_VIBROSWORD">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_DAMAGE_TYPE_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_ONEHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">60</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d8</set>
+			<set name="versatile">1d10</set>
+			<set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_VIBROSWORD</set>
+		</setters>
+	</element>
+
+	<element name="Vibroaxe" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_VIBROAXE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">60</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">2d6</set>
+			<set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_VIBROAXE</set>
+		</setters>
+	</element>
+
+	<element name="Weapon Proficiency (Force Pike)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_FORCE_PIKE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_LIGHTNING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Ryyk Blade)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_RYYK_BLADE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_DAMAGE_TYPE_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Stun Baton)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_STUN_BATON">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_LIGHTNING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_ONEHANDED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Stun-Stave)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_STUN_STAVE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_LIGHTNING, ID_INTERNAL_DAMAGE_TYPE_VERSATILE, ID_INTERNAL_WEAPON_GROUP_STAFFS</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Vibroblade)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_VIBROBLADE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_ONEHANDED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Vibrosword)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_VIBROSWORD">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_DAMAGE_TYPE_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_ONEHANDED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Vibroaxe)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_VIBROAXE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_FORCE_PIKE" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_RYYK_BLADE" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_STUN_BATON" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_STUN_STAVE" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_VIBROBLADE" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_VIBROSWORD" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_VIBROAXE" />
+		</rules>
+	</append>
+
+	<element name="Blaster Rifle" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_BLASTER_RIFLE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_RADIANT, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">80</set>
+			<set name="weight" lb="10">10 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">100/400</set>
+			<set name="damage" type="radiant">1d10</set>
+			<set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_BLASTER_RIFLE</set>
+		</setters>
+	</element>
+
+	<element name="Bowcaster" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_BOWCASTER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p>5ft explosion, DC 14 Dex save or 1d4 bludgeoning</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="15">15 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">60/240</set>
+			<set name="damage" type="bludgeoning">1d8</set>
+			<set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_BOWCASTER</set>
+		</setters>
+	</element>
+
+	<element name="Flame Thower" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_FLAME_THROWER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p>30 foot line or 15 foot cone</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">700</set>
+			<set name="weight" lb="20">20 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">30</set>
+			<set name="damage" type="fire">2d6</set>
+			<set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_FLAME_THROWER</set>
+		</setters>
+	</element>
+
+	<element name="Force Bow" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_FORCE_BOW">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_BOWS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">150/600</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="proficiency">ID_GMBINDER_SW5R_PROFICIENCY_WEAPON_PROFICIENCY_FORCEBOW</set>
+		</setters>
+	</element>
+
+	<element name="Gatling Blaster" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_GATLING_BLASTER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_RADIANT, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p>Can make second attack as free action</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="weight" lb="20">20 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">80/320</set>
+			<set name="damage" type="radiant">1d8</set>
+			<set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_GATLING_BLASTER</set>
+		</setters>
+	</element>
+
+	<element name="Rocket Launcher" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_ROCKET_LAUNCHER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p>10ft radius</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">5000</set>
+			<set name="weight" lb="15">15 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">80/320</set>
+			<set name="damage" type="bludgeoning">4d6</set>
+			<set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_ROCKET_LAUNCHER</set>
+		</setters>
+	</element>
+
+	<element name="Sniper Rifle" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_SNIPER_RIFLE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_RADIANT, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p>critical on 19-20</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="10">10 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">30/200/600</set>
+			<set name="damage" type="radiant">1d12</set>
+			<set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_SNIPER_RIFLE</set>
+		</setters>
+	</element>
+
+	<element name="Slug Pistol" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_SLUG_PISTOL">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_ONEHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">30/120</set>
+			<set name="damage" type="piercing">1d4</set>
+			<set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_SLUG_PISTOL</set>
+		</setters>
+	</element>
+
+	<element name="Slug Rifle" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_SLUG_RIFLE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">120</set>
+			<set name="weight" lb="14">14 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">100/400</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_SLUG_RIFLE</set>
+		</setters>
+	</element>
+
+	<element name="Weapon Proficiency (Blaster Rifle)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_BLASTER_RIFLE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_RADIANT, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Bowcaster)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_BOWCASTER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Flame Thrower)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_FLAME_THROWER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Force Bow)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_FORCEBOW">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_BOWS</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Gatling Blaster)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_GATLING_BLASTER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_RADIANT, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Rocket Launcher)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_ROCKET_LAUNCHER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Sniper Rifle)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_SNIPER_RIFLE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_RADIANT, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Slug Pistol)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_SLUG_PISTOL">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_ONEHANDED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Slug Rifle)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_SLUG_RIFLE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_BLASTER_RIFLE" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_BOWCASTER" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_FLAME_THROWER" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_FORCEBOW" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_GATLING_BLASTER" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_ROCKET_LAUNCHER" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_SNIPER_RIFLE" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_SLUG_PISTOL" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_SLUG_RIFLE" />
+		</rules>
+	</append>
+
+	<element name="Double-Bladed Lightsaber" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_DOUBLEBLADED_LIGHTSABER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_RADIANT</supports>
+		<description>
+			<p>If two-handed, offhand attack as bonus action, 1d8</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">5000</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="radiant">1d10</set>
+			<set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_DOUBLEBLADED_LIGHTSABER</set>
+		</setters>
+	</element>
+
+	<element name="Lightsaber" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_LIGHTSABER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_RADIANT, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">3000</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="radiant">1d8</set>
+			<set name="versatile">1d10</set>
+			<set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSABER</set>
+		</setters>
+	</element>
+
+	<element name="Lightsaber Pike" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_LIGHTSABER_PIKE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_RADIANT, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">4000</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="radiant">1d10</set>
+			<set name="versatile">1d10</set>
+			<set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSABER_PIKE</set>
+		</setters>
+	</element>
+
+	<element name="Weapon Proficiency (Double-Bladed Lightsaber)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_DOUBLEBLADED_LIGHTSABER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_RADIANT</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Lightsaber)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSABER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_RADIANT, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Lightsaber Pike)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSABER_PIKE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_RADIANT, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+	<element name="Weapon, +4" type="Magic Item" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_MAGIC_ITEM_WEAPON_4">
+		<description>
+			<p>You have a +4 bonus to attack and damage rolls made with this magic weapon.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Extremely Rare (Lightsabers Only)</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">{{parent}} +{{enhancement}}</set>
+		</setters>
+	</element>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_DOUBLEBLADED_LIGHTSABER" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSABER" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSABER_PIKE" />
+		</rules>
+	</append>
+
+	<element name="Charric Pistol" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_CHARRIC_PISTOL">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_RADIANT, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_ONEHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">25/100</set>
+			<set name="damage" type="radiant">1d4</set>
+			<set name="damage" type="fire">1</set>
+			<set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_CHARRIC_PISTOL</set>
+		</setters>
+	</element>
+
+	<element name="Charric Carbine" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_CHARRIC_CARBINE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_RADIANT, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">150</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">60/240</set>
+			<set name="damage" type="radiant">1d6</set>
+			<set name="damage" type="fire">3</set>
+			<set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_CHARRIC_CARBINE</set>
+		</setters>
+	</element>
+
+	<element name="Charric Rifle" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_CHARRIC_RIFLE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_RADIANT, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">200</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">80/320</set>
+			<set name="damage" type="radiant">1d8</set>
+			<set name="damage" type="fire">3</set>
+			<set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_CHARRIC_RIFLE</set>
+		</setters>
+	</element>
+
+	<element name="Charric Sniper" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_CHARRIC_SNIPER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_RADIANT, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p>critical on 19-20</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">300</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">20/200/600</set>
+			<set name="damage" type="radiant">1d10</set>
+			<set name="damage" type="fire">3</set>
+			<set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_CHARRIC_SNIPER</set>
+		</setters>
+	</element>
+
+	<element name="Weapon Proficiency (Charric Pistol)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_CHARRIC_PISTOL">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_RADIANT, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_ONEHANDED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Charric Carbine)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_CHARRIC_CARBINE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_RADIANT, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Charric Rifle)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_CHARRIC_RIFLE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_RADIANT, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Charric Sniper)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_CHARRIC_SNIPER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_RADIANT, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_CHARRIC_PISTOL" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_CHARRIC_CARBINE" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_CHARRIC_RIFLE" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_CHARRIC_SNIPER" />
+		</rules>
+	</append>
+
+</elements>

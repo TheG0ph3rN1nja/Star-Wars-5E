@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Under Cover Agent</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="under-cover-agent.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/under-cover-agent.xml" />
+		</update>
+	</info>
+
+	<element name="Under Cover Agent" type="Background" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_UNDER_COVER_AGENT">
+    <description>
+    <ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Insight, and pick 1: stealth, investigation, security, deception, performance, persuasion </li>
+        <li><strong>Languages:</strong>Two of your choice </li>
+				<li><strong>Equipment:</strong>Cipher manual, 15 cr  </li>
+      </ul>
+      <div element="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_SAFE_HAVEN" />
+    </description>
+      <setters>
+        <set name="short">Insight, and pick 1: stealth, investigation, intimidation, deception, performance, persuasion, Two languages of your choice </set>
+      </setters>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+        <select type="Proficiency" name="Skill Proficiency (Under Cover Agent)" supports="ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_GMBINDER_SW5E_PROFICIENCY_SKILL_SECURITY|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_PERSUASION" />
+				<select type="Language" name="Language (Under Cover Agent)" supports="Standard||Exotic" number="2" />
+      </rules>
+    </element>
+
+    <element name="Feature: Safe Haven" type="Background Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_SAFE_HAVEN">
+      <supports>Background Feature</supports>
+		<description>
+			<p>As a spy, you have access to a secret network of supporters and operatives who can provide assistance on your adventures. You know a set of secret signs and passwords you can use to identify such operatives, who can provide you with access to a hidden safe house, free room and board, or assistance in finding information. These agents never risk their lives for you or risk revealing their true identities.</p>
+		</description>
+		<sheet alt="Safe Haven">
+			<description>As a spy, you have access to a secret network of supporters and operatives who can provide assistance on your adventures. You know a set of secret signs and passwords you can use to identify such operatives, who can provide you with access to a hidden safe house, free room and board, or assistance in finding information. These agents never risk their lives for you or risk revealing their true identities.</description>
+		</sheet>
+	</element>
+
+</elements>

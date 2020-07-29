@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Celebrity Performer</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="celebrity-performer.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/celebrity-performer.xml" />
+		</update>
+	</info>
+
+	<element name="Celebrity Performer" type="Background" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_CELEBRITY_PERFORMER">
+    <description>
+    <ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Acrobatics, Performance</li>
+				<li><strong>Other Proficiencies:</strong>Disguise Kit, one musical instrument</li>
+				<li><strong>Equipment:</strong>One musical instrument, a costume, 15 cr </li>
+      </ul>
+      <div element="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_BY_POPULAR_DEMAND" />
+    </description>
+      <setters>
+        <set name="short">Acrobatics, Performance, Disguise Kit, one musical instrument,a costume, 15 cr</set>
+      </setters>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+        <select type="Proficiency" name="Tool Proficiency (Celebrity Performer)" supports="Musical Instrument" />
+      </rules>
+    </element>
+
+    <element name="Feature: By Popular Demand" type="Background Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_BY_POPULAR_DEMAND">
+      <supports>Background Feature</supports>
+		<description>
+			<p>You can always find a place to perform, usually in a cantina but possibly with a circus, at a theater, or even in a diplomat’s court. At such a place, you receive free lodging and food of a modest or comfortable standard (depending on the quality of the establishment), as long as you perform each night. In addition, your performance makes you something of a local figure. When strangers recognize you in a town where you have performed, they typically take a liking to you.</p>
+		</description>
+		<sheet alt="Celebrity Performer">
+			<description>You can always find a place to perform, usually in a cantina but possibly with a circus, at a theater, or even in a diplomat’s court. At such a place, you receive free lodging and food of a modest or comfortable standard (depending on the quality of the establishment), as long as you perform each night. In addition, your performance makes you something of a local figure. When strangers recognize you in a town where you have performed, they typically take a liking to you.</description>
+		</sheet>
+	</element>
+
+</elements>

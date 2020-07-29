@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Mercenary</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="mercenary.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/classes/mercenary.xml" />
+		</update>
+	</info>
+
+  <element name="Mercenary" type="Class" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_MERCENARY">
+		<description>
+      <p>Both infamous and anonymous at the same time, Mercenaries are heirs to a professional legacy—an ancient brotherhood with a glorious history. Tracking elusive targets across multiple star systems requires expertise, especially when the targets can be prominent, powerful, and often prepared for confrontation. Thrill seekers from all walks of life set out to become bounty hunters, but only the most hard-boiled survive in this competitive and deadly business. </p>
+      <h5 class="caption">THE MERCENARY</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-5">Proficiency Bonus</td><td class="left">Features</td></tr>
+				</thead>
+        <tr><td> 1st</td><td>+2</td><td class="left">Mercenary Conclave, Natural Explorer</td></tr>
+				<tr><td> 2nd</td><td>+2</td><td class="left">Ears to the Streets, Fighting Style, Mercenary Tools</td></tr>
+				<tr><td> 3rd</td><td>+2</td><td class="left">Conclave Feature</td></tr>
+				<tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement, Mercenary Technique</td></tr>
+				<tr><td> 5th</td><td>+3</td><td class="left">Conclave Feature</td></tr>
+				<tr><td> 6th</td><td>+3</td><td class="left">Extra Attack</td></tr>
+				<tr><td> 7th</td><td>+3</td><td class="left">Conclave Feature</td></tr>
+				<tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 9th</td><td>+4</td><td class="left">Fleet of Foot</td></tr>
+				<tr><td>10th</td><td>+4</td><td class="left">Action Surge</td></tr>
+				<tr><td>11th</td><td>+4</td><td class="left">Hide in Plain Sight</td></tr>
+				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>+5</td><td class="left">Extra Attack (2)</td></tr>
+				<tr><td>14th</td><td>+5</td><td class="left">Advanced Mercenary Technique</td></tr>
+				<tr><td>15th</td><td>+5</td><td class="left">Conclave Feature</td></tr>
+				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td>+6</td><td class="left">Action Surge (2)</td></tr>
+				<tr><td>18th</td><td>+6</td><td class="left">Extra Attack (3)</td></tr>
+				<tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td>+6</td><td class="left">Ultimate Killing Machine</td></tr>
+      </table>
+      <h3>Class Features</h3>
+      <p>As a mercenary, you have the following class features.</p>
+      <h4>Hit Points</h4>
+      <p><strong>Hit Dice:</strong> 1d10 per mercenary Level.</p>
+      <p><strong>Hit Points at 1st Level:</strong> 10 + your Constitution modifier</p>
+      <p><strong>Hit Points at Higher Levels:</strong> 1d10 (or 6) + your Constitution modifier per mercenary level after 1st</p>
+      <h5>PROFICIENCIES</h5>
+      <p><strong>Armor:</strong> Light and Medium armor, shields</p>
+      <p><strong>Weapons:</strong> Simple and Martial Weapons</p>
+      <p><strong>Tools:</strong> Demolitionist's Tools</p>
+      <p><strong>Starships:</strong> Small and Medium starships</p>
+      <p><strong>Saving Throw:</strong> Strength, Dexterity</p>
+      <p><strong>Skills:</strong> Choose four skills from Athletics, Insight, Intimidation, Investigation, Nature, Perception, Persuasion, Security, Stealth, and Survival</p>
+      <h5>EQUIPMENT</h5>
+      <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+      <ul>
+        <li>(a) a vibrosword or (b) a vibroblade</li>
+        <li>(a) a blaster rifle and 5 charge packs or (b) a vibrosword</li>
+        <li>(a) a burglar’s pack, (b) a dungeoneer’s pack, or (c) an explorer’s pack</li>
+        <li>Combat suit, a blaster pistol and 5 charge packs, and thieves’ tools</li>
+      </ul>
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_MERCENARY_CONCLAVE" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_NATURAL_EXPLORER" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_MERCENARY_REPUTATION" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_EARS_TO_THE_STREETS" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_FIGHTING_STYLE" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_MERCENARY_TOOLS" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_ABILITYSCOREIMPROVEMENT_MERCENARY" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_MERCENARY_TECHNIQUES" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_EXTRA_ATTACK" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_FLEET_OF_FOOT" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_ACTION_SURGE" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_HIDE_IN_PLAIN_SIGHT" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_ADVANCED_MERCENARY_TECHNIQUES" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_ULTIMATE_KILLING_MACHING" />
+    </description>
+    <sheet display="false" />
+    <setters>
+      <set name="hd">d10</set>
+    </setters>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+      <grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_ITEM_DEMOLITIONIST_TOOLS" />
+      <grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SMALL" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_MEDIUM" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+			<select type="Proficiency" name="Skill Proficiency (Mercenary)" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_GMBINDER_SW5E_PROFICIENCY_SKILL_SECURITY|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" number="4" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SKILL_REPAIRS" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SKILL_SECURITY" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS" level="1" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_MERCENARY_CONCLAVE" level="1" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_NATURAL_EXPLORER" level="1" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_MERCENARY_REPUTATION" level="1" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_EARS_TO_THE_STREETS" level="2" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_FIGHTING_STYLE" level="2" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_MERCENARY_TOOLS" level="2" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_ABILITYSCOREIMPROVEMENT_MERCENARY" level="4" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_MERCENARY_TECHNIQUES" level="5" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_EXTRA_ATTACK" level="6" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_FLEET_OF_FOOT" level="8" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_ACTION_SURGE" level="9" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_HIDE_IN_PLAIN_SIGHT" level="10" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_ADVANCED_MERCENARY_TECHNIQUES" level="14" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_ULTIMATE_KILLING_MACHING" level="20" />
+    </rules>
+  </element>
+
+  <element name="Mercenary Conclave" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_MERCENARY_CONCLAVE">
+		<description>
+			<p>There are three conclaves to choose from: the bounty hunter, the big game hunter, and the Jedi slayer.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Mercenary Conclave" supports="Mercenary Conclave" />
+		</rules>
+	</element>
+
+  <element name="Natural Explorer" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_NATURAL_EXPLORER">
+		<description>
+			<p>Starting at level 1, you are a master of navigating the natural world, and you react with swift and decisive action when attacked. This grants you the following benefits:</p>
+      <ul>
+        <li>You ignore difficult terrain.</li>
+        <li>You have advantage on initiative rolls.</li>
+        <li>On your first turn during combat, you have advantage on attack rolls against creatures that have not yet acted.</li>
+      </ul>
+		</description>
+		<sheet>
+      <description>You ignore difficult terrain. You have advantage on initiative rolls. On your first turn during combat, you have advantage on attack rolls against creatures that have not yet acted.</description>
+    </sheet>
+		<rules />
+	</element>
+
+  <element name="Mecenary Reputation" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_MERCENARY_REPUTATION">
+		<description>
+			<p>As a mercenary doing jobs all over the galaxy, you slowly but surely start to gain reputation and your name is known all around. From level 1 onwards, you gain a bonus to Intimidation and Persuasion checks equal to 1/4 of your level rounded normally.</p>
+      <p class="indent">Rounding normally means basic mathematics rules. For instance, for a character of level 5, when its level is divided by 4, the result is 1.25. That would round down to one. For a character of level 6, however, when divided by 4, the result would be 1.5, which would round up to 2.</p>
+		</description>
+		<sheet>
+      <description>You gain a bonus to Intimidation and Persuasion checks equal to 1/4 of your level rounded normally.</description>
+    </sheet>
+		<rules />
+	</element>
+
+  <element name="Ears to the Streets" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_EARS_TO_THE_STREETS">
+		<description>
+			<p>Starting at 2nd level, you gain vast knowledge that applies to Investigation and History. You gain +4 to any check on finding a job, a person, or underground dealers.</p>
+		</description>
+		<sheet>
+      <description>You gain vast knowledge that applies to Investigation and History. You gain +4 to any check on finding a job, a person, or underground dealers.</description>
+    </sheet>
+		<rules />
+	</element>
+
+  <element name="Fighting Style(Mercenary)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_FIGHTING_STYLE">
+		<description>
+			<p>At 2nd level, you adopt a particular style of fighting as your speciality. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+      <select type="Class Feature" name="Fighting Style" supports="Fighting Style,Mercenary" level="2"/>
+    </rules>
+	</element>
+
+  <element name="Defense(GM Binder)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FIGHTINGSTYLE_DEFENSE">
+		<supports>Fighting Style, Mercenary</supports>
+		<description>
+			<p>While you are wearing armor, you gain a +1 bonus to AC.</p>
+		</description>
+		<sheet>
+			<description>While you are wearing armor, you gain a +1 bonus to AC.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:misc" value="1" bonus="fighting style" equipped="[armor:any]" alt="Defense (Fighting Style)" />
+		</rules>
+	</element>
+
+	<element name="Dueling(GM Binder)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FIGHTINGSTYLE_DUELING">
+		<supports>Fighting Style, Mercenary</supports>
+		<description>
+			<p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+		</description>
+		<sheet>
+			<description>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</description>
+		</sheet>
+		<rules>
+			<!-- <stat name="melee:damage" value="2" equipped="[primary:any],([secondary:none]||[shield:any])" /> -->
+		</rules>
+	</element>
+
+  <element name="Sharpshooter(GM Binder)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FIGHTINGSTYLE_SHARPSHOOTER">
+		<supports>Fighting Style, Mercenary</supports>
+		<description>
+			<p>You gain +2 to attack rolls you make with ranged weapons.</p>
+		</description>
+		<sheet>
+			<description>You gain +2 to attack rolls you make with ranged weapons.</description>
+		</sheet>
+	</element>
+
+  <element name="Two-Weapon Fighting(GM Binder)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING">
+		<supports>Fighting Style, Mercenary</supports>
+		<description>
+			<p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
+		</description>
+		<sheet>
+			<description>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</description>
+		</sheet>
+	</element>
+
+  <element name="Mecenary Tools" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_MERCENARY_TOOLS">
+		<description>
+			<p>At 2nd level, you gain the tools of the trade that are necessary for a Mercenary to be the deadly killer he or she is. You gain new toolsets at level 2, and more at levels 7, 11, and 15. When you gain new toolsets, your mercenary conclave will provide you with one tool from that set, but you will be responsible for purchasing or acquiring other tools. The conclave in parentheses denotes which gadget your conclave gives you.</p>
+      <h5>Level 2</h5>
+      <ul>
+        <li>Bug (Jedi Slayer)</li>
+        <li>Mini Missiles (Bounty Hunter)</li>
+        <li>MM9 mini-concussive rocket launcher (Big Game Hunter)</li>
+      </ul>
+      <h5>Level 7</h5>
+      <ul>
+        <li>Implanted tracking device (Jedi Slayer, Bounty Hunter)</li>
+        <li>Electrified Net (Big Game Hunter)</li>
+      </ul>
+      <h5>Level 11</h5>
+      <ul>
+        <li>Adaptive Armor (Jedi Slayer)</li>
+        <li>Autoloader (Bounty Hunter)</li>
+        <li>Grenade Launcher (Big Game Hunter)</li>
+      </ul>
+      <h5>Level 15</h5>
+      <ul>
+        <li>Mandalorian Power Shield (Jedi Slayer)</li>
+        <li>Full Auto Conversion (Bounty Hunter)</li>
+        <li>Velocity-7 Dart Shooter (Big Game Hunter)</li>
+      </ul>
+		</description>
+		<sheet>
+      <description>Your conclave grants you 1 toolset at levels 2, 7, 11, and 15 each. See the list to know which toolset you will be granted.</description>
+    </sheet>
+		<rules />
+	</element>
+
+  <element name="Ability Score Improvement" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_ABILITYSCOREIMPROVEMENT_MERCENARY">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Mercenary 4)" supports="Improvement Option,Mercenary,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Mercenary 8)" supports="Improvement Option,Mercenary,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Mercenary 12)" supports="Improvement Option,Mercenary,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Mercenary 16)" supports="Improvement Option,Mercenary,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Mercenary 19)" supports="Improvement Option,Mercenary,19" level="19" />
+		</rules>
+	</element>
+
+  <element name="Mercenary Techniques" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_MERCENARY_TECHNIQUES">
+		<description>
+			<p>At level 5, you may choose one of the following features:</p>
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_MERCENARY_TECHNIQUES_DISARMING_STRIKE" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_MERCENARY_TECHNIQUES_MARKSMANS_STRIKE" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_MERCENARY_TECHNIQUES_SHOVE_ATTACK" />
+		</description>
+		<sheet display="false" />
+		<rules>
+      <select type="Class Feature" name="Mercenary Techniques" supports="Mercenary Techniques" level="5" />
+    </rules>
+	</element>
+
+  <element name="Disarming Strike" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_MERCENARY_TECHNIQUES_DISARMING_STRIKE">
+    <supports>Mercenary Techniques</supports>
+		<description>
+			<p>Once per turn, when you make a ranged or melee weapon attack against an enemy, you can declare that the shot is a disarming strike. On a hit, the target must make a Strength saving throw against your mercenary DC (8 + Cha + prof). On a failed save, the target drops one weapon it was holding.</p>
+		</description>
+		<sheet usage="Once/Turn">
+			<description>Once per turn, when you make a ranged or melee weapon attack against an enemy, you can declare that the shot is a disarming strike. On a hit, the target must make a Strength saving throw against your mercenary DC (8 + Cha + prof). On a failed save, the target drops one weapon it was holding.</description>
+		</sheet>
+		<rules />
+	</element>
+
+  <element name="Marksmans's Strike" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_MERCENARY_TECHNIQUES_MARKSMANS_STRIKE">
+    <supports>Mercenary Techniques</supports>
+		<description>
+			<p>At the beginning of your turn, you can declare a marksman’s strike. When you use Marksman’s strike, you cannot take a bonus action, move, or take any other action besides Marksman’s strike. This attack has advantage, and counts as a critical hit on a natural 19 or 20. If it is a critical hit, double the number of dice you would roll normally for a critical hit.</p>
+		</description>
+		<sheet usage="Once/Turn">
+			<description>At the beginning of your turn, you can declare a marksman’s strike. When you use Marksman’s strike, you cannot take a bonus action, move, or take any other action besides Marksman’s strike. This attack has advantage, and counts as a critical hit on a natural 19 or 20. If it is a critical hit, double the number of dice you would roll normally for a critical hit.</description>
+		</sheet>
+		<rules />
+	</element>
+
+  <element name="Shove Attack" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_MERCENARY_TECHNIQUES_SHOVE_ATTACK">
+    <supports>Mercenary Techniques</supports>
+		<description>
+			<p>Whenever an enemy is within 5 feet of you and you are wielding a ranged weapon, as a bonus action you can shove the enemy. You and the creature must make a strength contest. If the creature fails, it takes 1d6 damage, and is moved up to 15 feet away.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Whenever an enemy is within 5 feet of you and you are wielding a ranged weapon, as a bonus action you can shove the enemy. You and the creature must make a strength contest. If the creature fails, it takes 1d6 damage, and is moved up to 15 feet away.</description>
+		</sheet>
+		<rules />
+	</element>
+
+  <element name="Extra Attack" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_EXTRA_ATTACK">
+		<description>
+			<p>Beginning at 6th level, whenever you take the attack action on your turn, you may make another attack. The number of attacks increases to 2 at 13, and again to 3 at 18.</p>
+		</description>
+		<sheet>
+			<description level="6">You can attack twice, instead of once, whenever you take the Attack action on your turn</description>
+			<description level="13">You can attack three times, instead of once, whenever you take the Attack action on your turn</description>
+			<description level="18">You can attack four times, instead of once, whenever you take the Attack action on your turn</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="6" bonus="extra attack" />
+			<stat name="extra attack:count" value="3" level="13" bonus="extra attack" />
+			<stat name="extra attack:count" value="4" level="18" bonus="extra attack" />
+		</rules>
+	</element>
+
+  <element name="Fleet of Foot" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_FLEET_OF_FOOT">
+		<description>
+			<p>Beginning at 8th level, you can use the Dash action as a bonus action on your turn.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can use the Dash action as a bonus action on your turn.</description>
+		</sheet>
+		<rules />
+	</element>
+
+  <element name="Action Surge" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_ACTION_SURGE">
+		<description>
+			<p>Beginning at 9th level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.</p>
+		</description>
+		<sheet usage="{{mercenary-surge:count}}/Short Rest">
+			<description>On your turn, once per turn, you can take one additional action on top of your regular action and a possible bonus action.</description>
+		</sheet>
+		<rules>
+      <stat name="mercenary-surge:count" value="1" />
+      <stat name="mercenary-surge:count" value="1" level="17"/>
+    </rules>
+	</element>
+
+  <element name="Hide in Plain Sight" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_HIDE_IN_PLAIN_SIGHT">
+		<description>
+			<p>Starting at 10th level, you can remain perfectly still for long periods of time to set up ambushes. When you attempt to hide on your turn, you can opt to not move on that turn. Creatures that attempt to detect you take a -10 penalty to their wisdom(perception) check until the start of the next turn. You lose this benefit if you move or fall prone. You are still automatically detected if any effect or action causes you to no longer be hidden.</p>
+      <p class="indent">If you are still hidden at the beginning of your next turn, you can choose to remain motionless and gain this benefit until you are detected.</p>
+		</description>
+		<sheet>
+			<description>When you attempt to hide on your turn, you can opt to not move on that turn. Creatures that attempt to detect you take a -10 penalty to their wisdom(perception) check until the start of the next turn. You lose this benefit if you move or fall prone. You are still automatically detected if any effect or action causes you to no longer be hidden. If you are still hidden at the beginning of your next turn, you can choose to remain motionless and gain this benefit until you are detected.</description>
+		</sheet>
+		<rules />
+	</element>
+
+  <element name="Advanced Mercenary Techniques" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_ADVANCED_MERCENARY_TECHNIQUES">
+		<description>
+			<p>At level 14, you may choose one of the following features:</p>
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_ADVANCED_MERCENARY_TECHNIQUES_VOLLEY" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_ADVANCED_MERCENARY_TECHNIQUES_WHIRLWIND_ATTACK" />
+		</description>
+		<sheet display="false" />
+		<rules>
+      <select type="Class Feature" name="Advanced Mercenary Techniques" supports="Advanced Mercenary Techniques" level="14" />
+    </rules>
+	</element>
+
+  <element name="Volley" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_ADVANCED_MERCENARY_TECHNIQUES_VOLLEY">
+    <supports>Advanced Mercenary Techniques</supports>
+		<description>
+			<p>You can use your action to make a ranged attack against any number of creatures within a 10 foot of a point that you can see within your weapon’s range. You must have ammunition for each target, as normal, and you must make a separate attack action for each.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can use your action to make a ranged attack against any number of creatures within a 10 foot of a point that you can see within your weapon’s range. You must have ammunition for each target, as normal, and you must make a separate attack action for each.</description>
+		</sheet>
+		<rules />
+	</element>
+
+  <element name="Whirlwind Attack" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_ADVANCED_MERCENARY_TECHNIQUES_WHIRLWIND_ATTACK">
+    <supports>Advanced Mercenary Techniques</supports>
+		<description>
+			<p>You can use your action to make melee attack against any number of creatures within 5 feet of you. You must make separate attack rolls for each.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can use your action to make melee attack against any number of creatures within 5 feet of you. You must make separate attack rolls for each.</description>
+		</sheet>
+		<rules />
+	</element>
+
+  <element name="Ultimate Killing Machine" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MERCENARY_ULTIMATE_KILLING_MACHING">
+		<description>
+			<p>At 20th level you become unparalleled in your ability to kill. You can now add your Wisdom modifier to the attack roll or damage roll of any attack you make. You can choose to add this before or after the roll, but before any effects of the roll occur.</p>
+		</description>
+		<sheet>
+      <description>You can now add {{ultimate-killing:size}} to the attack roll or damage roll of any attack you make. You can choose to add this before or after the roll, but before any effects of the roll occur.</description>
+    </sheet>
+		<rules>
+      <stat name="ultimate-killing:size" value="wisdom:modifier" />
+    </rules>
+	</element>
+
+  <element name="Big Game Hunter Conclave" type="Archetype" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_BIGGAMEHUNTER_CONCLAVE">
+		<supports>Mercenary Conclave</supports>
+		<description>
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BIGGAMEHUNTER_CONCLAVE_FAVORED_ENEMY_BEAST" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BIGGAMEHUNTER_CONCLAVE_WHOALOOKATTHATBEAUTY" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BIGGAMEHUNTER_CONCLAVE_ULTIMATE_WRANGLER" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BIGGAMEHUNTER_CONCLAVE_MULTIATTACK_DEFENSE" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BIGGAMEHUNTER_CONCLAVE_EVASION" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BIGGAMEHUNTER_CONCLAVE_COUNTER_STRIKE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BIGGAMEHUNTER_CONCLAVE_FAVORED_ENEMY_BEAST" level="1" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BIGGAMEHUNTER_CONCLAVE_WHOALOOKATTHATBEAUTY" level="3" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BIGGAMEHUNTER_CONCLAVE_ULTIMATE_WRANGLER" level="5" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BIGGAMEHUNTER_CONCLAVE_MULTIATTACK_DEFENSE" level="7" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BIGGAMEHUNTER_CONCLAVE_EVASION" level="11" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BIGGAMEHUNTER_CONCLAVE_COUNTER_STRIKE" level="15" />
+		</rules>
+	</element>
+
+  <element name="Favored Enemy: Beasts" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BIGGAMEHUNTER_CONCLAVE_FAVORED_ENEMY_BEAST">
+		<description>
+			<p>As a Big Game Hunter, your speciality is in hunting down beasts. At level 1, you gain beasts as a favored enemy. You gain a +2 to damage rolls with weapon attacks against creatures of that favored type. You also gain advantage on wisdom (survival) checks to track your favored enemies, and also on intelligence checks on recalling information on your favored enemies.</p>
+      <p class="indent">When you gain this feature, you can also learn one language of your choice. It is typically a language spoken by your favored enemy, or creature. However it can be whatever language you want.</p>
+		</description>
+		<sheet>
+      <description>You gain beasts as a favored enemy. You gain a +2 to damage rolls with weapon attacks against creatures of that favored type. You also gain advantage on wisdom (survival) checks to track your favored enemies, and also on intelligence checks on recalling information on your favored enemies.</description>
+		</sheet>
+		<rules>
+			<select type="Language" name="Language (Big Game Hunter Conclave)" supports="Standard||Exotic" />
+		</rules>
+	</element>
+
+  <element name="Whoa, Look at that Beauty" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BIGGAMEHUNTER_CONCLAVE_WHOALOOKATTHATBEAUTY">
+		<description>
+			<p>As a big game hunter, you have gained a wide knowledge of everything wild and monstrous. As of level 3, you have the ability to learn about one creature you can see within 120 feet of you that is considered a beast. As a bonus action you immediately learn the target’s vulnerabilities, immunities, and resistances. You also learn any special abilities triggered when it takes damage; such as fire damage halting regeneration.</p>
+      <p class="indent">In addition, the first time each turn you hit the creature with a weapon attack it takes an additional 1d6 damage. This feature lasts until you choose another target with this feature, or you finish a long or short rest.</p>
+		</description>
+		<sheet action="Bonus Action">
+      <description>You have the ability to learn about one creature you can see within 120 feet of you that is considered a beast. As a bonus action you immediately learn the target’s vulnerabilities, immunities, and resistances. You also learn any special abilities triggered when it takes damage; such as fire damage halting regeneration. In addition, the first time each turn you hit the creature with a weapon attack it takes an additional 1d6 damage. This feature lasts until you choose another target with this feature, or you finish a long or short rest.</description>
+		</sheet>
+		<rules/>
+	</element>
+
+  <element name="Ultimate Wrangler" type="Arcetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BIGGAMEHUNTER_CONCLAVE_ULTIMATE_WRANGLER">
+		<description>
+			<p>At level 5, you gain proficiency, or expertise if you are already proficient, in the animal handling skill. Additionally, you can grapple large creatures.</p>
+		</description>
+		<sheet>
+      <description>you gain proficiency, or expertise if you are already proficient, in the animal handling skill. Additionally, you can grapple large creatures.</description>
+		</sheet>
+		<rules>
+      <stat name="animal handling:misc" value="proficiency" />
+    </rules>
+	</element>
+
+  <element name="Multiattack Defense" type="Arcetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BIGGAMEHUNTER_CONCLAVE_MULTIATTACK_DEFENSE">
+		<description>
+			<p>Starting at level 7, whenever a creature hits you with an attack, you gain a +4 to your AC against all subsequent against made by that creature for the rest of the round.</p>
+		</description>
+		<sheet>
+      <description>whenever a creature hits you with an attack, you gain a +4 to your AC against all subsequent against made by that creature for the rest of the round.</description>
+		</sheet>
+		<rules />
+	</element>
+
+  <element name="Evasion" type="Arcetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BIGGAMEHUNTER_CONCLAVE_EVASION">
+		<description>
+			<p>Beginning at level 11, whenever you are subjected to an effect that causes you to make a dexterity saving throw, you take half damage on a failed save, and no damage on a successful one.</p>
+		</description>
+		<sheet>
+      <description>Whenever you are subjected to an effect that causes you to make a dexterity saving throw, you take half damage on a failed save, and no damage on a successful one.</description>
+		</sheet>
+		<rules />
+	</element>
+
+  <element name="Counter Strike" type="Arcetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BIGGAMEHUNTER_CONCLAVE_COUNTER_STRIKE">
+		<description>
+			<p>At level 15, you gain the ability to counterattack when your prey tries to sabotage you. If an enemy forces you to make a saving throw, you can use your reaction to make an attack against it. You make this attack immediately before making the saving throw. If the attack hits, your save automatically succeeds, in addition to the normal weapon effects.</p>
+		</description>
+		<sheet>
+      <description>If an enemy forces you to make a saving throw, you can use your reaction to make an attack against it. You make this attack immediately before making the saving throw. If the attack hits, your save automatically succeeds, in addition to the normal weapon effects.</description>
+		</sheet>
+		<rules />
+	</element>
+
+  <element name="Bounty Hunter Conclave" type="Archetype" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_BOUNTYHUNTER_CONCLAVE">
+		<supports>Mercenary Conclave</supports>
+		<description>
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BOUNTYHUNTER_CONCLAVE_FAVORED_ENEMY_HUMANOIDS" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BOUNTYHUNTER_CONCLAVE_YOUCANRUNBUTYOULLONLYDIETIRED" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BOUNTYHUNTER_CONCLAVE_BONUS_PROFICIENCIES" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BOUNTYHUNTER_CONCLAVE_HESNOGOODTOMEDEAD" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BOUNTYHUNTER_CONCLAVE_CRIPPLING_STRIKE" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BOUNTYHUNTER_CONCLAVE_MAKING_AN_EXAMPLE" />
+      <div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BOUNTYHUNTER_CONCLAVE_UNCANNY_DODGE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BOUNTYHUNTER_CONCLAVE_FAVORED_ENEMY_HUMANOIDS" level="1" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BOUNTYHUNTER_CONCLAVE_YOUCANRUNBUTYOULLONLYDIETIRED" level="3" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BOUNTYHUNTER_CONCLAVE_BONUS_PROFICIENCIES" level="3" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BOUNTYHUNTER_CONCLAVE_HESNOGOODTOMEDEAD" level="5" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BOUNTYHUNTER_CONCLAVE_CRIPPLING_STRIKE" level="7" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BOUNTYHUNTER_CONCLAVE_MAKING_AN_EXAMPLE" level="11" />
+      <grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BOUNTYHUNTER_CONCLAVE_UNCANNY_DODGE" level="15" />
+		</rules>
+	</element>
+
+  <element name="Favored Enemy: Humanoids" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BOUNTYHUNTER_CONCLAVE_FAVORED_ENEMY_HUMANOIDS">
+		<description>
+			<p>As a Bounty Hunter your speciality is in hunting down humans, aliens, humanoids as long as they have a good price on their head. As a bounty hunter, at level 1, you gain humanoids as a favored enemy. You gain a +2 to damage rolls with weapon attacks made against creatures of that favored type. You also gain advantage on wisdom(survival) checks to track your favored enemies, and also on intelligence checks on recalling information on your favored enemies.</p>
+      <p class="indent">When you gain this feature, you can also learn one language of your choice. It is typically a language spoken by your favored enemy, or creature. However it can be whatever language you want.</p>
+		</description>
+		<sheet>
+      <description>You gain humanoids as a favored enemy. You gain a +2 to damage rolls with weapon attacks made against creatures of that favored type. You also gain advantage on wisdom(survival) checks to track your favored enemies, and also on intelligence checks on recalling information on your favored enemies.</description>
+		</sheet>
+		<rules>
+			<select type="Language" name="Language (Bounty Hunter Conclave)" supports="Standard||Exotic" />
+		</rules>
+	</element>
+
+  <element name="You Can Run, But You'll Only Die Tired" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BOUNTYHUNTER_CONCLAVE_YOUCANRUNBUTYOULLONLYDIETIRED">
+		<description>
+			<p>As a bounty hunter, it’s your job to find people who don’t want to be found. At 3rd level, you can choose up to 2 enemies of your favored type, and using some of your underground contacts, can find out where they are going to be at any time within the next month. You may change who you target at will, however you can only ever have 2 total marks.</p>
+      <p class="indent">Additionally, your movement speed is increased by 10.</p>
+		</description>
+		<sheet>
+      <description>You can choose up to 2 enemies of your favored type, and using some of your underground contacts, can find out where they are going to be at any time within the next month. You may change who you target at will, however you can only ever have 2 total marks.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:misc" value="10" bonus="You Can Run, But You'll Only Die Tired" />
+		</rules>
+	</element>
+
+  <element name="Bonus Proficiencies(Bounty Hunter Conclave)" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BOUNTYHUNTER_CONCLAVE_BONUS_PROFICIENCIES">
+		<description>
+			<p>At level 3, you gain proficiency in the Survival skill</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_ITEM_DEMOLITIONIST_TOOLS" />
+		</rules>
+	</element>
+
+  <element name="He's No Good To Me Dead" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BOUNTYHUNTER_CONCLAVE_HESNOGOODTOMEDEAD">
+		<description>
+			<p>Starting at level 5, as a bounty hunter, sometimes you need to take your bounty alive, even if you don’t want to. You gain the ability to deal nonlethal damage with ranged weapons, and you gain advantage on all grapple checks.</p>
+		</description>
+		<sheet>
+      <description>You gain the ability to deal nonlethal damage with ranged weapons, and you gain advantage on all grapple checks.</description>
+    </sheet>
+		<rules />
+	</element>
+
+  <element name="Crippling Strike" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BOUNTYHUNTER_CONCLAVE_CRIPPLING_STRIKE">
+		<description>
+			<p>Beginning at level 7, when you make an attack, you can attempt to cripple the enemy. The creature you attack must make a Constitution saving throw. On a failed save, the creature's speed is halved and it has disadvantage on Strength checks and saving throws for 1 minute. After using this ability, you cannot use it again until you complete a short or long rest.</p>
+		</description>
+		<sheet usage="Once/Short Rest">
+      <description>When you make an attack, you can attempt to cripple the enemy. The creature you attack must make a Constitution saving throw. On a failed save, the creature's speed is halved and it has disadvantage on Strength checks and saving throws for 1 minute.</description>
+    </sheet>
+		<rules />
+	</element>
+
+  <element name="Making an Example" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BOUNTYHUNTER_CONCLAVE_MAKING_AN_EXAMPLE">
+		<description>
+			<p>From level 11 onwards, whenever you deal enough damage with a weapon attack to an enemy to reduce their health to 0, all enemies within 30 feet of that enemy who have line of sight to you must make a Wisdom saving throw. Any creature that fails the saving throw is frightened for one minute. Each frightened creature can re-attempt the saving throw at the end of each of its turns.</p>
+		</description>
+		<sheet>
+      <description>whenever you deal enough damage with a weapon attack to an enemy to reduce their health to 0, all enemies within 30 feet of that enemy who have line of sight to you must make a Wisdom saving throw. Any creature that fails the saving throw is frightened for one minute. Each frightened creature can re-attempt the saving throw at the end of each of its turns.</description>
+    </sheet>
+		<rules />
+	</element>
+
+  <element name="Uncanny Dodge" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_BOUNTYHUNTER_CONCLAVE_UNCANNY_DODGE">
+		<description>
+			<p>At level 15, whenever an attacker that you can see hits you with an attack, you can use your reaction to halve the damage.</p>
+		</description>
+		<sheet>
+      <description>Whenever an attacker that you can see hits you with an attack, you can use your reaction to halve the damage.</description>
+    </sheet>
+		<rules />
+	</element>
+
+  <element name="Jedi Slayer Conclave" type="Archetype" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_JEDISLAYER_CONCLAVE">
+		<supports>Mercenary Conclave</supports>
+		<description>
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_JEDISLAYER_CONCLAVE_FAVORED_ENEMIES_FORCE_SENSITIVES" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_JEDISLAYER_CONCLAVE_FIGHTINGFIREWITHFIRE" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_JEDISLAYER_CONCLAVE_PREEMPTIVE_STRIKE" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_JEDISLAYER_CONCLAVE_IRON_MIND" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_JEDISLAYER_CONCLAVE_SLAYERS_FLURRY" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_JEDISLAYER_CONCLAVE_DEATHISFORTHEWEAK" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_JEDISLAYER_CONCLAVE_FAVORED_ENEMIES_FORCE_SENSITIVES" level="1" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_JEDISLAYER_CONCLAVE_FIGHTINGFIREWITHFIRE" level="3" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_JEDISLAYER_CONCLAVE_PREEMPTIVE_STRIKE" level="5" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_JEDISLAYER_CONCLAVE_IRON_MIND" level="7" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_JEDISLAYER_CONCLAVE_SLAYERS_FLURRY" level="11" />
+      <grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_JEDISLAYER_CONCLAVE_DEATHISFORTHEWEAK" level="15" />
+		</rules>
+	</element>
+
+  <element name="Favored Enemies: Force Sensitives" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_JEDISLAYER_CONCLAVE_FAVORED_ENEMIES_FORCE_SENSITIVES">
+		<description>
+			<p>As a Jedi-hunter, people with force power would normally make most mercenary quake in their boots, but not you. Force wielders are your speciality. At level 1, you gain force sensitive creatures &amp; humanoids as a favored enemy. You gain a +2 to damage rolls with weapon attacks against creatures of that favored type. You also gain advantage on wisdom (survival) checks to track your favored enemies, and also on intelligence checks on recalling information on your favored enemies.</p>
+      <p class="indent">When you gain this feature, you can also learn one language of your choice. It is typically a language spoken by your favored enemy, or creature. However it can be whatever language you want.</p>
+		</description>
+		<sheet>
+      <description>You gain force sensitive creatures &amp; humanoids as a favored enemy. You gain a +2 to damage rolls with weapon attacks against creatures of that favored type. You also gain advantage on wisdom (survival) checks to track your favored enemies, and also on intelligence checks on recalling information on your favored enemies.</description>
+    </sheet>
+		<rules>
+      <select type="Language" name="Language (Jedi Slayer Conclave)" supports="Standard||Exotic" />
+    </rules>
+	</element>
+
+  <element name="Fighting Fire With Fire" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_JEDISLAYER_CONCLAVE_FIGHTINGFIREWITHFIRE">
+		<description>
+			<p>As a Jedi slayer, you have learned to use your enemies favored weapon against them, and at level 3 gain proficiency with lightsabers. You do not need to be attuned to a lightsaber to have proficiency with it.</p>
+      <p class="indent">Additionally, you choose a fighting style from the fighting styles listed in the Sentinel class, but it only applies to the use of lightsabers. When using a lightsaber, your normal fighting style does not apply.</p>
+		</description>
+		<sheet>
+      <description>You gain proficiency with lightsabers. Your Lightsaber has a seperate fighting style than your normal fighting style</description>
+    </sheet>
+		<rules>
+      <grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSABER" />
+      <grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_DOUBLEBLADED_LIGHTSABER" />
+      <grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSABER_PIKE" />
+
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FIGHTING_STYLE" />
+    </rules>
+	</element>
+
+  <element name="Preemptive Strike" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_JEDISLAYER_CONCLAVE_PREEMPTIVE_STRIKE">
+		<description>
+			<p>At level 5, you gain the ability to preemptively strike an opponent who is about to attack. Once per turn, whenever you hit a favored enemy with an attack, one of the following effects applies to its next turn:</p>
+      <ul>
+        <li>The creature has disadvantage on its next melee or ranged weapon attack. <strong>or</strong></li>
+        <li>The creature has disadvantage on its next spell or force attack. <strong>or</strong></li>
+        <li>All allies gain advantage on the next saving throw imposed by a force ability used by the creature.</li>
+      </ul>
+      <p class="indent">You do not choose the effect that applies, the effect is automatically applied based off what the creature does on its turn.</p>
+		</description>
+		<sheet>
+      <description>
+        <p>whenever you hit a favored enemy with an attack, one of the following effects applies to its next turn(You do not get to choose): The creature has disadvantage on its next melee or ranged weapon attack. The creature has disadvantage on its next spell or force attack. All allies gain advantage on the next saving throw imposed by a force ability used by the creature.</p>
+      </description>
+    </sheet>
+		<rules />
+	</element>
+
+  <element name="Iron Mind" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_JEDISLAYER_CONCLAVE_IRON_MIND">
+		<description>
+			<p>At level 7, you gain advantage on any saving throws made against force abilities, and resistance to force and psychic damage.</p>
+		</description>
+		<sheet>
+      <description>You gain advantage on any saving throws made against force abilities, and resistance to force and psychic damage</description>
+    </sheet>
+		<rules />
+	</element>
+
+  <element name="Slayer's Flurry" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_JEDISLAYER_CONCLAVE_SLAYERS_FLURRY">
+		<description>
+			<p>Starting at level 11, once per turn, when you miss with an attack, you can immediately make another attack as a free action.</p>
+		</description>
+		<sheet action="Free Action">
+      <description>Once per turn, when you miss with an attack, you can immediately make another attack.</description>
+    </sheet>
+		<rules />
+	</element>
+
+  <element name="Death is for the Weak" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_JEDISLAYER_CONCLAVE_DEATHISFORTHEWEAK">
+		<description>
+			<p>At level 15, your determination can delay the grasp of death. If you take damage that would lower your hit points to 0, you can delay that damage and immediately take a bonus turn, interrupting the current one. You do not take the damage until the turn ends. It is possible to do things, such as gain resistances, that change how much damage you would take. Once you have used this feature, you cannot use it again until you complete a long rest.</p>
+		</description>
+		<sheet usage="Once/Long Rest">
+      <description>If you take damage that would lower your hit points to 0, you can delay that damage and immediately take a bonus turn, interrupting the current one. You do not take the damage until the turn ends. It is possible to do things, such as gain resistances, that change how much damage you would take. </description>
+    </sheet>
+		<rules />
+	</element>
+
+</elements>

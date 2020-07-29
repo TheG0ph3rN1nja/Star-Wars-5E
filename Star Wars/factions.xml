@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Factions</name>
+		<description>GM Binder</description>
+		<update version="0.0.1">
+			<file name="factions.xml" url="" />
+		</update>
+	</info>
+
+  <element name="Factions" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS">
+    <description>
+      <h3>Galactic Alignments</h3>
+      <p>The galactic alignments are the main factions of the galaxy. Joining each of them comes with its own pros and cons, namely making it difficult or easy to traverse certain systems without running into some form of combat.</p>
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS_BLACK_SUN" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS_CHISS_ASCENDANCY" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS_REPUBLIC" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS_JEDI" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS_MANDOADE" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS_SITH" />
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select type="Class Feature" name="Faction" supports="Faction" />
+    </rules>
+  </element>
+
+  <element name="Faction (Black Sun)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS_BLACK_SUN">
+    <supports>Faction</supports>
+    <description>
+      <p>Black Sun held a massive amount of reach and influence, extending its tendrils of corruption deep in the various galactic governments of each era. It was infamous for its involvement in piracy and smuggling. But smuggling was just the tip of the iceberg of the galaxy-wide organization. It was involved in every known type of illegal activity; its information networks surpassed even the accuracy and scope of Imperial Intelligence. The resources available to Black Sun rivaled those belonging to a large planetary army, including foot soldiers.</p>
+      <p class="indent"><strong><i>Alignment.</i></strong> Chaotic Neutral.</p>
+      <p class="indent"><strong><i>Neutralities.</i></strong> Mando'ade, Republic, Sith</p>
+      <h4>Starfighter Corps</h4>
+      <p class="indent"><i><strong>Exchange Consortium.</strong>You must receive an invitation to join this starfighter corps.</i></p>
+      <p class="indent"><i><strong>Black Sun Pirate Fleet.</strong>You must receive an invitation to join this starfighter corps.</i></p>
+      <p class="indent"><i><strong>White Maw.</strong>You must receive an invitation to join this starfighter corps.</i></p>
+    </description>
+    <sheet />
+    <setters />
+    <rules />
+  </element>
+
+	<element name="Starfighter Corps (Exchange Consortium)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_STARFIGHTER_CORPS_EXCHANGE_CONSORTIUM">
+		<supports>Starfighter Corps</supports>
+    <requirements>ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS_BLACK_SUN</requirements>
+    <description />
+		<sheet />
+		<rules />
+	</element>
+
+	<element name="Starfighter Corps (Black Sun Pirate Fleet)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_STARFIGHTER_CORPS_BLACKSUNPIRATEFLEET">
+		<supports>Starfighter Corps</supports>
+    <requirements>ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS_BLACK_SUN</requirements>
+    <description />
+		<sheet />
+		<rules />
+	</element>
+
+	<element name="Starfighter Corps (White Maw)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_STARFIGHTER_CORPS_WHITE_MAW">
+		<supports>Starfighter Corps</supports>
+    <requirements>ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS_BLACK_SUN</requirements>
+    <description />
+		<sheet />
+		<rules />
+	</element>
+
+	<element name="Faction (Chiss Ascendancy)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS_CHISS_ASCENDANCY">
+    <supports>Faction</supports>
+    <description>
+      <p>The Chiss Ascendancy, sometimes termed Chiss Space or the Chiss Empire by outsiders, was a portion of the galaxy just inside the Unknown Regions that was ruled by the Chiss.</p>
+      <p class="indent"><strong><i>Alignment.</i></strong> Neutral Good.</p>
+      <p class="indent"><strong><i>Allies.</i></strong> Republic</p>
+      <h4>Starfighter Corps</h4>
+      <p class="indent"><i><strong>Chiss Expansionary Defense Force.</strong>You must be aligned with the Chiss to join this starfighter corps.</i></p>
+    </description>
+    <sheet />
+    <setters />
+    <rules />
+  </element>
+
+	<element name="Starfighter Corps (Chiss Expansionary Defense Force)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_STARFIGHTER_CORPS_CHISSEXPANSIONARYDEFENSEFORCE">
+		<supports>Starfighter Corps</supports>
+    <requirements>ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS_CHISS_ASCENDANCY</requirements>
+    <description />
+		<sheet />
+		<rules />
+	</element>
+
+	<element name="Faction (Republic)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS_REPUBLIC">
+    <supports>Faction</supports>
+    <description>
+      <p>The Galactic Republic was a representative democracy, composed of various star systems, sectors and member worlds throughout most of the known galaxy. Its central government consisted of three branches: legislative, executive and judicial.</p>
+      <p class="indent"><strong><i>Alignment.</i></strong> Lawful Good.</p>
+      <p class="indent"><strong><i>Allies.</i></strong> Black Sun, Chiss Ascendancy, Jedi</p>
+			<h4>Sub-Factions</h4>
+			<p><strong>Havoc Squad.</strong></p>
+      <h4>Starfighter Corps</h4>
+      <p class="indent"><strong><i>Victor Group.</i></strong>An elite group of pilots, Victor Group is the Republic's main nautical-based special forces group. They perform high-risk and stealth missions for the Republic in tandem with some members of the Jedi Starfighter Corps. <i>You must be at least a level 10 pilot and complete missions for the Republic Navy to join this starfighter corps.</i></p>
+    </description>
+    <sheet />
+    <setters />
+    <rules />
+  </element>
+
+	<element name="Starfighter Corps (Victor Group)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_STARFIGHTER_CORPS_VICTOR_GROUP">
+		<supports>Starfighter Corps</supports>
+    <requirements>ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS_REPUBLIC,[level:10]</requirements>
+    <description />
+		<sheet />
+		<rules />
+	</element>
+
+	<element name="Faction (Jedi)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS_JEDI">
+    <supports>Faction</supports>
+    <description>
+      <p>Originally formed as a philosophical study group situated on the planet Tython, the Jedi became revered as guardians of peace and justice in the galaxy. As mystical wielders of the Force and of their signature lightsabers, their powers inspired all citizens in the galaxy. The calm, considered demeanor of the Jedi made them ideal brokers of peace in times of conflict or dispute. Yet, for all their power and diversity, the Jedi were few. Often beset by foes in times of doubt and confusion, undercurrents of evil often challenged their order and the establishment they served, the most notable being the Sith.</p>
+      <p class="indent"><strong><i>Alignment.</i></strong> Neutral Good.</p>
+      <p class="indent"><strong><i>Allies.</i></strong> Republic</p>
+      <h4>Starfighter Corps</h4>
+      <p class="indent"><i><strong>Jedi Starfighter Corps.</strong>You must be aligned with the Jedi to join this starfighter corps.</i></p>
+    </description>
+    <sheet />
+    <setters />
+    <rules />
+  </element>
+
+	<element name="Starfighter Corps (Jedi Starfighter Corps)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_STARFIGHTER_CORPS_JEDISTARFIGHTERCORPS">
+		<supports>Starfighter Corps</supports>
+    <requirements>ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS_JEDI</requirements>
+    <description />
+		<sheet />
+		<rules />
+	</element>
+
+	<element name="Faction (Mando'ade)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS_MANDOADE">
+    <supports>Faction</supports>
+    <description>
+      <p><i>"Here's why you can't exterminate us, aruetii. We're not huddled in one place—we span the galaxy. We need no lords or leaders—so you can't destroy our command. We can live without technology—so we can fight with our bare hands. We have no species or bloodline—so we can rebuild our ranks with others who want to join us. We're more than just a people or an army, aruetii. We're a culture. We're an idea. And you can't kill ideas—but we can certainly kill you."  ― Mandalore the Destroyer</i></p>
+			<p class="indent">The Mandalorians—known in Mando'a as the Mando'ade, or "Children of Mandalore"—were a nomadic group of clan-based people consisting of members from multiple species and multiple genders, all bound by a common culture.</p>
+      <p class="indent"><strong><i>Alignment.</i></strong> Neutral.</p>
+      <p class="indent"><strong><i>Neutralities.</i></strong> Black Sun</p>
+      <h4>Starfighter Corps</h4>
+      <p class="indent"><i><strong>Mando'a Defense Corps.</strong>You must be aligned with the Mando'ade to join this starfighter corps.</i></p>
+			<p class="indent"><i><strong>Black Watch.</strong>You must be aligned with the Mando'ade to join this starfighter corps.</i></p>
+    </description>
+    <sheet />
+    <setters />
+    <rules />
+  </element>
+
+	<element name="Starfighter Corps (Mando'a Defense Corps)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_STARFIGHTER_CORPS_MANDOADEFENSECORPS">
+		<supports>Starfighter Corps</supports>
+    <requirements>ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS_MANDOADE</requirements>
+    <description />
+		<sheet />
+		<rules />
+	</element>
+
+	<element name="Starfighter Corps (Black Watch)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_STARFIGHTER_CORPS_BLACK_WATCH">
+		<supports>Starfighter Corps</supports>
+    <requirements>ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS_MANDOADE</requirements>
+    <description />
+		<sheet />
+		<rules />
+	</element>
+
+	<element name="Faction (Sith)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS_SITH">
+    <supports>Faction</supports>
+    <description>
+      <p>The Sith Order was a sect of Force-sensitives who utilized the dark side of the Force. The term "Sith" originally referred to a species of aliens native to the planets Korriban and Ziost, who were later enslaved and ruled by exiled Dark Jedi from the Galactic Republic. These Dark Jedi had once been members of the Jedi Order, a monastic Force religion dedicated to peace through the use of the light side of the Force. The Dark Jedi, who refused to rely exclusively on the light side, challenged the Jedi by giving in to the dark side, which started the Hundred-Year Darkness.</p>
+      <p class="indent"><strong><i>Alignment.</i></strong> Lawful Evil.</p>
+      <p class="indent"><strong><i>Neutralities.</i></strong> Black Sun</p>
+      <h4>Starfighter Corps</h4>
+      <p class="indent"><i><strong>Black Fleet.</strong>You must be at least a level 10 pilot and complete missions for the Sith Navy to join this starfighter corps.</i></p>
+    </description>
+    <sheet />
+    <setters />
+    <rules />
+  </element>
+
+	<element name="Starfighter Corps (Black Fleet)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_STARFIGHTER_CORPS_BLACK_Fleet">
+		<supports>Starfighter Corps</supports>
+    <requirements>ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS_SITH,[level:10]</requirements>
+    <description />
+		<sheet />
+		<rules />
+	</element>
+
+</elements>

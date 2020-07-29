@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Guardian</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="guardian.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/classes/guardian.xml" />
+		</update>
+	</info>
+
+  <element name="Guardian" type="Class" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_GUARDIAN">
+		<description>
+      <p>Concentrating on martial training and combat, Guardians engaged in combat more than either of the other two classes of Jedi; the Consulars or the Sentinels. Descended from the Order's founders on Tython whose role in the galaxy was to defend the weak and uphold the laws of the Galactic Republic, the Guardians were often seen as representatives of the Order and the classic Jedi weapon: the lightsaber.</p>
+      <h3>CLASS FEATURES</h3>
+			<p>As an guardian, you gain the following class features.</p>
+			<h5>HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d10 per guardian level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 10 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d10 (or 6) + your Constitution modifier per guardian level after 1st</li>
+			</ul>
+			<h5>PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> Light, Medium armor, shields</li>
+				<li><strong>Weapons:</strong> Simple, lightsabers</li>
+				<li><strong>Tools:</strong> None</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Strength, Wisdom</li>
+				<li><strong>Skills:</strong>You are proficient with the Athletics and Perception skills </li>
+			</ul>
+			<h5>EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li>A lightsaber according to your fighting style</li>
+				<li>Robes</li>
+				<li>Combat Suit</li>
+			</ul>
+			<h5 class="caption">The Guardian</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="left">Proficiency Bonus</td><td class="left">Features</td><td class="col-5">Talents Known</td><td class="col-5">Disciplines Known</td><td class="col-5">Force Points</td><td class="col-5">Force Limit</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>+2</td><td class="left">Fighting Style, Force, Force Order</td><td>1</td><td>1</td><td>4</td><td>2</td></tr>
+				<tr><td> 2nd</td><td>+2</td><td class="left">Starfighter Corps</td><td>1</td><td>1</td><td>6</td><td>2</td></tr>
+				<tr><td> 3rd</td><td>+2</td><td class="left">Force Order feature</td><td>1</td><td>2</td><td>14</td><td>3</td></tr>
+				<tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td><td>1</td><td>2</td><td>16</td><td>3</td></tr>
+				<tr><td> 5th</td><td>+3</td><td class="left">Extra Attack</td><td>1</td><td>2</td><td>20</td><td>4</td></tr>
+				<tr><td> 6th</td><td>+3</td><td class="left">Force Order feature</td><td>2</td><td>3</td><td>24</td><td>4</td></tr>
+				<tr><td> 7th</td><td>+3</td><td class="left">Reckless Attack</td><td>2</td><td>3</td><td>28</td><td>5</td></tr>
+				<tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td><td>2</td><td>3</td><td>32</td><td>5</td></tr>
+				<tr><td> 9th</td><td>+4</td><td class="left">Fighting Style Feature</td><td>2</td><td>4</td><td>36</td><td>6</td></tr>
+				<tr><td>10th</td><td>+4</td><td class="left">Force Order feature</td><td>3</td><td>4</td><td>44</td><td>6</td></tr>
+				<tr><td>11th</td><td>+4</td><td class="left">—</td><td>3</td><td>4</td><td>55</td><td>7</td></tr>
+				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td><td>3</td><td>5</td><td>55</td><td>7</td></tr>
+				<tr><td>13th</td><td>+5</td><td class="left">Auxiliary Power, Overwhelm</td><td>3</td><td>5</td><td>55</td><td>7</td></tr>
+				<tr><td>14th</td><td>+5</td><td class="left">Force Order feature</td><td>3</td><td>5</td><td>55</td><td>7</td></tr>
+				<tr><td>15th</td><td>+5</td><td class="left">—</td><td>3</td><td>6</td><td>55</td><td>7</td></tr>
+				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td><td>3</td><td>6</td><td>55</td><td>7</td></tr>
+				<tr><td>17th</td><td>+6</td><td class="left">Survivor</td><td>4</td><td>6</td><td>55</td><td>7</td></tr>
+				<tr><td>18th</td><td>+6</td><td class="left">—</td><td>4</td><td>7</td><td>55</td><td>7</td></tr>
+				<tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td><td>4</td><td>7</td><td>55</td><td>7</td></tr>
+				<tr><td>20th</td><td>+6</td><td class="left">Flurry of Blows</td><td>5</td><td>7</td><td>55</td><td>7</td></tr>
+			</table>
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_FIGHTING_STYLE" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_FORCE_POINTS" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_FORCE_ORDER" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_SPELLCASTING_GUARDIAN" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_STARFIGHTER_CORPS" />
+      <div element="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_ABILITYSCOREIMPROVEMENT_GUARDIAN" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_EXTRA_ATTACK" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_RECKLESS_ATTACK" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_AUXILIARY_POWER" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_OVERWHELM" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_SURVIVOR" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_FLURRY_OF_BLOWS" />
+    </description>
+		<sheet display="false" />
+		<setters>
+			<set name="hd">d10</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSABER" />
+      <grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_DOUBLEBLADED_LIGHTSABER" />
+      <grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSABER_PIKE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SKILL_REPAIRS" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SKILL_SECURITY" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_FORCE_POINTS" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_FORCE_LIMIT" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_FORCE_TALENT_GUARDIAN" level="1" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FORCE_ORDER" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_SPELLCASTING_GUARDIAN" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FIGHTING_STYLE" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_STARFIGHTER_CORPS" level="2" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_ABILITYSCOREIMPROVEMENT_GUARDIAN" level="4" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_EXTRA_ATTACK" level="5" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_RECKLESS_ATTACK" level="7" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_AUXILIARY_POWER" level="13" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_OVERWHELM" level="13" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_SURVIVOR" level="17" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_FLURRY_OF_BLOWS" level="20" />
+		</rules>
+	</element>
+
+	<element name="Force Points(Guardian)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_FORCE_POINTS">
+		<description />
+		<sheet usage="{{force-points guardian:count}}/Long Rest" />
+			<rules>
+				<stat name="force-points guardian:count" value="4" />
+				<stat name="force-points guardian:count" value="2" level="2" />
+				<stat name="force-points guardian:count" value="6" level="3" />
+				<stat name="force-points guardian:count" value="4" level="4" />
+				<stat name="force-points guardian:count" value="4" level="5" />
+				<stat name="force-points guardian:count" value="4" level="6" />
+				<stat name="force-points guardian:count" value="4" level="7" />
+				<stat name="force-points guardian:count" value="4" level="8" />
+				<stat name="force-points guardian:count" value="4" level="9" />
+				<stat name="force-points guardian:count" value="8" level="10" />
+				<stat name="force-points guardian:count" value="11" level="11" />
+			</rules>
+	</element>
+
+	<element name="Force Limit(Guardian)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_FORCE_LIMIT">
+		<description />
+		<sheet usage="{{force-limit guardian:count}}/Spell Cast " />
+			<rules>
+				<stat name="force-limit guardian:count" value="2" />
+				<stat name="force-limit guardian:count" value="1" level="3" />
+				<stat name="force-limit guardian:count" value="1" level="5" />
+				<stat name="force-limit guardian:count" value="1" level="7" />
+				<stat name="force-limit guardian:count" value="1" level="9" />
+				<stat name="force-limit guardian:count" value="1" level="11" />
+			</rules>
+		</element>
+
+	<element name="Force Talent(Guardian)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_FORCE_TALENT_GUARDIAN">
+		<description />
+		<sheet display="false" />
+			<rules>
+				<select type="Class Feature" name="Force Talent(Guardian)" supports="Force Talent" number="1" level="1" />
+				<select type="Class Feature" name="Force Talent(Guardian)" supports="Force Talent" number="1" level="6" />
+				<select type="Class Feature" name="Force Talent(Guardian)" supports="Force Talent" number="1" level="10" />
+				<select type="Class Feature" name="Force Talent(Guardian)" supports="Force Talent" number="1" level="17" />
+				<select type="Class Feature" name="Force Talent(Guardian)" supports="Force Talent" number="1" level="20" />
+			</rules>
+	</element>
+
+	<element name="Force Ability(Spellcasting)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_SPELLCASTING_GUARDIAN">
+		<description>
+			<p>Wisdom is your force ability for your force disciplines. You use your Wisdom modifier when setting the saving throw DC for a force discipline or when making an attack roll with one.</p>
+			<center>
+				<p><strong>Discipline save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+				<p><strong>Discipline attack modifier</strong> = your proficiency bonus + your Wisdom modifier</p>
+			</center>
+		</description>
+		<sheet>
+			<description>Ability to use force disciplines(spells).</description>
+		</sheet>
+		<spellcasting name="Guardian" ability="Wisdom" prepare="false" allowReplace="true">
+			<list>Guardian</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
+			<grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
+
+			<select type="Class Feature" name="Force Discipline(Guardian)" supports="Force Discipline" number="1" level="1" />
+			<select type="Class Feature" name="Force Discipline(Guardian)" supports="Force Discipline" number="1" level="3" />
+			<select type="Class Feature" name="Force Discipline(Guardian)" supports="Force Discipline" number="1" level="6" />
+			<select type="Class Feature" name="Force Discipline(Guardian)" supports="Force Discipline" number="1" level="9" />
+			<select type="Class Feature" name="Force Discipline(Guardian)" supports="Force Discipline" number="1" level="12" />
+			<select type="Class Feature" name="Force Discipline(Guardian)" supports="Force Discipline" number="1" level="15" />
+			<select type="Class Feature" name="Force Discipline(Guardian)" supports="Force Discipline" number="1" level="18" />
+		</rules>
+	</element>
+
+	<element name="Starfighter Corps" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_STARFIGHTER_CORPS">
+		<description>
+			<p>Additionally, at level 2, you can join the Jedi Starfighter Corps. You gain proficiency with space vehicles.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency" supports="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SMALL" />
+		</rules>
+	</element>
+
+	<element name="Ability Score Improvement" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_ABILITYSCOREIMPROVEMENT_GUARDIAN">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Guardian 4)" supports="Improvement Option,Guardian,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Guardian 8)" supports="Improvement Option,Guardian,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Guardian 12)" supports="Improvement Option,Guardian,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Guardian 16)" supports="Improvement Option,Guardian,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Guardian 19)" supports="Improvement Option,Guardian,19" level="19" />
+		</rules>
+	</element>
+
+	<element name="Extra Attack" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_EXTRA_ATTACK">
+		<description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>You can attack twice whenever you take the Attack action on your turn.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Reckless Attack" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_RECKLESS_ATTACK">
+		<description>
+			<p>Starting at 7th level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.</p>
+		</description>
+		<sheet>
+		<description>When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="Auxiliary Power" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_AUXILIARY_POWER">
+		<description>
+			<p>Beginning at level 13, the guardian learns how to transfer power to other systems as a bonus action. Auxiliary power is only available if you are piloting a starship. You must be proficient with the class of starship you are using in order to use Auxiliary Power. You can only use each Auxiliary Power system once, but you regain all expended uses upon finishing repairs while docked. In addition, once you have used Auxiliary Power, you must wait one round before you can use it again. When auxiliary power is shifted to a system, the following applies:</p>
+			<p class="indent"><strong>Engines:</strong> Your starship gains an additional 1000ft movement for the rest of your turn</p>
+			<p class="indent"><strong>Shields:</strong> Your starship immediately gains 25 SP</p>
+			<p class="indent"><strong>Targeting:</strong> You gain advantage on your next attack roll</p>
+			<p class="indent"><strong>Weapons:</strong> You take a -5 penalty to the next attack roll made this turn, but add 10 to the total damage roll if the attack lands (before any multipliers).</p>
+		</description>
+		<sheet usage="Once Each/Ship Repair while at Docks">
+		<description>Choose One: Your starship gains an additional 1000ft movement for the rest of your turn|Your starship immediately gains 25 SP|You gain advantage on your next attack roll|You take a -5 penalty to the next attack roll made this turn, but add 10 to the total damage roll if the attack lands (before any multipliers).</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="Overwhelm" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_OVERWHELM">
+		<description>
+			<p>Additionally at level 13, you gain permanent knowledge of the Brute Force force discipline, and permanent focus on its focus. This focus cannot be lost, and therefore cannot be used for abilities such as Surge of Health.</p>
+		</description>
+		<sheet display="false" />
+			<rules />
+	</element>
+
+	<element name="Survivor" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_SURVIVOR">
+		<description>
+			<p>At 18th level, you attain the pinnacle of resilience in battle. At the start of each of your turns, you regain hit points equal to 5 + your Constitution modifier if you have no more than half of your hit points left. You don’t gain this benefit if you have 0 hit points.</p>
+		</description>
+		<sheet>
+		<description>At the start of each of your turns, you regain hit points equal to 5 + {{survivor:guardian}} if you have no more than half of your hit points left. You don’t gain this benefit if you have 0 hit points.</description>
+		</sheet>
+			<rules>
+				<stat name="survivor:guardian" value="constitution:modifier" />
+			</rules>
+	</element>
+
+	<element name="Flurry of Blows" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_GUARDIAN_FLURRY_OF_BLOWS">
+		<description>
+			<p>At level 20, you can choose to make a third attack when you use the Attack action on your turn, with the penalty being a -3 to your AC for the round.</p>
+		</description>
+		<sheet>
+		<description>You can choose to make a third attack when you use the Attack action on your turn, with the penalty being a -3 to your AC for the round.</description>
+		</sheet>
+			<rules />
+	</element>
+
+</elements>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Armor</name>
+		<description></description>
+		<author />
+		<update version="0.0.1">
+			<file name="items-armor.xml" url="" />
+		</update>
+	</info>
+
+  <element name="Combat Suit" type="Armor" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARMOR_LIGHT_COMBAT_SUIT">
+		<supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+		<description>
+			<p>Combat suit consists of quilted layers of cloth and batting.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Light</set>
+			<set name="armorClass">11 + Dex modifier</set>
+			<set name="stealth">Disadvantage</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_COMBAT_SUIT</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+			<stat name="ac:armored:armor" value="11" />
+		</rules>
+	</element>
+
+  <element name="Light Exoskeleton" type="Armor" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARMOR_LIGHT_LIGHT_EXOSKELETON">
+		<supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+		<description />
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">30</set>
+			<set name="weight" lb="11">11 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Light</set>
+			<set name="armorClass">11 + Dex modifier</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_EXOSKELETON</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:armor" value="11" />
+		</rules>
+	</element>
+
+  <element name="Heavy Combat Suit" type="Armor" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARMOR_LIGHT_HEAVY_COMBAT_SUIT">
+		<supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+		<description />
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="13">13 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Light</set>
+			<set name="armorClass">12 + Dex modifier</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_COMBAT_SUIT</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:armor" value="12" />
+		</rules>
+	</element>
+
+  <element name="Verpine Fiber Mesh" type="Armor" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARMOR_MEDIUM_VERPINE_FIBER_MESH">
+		<supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+		<description />
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">20</set>
+			<set name="weight" lb="12">12 lb.</set>
+			<set name="armor">Medium</set>
+			<set name="slot">body</set>
+			<set name="armorClass">12 + Dex modifier (max 2)</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_VERPINE_FIBER_MESH</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:armor" value="12" />
+		</rules>
+	</element>
+
+  <element name="Patchwork Battle Armor" type="Armor" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARMOR_MEDIUM_PATCHWORK_BATTLE_ARMOR">
+		<supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+		<description />
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="16">16 lb.</set>
+			<set name="armor">Medium</set>
+			<set name="slot">body</set>
+			<set name="armorClass">13 + Dex modifier (max 2)</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_PATCHWORK_BATTLE_ARMOR</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:armor" value="13" />
+		</rules>
+	</element>
+
+  <element name="Heavy Exoskeleton" type="Armor" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARMOR_MEDIUM_HEAVY_EXOSKELETON">
+		<supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+		<description />
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="25">25 lb.</set>
+			<set name="armor">Medium</set>
+			<set name="slot">body</set>
+			<set name="armorClass">14 + Dex modifier (max 2)</set>
+      <set name="stealth">Disadvantage</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_EXOSKELETON</set>
+		</setters>
+		<rules>
+      <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+			<stat name="ac:armored:armor" value="14" />
+		</rules>
+	</element>
+
+  <element name="Scout Battle Armor" type="Armor" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARMOR_MEDIUM_SCOUT_BATTLE_ARMOR">
+		<supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+		<description />
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">400</set>
+			<set name="weight" lb="25">25 lb.</set>
+			<set name="armor">Medium</set>
+			<set name="slot">body</set>
+			<set name="armorClass">14 + Dex modifier (max 2)</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SCOUT_BATTLE_ARMOR</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:armor" value="14" />
+		</rules>
+	</element>
+
+  <element name="Light Battle Armor" type="Armor" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARMOR_MEDIUM_LIGHT_BATTLE_ARMOR">
+		<supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+		<description />
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="weight" lb="25">25 lb.</set>
+			<set name="armor">Medium</set>
+			<set name="slot">body</set>
+			<set name="armorClass">15 + Dex modifier (max 2)</set>
+      <set name="stealth">Disadvantage</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_BATTLE_ARMOR</set>
+		</setters>
+		<rules>
+      <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+			<stat name="ac:armored:armor" value="15" />
+		</rules>
+	</element>
+
+  <element name="Battle Armor" type="Armor" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARMOR_HEAVY_BATTLE_ARMOR">
+		<supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+		<description />
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">30</set>
+			<set name="weight" lb="30">30 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Heavy</set>
+			<set name="stealth">Disadvantage</set>
+			<set name="armorClass">14</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_BATTLE_ARMOR</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+			<stat name="ac:armored:armor" value="14" />
+		</rules>
+	</element>
+
+  <element name="Heavy Battle Armor" type="Armor" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARMOR_HEAVY_HEAVY_BATTLE_ARMOR">
+		<supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+		<description />
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">75</set>
+			<set name="weight" lb="40">40 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Heavy</set>
+      <set name="strength">13</set>
+			<set name="stealth">Disadvantage</set>
+			<set name="armorClass">16</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_BATTLE_ARMOR</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+			<stat name="ac:armored:armor" value="16" />
+      <stat name="speed" value="-10" bonus="armor" requirements="![str:13]" />
+		</rules>
+	</element>
+
+  <element name="Durasteel Armor" type="Armor" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARMOR_HEAVY_DURASTEEL_ARMOR">
+		<supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+		<description />
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">200</set>
+			<set name="weight" lb="50">50 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Heavy</set>
+      <set name="strength">15</set>
+			<set name="stealth">Disadvantage</set>
+			<set name="armorClass">17</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_DURASTEEL_ARMOR</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+			<stat name="ac:armored:armor" value="17" />
+      <stat name="speed" value="-10" bonus="armor" requirements="![str:15]" />
+		</rules>
+	</element>
+
+  <element name="Shock Trooper Armor" type="Armor" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARMOR_HEAVY_SHOCK_TROOPER_ARMOR">
+		<supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+		<description />
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">1500</set>
+			<set name="weight" lb="55">55 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Heavy</set>
+      <set name="strength">15</set>
+			<set name="stealth">Disadvantage</set>
+			<set name="armorClass">18</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHOCK_TROOPER_ARMOR</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+			<stat name="ac:armored:armor" value="18" />
+      <stat name="speed" value="-10" bonus="armor" requirements="![str:15]" />
+		</rules>
+	</element>
+
+  <element name="Mandolorian Armor" type="Armor" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARMOR_HEAVY_MANDOLORIAN_ARMOR">
+		<supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+		<description />
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">5000</set>
+			<set name="weight" lb="45">45 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Heavy</set>
+			<set name="armorClass">18</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_MANDOLORIAN_ARMOR</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:armor" value="18" />
+		</rules>
+	</element>
+
+  <element name="Forearm Plasma Shield" type="Armor" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARMOR_SHIELD_FOREARM_PLASM_SHIELD">
+		<supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
+		<description />
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="slot">onehand,secondary</set>
+			<set name="type">Shield</set>
+			<set name="armor">Shield</set>
+			<set name="armorClass">+2</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_FOREARM_PLASMA_SHIELD</set>
+		</setters>
+		<rules>
+			<stat name="ac:shield" value="2" bonus="shield" />
+		</rules>
+	</element>
+
+</elements>

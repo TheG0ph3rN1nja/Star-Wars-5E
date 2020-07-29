@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Jawa</name>
+		<description>GM Binder</description>
+		<author />
+		<update version="0.0.1">
+			<file name="jawa.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Jawa" type="Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACE_JAWA">
+		<description>
+			<h4>Jawa Traits</h4>
+			<p>Your Jawa character has many different attributes that might be useful in the field:</p>
+			<p class="indent"><strong><i>Ability Score Increase.</i></strong> +2 Dex, +1 Int</p>
+      <p class="indent"><strong><i>Age.</i></strong> Up to 80 years</p>
+			<p class="indent"><strong><i>Alignment.</i></strong> Neutral.</p>
+			<p class="indent"><strong><i>Size.</i></strong> Small.</p>
+			<p class="indent"><strong><i>Speed.</i></strong> 25ft.</p>
+			<p class="indent"><strong><i>Darkvision.</i></strong> 30ft.</p>
+      <p class="indent"><strong><i>Expertise.</i></strong> Jawa have expertise in the Sleight of Hand and Intimidation skills.</p>
+      <p class="indent"><strong><i>Tool Proficiency</i></strong> All.</p>
+			<p class="indent"><strong><i>Languages.</i></strong> Basic, Jawaese. Jawas can only speak Jawaese.</p>
+		</description>
+		<sheet display="false" />
+			<setters />
+			<rules>
+				<stat name="Dexterity" value="2" />
+				<stat name="Intelligence" value="1" />
+				<grant type="Size" id="ID_SIZE_SMALL" />
+				<stat name="Speed" value="25" bonus="base" />
+        <grant type="Vision" name="ID_VISION_DARKVISION" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_JAWA_EXPERTISE" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_JAWA_TOOL_PROFICIENCY" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_JAWAESE" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_BASIC" />
+			</rules>
+    </element>
+
+    <element name="Expertise" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_JAWA_EXPERTISE">
+			<description>
+				<p>Jawa have expertise in the Repair and Security skills.</p>
+			</description>
+			<sheet>
+				<description>
+          <p>You have expertise in the Repair and Security skills.</p>
+        </description>
+			</sheet>
+			<rules>
+        <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_EXPERTISE_SECURITY" />
+        <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_EXPERTISE_REPAIRS" />
+      </rules>
+		</element>
+
+    <element name="Tool Proficiency" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_JAWA_TOOL_PROFICIENCY">
+			<description>
+				<p>All.</p>
+			</description>
+			<sheet display="false">
+				<description>
+          <p>All.</p>
+        </description>
+			</sheet>
+			<rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COBBLERS_TOOLS" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+        <grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_ITEM_ENGINEERING_TOOLS" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_GLASSBLOWERS_TOOLS" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_JEWELERS_TOOLS" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_LEATHERWORKERS_TOOLS" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_MASONS_TOOLS" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_PAINTERS_SUPPLIES" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POTTERS_TOOLS" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_WEAVERS_TOOLS" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS" />
+      </rules>
+		</element>
+
+ </elements>

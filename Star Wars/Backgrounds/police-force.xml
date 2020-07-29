@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Police Force</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="police-force.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/police-force.xml" />
+		</update>
+	</info>
+
+	<element name="Police Force" type="Background" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_POLICE_FORCE">
+    <description>
+    <ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Insight, and pick one: Athletics, Security </li>
+        <li><strong>Language:</strong>Two of your choice </li>
+				<li><strong>Equipment:</strong>Uniform, 2-way radio kit, handcuffs, 10 cr </li>
+      </ul>
+      <div element="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_WATCHERS_EYE" />
+    </description>
+      <setters>
+        <set name="short">Insight, and pick one: Athletics, Intimidation, Two of your choice, Uniform, 2-way radio kit, handcuffs, 10 cr </set>
+      </setters>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+        <select type="Proficiency" name="Skill Proficiency (Police Force)" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_GMBINDER_SW5E_PROFICIENCY_SKILL_SECURITY" />
+        <select type="Language" name="Language (Police Force)" supports="Standard||Exotic" number="2"/>
+      </rules>
+    </element>
+
+    <element name="Feature: Watcher's Eye" type="Background Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_WATCHERS_EYE">
+      <supports>Background Feature</supports>
+		<description>
+			<p>Your experience in enforcing the law, and dealing with lawbreakers, gives you a feel for local laws and criminals. You can easily find the local outpost of the watch or a similar organization, and just as easily pick out the dens of criminal activity in a community, although you're more likely to be welcome in the former locations rather than the latter.</p>
+		</description>
+		<sheet alt="Watcher's Eye">
+			<description>Your experience in enforcing the law, and dealing with lawbreakers, gives you a feel for local laws and criminals. You can easily find the local outpost of the watch or a similar organization, and just as easily pick out the dens of criminal activity in a community, although you're more likely to be welcome in the former locations rather than the latter.</description>
+		</sheet>
+	</element>
+
+</elements>

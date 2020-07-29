@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+		<name>New Skills</name>
+		<description>GM Binder</description>
+		<update version="0.0.1">
+			<file name="new-skills.xml" url="" />
+		</update>
+	</info>
+
+    <element name="Security" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_SKILL_SECURITY">
+        <supports>Skill,Intelligence,Adept,Beserker,Consular,Engineer,Guardian,Mercenary,Pilot,Scoundrel,Senator,Sentinel,Tactician,Trooper</supports>
+        <description>
+            <p>Your Intelligence (Security) check measures your ability to bypass various electronic countermeasures.</p>
+        </description>
+        <rules>
+            <stat name="security:count" value="proficiency" bonus="proficiency" />
+        </rules>
+    </element>
+
+    <element name="Skill Expertise (Security)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_EXPERTISE_SECURITY">
+        <supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+        <requirements>ID_GMBINDER_SW5E_PROFICIENCY_SKILL_SECURITY</requirements>
+        <description>
+            <p>Your proficiency bonus is doubled for any Security check you make.</p>
+            <div class="reference">
+                <div element="ID_GMBINDER_SW5E_PROFICIENCY_SKILL_SECURITY" />
+            </div>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="security:count" value="proficiency" bonus="double" />
+        </rules>
+    </element>
+
+    <element name="Security" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SKILL_SECURITY">
+        <description>
+            <p>You know how to bypass various electronic countermeasures.</p>
+        </description>
+        <sheet>
+            <description>You have a +{{security:count}} bonus to (Intelligence) Security checks.</description>
+        </sheet>
+        <rules>
+          <stat name="security:count" value="intelligence:modifier" bonus="ability" />
+        </rules>
+    </element>
+
+    <element name="Repairs" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_SKILL_REPAIRS">
+        <supports>Skill,Intelligence,Adept,Beserker,Consular,Engineer,Guardian,Mercenary,Pilot,Scoundrel,Senator,Sentinel,Tactician,Trooper</supports>
+        <description>
+            <p>Your Intelligence (Repairs) check measures your ability to fix things.</p>
+        </description>
+        <rules>
+            <stat name="repairs:proficiency" value="proficiency" bonus="proficiency" />
+        </rules>
+    </element>
+
+    <element name="Skill Expertise (Repairs)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_EXPERTISE_REPAIRS">
+        <supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+        <requirements>ID_GMBINDER_SW5E_PROFICIENCY_SKILL_REPAIRS</requirements>
+        <description>
+            <p>Your proficiency bonus is doubled for any Repairs check you make.</p>
+            <div class="reference">
+                <div element="ID_GMBINDER_SW5E_PROFICIENCY_SKILL_REPAIRS" />
+            </div>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="repairs:proficiency" value="proficiency" bonus="double" />
+        </rules>
+    </element>
+
+    <element name="Repairs" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SKILL_REPAIRS">
+        <description>
+            <p>You know how to fix various things.</p>
+        </description>
+        <sheet>
+            <description>You have a +{{repairs:count}} to Repairs checks.</description>
+        </sheet>
+        <rules>
+          <stat name="repairs:count" value="intelligence:modifier" bonus="ability" />
+        </rules>
+    </element>
+
+</elements>

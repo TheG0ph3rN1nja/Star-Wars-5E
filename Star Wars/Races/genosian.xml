@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Genosian</name>
+		<description>GM Binder</description>
+		<author />
+		<update version="0.0.1">
+			<file name="genosian.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Genosian" type="Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACE_GENOSIAN">
+		<description>
+			<h4>Genosian Traits</h4>
+			<p>Your Genosian character has many different attributes that might be useful in the field:</p>
+			<p class="indent"><strong><i>Ability Score Increase.</i></strong> Dexterity +2, Wisdom +1</p>
+      <p class="indent"><strong><i>Age.</i></strong> Around 50-60 years.</p>
+			<p class="indent"><strong><i>Alignment.</i></strong> Neutral, very protective of species.</p>
+			<p class="indent"><strong><i>Size.</i></strong> Medium</p>
+			<p class="indent"><strong><i>Speed.</i></strong> 25ft walking, 30ft flying.</p>
+			<p class="indent"><strong><i>Tool Proficiency.</i></strong> Engineer's tools.</p>
+			<p class="indent"><strong><i>Exoskeleton.</i></strong> Your AC is increased by 1.</p>
+      <p class="indent"><strong><i>Darkvision.</i></strong> 60ft.</p>
+			<p class="indent"><strong><i>Languages.</i></strong> Basic (understands), Geonosian. Geonosians can only speak Geonosian</p>
+		</description>
+		<sheet display="false" />
+			<setters />
+			<rules>
+				<stat name="Dexterity" value="2" />
+				<stat name="Wisdom" value="1" />
+				<grant type="Size" id="ID_SIZE_MEDIUM" />
+				<stat name="Speed" value="25" bonus="base" />
+        <stat name="Speed:Fly" value="30" bonus="base" />
+        <grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_ITEM_ENGINEERING_TOOLS" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_GENOSIAN_EXOSKELETON" />
+				<grant type="Vision" name="ID_VISION_DARKVISION" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_GEONOSIAN" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_BASIC" />
+			</rules>
+    </element>
+
+    <element name="Exoskeleton" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_GENOSIAN_EXOSKELETON">
+			<description>
+				<p>Your AC is increased by 1.</p>
+			</description>
+			<sheet>
+				<description>
+          <p>Your AC is increased by 1.</p>
+        </description>
+			</sheet>
+			<rules>
+        <stat name="ac" value="1" />
+      </rules>
+		</element>
+
+
+ </elements>

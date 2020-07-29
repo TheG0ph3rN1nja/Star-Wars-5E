@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Twi'lek</name>
+		<description>GM Binder</description>
+		<author />
+		<update version="0.0.1">
+			<file name="twi'lek.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Twi'lek" type="Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACE_TWILEK">
+		<description>
+			<h4>Twi'lek Traits</h4>
+			<p>Your Twi'lek character has many different attributes that might be useful in the field:</p>
+			<p class="indent"><strong><i>Ability Score Increase.</i></strong> Charisma +2, Dexterity +1.</p>
+      <p class="indent"><strong><i>Age.</i></strong> Up to 80 years.</p>
+			<p class="indent"><strong><i>Alignment.</i></strong> Good.</p>
+			<p class="indent"><strong><i>Size.</i></strong> Medium</p>
+			<p class="indent"><strong><i>Speed.</i></strong> 40ft.</p>
+			<p class="indent"><strong><i>Colorful Skin.</i></strong> Twi'leks were known for having colored skin. The common colors were green, blue, cream, and purple skin, but some rarer Twi'leks had red skin.</p>
+      <p class="indent">In addition, some Twi'leks had birthmarks that look like geometric tattoos.</p>
+			<p class="indent"><strong><i>Black Market Buyers.</i></strong> You have knowledge of most Black Market locations around the Outer Rim.</p>
+      <p class="indent"><strong><i>Seductive.</i></strong> You have advantage on Charisma checks made to seduce any creature that can understand you. This could be persuasion, deception, intimidation, or performance depending on how the action is performed.</p>
+      <p class="indent"><strong><i>Proficiency.</i></strong> Deception, Performance, Persuasion.</p>
+      <p class="indent"><strong><i>Languages.</i></strong> Basic, Ryl.</p>
+		</description>
+		<sheet display="false" />
+			<setters />
+			<rules>
+				<stat name="Charisma" value="2" />
+				<stat name="Dexterity" value="1" />
+				<grant type="Size" id="ID_SIZE_MEDIUM" />
+				<stat name="Speed" value="40" bonus="base" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_TWILEK_COLORFUL_SKIN" />
+				<grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_TWILEK_BLACK_MARKET_BUYERS" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_TWILEK_SEDUCTIVE" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_RYL" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_BASIC" />
+			</rules>
+    </element>
+
+    <element name="Colorful Skin" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_TWILEK_COLORFUL_SKIN">
+			<description>
+				<p>Twi'leks were known for having colored skin. The common colors were green, blue, cream, and purple skin, but some rarer Twi'leks had red skin.</p>
+        <p class="indent">In addition, some Twi'leks had birthmarks that look like geometric tattoos.</p>
+			</description>
+			<sheet display="false">
+				<description>
+          <p>Twi'leks were known for having colored skin. The common colors were green, blue, cream, and purple skin, but some rarer Twi'leks had red skin.</p>
+          <p class="indent">In addition, some Twi'leks had birthmarks that look like geometric tattoos.</p>
+        </description>
+			</sheet>
+			<rules />
+		</element>
+
+		<element name="Black Market Buyers" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_TWILEK_BLACK_MARKET_BUYERS">
+			<description>
+				<p>You have knowledge of most Black Market locations around the Outer Rim.</p>
+			</description>
+			<sheet>
+				<description>
+          <p>You have knowledge of most Black Market locations around the Outer Rim.</p>
+        </description>
+			</sheet>
+			<rules />
+		</element>
+
+    <element name="Seductive" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_TWILEK_SEDUCTIVE">
+			<description>
+				<p>You have advantage on Charisma checks made to seduce any creature that can understand you. This could be persuasion, deception, intimidation, or performance depending on how the action is performed.</p>
+			</description>
+			<sheet>
+				<description>
+          <p>You have advantage on Charisma checks made to seduce any creature that can understand you. This could be persuasion, deception, intimidation, or performance depending on how the action is performed.</p>
+        </description>
+			</sheet>
+			<rules />
+		</element>
+
+</elements>

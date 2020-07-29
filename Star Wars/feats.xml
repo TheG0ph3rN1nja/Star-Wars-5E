@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Feats</name>
+		<description>GM Binder</description>
+		<author />
+		<update version="0.0.1">
+			<file name="feats.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Fast Hands" type="Feat" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_FEAT_FAST_HANDS">
+		<description>
+			<p>You have become a master at reloading. You can now reload pistols as a free action. The sniper rifle, flame thrower, and rocket launcher you can now reload as a bonus action (except you can fire one rocket per turn). And the Gatling gun you can reload as an action.</p>
+		</description>
+		<sheet>
+			<description>You can now reload pistols as a free action. The sniper rifle, flame thrower, and rocket launcher you can now reload as a bonus action (except you can fire one rocket per turn). And the Gatling gun you can reload as an action.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Force Initiate" type="Feat" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_FEAT_FORCE_INITIATE">
+		<description>
+			<p>You learn one force talent of your choice, knowledge of one force discipline, 5 force points, and have a force limit of 2. The number of force points and force limit increases at level 7 to 10 force points and a limit of 3, at level 12 to 15 force points and a limit of 4, and level 17 to 20 force points and a limit of 5.</p>
+			<p class="indent">If you do not already have a force ability modifier, then your force ability modifier is the force ability modifier of discipline's class. I.e: Choosing a Sentinel discipline would mean your force ability modifier is Intelligence.</p>
+		</description>
+		<sheet>
+			<description>You have {{force-initiate:force-points}} force points, and have a force limit of {{force-initiate:force-limit}}. </description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Force Talent(Force Initiate)" supports="Force Talent" number="1" />
+			<select type="Class Feature" name="Force Discipline(Force Initiate)" supports="Force Discipline" number="1" />
+			<stat name="force-initiate:force-points" value="5" />
+			<stat name="force-initiate:force-points" value="5" level="7" />
+			<stat name="force-initiate:force-points" value="5" level="12" />
+			<stat name="force-initiate:force-points" value="5" level="17" />
+			<stat name="force-initiate:force-limit" value="2" />
+			<stat name="force-initiate:force-limit" value="1" level="7" />
+			<stat name="force-initiate:force-limit" value="1" level="12" />
+			<stat name="force-initiate:force-limit" value="1" level="17" />
+		</rules>
+	</element>
+
+	<element name="Force Sniper" type="Feat" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_FEAT_FORCE_SNIPER">
+		<prerequisite>The ability to use the force</prerequisite>
+		<requirements>ID_GMBINDER_SW5E_CLASS_ADEPT||ID_GMBINDER_SW5E_CLASS_CONSULAR||ID_GMBINDER_SW5E_CLASS_GUARDIAN||ID_GMBINDER_SW5E_CLASS_SENTINEL||ID_GMBINDER_SW5E_FEAT_FORCE_INITIATE||ID_GMBINDER_SW5E_RACE_DATHOMIRIAN</requirements>
+		<description>
+			<p>You have learned techniques to enhance your attacks with certain kinds of force abilities, gaining the following benefits:</p>
+			<ul>
+				<li>When you use a force ability that requires you to make an attack roll, the ability’s range is doubled.</li>
+				<li>Your ranged abilities ignore half cover and three-quarters cover.</li>
+				<li>You learn one cantrip that requires an attack roll. You use your force ability modifier for that cantrip.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you use a force ability that requires you to make an attack roll, the ability’s range is doubled. Your ranged abilities ignore half cover and three-quarters cover.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Cantrip(Fore Sniper)" supports="ID_GMBINDER_SW5E_SPELL_CROWNED_IN_SORROW|ID_GMBINDER_SW5E_SPELL_EYE_OF_HORROR|ID_GMBINDER_SW5E_SPELL_PRIMAL_FURY|ID_GMBINDER_SW5E_SPELL_NECROTIZING_TOUCH|ID_GMBINDER_SW5E_SPELL_VENOMOUS_TOUCH|ID_GMBINDER_SW5E_SPELL_PUSH|ID_GMBINDER_SW5E_SPELL_HUNGRY_LIGHTNING|ID_GMBINDER_SW5E_SPELL_FORCE_BLAST|ID_GMBINDER_SW5E_SPELL_HAMMER_OF_INQUISITION|ID_GMBIID_GMBINDER_SW5E_SPELL_DISTRACTING_FIGMENT|ID_GMBINDER_SW5E_SPELL_COMBUSTION|ID_GMBINDER_SW5E_SPELL_TELEKINETIC_STREAM" />
+		</rules>
+	</element>
+
+	<element name="Grappler" type="Feat" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_FEAT_GRAPPLER">
+		<prerequisite>Strength 13 or higher</prerequisite>
+		<requirements>[str:13]</requirements>
+		<description>
+			<p>You’ve developed the skills necessary to hold your own in close-quarters grappling. You gain the following benefits:</p>
+			<ul>
+				<li>You have advantage on attack rolls against a creature you are grappling.</li>
+				<li>You can use your action to try to pin a creature grappled by you. To do so, make another grapple check. If you succeed, you and the creature are both restrained until the grapple ends.</li>
+				<li>Creatures that are one size larger than you don’t automatically succeed on checks to escape your grapple.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You have advantage on attack rolls against a creature you are grappling.
+			You can use your action to try to pin a creature grappled by you. To do so, make another grapple check. If you succeed, you and the creature are both restrained until the grapple ends.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Headshot" type="Feat" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_FEAT_HEADSHOT">
+		<description>
+			<p>You have mastered the art of blowing people’s brains out. When making a ranged attack and you don’t have disadvantage your crit die moves down a rank (but it can’t go lower then 18). If your can already crit on 18’s then when you roll a natural 20 your weapons damage die do maximum damage.</p>
+		</description>
+		<sheet>
+			<description>When making a ranged attack and you don’t have disadvantage your crit die moves down a rank (but it can’t go lower then 18). If your can already crit on 18’s then when you roll a natural 20 your weapons damage die do maximum damage.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Heavy Weapon Master" type="Feat" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_FEAT_HEAVY_WEAPON_MASTER">
+		<description>
+			<p>You’ve learned to put the weight of a weapon to your advantage, letting its momentum empower your strikes. You gain the following benefits:</p>
+			<ul>
+				<li>On your turn, when you score a critical hit with a melee weapon or reduce a creature to 0 hit points with one, you can make one melee weapon attack as a bonus action.</li>
+				<li>Before you make a melee attack with a heavy weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, you add +10 to the attack’s damage.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>On your turn, when you score a critical hit with a melee weapon or reduce a creature to 0 hit points with one, you can make one melee weapon attack as a bonus action. Before you make a melee attack with a heavy weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, you add +10 to the attack’s damage.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Improvised Weapon Master" type="Feat" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_FEAT_IMPROVISED_WEAPON_MASTER">
+		<description>
+			<p>You are accustomed to having to use your ranged weapons as a melee weapon when necessary. You gain the following benefits:</p>
+			<ul>
+				<li>You can use your blaster to make a melee attack against one enemy when they are within 5ft of you. When you do so, use your Strength modifier for the attack roll, ignoring the modifier if it is negative. If you hit, your attack does 1d4 damage, unless the weapon has the Heavy property, in which case it deals 1d6 damage.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You can use your blaster to make a melee attack against one enemy when they are within 5ft of you. When you do so, use your Strength modifier for the attack roll, ignoring the modifier if it is negative. If you hit, your attack does 1d4 damage, unless the weapon has the Heavy property, in which case it deals 1d6 damage.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Infiltrator" type="Feat" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_FEAT_INFILTRATOR">
+		<prerequisite>Dexterity 13 or higher</prerequisite>
+		<requirements>[dex:13]</requirements>
+		<description>
+			<p>You are expert at slinking through shadows. You gain the following benefits:</p>
+			<ul>
+				<li>You can try to hide when you are lightly obscured from the creature from which you are hiding.</li>
+				<li>When you are hidden from a creature and miss it with a ranged weapon attack, making the attack doesn't reveal your position.</li>
+				<li>Dim light doesn’t impose disadvantage on your Wisdom (Perception) checks relying on sight.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You can try to hide when you are lightly obscured from the creature from which you are hiding. When you are hidden from a creature and miss it with a ranged weapon attack, making the attack doesn't reveal your position. Dim light doesn’t impose disadvantage on your Wisdom (Perception) checks relying on sight.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Jedi Slayer" type="Feat" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_FEAT_JEDI_SLAYER">
+		<description>
+			<p>You have practiced techniques useful in melee combat against spellcasters, gaining the following benefits:</p>
+			<ul>
+				<li>When a creature within 5 feet of you uses a force ability, you can use your reaction to make a melee weapon attack against that creature.</li>
+				<li>When you damage a creature that is concentrating on a spell, that creature has disadvantage on the saving throw it makes to maintain its concentration.</li>
+				<li>You have advantage on saving throws against spells cast by creatures within 5 feet of you.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When a creature within 5 feet of you uses a force ability, you can use your reaction to make a melee weapon attack against that creature. When you damage a creature that is concentrating on a spell, that creature has disadvantage on the saving throw it makes to maintain its concentration. You have advantage on saving throws against spells cast by creatures within 5 feet of you.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Martial Arts" type="Feat" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_FEAT_MARTIAL_ARTS">
+		<description>
+			<p>You gain the following benefits while you are unarmed and not wearing heavy armor:</p>
+			<ul>
+				<li>You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes.</li>
+				<li>You can roll a d4 in place of the normal damage of your unarmed strike or monk weapon. This die increases to a d6 at level 5, a d8 at level 11, and a d10 at level 17.</li>
+				<li>You have advantage on saving throws against spells cast by creatures within 5 feet of you.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your unarmed strike does 1d{{sw5e martial arts:dice}}+{{sw5e martial arts:damage}} damage. You can use Strength or Dexterity for these attacks.
+			When you use the Attack action with an unarmed strike or a monk weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven’t already taken a bonus action this turn.</description>
+		</sheet>
+		<rules>
+			<stat name="sw5e martial arts:attack" value="strength:modifier" bonus="martial arts" />
+			<stat name="sw5e martial arts:attack" value="dexterity:modifier" bonus="martial arts" />
+			<stat name="sw5e martial arts:damage" value="strength:modifier" bonus="martial arts" />
+			<stat name="sw5e martial arts:damage" value="dexterity:modifier" bonus="martial arts" />
+			<stat name="sw5e martial arts:dice" value="4" bonus="martial arts" />
+			<stat name="sw5e martial arts:dice" value="6" bonus="martial arts" level="5" />
+			<stat name="sw5e martial arts:dice" value="8" bonus="martial arts" level="11" />
+			<stat name="sw5e martial arts:dice" value="10" bonus="martial arts" level="17" />
+		</rules>
+	</element>
+
+	<element name="Pistol Expert" type="Feat" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_FEAT_PISTOL_EXPERT">
+		<description>
+			<p>Thanks to extensive practice with the crossbow, you gain the following benefits:</p>
+			<ul>
+				<li>Being within 5 feet o f a hostile creature doesn’t impose disadvantage on your ranged attack rolls.</li>
+				<li>When you use the Attack action and attack with a onehanded weapon, you can use a bonus action to attack with a pistol you are holding.</li>
+				<li>Reloading pistols becomes a free action.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Being within 5 feet o f a hostile creature doesn’t impose disadvantage on your ranged attack rolls. When you use the Attack action and attack with a onehanded weapon, you can use a bonus action to attack with a pistol you are holding. Reloading pistols becomes a free action.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Planetary Explorer" type="Feat" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_FEAT_PLANETARY_EXPLORER">
+		<description>
+			<p>Alert to the hidden traps and secret doors found in many dungeons, you gain the following benefits:</p>
+			<ul>
+				<li>When you roll, a Hit Die to regain hit points, the minimum number of hit points you regain from the roll equals twice your Constitution modifier (minimum of 2).</li>
+				<li>You have advantage on Wisdom (Perception) and Intelligence (Investigation) checks made to detect the presence of secret doors.</li>
+				<li>You have advantage on saving throws made to avoid or resist traps.</li>
+				<li>You have resistance to the damage dealt by traps.</li>
+				<li>You can search for traps while traveling at a normal pace, instead of only at a slow pace.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you roll, a Hit Die to regain hit points, the minimum number of hit points you regain from the roll equals twice your Constitution modifier (minimum of 2). You have advantage on Wisdom (Perception) and Intelligence (Investigation) checks made to detect the presence of secret doors. You have advantage on saving throws made to avoid or resist traps. You have resistance to the damage dealt by traps. You can search for traps while traveling at a normal pace, instead of only at a slow pace.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Sniper" type="Feat" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_FEAT_SNIPER">
+		<description>
+			<p>Thanks to extensive practice with the crossbow, you gain the following benefits:</p>
+			<ul>
+				<li>Attacking at long range doesn't impose disadvantage on your ranged weapon attack rolls.</li>
+				<li>Your ranged weapon attacks ignore half cover and three-quarters cover.</li>
+				<li>Before you make an attack with a ranged weapon that you are proficient with, you can choose to take a – 5 penalty to the attack roll. If the attack hits, you add +10 to the attack’s damage.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Attacking at long range doesn't impose disadvantage on your ranged weapon attack rolls. Your ranged weapon attacks ignore half cover and three-quarters cover. Before you make an attack with a ranged weapon that you are proficient with, you can choose to take a – 5 penalty to the attack roll. If the attack hits, you add +10 to the attack’s damage.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Arcanist" type="Feat" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_FEAT_ARCANIST">
+		<description>
+			<p>You study the arcane arts, gaining the following benefits:</p>
+			<ul>
+				<li>Increase your Intelligence score by 1, to a maximum of 20</li>
+				<li>You gain proficiency in the Arcana skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li>
+				<li>You learn the Third Eye force discipline and have the ability to use one of its abilities once per long rest (except you can’t use the true sight feature)</li>
+			</ul>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You learn the Third Eye force discipline and have the ability to use one of its abilities, excluding the true sight feature.</description>
+		</sheet>
+		<rules>
+			<stat name="intelligence" value="1" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_ARCANA" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FORCE_DISCIPLINE_THIRD_EYE" />
+		</rules>
+	</element>
+
+	<element name="Bombardier" type="Feat" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_FEAT_BOMBARDIER">
+		<description>
+			<p>You are a master at making thing go BOOM!</p>
+			<ul>
+				<li>Increase your Constitution score by 1, to a maximum of 20.</li>
+				<li>You gain proficiency with Demolitionist's Tools. If you are already proficient with this kit, you add double your proficiency bonus to checks you make with it (expertise).</li>
+				<li>You gain advantage on rolls to look for structural weaknesses in buildings, ships, and walls.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You gain advantage on rolls to look for structural weaknesses in buildings, ships, and walls.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" />
+			<grant type="Grants" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_ITEM_DEMOLITIONIST_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="Fixer Upper" type="Feat" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_FEAT_FIXER_UPPER">
+		<description>
+			<p>You are a master jury-rigging. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Intelligence score by 1, to a maximum of 20.</li>
+				<li>You gain proficiency in the Repair skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li>
+				<li>When jury-rigging a repair on a vehicle you can add one extra repair die to your roll.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When jury-rigging a repair on a vehicle you can add one extra repair die to your roll.</description>
+		</sheet>
+		<rules>
+			<stat name="intelligence" value="1" />
+			<stat name="repairs:count" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Hacker" type="Feat" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_FEAT_HACKER">
+		<description>
+			<p>You have a lot of experience breaking electronic locks.</p>
+			<ul>
+				<li>Increase your Intelligence score by 1, to a maximum of 20.</li>
+				<li>You gain proficiency in the Security skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li>
+				<li>You are so accustomed to breaking through electronic locks that you can judge the difficulty of a lock and once per day automatically open a medium or easy lock.</li>
+			</ul>
+		</description>
+		<sheet usage="1/Day">
+			<description>You are so accustomed to breaking through electronic locks that you can judge the difficulty of a lock and once per day automatically open a medium or easy lock.</description>
+		</sheet>
+		<rules>
+			<stat name="intelligence" value="1" />
+			<stat name="security:count" value="proficiency" />
+		</rules>
+	</element>
+
+</elements>

@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Adept</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="adept.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/classes/adept.xml" />
+		</update>
+	</info>
+
+  <element name="Adept" type="Class" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_ADEPT">
+		<description>
+      <p>Force Adepts were Force-wielders of all species with varying powers and abilities. Some of these Force Adepts were known to wield Force weapons such as quarterstaffs imbued with the Force, which inflicted more damage and were able to withstand lightsaber blows. This generic concept of Force Adepts often depicted them with little to no formal Jedi training in the Force and often coming from primitive planets.</p>
+      <h3>CLASS FEATURES</h3>
+			<p>As an adept, you gain the following class features.</p>
+			<h5>HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d8 per adept level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per adept level after 1st</li>
+			</ul>
+			<h5>PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> medium armor</li>
+				<li><strong>Weapons:</strong> Simple, martial weapons</li>
+				<li><strong>Tools:</strong> None</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Dexterity, Wisdom</li>
+				<li><strong>Skills:</strong> Choose four skills</li>
+			</ul>
+			<h5>EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li>a) a blaster rifle and 5 charge packs or b) a shortsword</li>
+				<li>a blaster pistol and 5 charge packs</li>
+				<li>Clothes</li>
+			</ul>
+			<h5 class="caption">THE ADEPT</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="left">Proficiency Bonus</td><td class="left">Features</td><td class="col-5">Talents Known</td><td class="col-5">Disciplines Known</td><td class="col-5">Force Points</td><td class="col-5">Force Limit</td></tr>
+				</thead>
+				<tr><td>1st</td><td>+2</td><td class="left">Force, Force Knife, Unarmored Defense</td><td>1</td><td>1</td><td>4</td><td>2</td></tr>
+				<tr><td>2nd</td><td>+2</td><td class="left">Unarmored Movement</td><td>1</td><td>1</td><td>6</td><td>2</td></tr>
+				<tr><td>3rd</td><td>+2</td><td class="left">Hone the Blade</td><td>2</td><td>2</td><td>14</td><td>3</td></tr>
+				<tr><td>4th</td><td>+2</td><td class="left">Ability Score Improvement</td><td>2</td><td>2</td><td>17</td><td>3</td></tr>
+				<tr><td>5th</td><td>+3</td><td class="left">Extra Attack</td><td>2</td><td>3</td><td>27</td><td>4</td></tr>
+				<tr><td>6th</td><td>+3</td><td class="left">Consumptive Knife, Force Heal</td><td>2</td><td>3</td><td>32</td><td>4</td></tr>
+				<tr><td>7th</td><td>+3</td><td class="left">Deflect Blaster Bolts</td><td>3</td><td>4</td><td>38</td><td>5</td></tr>
+				<tr><td>8th</td><td>+3</td><td class="left">Ability Score Improvement</td><td>3</td><td>4</td><td>44</td><td>5</td></tr>
+				<tr><td>9th</td><td>+4</td><td class="left">Force Knife Projection</td><td>3</td><td>5</td><td>57</td><td>6</td></tr>
+				<tr><td>10th</td><td>+4</td><td class="left">Force Mastery</td><td>3</td><td>5</td><td>64</td><td>6</td></tr>
+				<tr><td>11th</td><td>+4</td><td class="left">—</td><td>4</td><td>6</td><td>64</td><td>7</td></tr>
+				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td><td>4</td><td>6</td><td>64</td><td>7</td></tr>
+				<tr><td>13th</td><td>+5</td><td class="left">Channel Force</td><td>4</td><td>7</td><td>75</td><td>7</td></tr>
+				<tr><td>14th</td><td>+5</td><td class="left">Phantom Knife</td><td>4</td><td>7</td><td>75</td><td>7</td></tr>
+				<tr><td>15th</td><td>+5</td><td class="left">—</td><td>5</td><td>8</td><td>75</td><td>7</td></tr>
+				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td><td>5</td><td>8</td><td>75</td><td>7</td></tr>
+				<tr><td>17th</td><td>+6</td><td class="left">Force Resistance</td><td>5</td><td>9</td><td>75</td><td>7</td></tr>
+				<tr><td>18th</td><td>+6</td><td class="left">—</td><td>5</td><td>9</td><td>75</td><td>7</td></tr>
+				<tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td><td>6</td><td>10</td><td>75</td><td>7</td></tr>
+				<tr><td>20th</td><td>+6</td><td class="left">Shatterpoint</td><td>6</td><td>10</td><td>75</td><td>7</td></tr>
+			</table>
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_FORCE_POINTS" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_FORCE_KNIFE" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_SPELLCASTING_ADEPT" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_UNARMORED_DEFENSE" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_UNARMORED_MOVEMENT" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_HONE_THE_BLADE" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_EXTRA_ATTACK" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_ABILITYSCOREIMPROVEMENT_ADEPT" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_CONSUMPTIVE_KNIFE" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_FORCE_HEAL" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_DEFLECT_BLASTER_BOLTS" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_FORCE_KNIFE_PROJECTION" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_FORCE_MASTERY" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_CHANNEL_FORCE" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_PHANTOM_KNIFE" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_FORCE_RESISTANCE" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_SHATTERPOINT" />
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="hd">d8</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+			<select type="Proficiency" name="Skill Proficiency (Adept)" supports="Skill,Adept" number="4" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SKILL_REPAIRS" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SKILL_SECURITY" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_FORCE_POINTS" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_FORCE_LIMIT" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_FORCE_TALENT_ADEPT" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_SPELLCASTING_ADEPT" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_FORCE_KNIFE" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_UNARMORED_DEFENSE" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_UNARMORED_MOVEMENT" level="2" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_HONE_THE_BLADE" level="3" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_ABILITYSCOREIMPROVEMENT_ADEPT" level="4" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_EXTRA_ATTACK" level="5" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_CONSUMPTIVE_KNIFE" level="6" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_FORCE_HEAL" level="6" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_DEFLECT_BLASTER_BOLTS" level="7" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_FORCE_KNIFE_PROJECTION" level="9" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_FORCE_MASTERY" level="10" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_CHANNEL_FORCE" level="13" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_PHANTOM_KNIFE" level="14" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_FORCE_RESISTANCE" level="17" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_SHATTERPOINT" level="20" />
+		</rules>
+	</element>
+
+	<element name="Force Points(Adept)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_FORCE_POINTS">
+		<description />
+		<sheet usage="{{force-points adept:count}}/Long Rest" />
+			<rules>
+				<stat name="force-points adept:count" value="4" />
+				<stat name="force-points adept:count" value="2" level="2" />
+				<stat name="force-points adept:count" value="8" level="3" />
+				<stat name="force-points adept:count" value="3" level="4" />
+				<stat name="force-points adept:count" value="10" level="5" />
+				<stat name="force-points adept:count" value="5" level="6" />
+				<stat name="force-points adept:count" value="6" level="7" />
+				<stat name="force-points adept:count" value="6" level="8" />
+				<stat name="force-points adept:count" value="13" level="9" />
+				<stat name="force-points adept:count" value="7" level="10" />
+				<stat name="force-points adept:count" value="11" level="13" />
+			</rules>
+	</element>
+
+	<element name="Force Limit(Adept)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_FORCE_LIMIT">
+		<description />
+		<sheet usage="{{force-limit consular:count}}/Spell Cast " />
+			<rules>
+				<stat name="force-limit Adept:count" value="2" />
+				<stat name="force-limit Adept:count" value="1" level="3" />
+				<stat name="force-limit Adept:count" value="1" level="5" />
+				<stat name="force-limit Adept:count" value="1" level="7" />
+				<stat name="force-limit Adept:count" value="1" level="9" />
+				<stat name="force-limit Adept:count" value="1" level="11" />
+			</rules>
+		</element>
+
+	<element name="Force Ability(Spellcasting)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_SPELLCASTING_ADEPT">
+		<description>
+			<p>Wisdom is your force ability for your force disciplines. You use your Wisdom modifier when setting the saving throw DC for a force discipline or when making an attack roll with one.</p>
+			<center>
+				<p><strong>Discipline save DC</strong> = 8 + your proficiency bonus + your Wisfom modifier</p>
+				<p><strong>Discipline attack modifier</strong> = your proficiency bonus + your Wisdom modifier</p>
+			</center>
+		</description>
+		<sheet>
+			<description>Ability to use force disciplines(spells).</description>
+		</sheet>
+		<spellcasting name="Adept" ability="Wisdom" prepare="false" allowReplace="true">
+			<list>Adept</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
+			<grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
+
+			<select type="Class Feature" name="Force Discipline(Adept)" supports="Force Discipline" number="1" level="1" />
+			<select type="Class Feature" name="Force Discipline(Adept)" supports="Force Discipline" number="1" level="3" />
+			<select type="Class Feature" name="Force Discipline(Adept)" supports="Force Discipline" number="1" level="5" />
+			<select type="Class Feature" name="Force Discipline(Adept)" supports="Force Discipline" number="1" level="7" />
+			<select type="Class Feature" name="Force Discipline(Adept)" supports="Force Discipline" number="1" level="9" />
+			<select type="Class Feature" name="Force Discipline(Adept)" supports="Force Discipline" number="1" level="11" />
+			<select type="Class Feature" name="Force Discipline(Adept)" supports="Force Discipline" number="1" level="13" />
+			<select type="Class Feature" name="Force Discipline(Adept)" supports="Force Discipline" number="1" level="15" />
+			<select type="Class Feature" name="Force Discipline(Adept)" supports="Force Discipline" number="1" level="17" />
+			<select type="Class Feature" name="Force Discipline(Adept)" supports="Force Discipline" number="1" level="19" />
+		</rules>
+	</element>
+
+	<element name="Force Talent(Adept)" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_FORCE_TALENT_ADEPT">
+		<description />
+		<sheet display="false" />
+			<rules>
+				<select type="Class Feature" name="Force Talent(Adept)" supports="Force Talent" number="1" level="1" />
+				<select type="Class Feature" name="Force Talent(Adept)" supports="Force Talent" number="1" level="3" />
+				<select type="Class Feature" name="Force Talent(Adept)" supports="Force Talent" number="1" level="7" />
+				<select type="Class Feature" name="Force Talent(Adept)" supports="Force Talent" number="1" level="11" />
+				<select type="Class Feature" name="Force Talent(Adept)" supports="Force Talent" number="1" level="15" />
+				<select type="Class Feature" name="Force Talent(Adept)" supports="Force Talent" number="1" level="19" />
+			</rules>
+	</element>
+
+	<element name="Force Knife" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_FORCE_KNIFE">
+		<description>
+			<p>Starting at 1st level, you gain the ability to manifest a blade of force energy. As a bonus action, you create scintillating knives of force energy that project from both of your fists. You can’t hold anything in your hands while manifesting these blades. You can dismiss them as a bonus action.</p>
+			<p class="indent">For you, a soul knife is a martial melee weapon with the light and finesse properties. It deals 1d8 force damage on a hit.</p>
+			<p class="indent">As a bonus action, you can prepare to use the blades to parry; you gain a +2 bonus to AC until the start of your next turn or until you are incapacitated.</p>
+		</description>
+		<sheet action="Bonus Action">
+		<description>As a bonus action, you create scintillating knives of force energy that project from both of your fists. You can’t hold anything in your hands while manifesting these blades. You can dismiss them as a bonus action.It deals 1d8 force damage on a hit. As a bonus action, you can prepare to use the blades to parry.</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="Unarmored Defense" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_UNARMORED_DEFENSE">
+		<description>
+			<p>Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your force ability modifier.</p>
+		</description>
+		<sheet>
+			<description>While you are wearing no armor and not wielding a shield, your AC equals {{ac:unarmored defense adept}}.</description>
+		</sheet>
+			<rules>
+				<stat name="ac:unarmored defense adept:base" value="10" />
+				<stat name="ac:unarmored defense adept:dexterity" value="dexterity:modifier" />
+				<stat name="ac:unarmored defense adept:wisdom" value="wisdom:modifier" />
+				<stat name="ac:unarmored defense adept" value="ac:unarmored defense adept:base" />
+				<stat name="ac:unarmored defense adept" value="ac:unarmored defense adept:dexterity" />
+				<stat name="ac:unarmored defense adept" value="ac:unarmored defense adept:wisdom" />
+				<stat name="ac:calculation" value="ac:unarmored defense adept" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Unarmored Defense (Adept)" />
+			</rules>
+	</element>
+
+	<element name="Unarmored Movement" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_UNARMORED_MOVEMENT">
+		<description>
+			<p>Starting at 2nd level, your speed increases by 10 feet while you are not wearing armor or wielding a shield. This bonus increases when you reach certain monk levels, as shown in the Monk table.</p>
+			<p class="indent">At 9th level, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.</p>
+		</description>
+		<sheet>
+			<description>Your speed increases by {{adept:unarmored movement}} feet while you are not wearing armor or wielding a shield.</description>
+			<description level="9">Your speed increases by {{adept:unarmored movement}} feet while you are not wearing armor or wielding a shield. You gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.</description>
+		</sheet>
+		<rules>
+			<stat name="adept:unarmored movement" value="10" bonus="unarmored movement" level="2" />
+			<stat name="adept:unarmored movement" value="15" bonus="unarmored movement" level="6" />
+			<stat name="adept:unarmored movement" value="20" bonus="unarmored movement" level="10" />
+			<stat name="adept:unarmored movement" value="25" bonus="unarmored movement" level="14" />
+			<stat name="adept:unarmored movement" value="30" bonus="unarmored movement" level="18" />
+
+			<stat name="innate speed:misc" value="adept:unarmored movement" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:1]" />
+			<stat name="innate speed:climb:misc" value="monk:unarmored movement" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:climb:1]" />
+			<stat name="innate speed:fly:misc" value="monk:unarmored movement" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:fly:1]" />
+			<stat name="innate speed:swim:misc" value="monk:unarmored movement" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:swim:1]" />
+			<stat name="innate speed:burrow:misc" value="monk:unarmored movement" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:burrow:1]" />
+		</rules>
+	</element>
+
+	<element name="Ability Score Improvement" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_ABILITYSCOREIMPROVEMENT_ADEPT">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Adept 4)" supports="Improvement Option,Adept,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Adept 8)" supports="Improvement Option,Adept,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Adept 12)" supports="Improvement Option,Adept,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Adept 16)" supports="Improvement Option,Adept,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Adept 19)" supports="Improvement Option,Adept,19" level="19" />
+		</rules>
+	</element>
+
+	<element name="Hone The Blade" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_HONE_THE_BLADE">
+		<description>
+			<p>Starting at 3rd level, you can spend force points to augment your soul knife’s attack rolls and damage. You gain a bonus to attack and damage rolls with your soul knives depending on the number of force points spent, as shown on the table below. This bonus lasts for 10 minutes.</p>
+			<table>
+				<thead>
+					<tr><td class="col-5">ForcePoints</td><td class="left">Attack and Damage Bonus</td></tr>
+				</thead>
+				<tr><td>2</td><td>+1</td></tr>
+				<tr><td>5</td><td>+2</td></tr>
+				<tr><td>7</td><td>+4</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description> you can spend force points to augment your soul knife’s attack rolls and damage. You gain a bonus to attack and damage rolls with your soul knives depending on the number of force points spent.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Extra Attack" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_EXTRA_ATTACK">
+		<description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>You can attack twice whenever you take the Attack action on your turn.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Consumptive Knife" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_CONSUMPTIVE_KNIFE">
+		<description>
+			<p>Starting at 6th level, whenever you slay an enemy creature with a soul knife attack, you immediately regain 2 force points.</p>
+		</description>
+		<sheet>
+			<description>
+				<p>Whenever you slay an enemy creature with a soul knife attack, you immediately regain 2 force points.</p>
+			</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Force Heal" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_FORCE_HEAL">
+		<description>
+			<p>At 6th level, you gain the ability to heal yourself. As an action, you can regain hit points equal to three times your adept level. You must finish a long rest before you can use this feature again.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>
+				<p>You regain hit points equal to {{force heal:adept}}.</p>
+			</description>
+		</sheet>
+		<rules>
+			<stat name="force heal:adept:1" value="Level" />
+			<stat name="force heal:adept:2" value="Level" />
+			<stat name="force heal:adept:3" value="Level" />
+
+			<stat name="force heal:adept" value="force heal:adept:1" />
+			<stat name="force heal:adept" value="force heal:adept:2" />
+			<stat name="force heal:adept" value="force heal:adept:3" />
+
+			<stat name="calculation" value="force heal:adept" bonus="calculation" />
+		</rules>
+	</element>
+
+	<element name="Deflect Blaster Bolts" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_DEFLECT_BLASTER_BOLTS">
+		<description>
+			<p>Starting at 7th level, you can use your reaction to deflect or catch the blaster bolt when you are hit by a ranged blaster attack. When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity modifier + your adept level.</p>
+			<p class="indent">If you reduce the damage to 0, you can catch the energy of the blaster bolt if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a bolt in this way, you can spend 2 force points to make a ranged attack with the bolt you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies.</p>
+		</description>
+		<sheet>
+			<description>
+				<p>you can use your reaction to deflect or catch the blaster bolt when you are hit by a ranged blaster attack. When you do so, the damage you take from the attack is reduced by 1d10 + {{delect:adept}}.</p>
+				<p class="indent">If you reduce the damage to 0, you can catch the blaster bolt and make a ranged attack with the bolt you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies.</p>
+			</description>
+		</sheet>
+		<rules>
+			<stat name="deflect:adept:dexterity" value="dexterity:modifier" />
+			<stat name="deflect:adept:level" value="level" />
+
+			<stat name="deflect:adept" value="deflect:adept:dexterity" />
+			<stat name="deflect:adept" value="deflect:adept:level" />
+
+			<stat name="calculation" value="deflect:adept" bonus="calculation" />
+		</rules>
+	</element>
+
+	<element name="Force Knife Projection" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_FORCE_KNIFE_PROJECTION">
+		<description>
+			<p>Beginning at level 9, you can use the same power drawn for force knife to throw your knives at enemies. When you do so, a new knife will take the thrown one's place. The range for this thrown attack is 30ft, after which you will have disadvantage out to 60ft, which is the maximum range.</p>
+		</description>
+		<sheet>
+			<description>
+				<p>You can now throw your force Knife and he range for this thrown attack is 30ft, after which you will have disadvantage out to 60ft, which is the maximum range.</p>
+			</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Force Mastery" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_FORCE_MASTERY">
+		<description>
+			<p>Beginning at 10th level, your mastery of force energy allows you to push your mind beyond its normal limits. As an action, you gain 9 special force points that you can spend only on disciplines that require an action or a bonus action to use. You can use all 9 points on one discipline, or you can spread them across multiple disciplines. You can’t also spend your normal force points on these disciplines; you can spend only the special points gained from this feature. When you finish a long rest, you lose any of these special points that you haven’t spent.</p>
+			<p class="indent">If more than one of the disciplines you activate with these points require concentration, you can concentrate on all of them. Activating one of them ends any effect you were already concentrating on, and if you begin concentrating on an effect that doesn’t use these special points, the disciplines that you’re concentrating on end.</p>
+			<p class="indent">At 15th level, the pool of force points you gain from this feature increases to 12.</p>
+			<p class="indent">You have one use of this feature, and you regain any expended use of it with a long rest. You gain one additional use of this feature at 12th, 15th, and 18th level.</p>
+		</description>
+		<sheet action="Action" usage="{{force mastery:adept}}/Long Rest">
+			<description>
+				<p>Gain {{temp-points:adept}} special force points to expend on any discipline.</p>
+			</description>
+		</sheet>
+		<rules>
+			<stat name="temp-points:adept" value="9" />
+			<stat name="temp-points:adept" value="3" level="15" />
+
+			<stat name="force mastery:adept" value="1" />
+			<stat name="force mastery:adept" value="1" level="12" />
+			<stat name="force mastery:adept" value="1" level="15" />
+			<stat name="force mastery:adept" value="1" level="18" />
+
+		</rules>
+	</element>
+
+	<element name="Channel Force" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_CHANNEL_FORCE">
+		<description>
+			<p>From level 13 onwards, you can channel the force into yourself in an incredibly short amount of time. Whenever you take a short rest, as long as you spend at least 30 minutes meditating, you regain 25 force points.</p>
+		</description>
+		<sheet>
+			<description>
+				<p>Whenever you take a short rest, as long as you spend at least 30 minutes meditating, you regain 25 force points.</p>
+			</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Phantom Knife" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_PHANTOM_KNIFE">
+		<description>
+			<p>Starting at 14th level, you can make an attack that phases through most defenses. As an action, you can make one attack with your force knife. Treat the target’s AC as 10 against this attack, regardless of the target’s actual AC.</p>
+		</description>
+		<sheet action="Action">
+			<description>
+				<p>Whenever you can make an attack with your soul knife. Treat the target’s AC as 10 against this attack, regardless of the target’s actual AC.</p>
+			</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Force Resistance" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_FORCE_RESISTANCE">
+		<description>
+			<p>Beginning at 14th level, your mastery of the force grants you proficiency in all saving throws.</p>
+			<p class="indent">Additionally, whenever you make a saving throw and fail, you can spend 3 force points to reroll it and take the second result.</p>
+		</description>
+		<sheet>
+			<description>
+				<p>Whenever you make a saving throw and fail, you can spend 3 force points to reroll it and take the second result.</p>
+			</description>
+		</sheet>
+		<rules>
+			<grant name="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+			<grant name="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+			<grant name="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+			<grant name="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+		</rules>
+	</element>
+
+	<element name="Shatterpoint" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_ADEPT_SHATTERPOINT">
+		<description>
+			<p>At 20th level, you gain the ability to set up lethal force vibrations in someone’s body. When you hit a creature with your force knife or your unarmed strike, you can spend 7 force points to start these imperceptible vibrations, which last for a number of days equal to your adept level. The vibrations are harmless unless you use your action to end them. To do so, you and the target must be on the same planet. When you use this action, the creature must make a Constitution saving throw. If it fails, it is reduced to 0 hit points. If it succeeds, it takes 10d10 necrotic damage.</p>
+			<p class="indent">You can have only one creature under the effect of this feature at a time. You can choose to end the vibrations harmlessly without using an action.</p>
+		</description>
+		<sheet>
+			<description>When you hit a creature with your force knife or your unarmed strike, you can spend 7 force points to start these imperceptible vibrations, which last for a number of days equal to your adept level.The vibrations are harmless unless you use your action to end them. To do so, you and the target must be on the same planet. When you use this action, the creature must make a Constitution saving throw. If it fails, it is reduced to 0 hit points. If it succeeds, it takes 10d10 necrotic damage.You can have only one creature under the effect of this feature at a time. You can choose to end the vibrations harmlessly without using an action.</description>
+		</sheet>
+		<rules />
+	</element>
+
+</elements>

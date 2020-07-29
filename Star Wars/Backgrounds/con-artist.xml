@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Con Artist</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="con-artist.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/con-artist.xml" />
+		</update>
+	</info>
+
+	<element name="Con Artist" type="Background" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_CON_ARTIST">
+    <description>
+    <ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Deception, Sleight of Hand </li>
+				<li><strong>Other Proficiencies:</strong>Disguise kit, Forgery kit </li>
+        <li><strong>Languages:</strong>Two of your choice </li>
+				<li><strong>Equipment:</strong>Disguise Kit, Tools for your preferred con, 15 cr </li>
+      </ul>
+      <div element="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_BY_POPULAR_DEMAND" />
+    </description>
+      <setters>
+        <set name="short">Deception, Sleight of Hand, Disguise kit, Forgery kit, 2 languages of your choice, Disguise Kit, Tools for your preferred con, 15 cr</set>
+      </setters>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT" />
+        <select type="Language" name="Language (Con Artist)" supports="Standard||Exotic" number="2" />
+      </rules>
+    </element>
+
+    <element name="Feature: False Identity" type="Background Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_FALSE_IDENTITY">
+      <supports>Background Feature</supports>
+		<description>
+			<p>You have created a second identity that includes documentation, established acquaintances, and disguises that allow you to assume that persona. Additionally, you can forge documents including official papers and personal letters, as long as you have seen an example of the kind of document or the handwriting you are trying to copy.</p>
+		</description>
+		<sheet alt="Flase Identity">
+			<description>You have created a second identity that includes documentation, established acquaintances, and disguises that allow you to assume that persona. Additionally, you can forge documents including official papers and personal letters, as long as you have seen an example of the kind of document or the handwriting you are trying to copy.</description>
+		</sheet>
+	</element>
+
+</elements>

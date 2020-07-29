@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Sage</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="sage.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/sage.xml" />
+		</update>
+	</info>
+
+	<element name="Sage" type="Background" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_SAGE">
+    <description>
+    <ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Arcana, History </li>
+        <li><strong>Languages:</strong>Two of your choice </li>
+				<li><strong>Equipment:</strong>Writing utensils and paper, 10 cr </li>
+      </ul>
+      <div element="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_RESEARCHER" />
+    </description>
+      <setters>
+        <set name="short">Arcana, History, Two of your choice, Writing utensils and paper, 10 cr </set>
+      </setters>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+        <select type="Language" name="Language (Sage)" supports="Standard||Exotic" number="2" />
+      </rules>
+    </element>
+
+    <element name="Feature: Researcher" type="Background Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_RESEARCHER">
+      <supports>Background Feature</supports>
+		<description>
+			<p>When you attempt to learn or recall a piece of lore, if you do not know that information, you often know where and from whom you can obtain it. Usually, this information comes from a library, scriptorium, university, or a sage or other learned person or creature. Your DM might rule that the knowledge you seek is secreted away in an almost inaccessible place, or that it simply cannot be found. Unearthing the deepest secrets of the multiverse can require an adventure or even a whole campaign.</p>
+		</description>
+		<sheet alt="Researcher">
+			<description>When you attempt to learn or recall a piece of lore, if you do not know that information, you often know where and from whom you can obtain it. Usually, this information comes from a library, scriptorium, university, or a sage or other learned person or creature. Your DM might rule that the knowledge you seek is secreted away in an almost inaccessible place, or that it simply cannot be found. Unearthing the deepest secrets of the multiverse can require an adventure or even a whole campaign.</description>
+		</sheet>
+	</element>
+
+</elements>

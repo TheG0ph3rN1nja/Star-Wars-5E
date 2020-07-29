@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Weapon Mods</name>
+		<description>GM Binder</description>
+		<update version="0.0.1">
+			<file name="weapon-mods.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Tactician and Trooper Weapon Mods" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MODS">
+		<description>
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MODS_SUPPRESSING_FIRE" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MODS_JELLIED_FUEL" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MODS_AMMO_CONSERVATION" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MODS_TARGET_FINDER_SCOPE" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MODS_STUN_ROUNDS" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MODS_TARGETING_LASER" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MODS_HIGH_IMPACT_PISTOL_ROUND" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_MODS_GUIDED_ROCKET" />
+		</description>
+		<sheet display="false" />
+		<rules />
+	</element>
+
+	<element name="Supressing Fire Mod" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MODS_SUPPRESSING_FIRE">
+		<supports>Weapon Mod</supports>
+		<description>
+			<p>When the suppressing fire mode is attached to a gatling blaster, you can use your action to completely unload your charge pack into your enemies. Choose up to 6 enemies (or less depending on how many shots are left in your blaster) that are in front of you, not in cover, and within range, and make an attack roll against each of them. Each enemy hit has disadvantage on all their attack rolls on their next turn. Starting the turn after you use this feature roll a d6, on a 5 or 6 you regain this ability.</p>
+		</description>
+		<sheet action="Action">
+			<description>Choose up to 6 enemies (or less depending on how many shots are left in your blaster) that are in front of you, not in cover, and within range, and make an attack roll against each of them. Each enemy hit has disadvantage on all their attack rolls on their next turn. Starting the turn after you use this feature roll a d6, on a 5 or 6 you regain this ability.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Jellied Fuel Mod" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MODS_JELLIED_FUEL">
+		<supports>Weapon Mod</supports>
+		<description>
+			<p>When attached to a flamethrower, enemies hit by your flame thrower must make a Dex saving throw(DC 8+ your Strength Modifier + your Proficiency Bonus) or they are covered in jellied fuel and set fire, which deals 2d4 damage at the start of each of their turns until they spend 2 actions (only one of which can be from an ally) to put themselves out. The fire is immediately extinguished if the target jumps into water or into the dark, cold, vacuum of space.</p>
+		</description>
+		<sheet>
+			<description>enemies hit by your flame thrower must make a Dex saving throw(DC 8+ {{jellied-fuel:save-dc}}) or they are covered in jellied fuel and set fire, which deals 2d4 damage at the start of each of their turns until they spend 2 actions (only one of which can be from an ally) to put themselves out. The fire is immediately extinguished if the target jumps into water or into the dark, cold, vacuum of space.</description>
+		</sheet>
+		<rules>
+			<stat name="jellied-fuel:save-dc" value="strength:modfier" />
+			<stat name="jellied-fuel:save-dc" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Ammo Conservation Mod" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MODS_AMMO_CONSERVATION">
+		<supports>Weapon Mod</supports>
+		<description>
+			<p>The number of shots you can make with a blaster before reloading is multiplied by 1.5 (gatling blaster has 18 shots, flamethrower has 12 shots, sniper rifle has 9 shots, etc...).</p>
+			<p class="indent">The bowcaster, however, increases to 4 shots. This counts towards your weapon mod limit and cannot be given to allies.</p>
+		</description>
+		<sheet>
+			<description>The number of shots you can make with a blaster before reloading is multiplied by 1.5 (gatling blaster has 18 shots, flamethrower has 12 shots, sniper rifle has 9 shots, etc...). The bowcaster, however, increases to 4 shots. This counts towards your weapon mod limit and cannot be given to allies.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Target Finder Scope" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MODS_TARGET_FINDER_SCOPE">
+		<supports>Weapon Mod</supports>
+		<description>
+			<p>When this mod is attached to a weapon, attacks made with that weapon score a critical hit on a roll of 19 or 20 (stackable with sniper bonus and the headshot feat). This counts towards your total number of mods per weapon and can only be used on your weapons.</p>
+		</description>
+		<sheet>
+			<description>Attacks made with that weapon score a critical hit on a roll of 19 or 20 (stackable with sniper bonus and the headshot feat).</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Stun Rounds" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MODS_STUN_ROUNDS">
+		<supports>Weapon Mod</supports>
+		<description>
+			<p>When attached to a weapon a player can choose to fire a stun round from their blaster. In combat these rounds have a DC 13 con save, out of combat these rounds have a dc 17 con save. Targets that fail the save fall asleep (see sleep spell for sleep condition). These rounds deal no damage.</p>
+		</description>
+		<sheet>
+			<description>When attached to a weapon a player can choose to fire a stun round from their blaster. In combat these rounds have a DC 13 con save, out of combat these rounds have a dc 17 con save. Targets that fail the save fall asleep (see sleep spell for sleep condition). These rounds deal no damage.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Targeting Laser" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MODS_TARGETING_LASER">
+		<supports>Weapon Mod</supports>
+		<description>
+			<p>When attached to a weapon, a player can use a bonus action to mark a target, giving all allies advantage on attack rolls against that target until the beginning of your next turn.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Mark a target, giving all allies advantage on attack rolls against that target until the beginning of your next turn.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="High Impact Pistol Round" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MODS_HIGH_IMPACT_PISTOL_ROUND">
+		<supports>Weapon Mod</supports>
+		<description>
+			<p>When this mod is attached to a pistol, attacks made with the pistol deal one damage die higher. Heavy blaster pistols become 1d8, and blaster pistols become 1d6.</p>
+		</description>
+		<sheet>
+			<description>When this mod is attached to a pistol, attacks made with the pistol deal one damage die higher. Heavy blaster pistols become 1d8, and blaster pistols become 1d6.</description>
+		</sheet>
+		<rules />
+	</element>
+<!--Guided Rockets is invisible on the right side of the page on the .pdf in the weapon mods section. You can still copy and paste-->
+	<element name="Guided Rockets" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_MODS_GUIDED_ROCKET">
+		<supports>Weapon Mod</supports>
+		<description>
+			<p>When attached to a rocket launcher, you now have the ability to guide rockets fired from the launcher manually. This effect gives you a +5 to your attack rolls when shooting at ground targets. It also gives you the ability to guide your rockets around cover and lock onto vehicles.</p>
+		</description>
+		<sheet>
+			<description>When attached to a rocket launcher, you now have the ability to guide rockets fired from the launcher manually. This effect gives you a +5 to your attack rolls when shooting at ground targets. It also gives you the ability to guide your rockets around cover and lock onto vehicles.</description>
+		</sheet>
+		<rules />
+	</element>
+
+</elements>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Tribal Warrior</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="tribal-warrior.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/tribal-warrior.xml" />
+		</update>
+	</info>
+
+	<element name="Tribal Warrior" type="Background" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_TRIBAL_WARRIOR">
+    <description>
+    <ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Athletics, Survival </li>
+        <li><strong>Other Proficiencies:</strong>Pick one: musical instrument, or one type of tools </li>
+				<li><strong>Language:</strong>One of your choice </li>
+				<li><strong>Equipment:</strong>10 cr  </li>
+      </ul>
+      <div element="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_TRIBAL_HERITAGE" />
+    </description>
+      <setters>
+        <set name="short">Athletics, Survival, Pick one: musical instrument, or one type of tools, One language of your choice </set>
+      </setters>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+				<select type="Proficiency" name="Tool Proficiency (Survivalist)" supports="Musical Instrument||Tool" />
+        <select type="Language" name="Language (Survivalist)" supports="Standard||Exotic" />
+      </rules>
+    </element>
+
+    <element name="Feature: Tribal Heritage" type="Background Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_TRIBAL_HERITAGE">
+      <supports>Background Feature</supports>
+		<description>
+			<p>You are from a more primitive society but due to your planet's defeat have decided to go out and explore. Due to your heritage, however, anywhere that you can find others of your species you will find acceptance and shelter from your people.</p>
+		</description>
+		<sheet alt="Tribal Heritage">
+			<description>You are from a more primitive society but due to your planet's defeat have decided to go out and explore. Due to your heritage, however, anywhere that you can find others of your species you will find acceptance and shelter from your people.</description>
+		</sheet>
+	</element>
+
+</elements>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Trandoshan</name>
+		<description>GM Binder</description>
+		<author />
+		<update version="0.0.1">
+			<file name="trandoshan.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Trandoshan" type="Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACE_TRANDOSHAN">
+		<description>
+			<h4>Trandoshan Traits</h4>
+			<p>Your Trandoshan character has many different attributes that might be useful in the field:</p>
+			<p class="indent"><strong><i>Ability Score Increase.</i></strong> Constitution +2, Strength +1.</p>
+      <p class="indent"><strong><i>Age.</i></strong> Up to 70 years.</p>
+			<p class="indent"><strong><i>Alignment.</i></strong> Tendency towards chaotic.</p>
+			<p class="indent"><strong><i>Size.</i></strong> Medium</p>
+			<p class="indent"><strong><i>Speed.</i></strong> 30ft.</p>
+			<p class="indent"><strong><i>Natural Weapons.</i></strong> Trandoshans have a few attacks they can make without weapons. These attacks can be made using a bonus action or an action.</p>
+      <p class="indent"><p class="indent"><strong><i>Claws.</i></strong> 1d4 + Str slashing</p></p>
+      <p class="indent"><p class="indent"><strong><i>Bite.</i></strong> 1d6 + Str piercing</p></p>
+			<p class="indent"><strong><i>Regeneration.</i></strong> Once per long rest, you can regenerate 2d10 + Con hit points as an action. In addition, your hit die limit is increased by 3, and you regenerate lost limbs and body parts after 1d8 days.</p>
+      <p class="indent"><strong><i>Instinctual Hatred.</i></strong> Trandoshans have an unending, passionate hatred for the Wookiee species.</p>
+			<p class="indent"><strong><i>Languages.</i></strong> Basic, Trandoshan.</p>
+		</description>
+		<sheet display="false" />
+			<setters />
+			<rules>
+				<stat name="Constitution" value="2" />
+				<stat name="Strength" value="1" />
+				<grant type="Size" id="ID_SIZE_MEDIUM" />
+				<stat name="Speed" value="30" bonus="base" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_TRANDOSHAN_NATURAL_WEAPONS" />
+				<grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_TRANDOSHAN_REGENERATION" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_TRANDOSHAN_INSTINCTUAL_HATRED" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_TRANDOSHAN" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_BASIC" />
+			</rules>
+    </element>
+
+    <element name="Frightening Presence" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_TRANDOSHAN_NATURAL_WEAPONS">
+			<description>
+				<p>Trandoshans have a few attacks they can make without weapons. These attacks can be made using a bonus action or an action.</p>
+        <p class="indent">Claws. 1d4 + Str slashing</p>
+        <p class="indent">Bite. 1d6 + Str piercing</p>
+			</description>
+			<sheet action="Action or Bonus Action">
+				<description>
+          <p>Trandoshans have a few attacks they can make without weapons.</p>
+          <p class="indent">Claws. 1d4 + {{trandoshan claws:damage}} slashing.</p>
+          <p class="indent">Bite. 1d6 + {{trandoshan bite:damage}} piercing.</p>
+        </description>
+			</sheet>
+			<rules>
+        <stat name="trandoshan claws:damage" value="strength:modifier" />
+        <stat name="trandoshan bite:damage" value="strength:modifier" />
+      </rules>
+		</element>
+
+		<element name="Regeneration" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_TRANDOSHAN_REGENERATION">
+			<description>
+				<p>Once per long rest, you can regenerate 2d10 + Con hit points as an action. In addition, your hit die limit is increased by 3, and you regenerate lost limbs and body parts after 1d8 days.</p>
+			</description>
+			<sheet usage="Once/Long Rest">
+				<description>
+          <p>You can regenerate 2d10 + {{trandoshan regeneration:health}} hit points as an action. In addition, your hit die limit is increased by 3, and you regenerate lost limbs and body parts after 1d8 days.</p>
+        </description>
+			</sheet>
+			<rules>
+        <stat name="trandoshan regeneration:health" value="constitution:modifier" />
+      </rules>
+		</element>
+
+    <element name="Instinctual Hatred" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_TRANDOSHAN_INSTINCTUAL_HATRED">
+			<description>
+				<p>Trandoshans have an unending, passionate hatred for the Wookiee species.</p>
+			</description>
+			<sheet>
+				<description>
+          <p>You have an unending, passionate hatred for the Wookiee species.</p>
+        </description>
+			</sheet>
+			<rules />
+		</element>
+
+</elements>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Miraluka</name>
+		<description>GM Binder</description>
+		<author />
+		<update version="0.0.1">
+			<file name="miraluka.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Miraluka" type="Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACE_MIRALUKA">
+		<description>
+			<p>The Miraluka were a Near-Human species that differed from Humans in that they lacked eyes, only retaining vestigial eye sockets, and perceived the environment around them through Force sight instead of regular vision. This vision was so strong that if a Miraluka looked upon a Jedi or Sith, they could "see" Force radiating off them. The strength of a Miraluka's connection to the Force varied by individual.</p>
+      <p class="indent">Miraluka, as Near-Humans, could interbreed with baseline humanity. Humans with Miraluka blood included Krynda and Lucien Draay. It was said that such mating would result in difficulties for the offspring.</p>
+			<h4>Miraluka Traits</h4>
+			<p>Your Miraluka character has many different attributes that might be useful in the field:</p>
+			<p class="indent"><strong><i>Ability Score Increase.</i></strong> +1 Dexterity, +2 Wisdom</p>
+      <p class="indent"><strong><i>Age.</i></strong> Up to 100 years</p>
+			<p class="indent"><strong><i>Alignment.</i></strong> Good.</p>
+			<p class="indent"><strong><i>Size.</i></strong> Medium.</p>
+			<p class="indent"><strong><i>Speed.</i></strong> 30ft</p>
+			<p class="indent"><strong><i>Force Sight.</i></strong> Miraluka have no eyes, they rely on the force to see. They can perceive the environment and people at the same distances humans can, but in addition they can sense the force energy in any creature, so much so they can determine whether someone is a Jedi or Sith.</p>
+      <p class="indent"><strong><i>Telepathy.</i></strong> Miraluka can use their connection to the force to speak telepathically to any willing creature they can see with their force sight.</p>
+			<p class="indent"><strong><i>Languages.</i></strong> Basic, Miralukese.</p>
+		</description>
+		<sheet display="false" />
+			<setters />
+			<rules>
+				<stat name="Wisdom" value="2" />
+				<stat name="Dexterity" value="1" />
+				<grant type="Size" id="ID_SIZE_MEDIUM" />
+				<stat name="Speed" value="30" bonus="base" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_MIRALUKA_FORCE_SIGHT" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_MIRALUKA_TELEPATHY" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_MIRALUKESE" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_BASIC" />
+			</rules>
+    </element>
+
+    <element name="Force Sight" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_MIRALUKA_FORCE_SIGHT">
+			<description>
+				<p>Miraluka have no eyes, they rely on the force to see. They can perceive the environment and people at the same distances humans can, but in addition they can sense the force energy in any creature, so much so they can determine whether someone is a Jedi or Sith.</p>
+			</description>
+			<sheet>
+				<description>
+          <p>You can perceive the environment and people at the same distances humans can, but in addition they can sense the force energy in any creature, so much so they can determine whether someone is a Jedi or Sith.</p>
+        </description>
+			</sheet>
+			<rules />
+		</element>
+
+    <element name="Telepaty" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_MIRALUKA_TELEPATHY">
+			<description>
+				<p>Miraluka can use their connection to the force to speak telepathically to any willing creature they can see with their force sight.</p>
+			</description>
+			<sheet>
+				<description>
+          <p>You can use your connection to the force to speak telepathically to any willing creature you can see with their force sight.</p>
+        </description>
+			</sheet>
+			<rules />
+		</element>
+
+ </elements>

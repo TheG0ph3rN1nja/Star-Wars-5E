@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Pilot</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="pilot.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/classes/pilot.xml" />
+		</update>
+	</info>
+
+  <element name="Pilot" type="Class" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_PILOT">
+    <description>
+      <p>A pilot, sometimes called a flyboy, directly controlled the operation of a vehicle while located within the same craft. A pilot was often assisted by a copilot, navigator, astromech droid, weapons officer, or other crew members. The term "pilot" was applied across vehicles used on land or in water, air, and/or space.</p>
+      <p class="indent">On smaller ships, the word pilot and captain were interchangeable, but on larger vessels, the pilots were rarely the commanders of the vessels.</p>
+      <p class="indent">Starship captains, because of their generally piloting small-scale starships, were sometimes referred to informally as "flyboy."</p>
+      <h5 class="caption">THE PILOT</h5>
+      <table class="class-features">
+        <thead>
+          <tr><td class="col-5">Level</td><td class="col-5">Proficiency Bonus</td><td class="left">Features</td><td class="col-5">Vehicle Proficiencies</td></tr>
+        </thead>
+        <tr><td> 1st</td><td>+2</td><td class="left">Vehicle Proficiency,Starfighter Corps</td><td>1</td></tr>
+        <tr><td> 2nd</td><td>+2</td><td class="left">Auxiliary Power</td><td>1</td></tr>
+        <tr><td> 3rd</td><td>+2</td><td class="left">Pilot Training,Pilot Training Skill</td><td>2</td></tr>
+        <tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement,Extra Attack</td><td>2</td></tr>
+        <tr><td> 5th</td><td>+3</td><td class="left">Conscious Buyer</td><td>3</td></tr>
+        <tr><td> 6th</td><td>+3</td><td class="left">Extra Attack</td><td>3</td></tr>
+        <tr><td> 7th</td><td>+3</td><td class="left">Pilot Training Skill</td><td>3</td></tr>
+        <tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td><td>4</td></tr>
+        <tr><td> 9th</td><td>+4</td><td class="left">Fast Reflexes</td><td>4</td></tr>
+        <tr><td> 10th</td><td>+4</td><td class="left">Pilot Training Skill</td><td>4</td></tr>
+        <tr><td> 11th</td><td>+4</td><td class="left">Repair</td><td>4</td></tr>
+        <tr><td> 12th</td><td>+4</td><td class="left">Ability Score Improvement</td><td>5</td></tr>
+        <tr><td> 13th</td><td>+5</td><td class="left">Vehicular Combatant</td><td>5</td></tr>
+        <tr><td> 14th</td><td>+5</td><td class="left">Pilot Training Skill</td><td>5</td></tr>
+        <tr><td> 15th</td><td>+5</td><td class="left">Vehicular Auxiliary Power</td><td>5</td></tr>
+        <tr><td> 16th</td><td>+5</td><td class="left">Ability Score Improvement</td><td>5</td></tr>
+        <tr><td> 17th</td><td>+6</td><td class="left">Overcharge</td><td>7</td></tr>
+        <tr><td> 18th</td><td>+6</td><td class="left">Pilot Training Skill</td><td>7</td></tr>
+        <tr><td> 19th</td><td>+6</td><td class="left">Ability Score Improvement</td><td>7</td></tr>
+        <tr><td> 20th</td><td>+6</td><td class="left">Tan Pilot</td><td>7</td></tr>
+      </table>
+			<h3>Class Features</h3>
+      <p>As a pilot, you have the following class features.</p>
+      <h4>Hit Points</h4>
+      <p><strong>Hit Dice:</strong> 1d8 per pilot Level.</p>
+      <p><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</p>
+      <p><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per pilot level after 1st</p>
+      <h5>PROFICIENCIES</h5>
+      <p><strong>Armor:</strong> Light armor</p>
+      <p><strong>Weapons:</strong> Short swords, batons, vibroblades, blaster pistols, and blaster rifles</p>
+      <p><strong>Tools:</strong> Engineer's Tools</p>
+      <p><strong>Saving Throw:</strong> Dexterity, Intelligence</p>
+      <p><strong>Skills:</strong> Choose four from Acrobatics, Arcana, History, Investigation, Nature, Religion, Sleight of Hand, Stealth</p>
+      <h5>EQUIPMENT</h5>
+      <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+      <ul>
+        <li>(a) a shortsword or (b) a vibroblade</li>
+        <li>(a) a blaster pistol or (b) a blaster rifle</li>
+        <li>Ammunition 5 charge packs per chosen blaster weapon</li>
+        <li>Combat suit, a vibroblade, and an engineer’s pack</li>
+      </ul>
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_VEHICLE_PROFICIENCY" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_STARFIGHT_CORPS" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_AUXILIARY_POWER" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_PILOT_SCHOOL" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_ABILITYSCOREIMPROVEMENT_PILOT" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_CONSCIOUS_BUYER" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_EXTRA_ATTACK" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_FAST_REFLEXES" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_REPAIR" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_VEHICULAR_COMBATANT" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_VEHICULAR_AUXILIARY_POWER" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_OVERCHARGE" />
+			<div element="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_TAN_PILOT" />
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="hd">d8</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+      <grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_STUN_BATON" />
+      <grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_BLASTER_PISTOL" />
+			<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_BLASTER_RIFLE" />
+      <grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_ITEM_ENGINEERING_TOOLS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+			<select type="Proficiency" name="Skill Proficiency (Pilot)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH" number="4" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SKILL_REPAIRS" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SKILL_SECURITY" level="1" />
+      <grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_VEHICLE_PROFICIENCY" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_STARFIGHT_CORPS" level="1" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_AUXILIARY_POWER" level="2" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_PILOT_SCHOOL" level="3" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_ABILITYSCOREIMPROVEMENT_PILOT" level="4" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_CONSCIOUS_BUYER" level="5" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_EXTRA_ATTACK" level="6" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_FAST_REFLEXES" level="9" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_REPAIR" level="11" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_VEHICULAR_COMBATANT" level="13" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_OVERCHARGE" level="17" />
+			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_TAN_PILOT" level="20" />
+		</rules>
+	</element>
+
+	<element name="Vehicle Proficiency" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_VEHICLE_PROFICIENCY">
+		<description>
+			<p>Starting at level 1, you are proficient with one vehicle in the small vehicle category. This can be either a starship or a land vehicle. Pilots gain one more vehicle proficiency at levels 3, 5, 8, 12, 17, and 20.</p>
+			<p class="indent">In order to become proficient with a new vehicle, a pilot must spend one week piloting the new type of vehicle to become proficient with it. At level 5, pilots are able to be proficient with medium vehicles, and large vehicles at level 12.</p>
+			<table>
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-5">Class</td></tr>
+				</thead>
+				<tr><td>1</td><td>Small Space Vehicles</td></tr>
+				<tr><td>5</td><td>Medium Space Vehicles</td></tr>
+				<tr><td>12</td><td>Large Space Vehicles</td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency" supports="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SMALL" number="1" level="1" />
+			<select type="Proficiency" name="Tool Proficiency" supports="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SMALL" number="1" level="3" />
+			<select type="Proficiency" name="Tool Proficiency" supports="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SMALL||ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_MEDIUM" number="1" level="5" />
+			<select type="Proficiency" name="Tool Proficiency" supports="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SMALL||ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_MEDIUM" number="1" level="8" />
+			<select type="Proficiency" name="Tool Proficiency" supports="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SMALL||ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_MEDIUM||ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_LARGE" number="1" level="12" />
+			<select type="Proficiency" name="Tool Proficiency" supports="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SMALL||ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_MEDIUM||ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_LARGE" number="1" level="17" />
+			<select type="Proficiency" name="Tool Proficiency" supports="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SMALL||ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_MEDIUM||ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_LARGE" number="1" level="20" />
+		</rules>
+	</element>
+
+	<element name="Starfighter Corps" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_STARFIGHT_CORPS">
+		<description>
+			<p>At level 1 you choose a starfighter corps to join. Once you have chosen a starfighter corps, you cannot choose to leave it or join a new starfighter corps until you have leveled up. Your starfighter corps can help you with many things such as purchasing a ship, getting insurance for your current ship, sending you bounties and missions, and even sending people to help you with combat situations.</p>
+			<p class="indent">A list of joinable starfighter corps and their restrictions can be found in the chapter on Factions.</p>
+		</description>
+		<sheet>
+			<description>Once you have chosen a starfighter corps, you cannot choose to leave it or join a new starfighter corps until you have leveled up. Your starfighter corps can help you with many things such as purchasing a ship, getting insurance for your current ship, sending you bounties and missions, and even sending people to help you with combat situations.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Starfighter Corps" supports="Starfighter Corps" />
+		</rules>
+	</element>
+
+	<element name="Auxiliary Power" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_AUXILIARY_POWER">
+		<description>
+			<p>Beginning at level 2, a pilot learns how to transfer power to other systems as a bonus action. Auxiliary power is only available if you are piloting a starship. You must be proficient with the class of starship you are using in order to use Auxiliary Power. You can only use each Auxiliary Power system once, but you regain all expended uses upon finishing repairs while docked. In addition, once you have used Auxiliary Power, you must wait one round before you can use it again. When auxiliary power is shifted to a system, the following applies:</p>
+			<p class="indent"><strong>Engines:</strong> Your starship gains an additional 1000ft movement for the rest of your turn.</p>
+			<p class="indent"><strong>Shields:</strong> Your starship immediately gains 25 SP.</p>
+			<p class="indent"><strong>Targeting:</strong> You gain advantage on your next attack roll.</p>
+			<p class="indent"><strong>Weapons:</strong> You take a -5 penalty to the next attack roll made this turn, but add 10 to the total damage roll if the attack lands (before any multipliers).</p>
+		</description>
+		<sheet action="Bonus Action" usage="Once Each/Ship Repair">
+			<description level="2">
+				<p class="indent"><strong>Engines:</strong> Your starship gains an additional 1000ft movement for the rest of your turn.</p>
+				<p class="indent"><strong>Shields:</strong> Your starship immediately gains 25 SP.</p>
+				<p class="indent"><strong>Targeting:</strong> You gain advantage on your next attack roll.</p>
+				<p class="indent"><strong>Weapons:</strong> You take a -5 penalty to the next attack roll made this turn, but add 10 to the total damage roll if the attack lands (before any multipliers).</p>
+			</description>
+			<description level="15">
+				<p class="indent"><strong>Engines:</strong> Your starship gains an additional 1050ft movement for the rest of your turn.</p>
+				<p class="indent"><strong>Shields:</strong> Your vehicle immediately gains 25 SP or 10 temporary HP.</p>
+				<p class="indent"><strong>Targeting:</strong> You gain advantage on your next attack roll.</p>
+				<p class="indent"><strong>Weapons:</strong> You take a -5 penalty to the next attack roll made this turn, but add 10 to the total damage roll if the attack lands (before any multipliers).</p>
+			</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Pilot School" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_PILOT_SCHOOL">
+		<description>
+			<p>At level 3, pilots choose the school of training they wish to undertake. Pilots gain new skills in their chosen training school at levels 3, 7, 10, 14, and 18.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Pilot School" supports="Pilot School" />
+		</rules>
+	</element>
+
+	<element name="Ability Score Improvement" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_ABILITYSCOREIMPROVEMENT_PILOT">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Pilot 4)" supports="Improvement Option,Pilot,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Pilot 8)" supports="Improvement Option,Pilot,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Pilot 12)" supports="Improvement Option,Pilot,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Pilot 16)" supports="Improvement Option,Pilot,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Pilot 19)" supports="Improvement Option,Pilot,19" level="19" />
+		</rules>
+	</element>
+
+	<element name="Conscious Buyer" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_CONSCIOUS_BUYER">
+		<description>
+			<p>At level 5, pilots know how much repairs and other ship components should cost, as well as what condition they are in. From this level on, you have advantage on all Arcana, Deception, Insight, Investigation, and Persuasion checks when made in relation to purchasing or inspecting starships and starship components.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on all Arcana, Deception, Insight, Investigation, and Persuasion checks when made in relation to purchasing or inspecting starships and starship components.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Extra Attack" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_EXTRA_ATTACK">
+		<description>
+			<p>Beginning at 6th level, you can attack twice, instead of once, whenever you take the Attack action on your turn to make a melee or ranged weapon attack. <i>This does not apply to starship or vehicular combat.</i></p>
+		</description>
+		<sheet>
+			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn to make a melee or ranged weapon attack. <i>This does not apply to starship or vehicular combat.</i></description>
+			</sheet>
+		<rules />
+	</element>
+
+	<element name="Fast Reflexes" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_FAST_REFLEXES">
+		<description>
+			<p>Starting at level 9, pilots have gained the mental acuity to use the Dodge or Disengage action as a bonus action. When used during starfighter combat, it is used as if it was an Auxiliary Power system, and as such can only be used once before completing a docked repair.</p>
+		</description>
+		<sheet usage="Once/Ship Repair" action="Bonus Action">
+			<description>You have gained the mental acuity to use the Dodge or Disengage action as a bonus action. When used during starfighter combat, it is used as if it was an Auxiliary Power system, and as such can only be used once before completing a docked repair.</description>
+			</sheet>
+		<rules />
+	</element>
+
+	<element name="Repair" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_REPAIR">
+		<description>
+			<p>At level 11, once per docked repair you can use your engineer's kit to try and repair your ship or vehicle. You must be out of combat to use this ability. Your ship or vehicle regains hull points equal to rolling (1d6)d12.</p>
+		</description>
+		<sheet usage="Once/Ship Repair">
+			<description>you can use your engineer's kit to try and repair your ship or vehicle. You must be out of combat to use this ability. Your ship or vehicle regains hull points equal to rolling (1d6)d12.</description>
+			</sheet>
+		<rules />
+	</element>
+
+	<element name="Vehicular Combatant" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_VEHICULAR_COMBATANT">
+		<description>
+			<p>As a level 13 pilot, you are a dangerous foe to face while mounted on a land vehicle. While you are on your vehicle and aren’t incapacitated, you gain the following benefits:</p>
+			<ul>
+				<li>You have advantage on melee attack rolls against any unmounted creature that is smaller than your vehicle.</li>
+				<li>You can force an attack targeted at your vehicle to target you instead.</li>
+				<li>If your vehicle is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>
+				<p>While you are on your vehicle and aren’t incapacitated, you gain the following benefits:</p>
+				<ul>
+					<li>You have advantage on melee attack rolls against any unmounted creature that is smaller than your vehicle.</li>
+					<li>You can force an attack targeted at your vehicle to target you instead.</li>
+					<li>If your vehicle is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.</li>
+				</ul>
+			</description>
+			</sheet>
+		<rules />
+	</element>
+
+	<element name="Vehicular Auxiliary Power" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_VEHICULAR_AUXILIARY_POWER">
+		<description>
+			<p>Beginning at level 15, you have determined how to use your auxiliary power skills with your vehicles. You can now use auxiliary power with vehicles you are proficient with, with the following changes:</p>
+			<p class="indent"><strong>Engines:</strong> Your starship gains an additional 50ft movement for the rest of your turn.</p>
+			<p class="indent"><strong>Shields:</strong> Your starship immediately gains 25 SP or 10 temporary HP.</p>
+			<p class="indent"><strong>Targeting:</strong> You gain advantage on your next attack roll.</p>
+			<p class="indent"><strong>Weapons:</strong> You take a -5 penalty to the next attack roll made this turn, but add 10 to the total damage roll if the attack lands (before any multipliers).</p>
+		</description>
+		<sheet display="false" />
+		<rules />
+	</element>
+
+	<element name="Overcharge" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_OVERCHARGE">
+		<description>
+			<p>Once a pilot has reached level 17, he or she knows how to shift more power to the weapons than they previously could with auxiliary power. When a pilot uses the weapons auxiliary power system, if the attack lands it is considered a critical hit.</p>
+		</description>
+		<sheet>
+			<description>When you use the weapons auxiliary power system, if the attack lands it is considered a critical hit.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Tan Pilot" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_PILOT_TAN_PILOT">
+		<description>
+			<p>At level 20 you have reached the rank of Tan Pilot. Your name now has "Tan" as a prefix to your surname, and most pilots you run into in civilized areas will have heard of you. Whenever you are flying with your starfighter corps, once per round you can add your intelligence modifier to one of your corps member's attack or damage rolls.</p>
+		</description>
+		<sheet>
+			<description>Your name now has "Tan" as a prefix to your surname, and most pilots you run into in civilized areas will have heard of you. Whenever you are flying with your starfighter corps, once per round you can add {{tan-pilot:value}} to one of your corps member's attack or damage rolls.</description>
+		</sheet>
+		<rules>
+			<stat name="tan-pilot:value" value="intelligence:modifier" />
+		</rules>
+	</element>
+
+	<element name="Ace" type="Archetype" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_ACE">
+		<supports>Pilot School</supports>
+		<description>
+			<p>Ace pilots are lone wolves. They don't need to tell anyone how great they are at dogfighting, everyone else can watch and see.</p>
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_ACE_CUSTOM_BOOSTERS" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_ACE_CRACK_SHOT" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_ACE_TRIGGER_FINGER" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_ACE_FEAR" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_ACE_POWER_CONSERVATION" />
+		</description>
+		<sheet display="false">
+			<description>Ace pilots are lone wolves. They don't need to tell anyone how great they are at dogfighting, everyone else can watch and see.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_ACE_CUSTOM_BOOSTERS" level="3" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_ACE_CRACK_SHOT" level="7" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_ACE_TRIGGER_FINGER" level="10" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_ACE_FEAR" level="14" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_ACE_POWER_CONSERVATION" level="18" />
+		</rules>
+	</element>
+
+	<element name="Custom Boosters" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_ACE_CUSTOM_BOOSTERS">
+		<description>
+			<p>At level 3 ace pilots can rotate 120° by moving 500ft instead of only 60°. This is restricted to small and medium starships.</p>
+		</description>
+		<sheet>
+			<description>You can rotate 120° by moving 500ft instead of only 60°. This is restricted to small and medium starships.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Crack Shot" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_ACE_CRACK_SHOT">
+		<description>
+			<p>Once an ace pilot reaches level 7, he or she has had so much time behind the throttle that they don't necessarily need the targeting computer. At level 7, ace pilots do not have disadvantage on an attack made within 1000ft of the normal disadvantage range for their Targeting Computer's class.</p>
+		</description>
+		<sheet>
+			<description>You do not have disadvantage on an attack made within 1000ft of the normal disadvantage range for their Targeting Computer's class.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Trigger Finger" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_ACE_TRIGGER_FINGER">
+		<description>
+			<p>When you reach level 10, if you attack with your action you can use your bonus action to make a second attack.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>If you attack with your action you can use your bonus action to make a second attack.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Fear" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_ACE_FEAR">
+		<description>
+			<p>By the time you have reached level 14, word of your skills has spread to the far reaches of the Outer Rim, and most pilots fear ever facing you in a dogfight. The first time a hostile pilot encounters you they must make a DC 16 wisdom save. If they fail the save, they become feared for one minute. The hostile pilot can attempt to succeed on the save at the end of each of his or her turns.</p>
+		</description>
+		<sheet>
+			<description>The first time a hostile pilot encounters you they must make a DC 16 wisdom save. If they fail the save, they become feared for one minute. The hostile pilot can attempt to succeed on the save at the end of each of his or her turns.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Power Conservation" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_ACE_POWER_CONSERVATION">
+		<description>
+			<p>At level 18, ace pilots have mastered the art of Auxiliary Power, allowing each Auxiliary Power system to have two uses. This does not apply to Fast Reflexes and Overcharge.</p>
+		</description>
+		<sheet>
+			<description>Each Auxiliary Power system now have two uses. This does not apply to Fast Reflexes and Overcharge.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Squad Leader" type="Archetype" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_SQUAD_LEADER">
+		<supports>Pilot School</supports>
+		<description>
+			<p>Squad leaders are masters of tactics and teamwork. With the help of their wingmen, there is little that can be done to stop them.</p>
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SQUAD_LEADER_MARKING_TARGETS" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SQUAD_LEADER_WINGMAN" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SQUAD_LEADER_IMPROVED_MARKING_TARGETS" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SQUAD_LEADER_SQUADRON" />
+			<div element="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SQUAD_LEADER_TEAMWORK" />
+		</description>
+		<sheet display="false">
+			<description>Squad leaders are masters of tactics and teamwork. With the help of their wingmen, there is little that can be done to stop them.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SQUAD_LEADER_MARKING_TARGETS" level="3" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SQUAD_LEADER_WINGMAN" level="7" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SQUAD_LEADER_IMPROVED_MARKING_TARGETS" level="10" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SQUAD_LEADER_SQUADRON" level="14" />
+			<grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SQUAD_LEADER_TEAMWORK" level="18" />
+		</rules>
+	</element>
+
+	<element name="Marking Targets" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SQUAD_LEADER_MARKING_TARGETS">
+		<description>
+			<p>When you have reached level 3, you have learned how to track targets well. You can mark a target as a bonus action. The following rules apply to marking a target:</p>
+			<ul>
+				<li>To mark a target it must be within range of your targeting computer.</li>
+				<li>To keep a target marked, it must be within range of your targeting computer at the end of your turn.</li>
+			</ul>
+			<p class="indent">When a target is marked, you get a advantage on attacks made against the target while the target is in your attack vector.</p>
+		</description>
+		<sheet>
+			<description>When a target is marked, you get a advantage on attacks made against the target while the target is in your attack vector and is within range of your targeting computer.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Wingman" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SQUAD_LEADER_WINGMAN">
+		<description>
+			<p>Starting at 7th level, pilots who choose the squad leader path can have a wingman. Each day, a pilot can designate an ally player to be his or her wingman. Players who are designated as a wingman gain the following attribute:</p>
+			<ul>
+				<li>You can become proficient with one small starship by spending one week training with your squad leader.</li>
+				<li>You lose proficiency with a starship by becoming proficient with a new starship.</li>
+				<li>When piloting, in place of Intelligence modifier for starship proficiency, you add +2 to attack rolls, AC, and piloting saving throws.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You lose proficiency with a starship by becoming proficient with a new starship and when piloting, in place of Intelligence modifier for starship proficiency, you add +2 to attack rolls, AC, and piloting saving throws.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency" supports="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SMALL" number="1" />
+		</rules>
+	</element>
+
+	<element name="Improved Marking Targets" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SQUAD_LEADER_IMPROVED_MARKING_TARGETS">
+		<description>
+			<p>Starting at level 10, you and your wingman have learned to communicate well, allowing you both to mark targets. You can now mark a total of two targets.</p>
+			<p>In addition, you can use marking targets in a defensive manner. If a marked target is going to attack one of your squadmates or you and is in your attack vector or the attack vector of your wingman, as a reaction you or your wingman can choose to impose disadvantage on the marked target's attack roll.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>You can now mark a total of two targets and if a marked target is going to attack one of your squadmates or you and is in your attack vector or the attack vector of your wingman, as a reaction you or your wingman can choose to impose disadvantage on the marked target's attack roll.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Squadron" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SQUAD_LEADER_SQUADRON">
+		<description>
+			<p>At level 18 you can have a second wingman. In addition, you can mark a total of three targets.</p>
+		</description>
+		<sheet>
+			<description>You can have a second wingman. In addition, you can mark a total of three targets.</description>
+		</sheet>
+		<rules />
+	</element>
+
+	<element name="Teamwork" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_SQUAD_LEADER_TEAMWORK">
+		<description>
+			<p>At level 18, once per round, you can choose to add your intelligence modifier to one of your squadmates' attack or damage rolls.</p>
+		</description>
+		<sheet usage="Once/Round">
+			<description>You can choose to add {{teamwork:value}} to one of your squadmates' attack or damage rolls.</description>
+		</sheet>
+		<rules>
+			<stat name="teamwork:value" value="intelligence:modifier" />
+		</rules>
+	</element>
+
+</elements>

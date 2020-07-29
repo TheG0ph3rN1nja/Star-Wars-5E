@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Bothan</name>
+		<description>GM Binder</description>
+		<author />
+		<update version="0.0.1">
+			<file name="bothan.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Bothan" type="Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACE_BOTHAN">
+		<description>
+			<p>To the Bothans, information is the galaxy's most valuable currency, as well as its most potent weapon. As a culture, they believe that direct confrontation with foes — whether economic, political, or martial — is pointless. In an open conflict, the object both sides desire is often damaged or destroyed. This attitude has made espionage a natural line of work for Bothans. Information and spies are their greatest exports. The famed Bothan spynet is the largest independent intelligence-gathering organization the galaxy has ever known. Beings of power everywhere find Bothans irritating because they have a tendency to use every bit of information they can to acquire leverage or money, but no one wants to be the only person without access to the spynet, so everyone continues to deal with the Bothans.</p>
+      <h4>Slim and Shady</h4>
+      <p>Bothans hail from the industrial Mid Rim planet of Bothawui, though they also populate various colony worlds like Kothlis and Torolis. Most Bothans stand about 5–6 ft. tall. They have tapered pointed ears, elongated heads, and a very few from both sexes have beards. They are manipulative, crafty, suspicious, curious by nature, loyal, brave, and very smart. They developed their technology to travel among the stars millennia ago and are longstanding members of the galactic civilization.</p>
+      <h4>Bothan Names</h4>
+      <p class="indent"><strong><i>Male Names:</i></strong> Borsk, Eramuth, Hosk, Kai, Knol, Koth, Narsk, Nek, Traest, Utric</p>
+      <p class="indent"><strong><i>Female Names:</i></strong> Asyr, Glynn-Beti, Kolir, Oryon, Yantahar, Yaqeel</p>
+			<h4>Bothan Traits</h4>
+			<p>Your Bothan character has many different attributes that might be useful in the field:</p>
+			<p class="indent"><strong><i>Ability Score Increase.</i></strong> Your Intelligence score increases by 2 and you Dexterity score increases by 1.</p>
+      <p class="indent"><strong><i>Age.</i></strong> Bothans mature and age at the same rate as humans.</p>
+			<p class="indent"><strong><i>Alignment.</i></strong> Bothans tend to be outside the law but not without personal rules, generally aligning most with neutral, but tend to be morally good.</p>
+			<p class="indent"><strong><i>Size.</i></strong> Bothans stand around 4-5 feet tall and tend to be no more than 200 pounds. Your size is Medium.</p>
+			<p class="indent"><strong><i>Speed.</i></strong> Your base movement speed is 40 feet.</p>
+			<p class="indent"><strong><i>Proficiency.</i></strong> As a Bothan, you are proficient with two of the following abilities: deception, persuasion, security.</p>
+      <p class="indent"><strong><i>Darkvision</i></strong> 60 ft.</p>
+			<p class="indent"><strong><i>Languages.</i></strong> Bothan, Basic.</p>
+		</description>
+		<sheet display="false" />
+			<setters>
+        <set name="names" type="male">Borsk, Eramuth, Hosk, Kai, Knol, Koth, Narsk, Nek, Traest, Utric</set>
+        <set name="names-format">$(male)</set>
+        <set name="names" type="female">Asyr, Glynn-Beti, Kolir, Oryon, Yantahar, Yaqeel</set>
+        <set name="names-format">$(female)</set>
+      </setters>
+			<rules>
+				<select type="Ability Score Improvement" name="Ability Score Increase (Bothan)" supports="ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CHARISMA" />
+				<grant type="Size" id="ID_SIZE_MEDIUM" />
+				<stat name="Speed" value="40" bonus="base" />
+        <select type="Proficiency" name="Skill Proficiency (Bothan)" number="2" id="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_GMBINDER_SW5E_PROFICIENCY_SKILL_SECURITY" />
+				<grant type="Vision" name="ID_VISION_DARKVISION" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_BOTHESE" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_BASIC" />
+			</rules>
+    </element>
+
+
+ </elements>

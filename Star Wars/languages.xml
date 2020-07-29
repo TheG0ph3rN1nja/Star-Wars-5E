@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Languages</name>
+		<description>GM Binder</description>
+		<author />
+		<update version="0.0.1">
+			<file name="languages.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Arkanian" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_ARKANIAN">
+		<supports>Standard</supports>
+		<description>
+			<p>Common language of the galaxy.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Arkanian</set>
+			<set name="script">Arkanian</set>
+		</setters>
+	</element>
+
+  <element name="Basic" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_BASIC">
+		<supports>Standard</supports>
+		<description>
+			<p>Common language of the galaxy.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Most Races</set>
+			<set name="script">Basic</set>
+		</setters>
+	</element>
+
+  <element name="Binary" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_BINARY">
+		<supports>Standard</supports>
+		<description>
+			<p>Droid Language</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Droids</set>
+			<set name="script">Basic</set>
+		</setters>
+	</element>
+
+  <element name="Bothese" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_BOTHESE">
+		<supports>Standard</supports>
+		<description>
+			<p>Language of the Bothans.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Bothans</set>
+			<set name="script">Botha</set>
+		</setters>
+	</element>
+
+  <element name="Dug" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_DUG">
+		<supports>Standard</supports>
+		<description>
+			<p>Language of the Dug.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Dug</set>
+			<set name="script">Dug</set>
+		</setters>
+	</element>
+
+  <element name="Durese" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_DURESE">
+		<supports>Standard</supports>
+		<description>
+			<p>Language of the Duros.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Duros</set>
+			<set name="script">Basic</set>
+		</setters>
+	</element>
+
+  <element name="Gamorese" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_GAMORRESE">
+		<supports>Standard</supports>
+		<description>
+			<p>Language of the Gamorrean.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Gamorrean</set>
+			<set name="script">Gamorrese</set>
+		</setters>
+	</element>
+
+  <element name="Gungan" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_GUNGAN">
+		<supports>Standard</supports>
+		<description>
+			<p>Language of the Gungan.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Gungan</set>
+			<set name="script">Gungan</set>
+		</setters>
+	</element>
+
+  <element name="Huttese" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_HUTTESE">
+		<supports>Standard</supports>
+		<description>
+			<p>Language of the Huttss and the Weequay.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Hutts,Weequay</set>
+			<set name="script">Huttese</set>
+		</setters>
+	</element>
+
+  <element name="Jawaese" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_JAWAESE">
+		<supports>Standard</supports>
+		<description>
+			<p>Language of the Jawa.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Jawa</set>
+			<set name="script">Jawaese</set>
+		</setters>
+	</element>
+
+  <element name="Kel Dorian" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_KEL_DORIAN">
+		<supports>Standard</supports>
+		<description>
+			<p>Language of the Kel Dor.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Kel Dor</set>
+			<set name="script">Basic</set>
+		</setters>
+	</element>
+
+  <element name="Lasat" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_LASAT">
+		<supports>Standard</supports>
+		<description>
+			<p>Language of the Lasat.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Lasat</set>
+			<set name="script">Lasat</set>
+		</setters>
+	</element>
+
+  <element name="Mon Calamarian" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_MON_CALAMARIAN">
+		<supports>Standard</supports>
+		<description>
+			<p>Language of the Mon Calamari.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Mon Calamari</set>
+			<set name="script">Basic</set>
+		</setters>
+	</element>
+
+  <element name="Nautila" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_NAUTILA">
+		<supports>Standard</supports>
+		<description>
+			<p>Language of the Nautila.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Nautilan</set>
+			<set name="script">Nautila</set>
+		</setters>
+	</element>
+
+  <element name="Rodese" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_RODESE">
+		<supports>Standard</supports>
+		<description>
+			<p>Language of the Rhodian.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Rhodian</set>
+			<set name="script">Rodese</set>
+		</setters>
+	</element>
+
+  <element name="Ryl" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_RYL">
+		<supports>Standard</supports>
+		<description>
+			<p>Language of the Twi'lek.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Twi'lek</set>
+			<set name="script">Ryl</set>
+		</setters>
+	</element>
+
+  <element name="Shyriiwook" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_SHYRIIWOOK">
+		<supports>Standard</supports>
+		<description>
+			<p>Language of the Wookie.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Wookie</set>
+			<set name="script">Shyriiwook</set>
+		</setters>
+	</element>
+
+  <element name="Zabraki" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_ZABRAKI">
+		<supports>Standard</supports>
+		<description>
+			<p>Language of the Zabrak.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Zabrak</set>
+			<set name="script">Zabraki</set>
+		</setters>
+	</element>
+
+  <element name="Cheunh" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_CHEUNH">
+   <supports>ID_INTERNAL_SUPPORT_LANGUAGE_EXOTIC, Exotic</supports>
+   <description>
+     <p>Language of the Chiss.</p>
+   </description>
+   <setters>
+     <set name="Speakers">Chiss</set>
+     <set name="Script">Cheunh</set>
+     <set name="Exotic">True</set>
+   </setters>
+ </element>
+
+ <element name="Geonosian" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_GEONOSIAN">
+  <supports>ID_INTERNAL_SUPPORT_LANGUAGE_EXOTIC, Exotic</supports>
+  <description>
+    <p>Language of the Geonosian.</p>
+  </description>
+  <setters>
+    <set name="Speakers">Geonosian</set>
+    <set name="Script">Geonosian</set>
+    <set name="Exotic">True</set>
+  </setters>
+</element>
+
+<element name="Mando'a" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_MANDOA">
+ <supports>ID_INTERNAL_SUPPORT_LANGUAGE_EXOTIC, Exotic</supports>
+ <description>
+   <p>Language of the Mandalorian.</p>
+ </description>
+ <setters>
+   <set name="Speakers">Mandalorian</set>
+   <set name="Script">Mando'a</set>
+   <set name="Exotic">True</set>
+ </setters>
+</element>
+
+<element name="Old Gungan" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_OLD_GUNGAN">
+ <supports>ID_INTERNAL_SUPPORT_LANGUAGE_EXOTIC, Exotic</supports>
+ <description>
+   <p>Ancient launguage of the Gungan.</p>
+ </description>
+ <setters>
+   <set name="Speakers">Gungan</set>
+   <set name="Script">Old Gungan</set>
+   <set name="Exotic">True</set>
+ </setters>
+</element>
+
+<element name="Sith" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_SITH">
+ <supports>ID_INTERNAL_SUPPORT_LANGUAGE_EXOTIC, Exotic</supports>
+ <description>
+   <p>Language of the Sith.</p>
+ </description>
+ <setters>
+   <set name="Speakers">Sith</set>
+   <set name="Script">Sith</set>
+   <set name="Exotic">True</set>
+ </setters>
+</element>
+
+<element name="Thykarann" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_THYKARANN">
+ <supports>ID_INTERNAL_SUPPORT_LANGUAGE_EXOTIC, Exotic</supports>
+ <description>
+   <p>Richer and more technical language of the Wookie.</p>
+ </description>
+ <setters>
+   <set name="Speakers">Wookie</set>
+   <set name="Script">Shyriiwook</set>
+   <set name="Exotic">True</set>
+ </setters>
+</element>
+
+<element name="Togruti" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_TOGRUTI">
+ <supports>ID_INTERNAL_SUPPORT_LANGUAGE_EXOTIC, Exotic</supports>
+ <description>
+   <p>Language of the Togruta.</p>
+ </description>
+ <setters>
+   <set name="Speakers">Togruta</set>
+   <set name="Script">Togruti</set>
+   <set name="Exotic">True</set>
+ </setters>
+</element>
+
+<element name="Xaczik" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_XACZIK">
+ <supports>ID_INTERNAL_SUPPORT_LANGUAGE_EXOTIC, Exotic</supports>
+ <description>
+   <p>Language of the Wookie of the Wartaki Islands.</p>
+ </description>
+ <setters>
+   <set name="Speakers">Wookie</set>
+   <set name="Script">Shyriiwook</set>
+   <set name="Exotic">True</set>
+ </setters>
+</element>
+
+<element name="Dathomiri" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_DATHOMIRI">
+ <supports>ID_INTERNAL_SUPPORT_LANGUAGE_EXOTIC, Exotic</supports>
+ <description>
+   <p>Language of the Dathomirian.</p>
+ </description>
+ <setters>
+   <set name="Speakers">Dathomirian</set>
+   <set name="Script">Dathomiri</set>
+   <set name="Exotic">True</set>
+ </setters>
+</element>
+
+<element name="Khilese" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_KHILESE">
+ <supports>ID_INTERNAL_SUPPORT_LANGUAGE_EXOTIC, Exotic</supports>
+ <description>
+   <p>Language of the Khil.</p>
+ </description>
+ <setters>
+   <set name="Speakers">Khil</set>
+   <set name="Script">Khilese</set>
+   <set name="Exotic">True</set>
+ </setters>
+</element>
+
+<element name="Miralukese" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_MIRALUKESE">
+ <supports>ID_INTERNAL_SUPPORT_LANGUAGE_EXOTIC, Exotic</supports>
+ <description>
+   <p>Language of the Miraluka.</p>
+ </description>
+ <setters>
+   <set name="Speakers">Miraluka</set>
+   <set name="Script">Miralukese</set>
+   <set name="Exotic">True</set>
+ </setters>
+</element>
+
+<element name="Trandoshan" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_TRANDOSHAN">
+ <supports>ID_INTERNAL_SUPPORT_LANGUAGE_EXOTIC, Exotic</supports>
+ <description>
+   <p>Language of the Trandoshan.</p>
+ </description>
+ <setters>
+   <set name="Speakers">Trandoshan</set>
+   <set name="Script">Trandoshan</set>
+   <set name="Exotic">True</set>
+ </setters>
+</element>
+
+<element name="Sriluurian" type="Language" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_LANGUAGE_SRILUURIAN">
+ <supports>ID_INTERNAL_SUPPORT_LANGUAGE_EXOTIC, Exotic</supports>
+ <description>
+   <p>Language of the Weequay.</p>
+ </description>
+ <setters>
+   <set name="Speakers">Weequay</set>
+   <set name="Script">Sriluurian</set>
+   <set name="Exotic">True</set>
+ </setters>
+</element>
+
+</elements>

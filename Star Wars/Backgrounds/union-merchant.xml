@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Union Merchant</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="union-merchant.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/union-merchant.xml" />
+		</update>
+	</info>
+
+	<element name="Union Merchant" type="Background" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_UNION_MERCHANT">
+    <description>
+    <ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Insight, Persuasion </li>
+        <li><strong>Other Proficiencies:</strong>One type of tool </li>
+        <li><strong>Languages:</strong>One of your choice </li>
+				<li><strong>Equipment:</strong>One type of tools, membership card, 15 cr </li>
+      </ul>
+      <div element="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_UNION_MEMBERSHIP" />
+    </description>
+      <setters>
+        <set name="short">Insight, Persuasion, One type of tool, One of your choice </set>
+      </setters>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+        <select type="Proficiency" name="Skill Proficiency (Union Merchant)" supports="Tool" />
+				<select type="Language" name="Language (Union Merchant)" supports="Standard||Exotic" />
+      </rules>
+    </element>
+
+    <element name="Feature: Union Membership" type="Background Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_UNION_MEMBERSHIP">
+      <supports>Background Feature</supports>
+		<description>
+			<p>As an established and respected member of a union, you can rely on certain benefits that membership provides. Your fellow union members will provide you with lodging and food if necessary, and pay for your funeral if needed. In some cities and towns, a union hall offers a central place to meet other members of your profession, which can be a good place to meet potential patrons, allies, or hirelings.</p>
+      <p class="indent">Unions often wield tremendous political power. If you are accused of a crime, your union will support you if a good case can be made for your innocence or the crime is justifiable. You can also gain access to powerful political figures through the union, if you are a member in good standing. Such connections might require the donation of money or trade goods to the guild’s coffers. You must pay dues of 5 gp per month to the union. If you miss payments, you must make up back dues to remain in the union’s good graces.</p>
+		</description>
+		<sheet alt="Union Membership">
+			<description>
+        <p>As an established and respected member of a union, you can rely on certain benefits that membership provides. Your fellow union members will provide you with lodging and food if necessary, and pay for your funeral if needed. In some cities and towns, a union hall offers a central place to meet other members of your profession, which can be a good place to meet potential patrons, allies, or hirelings.</p>
+        <p class="indent">Unions often wield tremendous political power. If you are accused of a crime, your union will support you if a good case can be made for your innocence or the crime is justifiable. You can also gain access to powerful political figures through the union, if you are a member in good standing. Such connections might require the donation of money or trade goods to the guild’s coffers. You must pay dues of 5 gp per month to the union. If you miss payments, you must make up back dues to remain in the union’s good graces.</p>
+      </description>
+		</sheet>
+	</element>
+
+</elements>

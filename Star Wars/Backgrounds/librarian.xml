@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Librarian</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="librarian.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/librarian.xml" />
+		</update>
+	</info>
+
+	<element name="Librarian" type="Background" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_LIBRARIAN">
+    <description>
+    <ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>History, and pick one from the following: Arcana, Nature, Religion </li>
+        <li><strong>Languages:</strong>Four of your choice </li>
+				<li><strong>Equipment:</strong>Writing utensils and paper, 10 cr </li>
+      </ul>
+      <div element="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_WEALTH_OF_KNOWLEDGE" />
+    </description>
+      <setters>
+        <set name="short">History, and pick one from the following: Arcana, Nature, Religion, 4 language of your choice, Writing utensils and paper, 10 cr</set>
+      </setters>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+        <select type="Proficiency" name="Skill Proficiency (Librarian)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_RELIGION" />
+        <select type="Language" name="Language (Librarian)" supports="Standard||Exotic" number="4" />
+      </rules>
+    </element>
+
+    <element name="Feature: Wealth Of Knowledge" type="Background Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_WEALTH_OF_KNOWLEDGE">
+      <supports>Background Feature</supports>
+		<description>
+			<p>Due to your connection to higher level knowledge you are welcomed into any library in Republic controlled space, including the Jedi Temple library on Coruscant. You also are well connected with upper level thinkers who can aid you with information if you have no library access.</p>
+		</description>
+		<sheet alt="Wealth Of Knowledge">
+			<description>Due to your connection to higher level knowledge you are welcomed into any library in Republic controlled space, including the Jedi Temple library on Coruscant. You also are well connected with upper level thinkers who can aid you with information if you have no library access.</description>
+		</sheet>
+	</element>
+
+</elements>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Mon Calamari</name>
+		<description>GM Binder</description>
+		<author />
+		<update version="0.0.1">
+			<file name="moncalamari.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Mon Calamari" type="Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACE_MON_CALAMARI">
+		<description>
+			<h4>Mon Calamari Traits</h4>
+			<p>Your Mon Calamari character has many different attributes that might be useful in the field:</p>
+			<p class="indent"><strong><i>Ability Score Increase.</i></strong> Charisma +1, Dexterity +2</p>
+      <p class="indent"><strong><i>Age.</i></strong> Up to 70 years.</p>
+			<p class="indent"><strong><i>Alignment.</i></strong> Tendency to good.</p>
+			<p class="indent"><strong><i>Size.</i></strong> Medium.</p>
+			<p class="indent"><strong><i>Speed.</i></strong> 30ft land, 60ft swimming.</p>
+			<p class="indent"><strong><i>Waterbreathing.</i></strong>Your Mon Calamari character can breath underwater.</p>
+      <p class="indent"><strong><i>Fish Eyes.</i></strong> You have advantage on Investigation and Perception checks because your eyes can focus on two different things at once.</p>
+      <p class="indent"><strong><i>Water-Lovers.</i></strong> You have advantage on all Dexterity and Strength checks and saving throws, as well as grappling, while underwater.</p>
+			<p class="indent"><strong><i>Languages.</i></strong> Basic, Mon Calamarian</p>
+		</description>
+		<sheet display="false" />
+			<setters />
+			<rules>
+				<stat name="Dexterity" value="2" />
+				<stat name="Charisma" value="1" />
+				<grant type="Size" id="ID_SIZE_MEDIUM" />
+				<stat name="Speed" value="30" bonus="base" />
+        <stat name="Speed:Swim" value="60" bonus="base" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_MON_CALAMARI_WATERBREATHING" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_MON_CALAMARI_FISH_EYES" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_MON_CALAMARI_WATER_LOVERS" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_MON_CALAMARIAN" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_BASIC" />
+			</rules>
+    </element>
+
+    <element name="Waterbreathing" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_MON_CALAMARI_WATERBREATHING">
+			<description>
+				<p>Your Mon Calamari character can breath underwater.</p>
+			</description>
+			<sheet>
+				<description>
+          <p>You can breath underwater.</p>
+        </description>
+			</sheet>
+			<rules />
+		</element>
+
+    <element name="Fish Eyes" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_MON_CALAMARI_FISH_EYES">
+			<description>
+				<p>You have advantage on Investigation and Perception checks because your eyes can focus on two different things at once.</p>
+			</description>
+			<sheet>
+				<description>
+          <p>You have advantage on Investigation and Perception checks because your eyes can focus on two different things at once.</p>
+        </description>
+			</sheet>
+			<rules />
+		</element>
+
+    <element name="Water-Lovers" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_MON_CALAMARI_WATER_LOVERS">
+			<description>
+				<p>You have advantage on all Dexterity and Strength checks and saving throws, as well as grappling, while underwater.</p>
+			</description>
+			<sheet>
+				<description>
+          <p>You have advantage on all Dexterity and Strength checks and saving throws, as well as grappling, while underwater.</p>
+        </description>
+			</sheet>
+			<rules />
+		</element>
+
+ </elements>

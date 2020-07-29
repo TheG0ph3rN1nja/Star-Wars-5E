@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Dug</name>
+		<description>GM Binder</description>
+		<author />
+		<update version="0.0.1">
+			<file name="dug.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Dug" type="Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACE_DUG">
+		<description>
+			<p>Dugs were slender, powerfully built beings with a somewhat humanoid build and a unique method of walking that hailed from the high gravity world Malastare. Their primary means of locomotion were their strong arms, and their lower limbs and feet were used for grappling and other fine motor manipulation. They hardly ever walked on their lower limbs. Sebulba was only once seen standing on his legs. Although most Dugs may walk on all four limbs, others liked to use their strong arms as legs and their feet as hands like they would normally do.</p>
+      <h4>Cruel and Crafty</h4>
+      <p>Due to their oppression under their Gran rulers who colonized Malastare, many Dugs often felt the need to throw around their strength in bids to establish dominance. As a result, they were known for their ill-tempered demeanor, and many were bullying thugs.</p>
+      <h4>Dug Names</h4>
+      <p class="indent"><strong><i>Dug Names:</i></strong> Andurgo, Bog'Ruhx, Darnada, Dewanga, Nakha, Preigo, Pugwis, Sebolto, Sebulba</p>
+			<h4>Dug Traits</h4>
+			<p>Your Dug character has many different attributes that might be useful in the field:</p>
+			<p class="indent"><strong><i>Ability Score Increase.</i></strong> Add +1 to Constitution and +2 to Strength.</p>
+      <p class="indent"><strong><i>Age.</i></strong> Up to 75 years.</p>
+			<p class="indent"><strong><i>Alignment.</i></strong> Usually chaotic.</p>
+			<p class="indent"><strong><i>Size.</i></strong> Up to ~3 feet. Your size is Small.</p>
+			<p class="indent"><strong><i>Speed.</i></strong> Because they use their upper limbs for locomotion, a dug's base movement speed is 25 feet.</p>
+			<p class="indent"><strong><i>Proficiency.</i></strong> Athletics.</p>
+			<p class="indent"><strong><i>Tool Proficiency.</i></strong> Engineer's tools.</p>
+			<p class="indent"><strong><i>Vehicle Proficiency.</i></strong> As a base character, you can be proficient with one additional vehicle.</p>
+      <p class="indent"><strong><i>Darkvision</i></strong> Due to Malastare's atmosphere, the planet is in a near constant state of darkness. Therefore, the Dug have evolved to be able to see clearly in the dark up to 60ft.</p>
+			<p class="indent"><strong><i>Languages.</i></strong> Dug, Basic.</p>
+		</description>
+		<sheet display="false" />
+			<setters>
+        <set name="names" type="custom">Andurgo, Bog'Ruhx, Darnada, Dewanga, Nakha, Preigo, Pugwis, Sebolto, Sebulba</set>
+        <set name="names-format">$(custom)</set>
+      </setters>
+			<rules>
+				<stat name="Strength" value="2" />
+				<stat name="Constitution" value="1" />
+				<grant type="Size" id="ID_SIZE_SMALL" />
+				<stat name="Speed" value="25" bonus="base" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+				<grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_ITEM_ENGINEERING_TOOLS" />
+				<select type="Proficiency" name="Tool Proficiency" supports="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SMALL||ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_MEDIUM||ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_LARGE|ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_WATER|ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND" />
+				<grant type="Vision" name="ID_VISION_DARKVISION" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_DUG" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_BASIC" />
+			</rules>
+    </element>
+
+
+ </elements>

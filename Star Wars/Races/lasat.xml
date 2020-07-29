@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Lasat</name>
+		<description>GM Binder</description>
+		<author />
+		<update version="0.0.1">
+			<file name="lasat.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Lasat" type="Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACE_LASAT">
+		<description>
+			<h4>Lasat Traits</h4>
+			<p>Your Lasat character has many different attributes that might be useful in the field:</p>
+			<p class="indent"><strong><i>Ability Score Increase.</i></strong> +1 Constitution, +2 Strength</p>
+      <p class="indent"><strong><i>Age.</i></strong> Up to 80 years.</p>
+			<p class="indent"><strong><i>Alignment.</i></strong> Good.</p>
+			<p class="indent"><strong><i>Size.</i></strong> Medium.</p>
+			<p class="indent"><strong><i>Speed.</i></strong> 35ft</p>
+			<p class="indent"><strong><i>Heightened Senses.</i></strong>Your Lasat character has advantage on Perception checks unless you are deafened.</p>
+      <p class="indent"><strong><i>Darkvision.</i></strong> 30ft.</p>
+      <p class="indent"><strong><i>Proficiency.</i></strong> Athletics, Perception.</p>
+			<p class="indent"><strong><i>Languages.</i></strong> Basic, Lasat</p>
+		</description>
+		<sheet display="false" />
+			<setters />
+			<rules>
+				<stat name="Strength" value="2" />
+				<stat name="Constitution" value="1" />
+				<grant type="Size" id="ID_SIZE_MEDIUM" />
+				<stat name="Speed" value="35" bonus="base" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_LASAT_HEIGHTENED_SENSES" />
+        <grant type="Vision" name="ID_VISION_DARKVISION" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_LASAT" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_BASIC" />
+			</rules>
+    </element>
+
+    <element name="Heightened Senses" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_LASAT_HEIGHTENED_SENSES">
+			<description>
+				<p>Your Lasat character has advantage on Perception checks unless you are deafened.</p>
+			</description>
+			<sheet>
+				<description>
+          <p>You have advantage on Perception checks unless you are deafened.</p>
+        </description>
+			</sheet>
+			<rules />
+		</element>
+
+ </elements>

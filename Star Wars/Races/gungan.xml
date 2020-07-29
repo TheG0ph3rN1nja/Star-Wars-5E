@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Gungan</name>
+		<description>GM Binder</description>
+		<author />
+		<update version="0.0.1">
+			<file name="gungan.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Gungan" type="Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACE_GUNGAN">
+		<description>
+			<p>The Gungans were a sentient, amphibious humanoid race native to the terrestrial planet known as Naboo. Prior to the Invasion of Naboo, an event that took place in 32 BBY, the Gungans were a largely isolationist society. They were able to combine machinery with biology. They lived in large bubble-like domes under water. Gungans had strong leg muscles for swimming and were aided by their long fin-like ears. Their somewhat lanky arms ended in four-fingered hands, and their feet had three stubby toes each. Females tended to be slightly smaller with sleeker faces. They often tied their long ears back.</p>
+      <h4>Divided</h4>
+      <p>The Gungans were separated into two races: the lanky orange, yellow or red-skinned Otolla race, and the heavier green-skinned Ankura race. However, they all exhibited many of the same basic physical traits.</p>
+      <p class="indent">Starting life as tadpoles, Gungans developed into tall beings with extremely flexible cartilaginous skeletons. Strong leg muscles allowed for powerful and quick frog-kick style swimming through water as well as a remarkable jumping ability while on land. Fin-like ears (called haillu) also aided them in swimming, as well as expressing emotions like aggression, friendship, and fear. They had partially retractable eyestalks with nictitating membranes when underwater. Green eyes were unusual amongst Gungans.</p>
+			<h4>Gungan Traits</h4>
+			<p>Your Gungan character has many different attributes that might be useful in the field:</p>
+			<p class="indent"><strong><i>Ability Score Increase.</i></strong> +2 Dexterity, +1 Strength</p>
+      <p class="indent"><strong><i>Age.</i></strong> Up to 70.</p>
+			<p class="indent"><strong><i>Alignment.</i></strong> Good.</p>
+			<p class="indent"><strong><i>Size.</i></strong> Medium.</p>
+			<p class="indent"><strong><i>Speed.</i></strong> 40ft walking and swimming.</p>
+			<p class="indent"><strong><i>Powerful Legs.</i></strong> Your jump height and distance is doubled.</p>
+      <p class="indent"><strong><i>Unnatural Luck</i></strong> If you roll a 1 on an attack roll, ability check, or saving throw, you may choose to reroll, but you must take the second roll.</p>
+			<p class="indent"><strong><i>Languages.</i></strong> Gungan, Basic.</p>
+		</description>
+		<sheet display="false" />
+			<setters />
+			<rules>
+				<stat name="Dexterity" value="2" />
+				<stat name="Strength" value="1" />
+				<grant type="Size" id="ID_SIZE_MEDIUM" />
+				<stat name="Speed" value="40" bonus="base" />
+        <stat name="Speed:Swim" value="40" bonus="base" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_GUNGAN_POWERFUL_LEGS" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_GUNGAN_UNNATURAL_LUCK" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_GUNGAN" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_BASIC" />
+			</rules>
+    </element>
+
+    <element name="Powerful Legs" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_GUNGAN_POWERFUL_LEGS">
+			<description>
+				<p>Your jump height and distance is doubled.</p>
+			</description>
+			<sheet>
+				<description>
+          <p>Your jump height and distance is doubled.</p>
+        </description>
+			</sheet>
+			<rules />
+		</element>
+
+    <element name="Unnatural Luck" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_GUNGAN_UNNATURAL_LUCK">
+			<description>
+				<p>If you roll a 1 on an attack roll, ability check, or saving throw, you may choose to reroll, but you must take the second roll.</p>
+			</description>
+			<sheet>
+				<description>
+          <p>If you roll a 1 on an attack roll, ability check, or saving throw, you may choose to reroll, but you must take the second roll.</p>
+        </description>
+			</sheet>
+			<rules />
+		</element>
+
+ </elements>

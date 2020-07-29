@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Force Fighting Styles</name>
+		<description>GM Binder</description>
+		<update version="0.0.1">
+			<file name="force-fighting-styles.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Force Fighting Style" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FIGHTING_STYLE">
+		<supports>Guardian, Sentinel, Mercenary</supports>
+		<description>
+			<p>At 1st level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again. When you choose a fighting style, you are also deciding which weapons your character starts with.</p>
+			<table class="Force Fighting Style">
+			<thead>
+				<tr><td class="col-5">Fighting Style</td><td class="left">Weapons</td></tr>
+			</thead>
+			<tr><td class="left">Ataru</td><td class="left">Lightsaber, Vibroblade</td></tr>
+			<tr><td class="left">Makashi</td><td class="left">Lightsaber</td></tr>
+			<tr><td class="left">Niman</td><td class="left">Double-bladed Lightsaber</td></tr>
+			<tr><td class="left">Shien</td><td class="left">Lightsaber Pike</td></tr>
+			<tr><td class="left">Soresu</td><td class="left">Lightsaber</td></tr>
+		</table>
+		</description>
+		<sheet display="false" />
+			<rules>
+				<select type="Class Feature" name="Force Fighting Style" supports="Force Fighting Style" />
+			</rules>
+	</element>
+
+	<element name="Ataru" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FIGHTING_STYLE_ATARU">
+		<supports>Force Fighting Style</supports>
+		<description>
+			<h4>Ataru</h4>
+			<p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack. If the second weapon is a lightsaber, you must be attuned with it to use this feature.</p>
+			<h4>Battle Mastery</h4>
+			<p>Starting at level 9, if you are dual wielding two lightsabers with which you are proficient, when you use a bonus action to cast a force ability followed by the Attack action, you may use a free action to make an attack with your off-hand saber.</p>
+		</description>
+		<sheet>
+		<description>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</description>
+		</sheet>
+			<rules>
+				<grant type="Fighting Style Feature" id="ID_GMBINDER_SW5E_FIGHTING_STYLE_FEATURE_BATTLE_MASTERY" level="9" supports="Gaurdian" />
+			</rules>
+	</element>
+
+	<element name="Battle Mastery" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_FIGHTING_STYLE_FEATURE_BATTLE_MASTERY">
+		<supports>Ataru</supports>
+		<description>
+			<p>Starting at level 9, if you are dual wielding two lightsabers with which you are proficient, when you use a bonus action to cast a force ability followed by the Attack action, you may use a free action to make an attack with your off-hand saber.</p>
+		</description>
+		<sheet usage="Free Action">
+		<description>If you are dual wielding two lightsabers with which you are proficient, when you use a bonus action to cast a force ability followed by the Attack action, you may use a free action to make an attack with your off-hand saber.</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="Mikashi" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FIGHTING_STYLE_MIKASHI">
+		<supports>Force Fighting Style</supports>
+		<description>
+			<h4>MIKASHI</h4>
+			<p>When you are wielding only one lightsaber you are attuned with, you gain a +2 bonus to damage rolls with it.</p>
+			<h4>Flurry</h4>
+			<p>Starting at 9th level, when you miss with an attack during your turn, you can immediately make an additional attack. You can only gain one additional attack on your turn with this ability.</p>
+		</description>
+		<sheet>
+		<description>When you are wielding only one lightsaber you are attuned with, you gain a +2 bonus to damage rolls with it.</description>
+		</sheet>
+			<rules>
+				<grant type="Fighting Style Feature" id="ID_GMBINDER_SW5E_FIGHTING_STYLE_FEATURE_FLURRY" level="9" supports="Gaurdian" />
+			</rules>
+	</element>
+
+	<element name="Flurry" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_FIGHTING_STYLE_FEATURE_FLURRY">
+		<supports>Mikashi</supports>
+		<description>
+			<p>Starting at 9th level, when you miss with an attack during your turn, you can immediately make an additional attack. You can only gain one additional attack on your turn with this ability.</p>
+		</description>
+		<sheet>
+		<description>When you miss with an attack during your turn, you can immediately make an additional attack. You can only gain one additional attack on your turn with this ability.</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="Niman" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FIGHTING_STYLE_NIMAN">
+		<supports>Force Fighting Style</supports>
+		<description>
+			<h4>NIMAN</h4>
+			<p>When you use a double-bladed lightsaber you are attuned with, you get a +2 bonus to attacks made with it.</p>
+			<h4>Double Bladed Fury</h4>
+			<p>At level 9, when wielding a double-bladed lightsaber you are attuned with, you can make a second attack as a free action whenever you use the Attack action.</p>
+		</description>
+		<sheet>
+		<description>When you use a double-bladed lightsaber you are attuned with, you get a +2 bonus to attacks made with it.</description>
+		</sheet>
+			<rules>
+				<grant type="Fighting Style Feature" id="ID_GMBINDER_SW5E_FIGHTING_STYLE_FEATURE_DOUBLE_BLADED_FURY" level="9" supports="Gaurdian" />
+			</rules>
+	</element>
+
+	<element name="Double Bladed Fury" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_FIGHTING_STYLE_FEATURE_DOUBLE_BLADED_FURY">
+		<supports>Niman</supports>
+		<description>
+			<p>At level 9, when wielding a double-bladed lightsaber you are attuned with, you can make a second attack as a free action whenever you use the Attack action.</p>
+		</description>
+		<sheet>
+		<description>When wielding a double-bladed lightsaber you are attuned with, you can make a second attack as a free action whenever you use the Attack action.</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="Shien" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FIGHTING_STYLE_SHIEN">
+		<supports>Force Fighting Style</supports>
+		<description>
+			<h4>Shien</h4>
+			<p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a lightsaber you are attuned with.</p>
+			<h4>Pike Mastery</h4>
+			<p>At level 9, you excel at defending narrow passageways, doorways, and other tight space. As a bonus action, you can enter a defensive stance that lasts until the start of your next turn. While in your defensive stance, you can make opportunity attacks without using your reaction, and you can use your reaction to make a melee attack against a creature that moves more than 5 feet while within your reach.</p>
+		</description>
+		<sheet>
+		<description>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll.</description>
+		</sheet>
+			<rules>
+				<grant type="Fighting Style Feature" id="ID_GMBINDER_SW5E_FIGHTING_STYLE_FEATURE_PIKE_MASTERY" level="9" supports="Gaurdian" />
+			</rules>
+	</element>
+
+	<element name="Pike Mastery" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_FIGHTING_STYLE_FEATURE_PIKE_MASTERY">
+		<supports>Shien</supports>
+		<description>
+			<p>At level 9, you excel at defending narrow passageways, doorways, and other tight space. As a bonus action, you can enter a defensive stance that lasts until the start of your next turn. While in your defensive stance, you can make opportunity attacks without using your reaction, and you can use your reaction to make a melee attack against a creature that moves more than 5 feet while within your reach.</p>
+		</description>
+		<sheet usage="Bonus Action">
+		<description>you can enter a defensive stance that lasts until the start of your next turn. While in your defensive stance, you can make opportunity attacks without using your reaction, and you can use your reaction to make a melee attack against a creature that moves more than 5 feet while within your reach.</description>
+		</sheet>
+			<rules />
+	</element>
+
+	<element name="Soresu" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FIGHTING_STYLE_SORESU">
+		<supports>Force Fighting Style</supports>
+		<description>
+			<h4>Soresu</h4>
+			<p>While you are wearing armor, you gain a +1 bonus to AC</p>
+			<h4>Parry</h4>
+			<p>Starting at level 9, as a reaction, when you are hit with an attack, you can choose to add your proficiency bonus to your AC.</p>
+		</description>
+		<sheet display="false" />
+			<rules>
+				<grant type="Fighting Style Feature" id="ID_GMBINDER_SW5E_FIGHTING_STYLE_FEATURE_PARRY" level="9" supports="Gaurdian" />
+				<stat name="ac" value="1" />
+			</rules>
+	</element>
+
+	<element name="Parry" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_FIGHTING_STYLE_FEATURE_PARRY">
+		<supports>Soresu</supports>
+		<description>
+			<p>Starting at level 9, as a reaction, when you are hit with an attack, you can choose to add your proficiency bonus to your AC.</p>
+		</description>
+		<sheet usage="Reaction">
+		<description>When you are hit with an attack, you can choose to add your proficiency bonus to your AC.</description>
+		</sheet>
+			<rules />
+	</element>
+
+</elements>

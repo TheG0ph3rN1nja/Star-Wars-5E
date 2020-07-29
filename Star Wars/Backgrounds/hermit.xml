@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Hermit</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="hermit.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/hermit.xml" />
+		</update>
+	</info>
+
+	<element name="Hermit" type="Background" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_HERMIT">
+    <description>
+    <ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Medicine, Religion </li>
+        <li><strong>Other Proficiencies:</strong>Medical Kit </li>
+        <li><strong>Languages:</strong>One of your choice </li>
+				<li><strong>Equipment:</strong>Med kit, 15 cr </li>
+      </ul>
+      <div element="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_DISCOVERY" />
+    </description>
+      <setters>
+        <set name="short">Medicine, Religion, Medical Kit, One type of tools, 1 language of your choice, a ceremonial plaque with the seal of your company, 15 cr</set>
+      </setters>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+        <grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_ITEM_MEDICAL_KIT" />
+        <select type="Language" name="Language (Hermit)" supports="Standard||Exotic" />
+      </rules>
+    </element>
+
+    <element name="Feature: Company Respect" type="Background Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_COMPANY_RESPECT">
+      <supports>Background Feature</supports>
+		<description>
+			<p>The quiet seclusion of your extended hermitage gave you access to a unique and powerful discovery. The exact nature of this revelation depends on the nature of your seclusion. It might be a great truth about the cosmos, the deities, the powerful beings of the outer planes, or the forces of nature. It could be a site that no one else has ever seen. You might have uncovered a fact that has long been forgotten, or unearthed some relic of the past that could rewrite history. It might be information that would be damaging to the people who or consigned you to exile, and hence the reason for your return to society. Work with your DM to determine the details of your discovery and its impact on the campaign.</p>
+		</description>
+		<sheet alt="Company Respect">
+			<description>The quiet seclusion of your extended hermitage gave you access to a unique and powerful discovery. The exact nature of this revelation depends on the nature of your seclusion. It might be a great truth about the cosmos, the deities, the powerful beings of the outer planes, or the forces of nature. It could be a site that no one else has ever seen. You might have uncovered a fact that has long been forgotten, or unearthed some relic of the past that could rewrite history. It might be information that would be damaging to the people who or consigned you to exile, and hence the reason for your return to society. Work with your DM to determine the details of your discovery and its impact on the campaign.</description>
+		</sheet>
+	</element>
+
+</elements>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Force Orders</name>
+		<description>GM Binder</description>
+		<author />
+		<update version="0.0.1">
+			<file name="force-orders.xml" url="" />
+		</update>
+	</info>
+
+  <element name="Force Order" type="Class Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FORCE_ORDER">
+    <description>
+      <h3>Force Orders</h3>
+      <p>The following are subclasses for the Consular, Guardian, and Sentinel classes. If you are playing Adept, you can ignore this section.</p>
+    </description>
+    <sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Force Order" supports="Force Order" />
+		</rules>
+  </element>
+
+  <element name="Gray" type="Archetype" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ORDER_GRAY">
+    <supports>Force Order</supports>
+    <description>
+      <h4>Gray</h4>
+      <p>The Order of the Gray uses the force to its absolute limits. Followers of this order are known as Grays. They use force energy to modify their bodies, strengthening them against attack and turning themselves into living weapons.</p>
+      <p class="indent">Their mastery of the force form grants them their name, for Grays are the balance between light and dark.</p>
+      <div element="ID_GMBINDER_SW5E_ORDER_FEATURE_GRAY_IMMORTAL_DURABILITY" />
+      <div element="ID_GMBINDER_SW5E_ORDER_FEATURE_GRAY_FORCE_RESILIENCE" />
+      <div element="ID_GMBINDER_SW5E_ORDER_FEATURE_GRAY_SURGE_OF_HEALTH" />
+      <div element="ID_GMBINDER_SW5E_ORDER_FEATURE_GRAY_IMMORTAL_WILL" />
+    </description>
+    <sheet display="false" />
+		<rules>
+      <grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ORDER_FEATURE_GRAY_IMMORTAL_DURABILITY" level="1"/>
+      <grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ORDER_FEATURE_GRAY_FORCE_RESILIENCE" level="3"/>
+      <grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ORDER_FEATURE_GRAY_SURGE_OF_HEALTH" level="6"/>
+      <grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ORDER_FEATURE_GRAY_IMMORTAL_WILL" level="14"/>
+		</rules>
+  </element>
+
+  <element name="Immortal Durability" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ORDER_FEATURE_GRAY_IMMORTAL_DURABILITY">
+    <description>
+      <p>Starting at 1st level, your hit point maximum increases by 1 per force wielder level. In addition, while you aren’t wearing armor or wielding a shield, your base AC equals 10 + your Dexterity modifier + your Constitution modifier.</p>
+    </description>
+    <sheet>
+      <description>Your hit point maximum increases by {{hp:immortal-durability}}. While you aren’t wearing armor or wielding a shield, your base AC equals {{ac:unarmored defense gray}}</description>
+    </sheet>
+    <rules>
+      <stat name="hp:immortal-durability" value="level" />
+      <stat name="hp" value="hp:immortal-durability" />
+
+      <stat name="ac:unarmored defense gray:base" value="10" />
+      <stat name="ac:unarmored defense gray:dexterity" value="dexterity:modifier" />
+      <stat name="ac:unarmored defense gray:constitution" value="constitution:modifier" />
+      <stat name="ac:unarmored defense gray" value="ac:unarmored defense gray:base" />
+      <stat name="ac:unarmored defense gray" value="ac:unarmored defense gray:dexterity" />
+      <stat name="ac:unarmored defense gray" value="ac:unarmored defense gray:constitution" />
+      <stat name="ac:calculation" value="ac:unarmored defense gray" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Unarmored Defense (Gray)" />
+    </rules>
+  </element>
+
+  <element name="Force Resilience" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ORDER_FEATURE_GRAY_FORCE_RESILIENCE">
+    <description>
+      <p>Starting at 3rd level, your force energy grants you extraordinary fortitude. At the start of each of your turns, you gain temporary hit points equal to your force ability modifier (minimum of 0) if you have at least 1 hit point.</p>
+    </description>
+    <sheet>
+      <description>At the start of each of your turns, you gain temporary hit points equal to your spellcasting modifier if you have at least 1 hit point.</description>
+    </sheet>
+    <rules />
+  </element>
+
+  <element name="Surge of Health" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ORDER_FEATURE_GRAY_SURGE_OF_HEALTH">
+    <description>
+      <p>Starting at 6th level, you can draw on your focus to escape death’s grasp. As a reaction when you take damage, you can halve that damage against you. Your focus immediately ends if it’s active, and you can’t use it until you finish a short or long rest. You can’t use this feature if you can’t use your focus.</p>
+    </description>
+    <sheet action="Reaction" usage="Once/Short Rest">
+      <description>As a reaction when you take damage, you can halve that damage against you. Your focus immediately ends if it’s active.</description>
+    </sheet>
+    <rules />
+  </element>
+
+  <element name="Immortal Will" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ORDER_FEATURE_GRAY_IMMORTAL_WILL">
+    <description>
+      <p>Starting at 14th level, you can draw on your reserves of force power to survive beyond death. At the end of your turn while at 0 hit points, you can spend 5 force points to immediately regain a number of hit points equal to your force wielder level + your Constitution modifier.</p>
+    </description>
+    <sheet>
+      <description>At the end of your turn while at 0 hit points, you can spend 5 force points to immediately regain a number of hit points equal to {{temp:immortal}}</description>
+    </sheet>
+    <rules>
+      <stat name="temp:immortal:level" value="level" />
+      <stat name="temp:immortal:constitution" value="constitution:modifier" />
+
+      <stat name="temp:immortal" value="temp:immortal:level" />
+      <stat name="temp:immortal" value="temp:immortal:constitution" />
+
+      <stat name="temp:calculation" value="temp:immortal" bonus="calculation" />
+    </rules>
+  </element>
+
+  <element name="Jedi" type="Archetype" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ORDER_JEDI">
+    <supports>Force Order</supports>
+    <description>
+      <h4>Jedi</h4>
+      <p>Force wielders of the Order of the Jedi delve into the world of emotion, mastering their inner life to such an extent that they can manipulate and amplify the emotions of others with the same ease that an artist shapes clay. Known as Avatars, these mystics vary from tyrants to inspiring leaders who are loved by their followers.</p>
+      <p class="indent">Jedi can bring out extreme emotions in the people around them. For their allies, they can lend hope, ferocity, and courage, transforming a fighting band into a deadly, unified force. For their enemies, they bring fear, disgust, and trepidation that can make even the most hardened veteran act like a shaky rookie.</p>
+      <div element="ID_GMBINDER_SW5E_ORDER_FEATURE_JEDI_BREADTH_OF_KNOWLEDGE" />
+      <div element="ID_GMBINDER_SW5E_ORDER_FEATURE_JEDI_FORCE_IN_BATTLE" />
+      <div element="ID_GMBINDER_SW5E_ORDER_FEATURE_JEDI_FORCE_IN_HEALING" />
+      <div element="ID_GMBINDER_SW5E_ORDER_FEATURE_JEDI_FORCE_IN_SPEED" />
+    </description>
+    <sheet display="false" />
+		<rules>
+      <grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ORDER_FEATURE_JEDI_BREADTH_OF_KNOWLEDGE" level="1"/>
+      <grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ORDER_FEATURE_JEDI_FORCE_IN_BATTLE" level="3"/>
+      <grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ORDER_FEATURE_JEDI_FORCE_IN_HEALING" level="6"/>
+      <grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ORDER_FEATURE_JEDI_FORCE_IN_SPEED" level="14"/>
+		</rules>
+  </element>
+
+  <element name="Breadth of Knowledge" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ORDER_FEATURE_JEDI_BREADTH_OF_KNOWLEDGE">
+    <description>
+      <p>At 1st level, you gain the ability to extend your knowledge. When you finish a long rest, you gain two proficiencies of your choice: two tools, two skills, or one of each. You can replace one or both of these selections with languages. This benefit lasts until you finish a long rest.</p>
+    </description>
+    <sheet usage="Once/Long Rest">
+      <description>You gain two proficiencies of your choice choosing from languages, skills, and tools.</description>
+    </sheet>
+    <rules />
+  </element>
+
+  <element name="Force in Battle" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ORDER_FEATURE_JEDI_FORCE_IN_BATTLE">
+    <description>
+      <p>Starting at 3rd level, you project an inspiring aura. While you aren’t incapacitated, each ally within 30 feet of you who can see you gains a +2 bonus to initiative rolls.</p>
+    </description>
+    <sheet>
+      <description>While you aren’t incapacitated, each ally within 30 feet of you who can see you gains a +2 bonus to initiative rolls.</description>
+    </sheet>
+    <rules />
+  </element>
+
+  <element name="Force in Healing" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ORDER_FEATURE_JEDI_FORCE_IN_HEALING">
+    <description>
+      <p>Beginning at 6th level, you project an aura of resilience. While you aren’t incapacitated, each ally within 30 feet of you who can see you regains additional hit points equal to your force ability modifier (minimum of 0) whenever they regain hit points from a force discipline.</p>
+    </description>
+    <sheet>
+      <description>While you aren’t incapacitated, each ally within 30 feet of you who can see you regains additional hit points equal to your force ability modifier (minimum of 0) whenever they regain hit points from a force discipline.</description>
+    </sheet>
+    <rules />
+  </element>
+
+  <element name="Force in Speed" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ORDER_FEATURE_JEDI_FORCE_IN_SPEED">
+    <description>
+      <p>Starting at 14th level, you project an aura of speed. While you aren’t incapacitated, any ally within 30 feet of you who can see you can take the Dash action as a bonus action.</p>
+    </description>
+    <sheet>
+      <description>While you aren’t incapacitated, any ally within 30 feet of you who can see you can take the Dash action as a bonus action.</description>
+    </sheet>
+    <rules />
+  </element>
+
+  <element name="Sith" type="Archetype" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ORDER_SITH">
+    <supports>Force Order</supports>
+    <description>
+      <h4>Jedi</h4>
+      <p>Force wielders of the Order of the Sith keep their minds in a strange, rarified state. They seek to accumulate as much power as possible, as they quest to unravel the mysteries of the multiverse and seek the underlying structure of all things. At the same time, they perceive a bizarre, living web of power they call the noosphere.</p>
+      <p class="indent">Sith, as their name indicates, delight in travel, exploration, and discovery. They desire to accumulate as much power as possible, and the pursuit of secrets and hidden lore can become an obsession for them.</p>
+      <div element="ID_GMBINDER_SW5E_ORDER_FEATURE_SITH_ARMOR_TRAINING" />
+      <div element="ID_GMBINDER_SW5E_ORDER_FEATURE_SITH_ELEMENTAL_ATTUNEMENT" />
+      <div element="ID_GMBINDER_SW5E_ORDER_FEATURE_SITH_FORCE_SURGE" />
+      <div element="ID_GMBINDER_SW5E_ORDER_FEATURE_SITH_CUTTING_RESONANCE" />
+    </description>
+    <sheet display="false" />
+		<rules>
+      <grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ORDER_FEATURE_SITH_ARMOR_TRAINING" level="1"/>
+      <grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ORDER_FEATURE_SITH_ELEMENTAL_ATTUNEMENT" level="3"/>
+      <grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ORDER_FEATURE_SITH_FORCE_SURGE" level="6"/>
+      <grant type="Archetype Feature" id="ID_GMBINDER_SW5E_ORDER_FEATURE_SITH_CUTTING_RESONANCE" level="14"/>
+		</rules>
+  </element>
+
+  <element name="Armor Training" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ORDER_FEATURE_SITH_ARMOR_TRAINING">
+    <description>
+      <p>At 1st level, you gain proficiency with medium armor and shields.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+    </rules>
+  </element>
+
+  <element name="Elemental Attunement" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ORDER_FEATURE_SITH_ELEMENTAL_ATTUNEMENT">
+    <description>
+      <p>Starting at 3rd level, when a creature’s resistance reduces the damage dealt by a force ability of yours, you can spend 1 force point to cause that use of the discipline to ignore the creature’s resistance. You can’t spend this point if doing so would increase the ability’s cost above your force limit.</p>
+    </description>
+    <sheet>
+      <description>When a creature’s resistance reduces the damage dealt by a force ability of yours, you can spend 1 force point to cause that use of the discipline to ignore the creature’s resistance. You can’t spend this point if doing so would increase the ability’s cost above your force limit.</description>
+    </sheet>
+    <rules />
+  </element>
+
+  <element name="Force Surge" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ORDER_FEATURE_SITH_FORCE_SURGE">
+    <description>
+      <p>Starting at 6th level, you can overload your focus to unleash a devastating lightning attack. Using an action, you release force energy from your fingertips that manifests itself into a cone of lightning. The cone travels 15ft, and any creature caught in the cone must make a Dexterity saving throw or take 3d10 lightning damage. A creature that saves the throw takes half damage. Your focus immediately ends if it’s active, and you can’t use it until you finish a short or long rest.</p>
+      <p class="indent">The number of damage die increases at level 10 to 5d10, and at level 18 to 7d10.</p>
+      <p class="indent">At level 14, if a creature fails the save, it is stunned for one round.</p>
+      <p class="indent">You can’t use this feature if you can’t use your focus.</p>
+    </description>
+    <sheet action="Action" usage="Once/Short Rest">
+      <description>Using an action, you release force energy from your fingertips that manifests itself into a cone of lightning. The cone travels 15ft, and any creature caught in the cone must make a Dexterity saving throw or take {{force-surge:dice:number}}d10 lightning damage.</description>
+    </sheet>
+    <rules>
+      <stat name="force-surge:dice:number" value="3" bonus="force-surge" level="6" />
+			<stat name="force-surge:dice:number" value="5" bonus="force-surge" level="10" />
+			<stat name="force-surge:dice:number" value="7" bonus="force-surge" level="18" />
+    </rules>
+  </element>
+
+  <element name="Cutting Resonance" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ORDER_FEATURE_SITH_CUTTING_RESONANCE">
+    <description>
+      <p>At 14th level, you gain the ability to infuse your weapon attacks with force energy. Once on each of your turns when you hit a creature with a weapon, you can deal an extra 2d8 necrotic damage to the target. This extra damage can only be applied once per turn.</p>
+    </description>
+    <sheet usage="Once/Per Turn">
+      <description>When you hit a creature with a weapon, you can deal an extra 2d8 necrotic damage to the target.</description>
+    </sheet>
+    <rules />
+  </element>
+
+</elements>

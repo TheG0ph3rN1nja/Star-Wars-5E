@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Mandalorian</name>
+		<description>GM Binder</description>
+		<author />
+		<update version="0.0.1">
+			<file name="mandalorian.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Mandalorian" type="Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACE_MANDALORIAN">
+		<description>
+      <h4>Background: Mandalorian</h4>
+      <p><i>In five millennia, the Mandalorians fought with and against a thousand armies on a thousand worlds. They learned to speak as many languages and absorbed weapons technology and tactics from every war. And yet, despite the overwhelming influence of alien cultures, and the absence of a true homeworld and even species, their own language not only survived but changed little, their way of life and their philosophy remained untouched, and their ideals and sense of family, of identify, of nation, were only strengthened.</i></p>
+      <h4>Tribal Warriors</h4>
+      <p>The Mandalorians—known in Mando'a as the Mando'ade, or "Children of Mandalore"—were a nomadic group of clan-based people consisting of members from multiple species and multiple genders, all bound by a common culture.</p>
+      <p class="indent">In their early years, Mandalorian culture revolved around battle, with war being a source of honor and pride in their community. The leader of the Mandalorians was known as the Mand'alor, translating to "Sole Ruler" and was rendered as "Mandalore" in Basic. Throughout their history, the Mandalorians were frequently allied with the Sith, perhaps most notably the Sith Lord Exar Kun, and held a certain distrust and general dislike for the Jedi Order. However, they would not hesitate to cooperate with the Jedi if a partnership between the two groups was mutually beneficial.</p>
+      <h4>Race</h4>
+      <p>A Dathomirian, Human, Twi'lek, or Zabrak can be a Mandalorian.</p>
+      <h4>Mandalorian Names</h4>
+      <p>Mandalorians placed little importance on birthplace or citizenship, and so had no official "state" as understood by galactic politics. Mandalorian society was a classical meritocracy, where rank and status meant nothing in comparison to a being's actions and achievements.[3] Mandalorian clans were led by chieftains—usually senior members of the clans chosen for their wisdom—and the loose affiliation and cooperation between them was the closest the Mandalorians had to a standard government.</p>
+      <p class="indent"><strong><i>Male Names:</i></strong>Akero, Baltan, Boba, Cassuss, Jango, Levet, Takan, Thraijon, Vhonte</p>
+      <p class="indent"><strong><i>Female Names:</i></strong>Hayar, Karin, Mari, Mij, Ohta, Sabine, Vera</p>
+      <p class="indent"><strong><i>Clan Names:</i></strong>Bralor, Beviin, Fett, Ordo, Skirata, Vevut, Vizsla, Wren</p>
+			<h4>Mandalorian Traits</h4>
+			<p>Your mandalorian character has many different attributes that might be useful in the field:</p>
+			<p class="indent"><strong><i>Alignment.</i></strong> Mandalorians tend to align with lawful evil, but can be any alignment.</p>
+			<p class="indent"><strong><i>Equipment.</i></strong> Mandalorian combat armor (+1), Mandalorian blaster or sword (+1).</p>
+			<p class="indent"><strong><i>Proficiency.</i></strong> You are proficient with Mandalorian armor and Mandalorian-made weapons.</p>
+      <p class="indent"><strong><i>Skill.</i></strong> Repairs, one of your choice</p>
+			<p class="indent"><strong><i>Languages.</i></strong> Mando'a, Basic, two of your choice.</p>
+      <p class="indent"><strong><i>Subrace.</i></strong> Two main subraces of arkanians exist in the Star Wars Universe: pure-bloods and offshoots. Choose one of these subraces.</p>
+		</description>
+		<sheet display="false" />
+			<setters>
+        <set name="names" type="male">Akero, Baltan, Boba, Cassuss, Jango, Levet, Takan, Thraijon, Vhonte</set>
+        <set name="names-format">$(male)</set>
+        <set name="names" type="female">Hayar, Karin, Mari, Mij, Ohta, Sabine, Vera</set>
+        <set name="names-format">$(female)</set>
+        <set name="names" type="surname">Bralor, Beviin, Fett, Ordo, Skirata, Vevut, Vizsla, Wren</set>
+        <set name="names-format">$(female)</set>
+      </setters>
+			<rules>
+        <grant type="Proficiency" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_MANDALORIAN_PROFICIENCY" />
+        <grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_SKILL_REPAIRS" />
+        <select type="Proficiency" name="Skill Proficiency (Mandalorian)" supports="Skill" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_MANDOA" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_BASIC" />
+        <select type="Language" name="Language (Mandalorian)" supports="Stamdard||Exotic" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_MANDALORIAN_SUBRACE" />
+			</rules>
+    </element>
+
+    <element name="Proficiency" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_MANDALORIAN_PROFICIENCY">
+			<description>
+				<p>You are proficient with Mandalorian armor </p>
+			</description>
+			<sheet>
+				<description>
+          <p>You are proficient with Mandalorian armor </p>
+        </description>
+			</sheet>
+			<rules>
+        <grant type="Proficiency" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_MANDALORIAN" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MANDOLORIAN_ARMOR" />
+      </rules>
+		</element>
+
+    <element name="Weapon Proficiency (Madalorian Weapons)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_MANDALORIAN">
+  		<supports>ID_INTERNAL_WEAPON</supports>
+  	</element>
+
+    <append id="ID_PROFICIENCY_WEAPON_PROFICIENCY">
+  		<rules>
+  			<grant type="ID_GMBINDER_SW5E_PROFICIENCY_WEAPON_PROFICIENCY_MANDALORIAN" />
+      </rules>
+    </append>
+
+    <element name="Armor Proficiency (Madalorian Armor)" type="Proficiency" source="GM Binder SW5E" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MANDOLORIAN_ARMOR">
+  		<supports>ID_INTERNAL_WEAPON</supports>
+  	</element>
+
+    <append id="ID_PROFICIENCY_ARMOR_PROFICIENCY">
+  		<rules>
+  			<grant type="ID_PROFICIENCY_ARMOR_PROFICIENCY_MANDOLORIAN_ARMOR" />
+      </rules>
+    </append>
+
+    <element name="Mandalorian Subrace" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_MANDALORIAN_SUBRACE">
+      <description />
+      <sheet display="false" />
+      <rules>
+        <select type="Sub Race" name="Mandalorian Subrace" supports="Mandalorian" />
+      </rules>
+    </element>
+
+    <element name="Dathomirian Mandolorian" type="Sub Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SUB_RACE_DATHOMIRIAN_MANDALORIAN">
+      <supports>Mandalorian</supports>
+      <description>
+  			<h4>Dathomirian Traits</h4>
+  			<p>Your Dathomirian character has many different attributes that might be useful in the field:</p>
+  			<p class="indent"><strong><i>Ability Score Increase.</i></strong> Your Intelligence score increases by 2 and your Dexterity score increases by 1.</p>
+        <p class="indent"><strong><i>Age.</i></strong> Up to 90 years.</p>
+        <p class="indent"><strong><i>Size.</i></strong> Medium</p>
+  			<p class="indent"><strong><i>Speed.</i></strong> Your base movement speed is 40 feet.</p>
+      </description>
+      <sheet display="false">
+        <description>
+          <h4>Dathomirian Traits</h4>
+    			<p>Your Dathomirian character has many different attributes that might be useful in the field:</p>
+    			<p class="indent"><strong><i>Ability Score Increase.</i></strong> Your Intelligence score increases by 2 and your Dexterity score increases by 1.</p>
+          <p class="indent"><strong><i>Age.</i></strong> Up to 90 years.</p>
+          <p class="indent"><strong><i>Size.</i></strong> Medium</p>
+    			<p class="indent"><strong><i>Speed.</i></strong> Your base movement speed is 40 feet.</p>
+        </description>
+      </sheet>
+      <rules>
+        <stat name="Intelligence" value="2" />
+        <stat name="Dexterity" value="1" />
+				<grant type="Size" id="ID_SIZE_MEDIUM" />
+				<stat name="Speed" value="40" bonus="base" />
+      </rules>
+    </element>
+
+    <element name="Human Mandolorian" type="Sub Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SUB_RACE_HUMAN_MANDALORIAN">
+      <supports>Mandalorian</supports>
+      <description>
+        <h4>HUMAN TRAITS</h4>
+        <p>It’s hard to make generalizations about humans, but your human character has these traits.</p>
+        <span class="feature">Ability Score Increase.</span>Your ability scores each increase by 1.<br />
+        <span class="feature">Age.</span>Humans reach adulthood in their late teens and live less than a century.<br />
+        <span class="feature">Size.</span>Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium.<br />
+        <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br />
+      </description>
+      <sheet display="false">
+        <description>
+          <p>It’s hard to make generalizations about humans, but your human character has these traits.</p>
+          <span class="feature">Ability Score Increase.</span>Your ability scores each increase by 1.<br />
+          <span class="feature">Age.</span>Humans reach adulthood in their late teens and live less than a century.<br />
+          <span class="feature">Size.</span>Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium.<br />
+          <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br />
+        </description>
+      </sheet>
+      <rules>
+        <stat name="Strength" value="1" />
+        <stat name="Dexterity" value="1" />
+        <stat name="Constitution" value="1" />
+        <stat name="Intelligence" value="1" />
+        <stat name="Wisdom" value="1" />
+        <stat name="Charisma" value="1" />
+				<grant type="Size" id="ID_SIZE_MEDIUM" />
+				<stat name="Speed" value="30" bonus="base" />
+      </rules>
+    </element>
+
+    <element name="Twi'lek Mandolorian" type="Sub Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SUB_RACE_TWILEK_MANDALORIAN">
+      <supports>Mandalorian</supports>
+      <description>
+        <h4>Twi'lek Traits</h4>
+  			<p>Your Twi'lek character has many different attributes that might be useful in the field:</p>
+  			<p class="indent"><strong><i>Ability Score Increase.</i></strong> Charisma +2, Dexterity +1.</p>
+        <p class="indent"><strong><i>Age.</i></strong> Up to 80 years.</p>
+  			<p class="indent"><strong><i>Size.</i></strong> Medium</p>
+  			<p class="indent"><strong><i>Speed.</i></strong> 40ft.</p>
+      </description>
+      <sheet display="false">
+        <description>
+          <h4>Twi'lek Traits</h4>
+    			<p>Your Twi'lek character has many different attributes that might be useful in the field:</p>
+    			<p class="indent"><strong><i>Ability Score Increase.</i></strong> Charisma +2, Dexterity +1.</p>
+          <p class="indent"><strong><i>Age.</i></strong> Up to 80 years.</p>
+    			<p class="indent"><strong><i>Size.</i></strong> Medium</p>
+    			<p class="indent"><strong><i>Speed.</i></strong> 40ft.</p>
+        </description>
+      </sheet>
+      <rules>
+        <stat name="Charisma" value="2" />
+        <stat name="Dexterity" value="1" />
+				<grant type="Size" id="ID_SIZE_MEDIUM" />
+				<stat name="Speed" value="40" bonus="base" />
+      </rules>
+    </element>
+
+    <element name="Zabrak Mandolorian" type="Sub Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_SUB_RACE_ZABRAK_MANDALORIAN">
+      <supports>Mandalorian</supports>
+      <description>
+        <h4>Zabrak Traits</h4>
+  			<p>Your Zabrak character has many different attributes that might be useful in the field:</p>
+  			<p class="indent"><strong><i>Ability Score Increase.</i></strong> +2 to one ability score and +1 to another.</p>
+        <p class="indent"><strong><i>Age.</i></strong> Up to 80.</p>
+  			<p class="indent"><strong><i>Size.</i></strong> Medium.</p>
+  			<p class="indent"><strong><i>Speed.</i></strong> 30ft.</p>
+      </description>
+      <sheet display="false">
+        <description>
+          <h4>Zabrak Traits</h4>
+    			<p>Your Zabrak character has many different attributes that might be useful in the field:</p>
+    			<p class="indent"><strong><i>Ability Score Increase.</i></strong> +2 to one ability score and +1 to another.</p>
+          <p class="indent"><strong><i>Age.</i></strong> Up to 80.</p>
+    			<p class="indent"><strong><i>Size.</i></strong> Medium.</p>
+    			<p class="indent"><strong><i>Speed.</i></strong> 30ft.</p>
+        </description>
+      </sheet>
+      <rules>
+        <select type="Racial Trait" name="Ability Score (Zabrak Mandalorian)" supports="Zabrak Mandalorian" number="1" />
+				<select type="Ability Score Improvement" name="Ability Score Increase, Zabrak Madalorian" supports="ID_INTERNAL_ASI_STRENGTH|ID_INTERNAL_ASI_DEXTERITY|ID_INTERNAL_ASI_INTELLIGENCE|ID_INTERNAL_ASI_WISDOM|ID_INTERNAL_ASI_CHARISMA" number="2"/>
+				<grant type="Size" id="ID_SIZE_MEDIUM" />
+				<stat name="Speed" value="30" bonus="base" />
+      </rules>
+    </element>
+
+  </elements>

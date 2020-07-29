@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Outlaw</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="outlaw.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/outlaw.xml" />
+		</update>
+	</info>
+
+	<element name="Outlaw" type="Background" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND__OUTLAW">
+    <description>
+    <ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Stealth, and pick 1 depending on your specialty: Deception, Security </li>
+        <li><strong>Other Proficiencies:</strong>One gaming kit, Thieves’ tools </li>
+				<li><strong>Equipment:</strong>Thieves’ tools, crowbar, hacking equipment, detonator, 15 cr </li>
+      </ul>
+      <div element="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_OUTLAW_CONTRACT" />
+    </description>
+      <setters>
+        <set name="short">Stealth, and pick 1 depending on your specialty: Deception, Intimidation, One gaming kit, Thieves’ tools, Thieves’ tools, crowbar, hacking equipment, detonator, 15 crYou have a reliable and trustworthy contact who acts as your liaison to a network of other criminals. You know how to get messages to and from your contact, even over great distances; specifically, you know the local messengers, corrupt caravan masters, and seedy sailors who can deliver messages for you.</set>
+      </setters>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+        <select type="Proficiency" name="Tool Proficiency (Outlaw)" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_GMBINDER_SW5E_PROFICIENCY_SKILL_SECURITY" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+        <select type="Proficiency" name="Tool Proficiency (Outlaw)" supports="Gaming Set" />
+      </rules>
+    </element>
+
+    <element name="Feature: Outlaw Contract" type="Background Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_OUTLAW_CONTRACT">
+      <supports>Background Feature</supports>
+		<description>
+			<p>You have a reliable and trustworthy contact who acts as your liaison to a network of other criminals. You know how to get messages to and from your contact, even over great distances; specifically, you know the local messengers, corrupt caravan masters, and seedy sailors who can deliver messages for you.</p>
+		</description>
+		<sheet alt="Outlaw Contract">
+			<description>You have a reliable and trustworthy contact who acts as your liaison to a network of other criminals. You know how to get messages to and from your contact, even over great distances; specifically, you know the local messengers, corrupt caravan masters, and seedy sailors who can deliver messages for you.</description>
+		</sheet>
+	</element>
+
+</elements>

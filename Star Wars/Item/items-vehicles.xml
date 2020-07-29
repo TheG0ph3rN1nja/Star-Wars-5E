@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Mounts &amp; Vehicles</name>
+    <description>GM Binder</description>
+    <author />
+    <update version="0.0.1">
+      <file name="items-vehicles.xml" url="" />
+    </update>
+  </info>
+
+  <element name="Tool Proficiency (Space Vehicles)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE">
+		<supports>ID_INTERNAL_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES</supports>
+	</element>
+
+  <element name="Tool Proficiency (Space Vehicles Small)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SMALL">
+		<supports>ID_INTERNAL_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE</supports>
+	</element>
+  <element name="Tool Proficiency (Space Vehicles Medium)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_MEDIUM">
+		<supports>ID_INTERNAL_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE</supports>
+	</element>
+  <element name="Tool Proficiency (Space VehiclesLarge)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_LARGE">
+		<supports>ID_INTERNAL_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE</supports>
+	</element>
+
+  <append id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES">
+		<rules>
+			<grant type="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SMALL" />
+      <grant type="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_MEDIUM" />
+      <grant type="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_LARGE" />
+      <grant type="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SITH_STARSHIP" />
+      <grant type="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_BT7_THUNDERCLAP" />
+      <grant type="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_FURY_INTERCEPTOR" />
+      <grant type="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_LIBERATOR" />
+      <grant type="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_D5_MANTIS" />
+      <grant type="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SAVAGE_STARFIGHTER" />
+      <grant type="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_AUREK_STARFIGHTER" />
+      <grant type="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_XS_STOCK" />
+      <grant type="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_DYNAMIC" />
+      <grant type="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_MINISTRY" />
+      <grant type="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_ASF01_BWING_STARFIGHTER" />
+      <grant type="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_X70B_PHANTOM" />
+      <grant type="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_VENATOR" />
+      <grant type="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_DERRIPHAN" />
+      <grant type="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_PRAETORIAN" />
+      <grant type="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_HAMMERHEAD" />
+      <grant type="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_HAMMERHEAD_II" />
+      <grant type="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_VALOR" />
+    </rules>
+  </append>
+
+  <element name="Sith Starship" type="Item" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ITEM_SITH_STARSHIP">
+    <supports>ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SMALL</supports>
+		<description>
+			<p><strong><em>Speed.</em></strong> 3500ft</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">10000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>
+      <set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SITH_STARSHIP</set>
+		</setters>
+	</element>
+
+  <element name="BT-7 Thunderclap" type="Item" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ITEM_BT7_THUNDERCLAP">
+    <supports>ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SMALL</supports>
+		<description>
+			<p><strong><em>Speed.</em></strong> 3000ft</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">12000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>
+      <set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_BT7_THUNDERCLAP</set>
+		</setters>
+	</element>
+
+  <element name="Fury Interceptor" type="Item" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ITEM_FURY_INTERCEPTOR">
+    <supports>ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SMALL</supports>
+		<description>
+			<p><strong><em>Speed.</em></strong> 4000ft</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">14000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>
+      <set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_FURY_INTERCEPTOR</set>
+		</setters>
+	</element>
+
+  <element name="Liberator" type="Item" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ITEM_LIBERATOR">
+    <supports>ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SMALL</supports>
+		<description>
+			<p><strong><em>Speed.</em></strong> 3500ft</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">16000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>
+      <set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_LIBERATOR</set>
+		</setters>
+	</element>
+
+  <element name="D-5 Mantis" type="Item" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ITEM_D5_MANTIS">
+    <supports>ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SMALL</supports>
+		<description>
+			<p><strong><em>Speed.</em></strong> 3000ft</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">25000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>
+      <set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_D5_MANTIS</set>
+		</setters>
+	</element>
+
+  <element name="Savage Starfighter" type="Item" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ITEM_SAVAGE_STARFIGHTER">
+    <supports>ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SMALL</supports>
+		<description>
+			<p><strong><em>Speed.</em></strong> 4000ft</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">30000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>
+      <set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SAVAGE_STARFIGHTER</set>
+		</setters>
+	</element>
+
+  <element name="Aurek Strikefighter" type="Item" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ITEM_AUREK_STRIKEFIGHTER">
+    <supports>ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SMALL</supports>
+		<description>
+			<p><strong><em>Speed.</em></strong> 4500ft</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">35000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>
+      <set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_AUREK_STRIKEFIGHTER</set>
+		</setters>
+	</element>
+
+  <element name="Tool Proficiency (Sith Starship)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SITH_STARSHIP">
+    <supports>ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SMALL</supports>
+  </element>
+
+  <element name="Tool Proficiency (BT-7 Thunderclap)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_BT7_THUNDERCLAP">
+    <supports>ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SMALL</supports>
+  </element>
+
+  <element name="Tool Proficiency (Fury Interceptor)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_FURY_INTERCEPTOR">
+    <supports>ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SMALL</supports>
+  </element>
+
+  <element name="Tool Proficiency (Liberator)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_LIBERATOR">
+    <supports>ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SMALL</supports>
+  </element>
+
+  <element name="Tool Proficiency (D-5 Mantis)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_D5_MANTIS">
+    <supports>ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SMALL</supports>
+  </element>
+
+  <element name="Tool Proficiency (Savage Starfighter)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SAVAGE_STARFIGHTER">
+    <supports>ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SMALL</supports>
+  </element>
+
+  <element name="Tool Proficiency (Aurek Starfighter)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_AUREK_STRIKEFIGHTER">
+    <supports>ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_SMALL</supports>
+  </element>
+
+  <element name="XS Stock" type="Item" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ITEM_XS_STOCK">
+    <supports>ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_MEDIUM</supports>
+		<description>
+			<p><strong><em>Speed.</em></strong> 30000ft</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">25000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>
+      <set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_XS_STOCK</set>
+		</setters>
+	</element>
+
+  <element name="Dynamic" type="Item" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ITEM_DYNAMIC">
+    <supports>ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_MEDIUM</supports>
+		<description>
+			<p><strong><em>Speed.</em></strong> 3500ft</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">45000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>
+      <set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_DYNAMIC</set>
+		</setters>
+	</element>
+
+  <element name="Ministry" type="Item" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ITEM_MINISTRY">
+    <supports>ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_MEDIUM</supports>
+		<description>
+			<p><strong><em>Speed.</em></strong> 3000ft</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">7500</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>
+      <set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_MINISTRY</set>
+		</setters>
+	</element>
+
+  <element name="A/SF-01 B-wing Starfighter" type="Item" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ITEM_ASF01_BWING_STARFIGHTER">
+    <supports>ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_MEDIUM</supports>
+		<description>
+			<p><strong><em>Speed.</em></strong> 3500ft</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">22000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>
+      <set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_ASF01_BWING_STARFIGHTER</set>
+		</setters>
+	</element>
+
+  <element name="X-70B Phantom" type="Item" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ITEM_X70B_PHANTOM">
+    <supports>ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_MEDIUM</supports>
+		<description>
+			<p><strong><em>Speed.</em></strong> 4500ft</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">100000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>
+      <set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_X70B_PHANTOM</set>
+		</setters>
+	</element>
+
+  <element name="Tool Proficiency (XS Stock)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_XS_STOCK">
+    <supports>ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_MEDIUM</supports>
+  </element>
+
+  <element name="Tool Proficiency (Dynamic)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_DYNAMIC">
+    <supports>ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_MEDIUM</supports>
+  </element>
+
+  <element name="Tool Proficiency (Ministry)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_MINISTRY">
+    <supports>ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_MEDIUM</supports>
+  </element>
+
+  <element name="Tool Proficiency (A/SF-01 B-wing Starfighter)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_ASF01_BWING_STARFIGHTER">
+    <supports>ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_MEDIUM</supports>
+  </element>
+
+  <element name="Tool Proficiency (X-70B Phantom)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_X70B_PHANTOM">
+    <supports>ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_MEDIUM</supports>
+  </element>
+
+  <element name="Venator" type="Item" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ITEM_VENATOR">
+		<description>
+			<p><strong><em>Speed.</em></strong> 1500ft</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">175000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>
+      <set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_VENATOR</set>
+		</setters>
+	</element>
+
+  <element name="Derriphan" type="Item" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ITEM_Derriphan">
+		<description>
+			<p><strong><em>Speed.</em></strong> 1500ft</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">200000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>
+      <set name="proficiency">IID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_DERRIPHAN</set>
+		</setters>
+	</element>
+
+  <element name="Praetorian" type="Item" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ITEM_PRAETORIAN">
+		<description>
+			<p><strong><em>Speed.</em></strong> 1500ft</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">250000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>
+      <set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_PRAETORIAN</set>
+		</setters>
+	</element>
+
+  <element name="Hammerhead" type="Item" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ITEM_HAMMERHEAD">
+		<description>
+			<p><strong><em>Speed.</em></strong> 1500ft</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">2500000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>
+      <set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_HAMMERHEAD</set>
+		</setters>
+	</element>
+
+  <element name="Hammerhead II" type="Item" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ITEM_HAMMERHEAD_II">
+		<description>
+			<p><strong><em>Speed.</em></strong> 1500ft</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">5000000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>
+      <set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_HAMMERHEAD_II</set>
+		</setters>
+	</element>
+
+  <element name="Valor" type="Item" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ITEM_VALOR">
+		<description>
+			<p><strong><em>Speed.</em></strong> 1500ft</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">10000000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>
+      <set name="proficiency">ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_VALOR</set>
+		</setters>
+	</element>
+
+  <element name="Tool Proficiency (Venator)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_VENATOR">
+    <supports>ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_LARGE</supports>
+  </element>
+
+  <element name="Tool Proficiency (Derriphan)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_DERRIPHAN">
+    <supports>ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_LARGE</supports>
+  </element>
+
+  <element name="Tool Proficiency (Praetorian)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_PRAETORIAN">
+    <supports>ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_LARGE</supports>
+  </element>
+
+  <element name="Tool Proficiency (Hammerhead)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_HAMMERHEAD">
+    <supports>ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_LARGE</supports>
+  </element>
+
+  <element name="Tool Proficiency (Hammerhead II)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_HAMMERHEAD_II">
+    <supports>ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_LARGE</supports>
+  </element>
+
+  <element name="Tool Proficiency (Valor)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_VALOR">
+    <supports>ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_LARGE</supports>
+  </element>
+
+</elements>

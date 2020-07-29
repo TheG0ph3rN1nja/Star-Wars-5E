@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Bounty Hunter</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="bounty-hunter.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/backgrounds/bounty-hunter.xml" />
+		</update>
+	</info>
+
+	<element name="Bounty Hunter" type="Background" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_BOUNTY_HUNTER">
+    <description>
+    <ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Pick 2: Stealth, Intimidation, Insight, Investigation</li>
+				<li><strong>Other Proficiencies:</strong>Pick 2: Thieves’ tools, gaming set, instrument </li>
+				<li><strong>Equipment:</strong>20 cr</li>
+      </ul>
+      <div element="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_EAR_TO_THE_GROUND" />
+    </description>
+      <setters>
+        <set name="short">2 Skills, 2 Proficiencies, 20 cr</set>
+      </setters>
+      <rules>
+        <select type="Proficiency" name="Proficiency (Bounty Hunter)" supports="ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION" number="2" />
+        <select type="Proficiency" name="Tool Proficiency (Bounty Hunter)" supports="Musical Instrument||Gaming Set||Tool" number="2" />
+      </rules>
+    </element>
+
+    <element name="Feature: Ear to the Ground" type="Background Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_BACKGROUND_FEATURE_EAR_TO_THE_GROUND">
+      <supports>Background Feature</supports>
+		<description>
+			<p>You are in frequent contact with people in the segment of society that your chosen quarries move through. These people might be associated with the criminal underworld, the rough-and-tumble folk of the streets, or members of high society. This connection comes in the form of a contact in any city you visit, a person who provides information about the people and places of the local area.</p>
+		</description>
+		<sheet alt="Ear to the Ground">
+			<description>You are in frequent contact with people in the segment of society that your chosen quarries move through. These people might be associated with the criminal underworld, the rough-and-tumble folk of the streets, or members of high society. This connection comes in the form of a contact in any city you visit, a person who provides information about the people and places of the local area.</description>
+		</sheet>
+	</element>
+
+</elements>

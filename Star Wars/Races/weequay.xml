@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Weequay</name>
+		<description>GM Binder</description>
+		<author />
+		<update version="0.0.1">
+			<file name="weequay.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Weequay" type="Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACE_WEEQUAY">
+		<description>
+			<h4>Weequay Traits</h4>
+			<p>Your Weequay character has many different attributes that might be useful in the field:</p>
+			<p class="indent"><strong><i>Ability Score Increase.</i></strong> Charisma +1, Dexterity +2.</p>
+      <p class="indent"><strong><i>Age.</i></strong> Up to 90 years.</p>
+			<p class="indent"><strong><i>Alignment.</i></strong> Tendency to chaotic; usually neutral.</p>
+			<p class="indent"><strong><i>Size.</i></strong> Medium</p>
+			<p class="indent"><strong><i>Speed.</i></strong> 30ft.</p>
+			<p class="indent"><strong><i>Darkvision.</i></strong> 30ft.</p>
+      <p class="indent"><strong><i>Hardened Skin.</i></strong> Your skin has a hard shell on it, allowing you to resist blaster fire. Whenever you are dealt radiant damage, you can use your reaction to lower the damage dealt by 1d6 + Con.</p>
+      <p class="indent"><strong><i>Proficiency.</i></strong> Deception.</p>
+      <p class="indent"><strong><i>Languages.</i></strong> Basic, Sriluurian, Huttese.</p>
+		</description>
+		<sheet display="false" />
+			<setters />
+			<rules>
+				<stat name="Charisma" value="2" />
+				<stat name="Dexterity" value="1" />
+				<grant type="Size" id="ID_SIZE_MEDIUM" />
+				<stat name="Speed" value="30" bonus="base" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_WEEQUAY_HARDENED_SKIN" />
+        <grant type="Vision" name="ID_VISION_DARKVISION" />
+        <grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_HUTTESE" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_SRILUURIAN" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_BASIC" />
+			</rules>
+    </element>
+
+    <element name="Hardened Skin" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_WEEQUAY_HARDENED_SKIN">
+			<description>
+				<p>Your skin has a hard shell on it, allowing you to resist blaster fire. Whenever you are dealt radiant damage, you can use your reaction to lower the damage dealt by 1d6 + Con.</p>
+			</description>
+			<sheet action="Reaction">
+				<description>
+          <p>Your skin has a hard shell on it, allowing you to resist blaster fire. Whenever you are dealt radiant damage, lower the damage dealt by 1d6 + {{weequay skin:health}}.</p>
+        </description>
+			</sheet>
+			<rules>
+        <stat name="weequay skin:health" value="constitution:modifier" />
+      </rules>
+		</element>
+
+</elements>
