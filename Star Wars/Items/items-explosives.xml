@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Explosives</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="items-explosives.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/Items/items-explosives.xml" />
+		</update>
+	</info>
+
+	<element name="Adhesive Grenade" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_ADHESIVE_GRENADE">
+		<description>
+			<p>10ft radius, difficult terrain, 15 AC, 20 HP</p>
+		</description>
+		<setters>
+			<set name="category">Explosives</set>
+			<set name="cost" currency="sp">15</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="damage" type="bludgeoning">2d6</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Bacta Grenade" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_BACTA_GRENADE">
+		<description>
+			<p>10ft radius</p>
+		</description>
+		<setters>
+			<set name="category">Explosives</set>
+			<set name="cost" currency="sp">60</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="damage" type="healing">2d6</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Breaching Charge" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_BREACHING">
+		<description>
+			<p>30 seconds to attach</p>
+		</description>
+		<setters>
+			<set name="category">Explosives</set>
+			<set name="cost" currency="sp">50</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="damage" type="bludgeoning">150</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Concussion  Grenade" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_CONCUSSION_GRENADE">
+		<description>
+			<p>10ft radius, DC 14 Con save or stunned 1 round</p>
+		</description>
+		<setters>
+			<set name="category">Explosives</set>
+			<set name="cost" currency="sp">25</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="damage" type="force">2d6</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="CryoBan Grenade" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_CRYOBAN_GRENADE">
+		<description>
+			<p>10ft radius, extra 1d6 cold</p>
+		</description>
+		<setters>
+			<set name="category">Explosives</set>
+			<set name="cost" currency="sp">20</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="damage" type="bludgeoning">2d6</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Frag Grenade" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_FRAG_GRENADE">
+		<description>
+			<p>10ft radius</p>
+		</description>
+		<setters>
+			<set name="category">Explosives</set>
+			<set name="cost" currency="sp">15</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="damage" type="bludgeoning">2d6</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Ion Grenade" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_ION_GRENADE">
+		<description>
+			<p>10ft radius, extra 2d6 vs droids and vehicles</p>
+		</description>
+		<setters>
+			<set name="category">Explosives</set>
+			<set name="cost" currency="sp">15</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="damage" type="thunder">1d6</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Plasma Grenade" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_PLASMA_GRENADE">
+		<description>
+			<p>10ft radius</p>
+		</description>
+		<setters>
+			<set name="category">Explosives</set>
+			<set name="cost" currency="sp">20</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="damage" type="acid">3d6</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Poison Grenade" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_POISON_GRENADE">
+		<description>
+			<p>10ft radius, DC 14 Con save or poisoned</p>
+		</description>
+		<setters>
+			<set name="category">Explosives</set>
+			<set name="cost" currency="sp">15</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="damage" type="poison">2d6</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Thermal Detonator" type="Weapon" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_WEAPON_THERMAL_DETONATOR">
+		<description>
+			<p>10ft radius, extra 1d6 fire</p>
+		</description>
+		<setters>
+			<set name="category">Explosives</set>
+			<set name="cost" currency="sp">25</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="damage" type="bludgeoning">3d6</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+</elements>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Ammo</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="items-ammo.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/Items/items-ammo.xml" />
+		</update>
+	</info>
+
+	<element name="Charge Pack" type="Item" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ITEM_CHARGE_PACK">
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="sp">25</set>
+			<set name="weight" lb="0.5">1/2 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Rocket" type="Item" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ITEM_ROCKET">
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="sp">200</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Kesium Cartridge" type="Item" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_KESIUM_CARTRIDGE">
+		<description>
+			<p>d4/d8, DC check or knocked prone</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="sp">200</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Rethen Gas Cartridge" type="Item" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RETHEN_GAS_CARTRIDGE">
+		<description>
+			<p>d4/d8, DC check or stunned 1 round</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="sp">300</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Tibanna Gas Cartridge" type="Item" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_TIBANNA_GAS_CARTRIDGE">
+		<description>
+			<p>Normal</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="sp">200</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Vanoorian Ammonia Cartridge" type="Item" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_VANOORIAN_AMMONIA_CARTRIDGE">
+		<description>
+			<p>d4/d8, Extra d4/d6 damage against droids</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="sp">300</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>

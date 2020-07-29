@@ -50,6 +50,8 @@
 		<file name="items-tools.xml" url="https://raw.githubusercontent.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars-5E/Star-Wars/Star%20Wars/Items/items-tools.xml" />
 		<file name="items-vehicles.xml" url="https://raw.githubusercontent.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars-5E/Star-Wars/Star%20Wars/Items/items-vehicles.xml" />
 		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars-5E/Star-Wars/Star%20Wars/Items/items-weapons.xml" />
+		<file name="items-ammo.xml" url="https://raw.githubusercontent.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars-5E/Star-Wars/Star%20Wars/Items/items-ammo.xml" />
+		<file name="items-explosives.xml" url="https://raw.githubusercontent.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars-5E/Star-Wars/Star%20Wars/Items/items-explosives.xml" />
 		<!--Races-->
 		<file name="arkanian.xml" url="https://raw.githubusercontent.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars-5E/Star-Wars/Star%20Wars/Races/arkanian.xml" />
 		<file name="bothan.xml" url="https://raw.githubusercontent.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars-5E/Star-Wars/Star%20Wars/Races/bothan.xml" />
