@@ -2,9 +2,10 @@
 <elements>
 	<info>
 		<name>Force Disciplines</name>
-		<description>GM Binder</description>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
 		<update version="0.0.1">
-			<file name="force-disciplines.xml" url="" />
+			<file name="force-disciplines.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/force-disciplines.xml" />
 		</update>
 	</info>
 

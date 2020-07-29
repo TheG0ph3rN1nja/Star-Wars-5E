@@ -62,5 +62,31 @@
 		<file name="genosian.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/Races/genosian.xml" />
 		<file name="gungan.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/Races/gungan.xml" />
 		<file name="jawa.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/Races/jawa.xml" />
+		<file name="keldor.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/Races/keldor.xml" />
+		<file name="lasat.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/Races/lasat.xml" />
+		<file name="mandalorian.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/Races/mandalorian.xml" />
+		<file name="miraluka.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/Races/miraluka.xml" />
+		<file name="moncalamari.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/Races/moncalamari.xml" />
+		<file name="nautolan.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/Races/nautolan.xml" />
+		<file name="rodian.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/Races/rodian.xml" />
+		<file name="togruta.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/Races/togruta.xml" />
+		<file name="trandoshan.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/Races/trandoshan.xml" />
+		<file name="twilek.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/Races/twilek.xml" />
+		<file name="weequay.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/Races/weequay.xml" />
+		<file name="wookie.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/Races/wookie.xml" />
+		<file name="zabrak.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/Races/zabrak.xml" />
+		<!--Misc-->
+		<file name="companions.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/companions.xml" />
+		<file name="factions.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/factions.xml" />
+		<file name="feats.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/feats.xml" />
+		<file name="force-disciplines.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/force-disciplines.xml" />
+		<file name="force-fighting-styles.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/force-fighting-styles.xml" />
+		<file name="force-orders.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/force-orders.xml" />
+		<file name="force-talents.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/force-talents.xml" />
+		<file name="gadgets-schematics.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/gadgets-schematics.xml" />
+		<file name="languages.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/languages.xml" />
+		<file name="majestic-talents.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/majestic-talents.xml" />
+		<file name="new-skills.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/new-skills.xml" />
+		<file name="weapon-mods.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/weapom-mods.xml" />
 	</files>
 </index>
