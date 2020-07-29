@@ -2,7 +2,7 @@
 <elements>
 <info>
   <update version="0.0.1">
-    <file name="sources.xml" url="https://raw.githubusercontent.com/TheG0ph3rN1nja/Star-Wars-5E/sources.xml" />
+    <file name="source.xml" url="https://raw.githubusercontent.com/TheG0ph3rN1nja/Star-Wars-5E/source.xml" />
   </update>
 </info>
 
