@@ -86,3 +86,5 @@
 			<set name="stackable">true</set>
 		</setters>
 	</element>
+
+</elements>
