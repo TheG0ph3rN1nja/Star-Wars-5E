@@ -2,10 +2,10 @@
 <elements>
 	<info>
 		<name>Arkanian</name>
-		<description>GM Binder</description>
-		<author />
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
 		<update version="0.0.1">
-			<file name="arkanian.xml" url="" />
+			<file name="arkanian.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/Races/arkanian.xml" />
 		</update>
 	</info>
 

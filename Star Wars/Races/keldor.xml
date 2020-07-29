@@ -2,10 +2,10 @@
 <elements>
 	<info>
 		<name>Kel Dor</name>
-		<description>GM Binder</description>
-		<author />
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
 		<update version="0.0.1">
-			<file name="keldor.xml" url="" />
+			<file name="keldor.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/Races/keldor.xml" />
 		</update>
 	</info>
 

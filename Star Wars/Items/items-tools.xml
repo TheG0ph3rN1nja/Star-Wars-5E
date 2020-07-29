@@ -2,11 +2,11 @@
 <elements>
   <info>
     <name>Tools</name>
-    <description>GM Binder</description>
-    <author />
-    <update version="0.0.1">
-      <file name="items-tools.xml" url="" />
-    </update>
+    <description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="items-tools.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/Items/items-tools.xml" />
+		</update>
   </info>
 
   <element name="Engineering Tools" type="Item" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ITEM_TOOLS_ENGINEERING_TOOLS">
