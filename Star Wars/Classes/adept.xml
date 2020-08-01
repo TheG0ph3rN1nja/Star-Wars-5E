@@ -91,7 +91,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
-			<select type="Proficiency" name="Skill Proficiency (Adept)" supports="Skill,Adept" number="4" />
+			<select type="Proficiency" name="Skill Proficiency (Adept)" supports="Skills,Adept" number="4" />
 			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SKILL_REPAIRS" level="1" />
 			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_SKILL_SECURITY" level="1" />
 			<grant type="Class Feature" id="ID_GMBINDER_SW5E_CLASS_FEATURE_FACTIONS" level="1" />
