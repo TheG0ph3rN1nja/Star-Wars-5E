@@ -1,20 +1,30 @@
 READ ME!!!!
 This will explain if there are changes to certain parts of the overhaul. If I miss something or there are question feel free to ask or comment.
 Note: I DID NOT make any of this. All of this info came from https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9 ALTHOUGH I did change a few things
-so it could work with Aurora or so it could make sense.
+so it could work with Aurora or so it could make sense. I will try to keep this READ Me updated as much as possible.
 
 Races
 -Mandalorian background changed to Race with subraces to make more sense
+-Humans are the same as Core so not added.(May add later)
+-Read the Zabrak and Chose races info before selecting your skills. I had to use a workaround that doesn't follow how the rules were specifically written.
 
 Backgrounds
 
 Classes
 -Senator class will only display the Guardian Companion as Aurora only supports 1 companion in the sheet generation as far as I know.
+-Force welding classes will have to select their class again for each force discipline so that it shows up on spellcasting sheet correctly.
+-Engineer gadget creation are spells and is setup like the paladin class.( They will be added as purchasable items later as well)
 
 Items
 -Some items still need to be added.
+-Gadgets are only creation spells right now
+-Starship weapons and add-ons
+-Weapon mods that are available for every class.(The tactician and Trooper are class features that you choose as you level up)
 
 Other
 -Repair and Security Skills are under Class Feature section and WILL ONLY show up if you select a SW5E Class
 -There was no multiclass info added so it was not made available
--Strongly recommend turning off other sources unless you specifically want to use something for this campaign setting
+-Strongly recommend turning off other sources unless you specifically want to use something for this campaign setting.
+-If you are not a force welding class and gain access to a force discipline. Use THAT discipline's type for spellcasting.
+-Demolitionist skill was not added because there were tools already available and only 1 class used it.
+
