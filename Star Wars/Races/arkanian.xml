@@ -141,7 +141,7 @@
         </description>
       </sheet>
       <rules>
-        <select type="Proficiency" name="Skill Proficiency (Offshoot Arkanian)" number="2" />
+        <select type="Proficiency" name="Skill Proficiency (Offshoot Arkanian)" supports="Skill" number="2" />
       </rules>
     </element>
 
