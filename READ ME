@@ -7,6 +7,8 @@ Races
 -Mandalorian background changed to Race with subraces to make more sense
 -Humans are the same as Core so not added.(May add later)
 -Read the Zabrak and Chose races info before selecting your skills. I had to use a workaround that doesn't follow how the rules were specifically written.
+-Fix Arkainian Offshoot Skill Proficiency
+-Forgot to add Khil Race
 
 Backgrounds
 
@@ -14,6 +16,7 @@ Classes
 -Senator class will only display the Guardian Companion as Aurora only supports 1 companion in the sheet generation as far as I know.
 -Force welding classes will have to select their class again for each force discipline so that it shows up on spellcasting sheet correctly.
 -Engineer gadget creation are spells and is setup like the paladin class.( They will be added as purchasable items later as well)
+-Fix Adept Skill Proficiency
 
 Items
 -Some items still need to be added.
@@ -27,4 +30,3 @@ Other
 -Strongly recommend turning off other sources unless you specifically want to use something for this campaign setting.
 -If you are not a force welding class and gain access to a force discipline. Use THAT discipline's type for spellcasting.
 -Demolitionist skill was not added because there were tools already available and only 1 class used it.
-
