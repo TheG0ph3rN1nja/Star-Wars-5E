@@ -4,7 +4,7 @@
 		<name>Zabrak</name>
 		<description></description>
 		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="zabrak.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/Races/zabrak.xml" />
 		</update>
 	</info>
@@ -32,12 +32,13 @@
 		<sheet display="false" />
 			<setters />
 			<rules>
-				<select type="Ability Score Improvement" name="Ability Score Increase, Zabrak" supports="ID_INTERNAL_ASI_STRENGTH|ID_INTERNAL_ASI_DEXTERITY|ID_INTERNAL_ASI_INTELLIGENCE|ID_INTERNAL_ASI_WISDOM|ID_INTERNAL_ASI_CHARISMA" number="3"/>
 				<grant type="Size" id="ID_SIZE_MEDIUM" />
 				<stat name="Speed" value="30" bonus="base" />
         <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
         <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
         <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_ZABRAK_HORNED" />
+				<grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_ZABRAK_ASI_II" />
+				<grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_ZABRAK_ASI_I" />
 				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_ZABRAKI" />
 				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_BASIC" />
 			</rules>
@@ -55,65 +56,176 @@
 			<rules />
 		</element>
 
-    <element name="Ability Score Increase (Strength)" type="Racial Trait" source="GM Binder SW5E" id="ID_RACIAL_TRAIT_ZABRAK_STRENGTH">
-		<compendium display="false" />
-		<supports>Zabrak</supports>
-		<description>
-			<p>Your Strength score increases by 1.</p>
-		</description>
-		<rules>
-			<stat name="strength" value="1"/>
-		</rules>
-	</element>
-	<element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="GM Binder SW5E" id="ID_RACIAL_TRAIT_ZABRAK_DEXTERITY">
-		<compendium display="false" />
-		<supports>Zabrak</supports>
-		<description>
-			<p>Your Dexterity score increases by 1.</p>
-		</description>
-		<rules>
-			<stat name="dexterity" value="1"/>
-		</rules>
-	</element>
-	<element name="Ability Score Increase (Constitution)" type="Racial Trait" source="GM Binder SW5E" id="ID_RACIAL_TRAIT_ZABRAK_CONSTITUTION">
-		<compendium display="false" />
-		<supports>Zabrak</supports>
-		<description>
-			<p>Your Constitution score increases by 1.</p>
-		</description>
-		<rules>
-			<stat name="constitution" value="1"/>
-		</rules>
-	</element>
-	<element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="GM Binder SW5E" id="ID_RACIAL_TRAIT_ZABRAK_INTELLIGENCE">
-		<compendium display="false" />
-		<supports>Zabrak</supports>
-		<description>
-			<p>Your Intelligence score increases by 1.</p>
-		</description>
-		<rules>
-			<stat name="intelligence" value="1"/>
-		</rules>
-	</element>
-	<element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="GM Binder SW5E" id="ID_RACIAL_TRAIT_ZABRAK_WISDOM">
-		<compendium display="false" />
-		<supports>Zabrak</supports>
-		<description>
-			<p>Your Wisdom score increases by 1.</p>
-		</description>
-		<rules>
-			<stat name="wisdom" value="1"/>
-		</rules>
-	</element>
-  <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="GM Binder SW5E" id="ID_RACIAL_TRAIT_ZABRAK_WISDOM">
-		<compendium display="false" />
-		<supports>Zabrak</supports>
-		<description>
-			<p>Your Charisma score increases by 1.</p>
-		</description>
-		<rules>
-			<stat name="Charisma" value="1"/>
-		</rules>
-	</element>
+		<element name="Ability Score Increase II" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_ZABRAK_ASI_II">
+			<description>
+				<p>Choose an Ability Score to increase by 2</p>
+			</description>
+			<sheet display="false">
+				<description>
+          <p>Choose an Ability Score to increase by 2</p>
+        </description>
+			</sheet>
+			<rules>
+				<select type="Racial Trait" name="Ability Score Increase, Zabrak II" supports="ID_RACIAL_TRAIT_ZABRAK_STRENGTH_II|ID_RACIAL_TRAIT_ZABRAK_DEXTERITY_II|ID_RACIAL_TRAIT_ZABRAK_CONSTITUTION_II|ID_RACIAL_TRAIT_ZABRAK_INTELLIGENCE_II|ID_RACIAL_TRAIT_ZABRAK_WISDOM_II|ID_RACIAL_TRAIT_ZABRAK_CHARISMA_II" />
+			</rules>
+		</element>
+
+		<element name="Ability Score Increase (Strength)" type="Racial Trait" source="GM Binder SW5E" id="ID_RACIAL_TRAIT_ZABRAK_STRENGTH_II">
+			<compendium display="false" />
+			<requirements>!ID_RACIAL_TRAIT_ZABRAK_STRENGTH_I</requirements>
+			<supports>Zabrak</supports>
+			<description>
+				<p>Your Strength score increases by 2.</p>
+			</description>
+			<rules>
+				<stat name="Strength" value="2"/>
+			</rules>
+		</element>
+
+		<element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="GM Binder SW5E" id="ID_RACIAL_TRAIT_ZABRAK_DEXTERITY_II">
+			<compendium display="false" />
+			<requirements>!ID_RACIAL_TRAIT_ZABRAK_DEXTERITY_I</requirements>
+			<supports>Zabrak</supports>
+			<description>
+				<p>Your Dexterity score increases by 2.</p>
+			</description>
+			<rules>
+				<stat name="Dexterity" value="2"/>
+			</rules>
+		</element>
+
+		<element name="Ability Score Increase (Constitution)" type="Racial Trait" source="GM Binder SW5E" id="ID_RACIAL_TRAIT_ZABRAK_CONSTITUTION_II">
+			<compendium display="false" />
+			<requirements>!ID_RACIAL_TRAIT_ZABRAK_CONSTITUTION_I</requirements>
+			<supports>Zabrak</supports>
+			<description>
+				<p>Your Constitution score increases by 2.</p>
+			</description>
+			<rules>
+				<stat name="Constitution" value="2"/>
+			</rules>
+		</element>
+
+		<element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="GM Binder SW5E" id="ID_RACIAL_TRAIT_ZABRAK_INTELLIGENCE_II">
+			<compendium display="false" />
+			<requirements>!ID_RACIAL_TRAIT_ZABRAK_INTELLIGENCE_I</requirements>
+			<supports>Zabrak</supports>
+			<description>
+				<p>Your Intelligence score increases by 2.</p>
+			</description>
+			<rules>
+				<stat name="Intelligence" value="2"/>
+			</rules>
+		</element>
+
+		<element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="GM Binder SW5E" id="ID_RACIAL_TRAIT_ZABRAK_WISDOM_II">
+			<compendium display="false" />
+			<requirements>!ID_RACIAL_TRAIT_ZABRAK_WISDOM_I</requirements>
+			<supports>Zabrak</supports>
+			<description>
+				<p>Your Wisdom score increases by 2.</p>
+			</description>
+			<rules>
+				<stat name="Wisdom" value="2"/>
+			</rules>
+		</element>
+
+		<element name="Ability Score Increase (Charisma)" type="Racial Trait" source="GM Binder SW5E" id="ID_RACIAL_TRAIT_ZABRAK_CHARISMA_II">
+			<compendium display="false" />
+			<requirements>!ID_RACIAL_TRAIT_ZABRAK_CHARISMA_I</requirements>
+			<supports>Zabrak</supports>
+			<description>
+				<p>Your Charisma score increases by 2.</p>
+			</description>
+			<rules>
+				<stat name="Charisma" value="2"/>
+			</rules>
+		</element>
+
+		<element name="Ability Score Increase I" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_ZABRAK_ASI_I">
+			<description>
+				<p>Choose an Ability Score to increase by 1</p>
+				</description>
+			<sheet display="false">
+				<description>
+          <p>Choose an Ability Score to increase by 1</p>
+        </description>
+			</sheet>
+			<rules>
+				<select type="Racial Trait" name="Ability Score Increase, Zabrak I" supports="ID_RACIAL_TRAIT_ZABRAK_STRENGTH_I|ID_RACIAL_TRAIT_ZABRAK_DEXTERITY_I|ID_RACIAL_TRAIT_ZABRAK_CONSTITUTION_I|ID_RACIAL_TRAIT_ZABRAK_INTELLIGENCE_I|ID_RACIAL_TRAIT_ZABRAK_WISDOM_I|ID_RACIAL_TRAIT_ZABRAK_CHARISMA_I" />
+			</rules>
+		</element>
+
+		<element name="Ability Score Increase (Strength)" type="Racial Trait" source="GM Binder SW5E" id="ID_RACIAL_TRAIT_ZABRAK_STRENGTH_I">
+			<compendium display="false" />
+			<requirements>!ID_RACIAL_TRAIT_ZABRAK_STRENGTH_II</requirements>
+			<supports>Zabrak</supports>
+			<description>
+				<p>Your Strength score increases by 1.</p>
+			</description>
+			<rules>
+				<stat name="Strength" value="1"/>
+			</rules>
+		</element>
+
+		<element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="GM Binder SW5E" id="ID_RACIAL_TRAIT_ZABRAK_DEXTERITY_I">
+			<compendium display="false" />
+			<requirements>!ID_RACIAL_TRAIT_ZABRAK_DEXTERITY_II</requirements>
+			<supports>Zabrak</supports>
+			<description>
+				<p>Your Dexterity score increases by 1.</p>
+			</description>
+			<rules>
+				<stat name="Dexterity" value="1"/>
+			</rules>
+		</element>
+
+		<element name="Ability Score Increase (Constitution)" type="Racial Trait" source="GM Binder SW5E" id="ID_RACIAL_TRAIT_ZABRAK_CONSTITUTION_I">
+			<compendium display="false" />
+			<requirements>!ID_RACIAL_TRAIT_ZABRAK_CONSTITUTION_II</requirements>
+			<supports>Zabrak</supports>
+			<description>
+				<p>Your Constitution score increases by 1.</p>
+			</description>
+			<rules>
+				<stat name="Constitution" value="1"/>
+			</rules>
+		</element>
+
+		<element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="GM Binder SW5E" id="ID_RACIAL_TRAIT_ZABRAK_INTELLIGENCE_I">
+			<compendium display="false" />
+			<requirements>!ID_RACIAL_TRAIT_ZABRAK_INTELLIGENCE_II</requirements>
+			<supports>Zabrak</supports>
+			<description>
+				<p>Your Intelligence score increases by 1.</p>
+			</description>
+			<rules>
+				<stat name="Intelligence" value="1"/>
+			</rules>
+		</element>
+
+		<element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="GM Binder SW5E" id="ID_RACIAL_TRAIT_ZABRAK_WISDOM_I">
+			<compendium display="false" />
+			<requirements>!ID_RACIAL_TRAIT_ZABRAK_WISDOM_II</requirements>
+			<supports>Zabrak</supports>
+			<description>
+				<p>Your Wisdom score increases by 1.</p>
+			</description>
+			<rules>
+				<stat name="Wisdom" value="1"/>
+			</rules>
+		</element>
+
+		<element name="Ability Score Increase (Charisma)" type="Racial Trait" source="GM Binder SW5E" id="ID_RACIAL_TRAIT_ZABRAK_CHARISMA_I">
+			<compendium display="false" />
+			<requirements>!ID_RACIAL_TRAIT_ZABRAK_CHARISMA_II</requirements>
+			<supports>Zabrak</supports>
+			<description>
+				<p>Your Charisma score increases by 1.</p>
+			</description>
+			<rules>
+				<stat name="Charisma" value="1"/>
+			</rules>
+		</element>
 
  </elements>

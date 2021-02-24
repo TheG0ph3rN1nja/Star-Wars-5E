@@ -19,7 +19,7 @@
   <element name="Tool Proficiency (Space Vehicles Medium)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_MEDIUM">
 		<supports>ID_INTERNAL_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE</supports>
 	</element>
-  <element name="Tool Proficiency (Space VehiclesLarge)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_LARGE">
+  <element name="Tool Proficiency (Space Vehicles Large)" type="Proficiency" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE_LARGE">
 		<supports>ID_INTERNAL_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_SPACE</supports>
 	</element>
 

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Khil</name>
+		<description></description>
+		<author url="https://www.gmbinder.com/share/-L3EDylnKWyz1lGQb5o9">GM Binder SW5E</author>
+		<update version="0.0.1">
+			<file name="Khil.xml" url="https://github.com/TheG0ph3rN1nja/Star-Wars-5E/Star-Wars/Races/khil.xml" />
+		</update>
+	</info>
+
+	<element name="Khil" type="Race" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACE_KHIL">
+		<description>
+			<h4>Khil Traits</h4>
+			<p>Your Khil character has many different attributes that might be useful in the field:</p>
+			<p class="indent"><strong><i>Ability Score Increase.</i></strong> +2 Strength, +2 Wisdom</p>
+      <p class="indent"><strong><i>Age.</i></strong> Up to 90 years.</p>
+			<p class="indent"><strong><i>Alignment.</i></strong> Good.</p>
+			<p class="indent"><strong><i>Size.</i></strong> Medium.</p>
+			<p class="indent"><strong><i>Speed.</i></strong> 30ft</p>
+      <p class="indent"><strong><i>Darkvision.</i></strong> 60ft.</p>
+      <p class="indent"><strong><i>Proficiency.</i></strong> Perception, Persuasion.</p>
+			<p class="indent"><strong><i>Languages.</i></strong> Basic, Khilese</p>
+		</description>
+		<sheet display="false" />
+			<setters />
+			<rules>
+				<stat name="Strength" value="2" />
+				<stat name="Wisdom" value="2" />
+				<grant type="Size" id="ID_SIZE_MEDIUM" />
+				<stat name="Speed" value="30" bonus="base" />
+        <grant type="Racial Trait" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_LASAT_HEIGHTENED_SENSES" />
+        <grant type="Vision" name="ID_VISION_DARKVISION" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_KHILESE" />
+				<grant type="Language" id="ID_GMBINDER_SW5E_LANGUAGE_BASIC" />
+			</rules>
+    </element>
+
+	</elements>
