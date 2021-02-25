@@ -11,7 +11,7 @@ Backgrounds
 
 Classes
 -Senator class will only display the Guardian Companion as Aurora only supports 1 companion in the sheet generation as far as I know.
--Force welding classes will have to select their class again for each force discipline so that it shows up on spellcasting sheet correctly.
+-Force welding classes will have to select their class again for each force discipline so that it shows up on spellcasting sheet correctly. May have a fix testing needed.
 -Engineer gadget creation are spells and is setup like the paladin class.( They will be added as purchasable items later as well)
 
 Items

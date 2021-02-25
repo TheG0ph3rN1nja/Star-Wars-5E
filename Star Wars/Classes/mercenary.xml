@@ -663,9 +663,12 @@
 			<p>At level 7, you gain advantage on any saving throws made against force abilities, and resistance to force and psychic damage.</p>
 		</description>
 		<sheet>
-      <description>You gain advantage on any saving throws made against force abilities, and resistance to force and psychic damage</description>
+      <description>You gain advantage on any saving throws made against force abilities</description>
     </sheet>
-		<rules />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+		</rules>
 	</element>
 
   <element name="Slayer's Flurry" type="Archetype Feature" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_ARCHETYPE_FEATURE_JEDISLAYER_CONCLAVE_SLAYERS_FLURRY">

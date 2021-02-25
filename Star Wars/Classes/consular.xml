@@ -308,13 +308,17 @@
         <li>You gain resistance to bludgeoning, piercing, and slashing damage.</li>
         <li>You no longer age.</li>
         <li>You are immune to disease, poison damage, and the poisoned condition.</li>
-        <li>If you die, roll a d20. On a 10 or higher, you discorporate with 0 hit points, instead of dying, and you fall unconscious. You and your gear disappear. You appear at a spot of your choice 1d4 - 1 days later on the plane of existence where you died, having gained the benefits of one long rest.</li>
+        <li>If you die, roll a d20. On a 10 or higher, you discorporate with 0 hit points, instead of dying, and you fall unconscious. You and your gear disappear. You appear at a spot of your choice 1d4-1 days later on the plane of existence where you died, having gained the benefits of one long rest.</li>
       </ul>
 		</description>
 		<sheet>
-		<description>You gain resistance to bludgeoning, piercing, and slashing damage, no longer age, are immune to disease, poison damage, and the poisoned condition, and if you die, roll a d20. On a 10 or higher, you discorporate with 0 hit points, instead of dying, and you fall unconscious. You and your gear disappear. You appear at a spot of your choice 1d4 - 1 days later on the plane of existence where you died, having gained the benefits of one long rest.</description>
+		<description>You no longer age, are immune to disease, poison damage, and the poisoned condition, and if you die, roll a d20. On a 10 or higher, you discorporate with 0 hit points, instead of dying, and you fall unconscious. You and your gear disappear. You appear at a spot of your choice 1d4-1 days later on the plane of existence where you died, having gained the benefits of one long rest.</description>
 		</sheet>
-			<rules />
+			<rules>
+				<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+				<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+				<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+			</rules>
 	</element>
 
 </elements>

@@ -54,10 +54,12 @@
 			</description>
 			<sheet>
 				<description>
-          <p>You do not take any kind of penalties due to cold weather, and you have resistance to cold damage.</p>
+          <p>You do not take any kind of penalties due to cold weather.</p>
         </description>
 			</sheet>
-			<rules />
+			<rules>
+				<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+			</rules>
 		</element>
 
     <element name="Chiss Weapons" type="Racial Trait" source="GM Binder SW5E" id="ID_GMBINDER_SW5E_RACIAL_TRAIT_CHISS_CHISS_WEAPONS">
